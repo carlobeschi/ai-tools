@@ -75,7 +75,7 @@ h1{font:700 clamp(28px,4vw,42px)/1.05 var(--display);color:var(--ink);margin:0;t
 </style>
 
 <div class="wrap">
-  <nav class="nav"><a href="./" aria-current="page">Treemaps</a><a href="assess.html">Check your stack</a></nav>
+  <nav class="nav"><a href="./" aria-current="page">Treemaps</a><a href="assess.html">Check your stack</a><a href="trends.html">Trends</a></nav>
   <header>
     <div>
       <h1>Which AI dev tools developers actually use</h1>
@@ -176,9 +176,10 @@ function pickSnapshot(idx){ const q=new URLSearchParams(location.search).get("sn
 (async()=>{
   const idx=await (await fetch("data/snapshots/index.json")).json();
   snap=await (await fetch(`data/snapshots/${pickSnapshot(idx)}.json`)).json();
-  const s=snap.source;
-  document.getElementById("sub").innerHTML=`Snapshot ${snap.snapshot_date}, from <a href="${s.url}" target="_blank" rel="noopener">${s.name}</a> by ${s.author}: ${snap.corpus.hn_comments.toLocaleString("en")} Hacker News comments across ${snap.corpus.ask_hn_threads} “what's your setup” threads. Tile area is the tool's share within its category; hover a tile for details.`;
-  document.getElementById("note").textContent="“Devs naming it” counts Hacker News developers who say they use the tool, so it is the closest proxy for share of users. HN skews senior and terminal-first. “Composite score” is Alexis's blend of mentions, comment volume, stars, downloads, Lobsters and dev.to. Cards marked “numbers approximate” were transcribed from the rendered page and will be refreshed from the source JSON.";
+  const s=snap.source, own=snap.kind==="collected";
+  document.getElementById("sub").innerHTML=`Snapshot ${snap.snapshot_date}, ${own?`measured by our <a href="${s.url}" target="_blank" rel="noopener">recurring run</a> (baseline: <a href="${s.baseline.url}" target="_blank" rel="noopener">${s.baseline.name}</a>)`:`from <a href="${s.url}" target="_blank" rel="noopener">${s.name}</a> by ${s.author}`}: ${snap.corpus.hn_comments.toLocaleString("en")} Hacker News comments across ${snap.corpus.ask_hn_threads} “what's your setup” threads. Tile area is the tool's share within its category; hover a tile for details.`;
+  if(own) document.getElementById("note").textContent="“Devs naming it” counts Hacker News developers who name the tool in Ask HN setup threads, the closest proxy for share of users; HN skews senior and terminal-first. “Composite score” is our recomputation of the source's blend (HN devs, HN comments, stars or downloads, HN story points). See the Trends page for changes over time.";
+  else document.getElementById("note").textContent="“Devs naming it” counts Hacker News developers who say they use the tool, so it is the closest proxy for share of users. HN skews senior and terminal-first. “Composite score” is Alexis's blend of mentions, comment volume, stars, downloads, Lobsters and dev.to. Cards marked “numbers approximate” were transcribed from the rendered page and will be refreshed from the source JSON.";
   draw();
 })();
 </script>

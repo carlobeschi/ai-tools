@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta charset="utf-8">
+<title>AI Dev Tools Trends</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: header with metric switch and a "biggest movers" strip, then one card per category:
+   a table of tools with a sparkline across snapshots, the latest value and the change since the previous one. */
+:root{
+  --bg:#f5f6fa; --surface:#ffffff; --ink:#1d2160; --fg:#1b1d2b; --muted:#5d6278; --line:#d9dbe7;
+  --up:#0f7a52; --down:#b3261e; --spark:#3446d4; --base:#9aa0bd;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12131c; --surface:#1a1c28; --ink:#b9c0ff; --fg:#e6e7f0; --muted:#9a9eb5; --line:#2c2f42;
+  --up:#4cc38a; --down:#ff8a80; --spark:#7d8bff; --base:#5d6278; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12131c; --surface:#1a1c28; --ink:#b9c0ff; --fg:#e6e7f0; --muted:#9a9eb5; --line:#2c2f42;
+  --up:#4cc38a; --down:#ff8a80; --spark:#7d8bff; --base:#5d6278; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:24px}
+.nav{display:flex;gap:16px;font:500 13px var(--body);margin-bottom:-8px}
+.nav a{color:var(--muted);text-decoration:none}
+.nav a[aria-current]{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.nav a:hover{color:var(--ink)}
+header{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:end;justify-content:space-between}
+h1{font:700 clamp(28px,4vw,42px)/1.05 var(--display);color:var(--ink);margin:0;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:6px 0 0;max-width:66ch}
+.sub a,.note a{color:var(--ink)}
+.controls{display:flex;flex-direction:column;gap:8px;min-width:0}
+.label{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:3px;gap:2px;flex-wrap:wrap}
+.seg button{font:500 13px var(--body);border:0;background:none;color:var(--muted);padding:6px 12px;border-radius:6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.seg button:focus-visible{outline:2px solid var(--spark);outline-offset:2px}
+.movers{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:12px}
+.mv{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0}
+.mv .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.mv .t{font:700 17px/1.2 var(--display);color:var(--ink);margin-top:2px;overflow-wrap:anywhere}
+.mv .d{font:500 13px var(--mono)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;min-width:0}
+.card h2{font:700 19px/1.15 var(--display);margin:0 0 8px;color:var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+th{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-align:right;padding:4px 4px;border-bottom:1px solid var(--line)}
+th:first-child{text-align:left}
+td{padding:5px 4px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.n{text-align:left;white-space:normal;overflow-wrap:anywhere}
+td.n .x{font:500 10.5px var(--mono);color:var(--muted);margin-left:4px}
+td.s{width:84px}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--muted)}
+svg.spark{display:block;width:80px;height:24px;overflow:visible}
+svg.spark path{fill:none;stroke:var(--spark);stroke-width:1.6}
+svg.spark circle{fill:var(--spark)} svg.spark circle.b{fill:var(--base)}
+.note{font-size:13px;color:var(--muted);max-width:86ch;margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.empty{color:var(--muted);font-size:13px;margin:6px 0 0}
+</style>
+
+<div class="wrap">
+  <nav class="nav"><a href="./">Treemaps</a><a href="assess.html">Check your stack</a><a href="trends.html" aria-current="page">Trends</a></nav>
+  <header>
+    <div>
+      <h1>How AI dev tool adoption is moving</h1>
+      <p class="sub" id="sub">Change between snapshots, one every two weeks.</p>
+    </div>
+    <div class="controls">
+      <span class="label" id="mlabel">Signal</span>
+      <div class="seg" role="group" aria-labelledby="mlabel" id="seg"></div>
+    </div>
+  </header>
+  <section class="movers" id="movers" aria-label="Biggest movers"></section>
+  <div class="grid" id="grid"></div>
+  <p class="note" id="note"></p>
+</div>
+
+<script>
+const METRICS = [
+  {k:"hn_comments_12m", label:"HN comments", long:"HN comments mentioning the tool, last 12 months"},
+  {k:"hn_devs", label:"HN devs", long:"HN developers naming the tool in Ask HN setup threads"},
+  {k:"github_stars", label:"GitHub stars", long:"GitHub stars"},
+  {k:"downloads_month", label:"Downloads", long:"npm / PyPI downloads, last month"},
+  {k:"score", label:"Score", long:"Composite score, 0-100"},
+];
+const fmt = n => n==null ? "–" : n>=1e6 ? (n/1e6).toFixed(n>=1e7?0:1)+"M" : n>=1e3 ? (n/1e3).toFixed(n>=1e4?0:1)+"k" : String(Math.round(n*10)/10);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let snaps = [], metric = "hn_comments_12m";
+try { metric = localStorage.getItem("tr-metric") || metric } catch(e){}
+if (!METRICS.some(m => m.k === metric)) metric = "hn_comments_12m";
+
+// A snapshot taken from the source (the first one) uses the source's own method. Collected snapshots list which
+// fields are measured the same way as the source; any other field is only compared between collected snapshots.
+const comparable = (s, k) => s.kind !== "collected" || (s.method?.comparable_to_baseline || []).includes(k);
+function series(k){
+  const coll = snaps.filter(s => s.kind === "collected");
+  if (!coll.length || coll.every(s => comparable(s, k))) return snaps;
+  return coll;
+}
+
+function allTools(c){ return [...c.tools, ...(c.others || [])] }
+
+function spark(vals, kinds){
+  const pts = vals.map((v,i) => [i, v]).filter(p => p[1] != null);
+  if (!pts.length) return "";
+  const W = 80, H = 24, n = Math.max(vals.length - 1, 1);
+  const lv = pts.map(p => Math.log10(p[1] + 1)), lo = Math.min(...lv), hi = Math.max(...lv), span = hi - lo || 1;
+  const xy = pts.map((p,j) => [p[0] / n * W, H - 2 - (hi === lo ? (H - 4) / 2 : (lv[j] - lo) / span * (H - 4))]);
+  const d = xy.map((q,j) => (j ? "L" : "M") + q[0].toFixed(1) + " " + q[1].toFixed(1)).join("");
+  const dots = xy.map((q,j) => `<circle class="${kinds[pts[j][0]] !== "collected" ? "b" : ""}" cx="${q[0].toFixed(1)}" cy="${q[1].toFixed(1)}" r="2"/>`).join("");
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" aria-hidden="true">${pts.length > 1 ? `<path d="${d}"/>` : ""}${dots}</svg>`;
+}
+
+function delta(a, b){
+  if (a == null || b == null) return {txt:"–", cls:"flat", p:null};
+  if (b === 0) return a === 0 ? {txt:"0", cls:"flat", p:0} : {txt:"new", cls:"up", p:null};
+  const p = (a - b) / b * 100, r = Math.round(p);
+  return {txt:(r > 0 ? "+" : "") + r + "%", cls: r > 0 ? "up" : r < 0 ? "down" : "flat", p};
+}
+
+function draw(){
+  const m = METRICS.find(x => x.k === metric);
+  document.querySelectorAll("#seg button").forEach(b => b.setAttribute("aria-pressed", b.dataset.m === metric));
+  const ss = series(metric), last = ss[ss.length - 1], prev = ss[ss.length - 2];
+  const kinds = ss.map(s => s.kind);
+  const grid = document.getElementById("grid"); grid.innerHTML = "";
+  const movers = [];
+  for (const c of last.categories){
+    const byName = s => Object.fromEntries(allTools(s.categories.find(x => x.id === c.id) || {tools:[]}).map(t => [t.name, t]));
+    const maps = ss.map(byName);
+    const names = new Set(c.tools.map(t => t.name));
+    if (prev) (prev.categories.find(x => x.id === c.id)?.tools || []).forEach(t => names.add(t.name));
+    const rows = [...names].map(n => {
+      const vals = maps.map(mp => mp[n]?.[metric] ?? null);
+      const cur = vals[vals.length - 1], before = vals.length > 1 ? vals[vals.length - 2] : null;
+      const dl = delta(cur, before);
+      if (dl.p != null && (before || 0) >= ({hn_devs:5, score:5, hn_comments_12m:30}[metric] ?? 1000)) movers.push({c:c.name, n, dl, cur});
+      return {n, vals, cur, dl, top: c.tools.some(t => t.name === n), col: last.categories.find(x => x.id === c.id) && allTools(c).find(t => t.name === n)?.collision};
+    }).sort((a,b) => (b.cur ?? -1) - (a.cur ?? -1));
+    const sec = document.createElement("section"); sec.className = "card";
+    sec.innerHTML = `<h2>${esc(c.name)}</h2><table><thead><tr><th scope="col">Tool</th><th scope="col"><span class="sr">Trend</span></th><th scope="col">${esc(m.label)}</th><th scope="col">${prev ? "vs " + prev.snapshot_date.slice(5) : "Change"}</th></tr></thead><tbody>${
+      rows.map(r => `<tr><td class="n">${esc(r.n)}${r.top ? "" : '<span class="x">out of top 10</span>'}${r.col ? '<span class="x" title="Name collides with common words; count needs reading">≈</span>' : ""}</td><td class="s">${spark(r.vals, kinds)}</td><td>${fmt(r.cur)}</td><td class="${r.dl.cls}">${r.dl.txt}</td></tr>`).join("")
+    }</tbody></table>`;
+    grid.appendChild(sec);
+  }
+  const mv = document.getElementById("movers");
+  movers.sort((a,b) => b.dl.p - a.dl.p);
+  const pick = [...movers.slice(0, 3), ...movers.slice(-3).reverse().filter(x => x.dl.p < 0 && !movers.slice(0,3).includes(x))];
+  mv.innerHTML = prev && pick.length ? pick.map(x => `<div class="mv"><div class="k">${esc(x.c)}</div><div class="t">${esc(x.n)}</div><div class="d ${x.dl.cls}">${x.dl.txt} · ${fmt(x.cur)} ${esc(m.label.toLowerCase())}</div></div>`).join("")
+    : `<p class="empty">${ss.length < 2 ? `Only one snapshot is comparable for “${esc(m.label)}” so far; changes appear after the next run.` : "No movers on this signal."}</p>`;
+  const skipped = snaps.length - ss.length;
+  document.getElementById("note").innerHTML = `${esc(m.long)}. Grey dots are the first snapshot, taken from <a href="${esc(snaps[0].source.url)}" target="_blank" rel="noopener">${esc(snaps[0].source.name)}</a>; blue dots are our own runs (<a href="https://github.com/carlobeschi/ai-tools/blob/main/docs/methodology.md" target="_blank" rel="noopener">method</a>). ${skipped ? `For this signal the first snapshot is left out, because our method differs from the source's. ` : ""}Sparklines use a log scale. “≈” marks names that collide with common words (Pi, Cursor, Orca…), whose counts are less reliable.`;
+}
+
+(async () => {
+  const idx = await (await fetch("data/snapshots/index.json")).json();
+  snaps = await Promise.all(idx.snapshots.map(async d => (await fetch(`data/snapshots/${d}.json`)).json()));
+  snaps.sort((a,b) => a.snapshot_date.localeCompare(b.snapshot_date));
+  document.getElementById("sub").textContent = `${snaps.length} snapshot${snaps.length > 1 ? "s" : ""}: ${snaps.map(s => s.snapshot_date).join(", ")}. A new one is collected every two weeks; the change column compares the last two.`;
+  document.getElementById("seg").innerHTML = METRICS.map(x => `<button data-m="${x.k}">${x.label}</button>`).join("");
+  document.querySelectorAll("#seg button").forEach(b => b.addEventListener("click", () => { metric = b.dataset.m; try { localStorage.setItem("tr-metric", metric) } catch(e){} draw() }));
+  draw();
+})();
+</script>
