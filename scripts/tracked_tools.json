@@ -1,0 +1,1444 @@
+{
+ "version": 1,
+ "notes": "Tools tracked by scripts/collect_snapshot.py. q: HN Algolia phrases (max is used); re: regex matched against comments in the Ask HN setup threads (case-insensitive unless cs); gh/pypi/npm: sources for stars and downloads; collide: name collides with common words, so counts need reading (see docs/methodology.md).",
+ "hn_devs_since": "2025-05-01",
+ "setup_threads_seed": [
+  50366117,
+  48445024,
+  49636239,
+  44262410
+ ],
+ "categories": {
+  "terminal": {
+   "Claude Code": {
+    "q": [
+     "\"claude code\""
+    ],
+    "re": "claude[ -]?code",
+    "gh": "anthropics/claude-code",
+    "npm": "@anthropic-ai/claude-code",
+    "devto": "claudecode"
+   },
+   "Codex CLI": {
+    "q": [
+     "\"codex\""
+    ],
+    "re": "\\bcodex\\b",
+    "gh": "openai/codex",
+    "npm": "@openai/codex",
+    "devto": "codex"
+   },
+   "OpenCode": {
+    "q": [
+     "\"opencode\""
+    ],
+    "re": "\\bopencode\\b",
+    "gh": "anomalyco/opencode",
+    "npm": "opencode-ai",
+    "devto": "opencode"
+   },
+   "Pi": {
+    "q": [
+     "\"pi.dev\"",
+     "\"pi agent\"",
+     "\"pi coding agent\"",
+     "\"pi-coding-agent\""
+    ],
+    "re": "(?<![Rr]aspberry )\\bPi\\b(?![-. ]?[Hh]ole|-?[Hh]ole)|pi\\.dev|pi-coding-agent",
+    "cs": true,
+    "gh": "earendil-works/pi",
+    "npm": "@mariozechner/pi-coding-agent",
+    "collide": true
+   },
+   "DeepSeek Harness": {
+    "q": [
+     "\"deepseek harness\""
+    ],
+    "re": "deepseek harness|\\bdsh\\b",
+    "gh": "deepseek-ai/deepseek-harness"
+   },
+   "Aider": {
+    "q": [
+     "\"aider\""
+    ],
+    "re": "\\baider\\b",
+    "gh": "Aider-AI/aider",
+    "pypi": "aider-chat"
+   },
+   "Gemini CLI": {
+    "q": [
+     "\"gemini cli\"",
+     "\"gemini-cli\""
+    ],
+    "re": "gemini[ -]cli",
+    "gh": "google-gemini/gemini-cli",
+    "npm": "@google/gemini-cli",
+    "devto": "geminicli"
+   },
+   "Copilot CLI": {
+    "q": [
+     "\"copilot cli\""
+    ],
+    "re": "copilot[ -]cli",
+    "gh": "github/copilot-cli",
+    "npm": "@github/copilot"
+   },
+   "Goose": {
+    "q": [
+     "\"goose agent\"",
+     "\"block goose\"",
+     "\"block's goose\"",
+     "\"codename goose\""
+    ],
+    "re": "\\bgoose\\b",
+    "gh": "aaif-goose/goose",
+    "collide": true
+   },
+   "Mistral Vibe": {
+    "q": [
+     "\"mistral vibe\"",
+     "\"vibe cli\""
+    ],
+    "re": "mistral vibe|vibe cli|\\bdevstral\\b",
+    "gh": "mistralai/mistral-vibe"
+   },
+   "Muse Code": {
+    "q": [
+     "\"muse code\""
+    ],
+    "re": "muse code"
+   },
+   "Kimi CLI": {
+    "q": [
+     "\"kimi cli\"",
+     "\"kimi-cli\""
+    ],
+    "re": "kimi[ -]cli",
+    "gh": "MoonshotAI/kimi-cli"
+   },
+   "Qwen Code": {
+    "q": [
+     "\"qwen code\"",
+     "\"qwen-code\""
+    ],
+    "re": "qwen[ -]code\\b",
+    "gh": "QwenLM/qwen-code",
+    "npm": "@qwen-code/qwen-code"
+   },
+   "Zerostack": {
+    "q": [
+     "\"zerostack\""
+    ],
+    "re": "\\bzerostack\\b"
+   },
+   "Codewhale": {
+    "q": [
+     "\"codewhale\""
+    ],
+    "re": "\\bcodewhale\\b"
+   },
+   "Amp": {
+    "q": [
+     "\"ampcode\"",
+     "\"amp code\"",
+     "\"sourcegraph amp\""
+    ],
+    "re": "\\bAmp\\b|ampcode",
+    "cs": true,
+    "collide": true
+   },
+   "jcode": {
+    "q": [
+     "\"jcode\""
+    ],
+    "re": "\\bjcode\\b"
+   },
+   "Plandex": {
+    "q": [
+     "\"plandex\""
+    ],
+    "re": "\\bplandex\\b",
+    "gh": "plandex-ai/plandex"
+   },
+   "Droid": {
+    "q": [
+     "\"factory droid\"",
+     "\"droid cli\""
+    ],
+    "re": "\\bDroid\\b|factory\\.ai",
+    "cs": true,
+    "collide": true
+   },
+   "Crush": {
+    "q": [
+     "\"charm crush\"",
+     "\"crush cli\""
+    ],
+    "re": "\\bCrush\\b",
+    "cs": true,
+    "gh": "charmbracelet/crush",
+    "collide": true
+   },
+   "Open Interpreter": {
+    "q": [
+     "\"open interpreter\""
+    ],
+    "re": "open[ -]interpreter"
+   },
+   "Kiro CLI": {
+    "q": [
+     "\"kiro cli\"",
+     "\"kiro-cli\""
+    ],
+    "re": "kiro[ -]cli"
+   }
+  },
+  "editors": {
+   "VS Code + Copilot": {
+    "q": [
+     "\"github copilot\"",
+     "\"vscode copilot\"",
+     "\"vs code copilot\""
+    ],
+    "re": "github copilot|(?:vs ?code|vscode)\\W{0,3}(?:\\+|and|with)?\\W{0,3}copilot|copilot (?:in|with) (?:vs ?code|vscode)",
+    "devto": "githubcopilot"
+   },
+   "Cursor": {
+    "q": [
+     "\"cursor ide\"",
+     "\"cursor editor\"",
+     "\"cursor agent\"",
+     "\"using cursor\""
+    ],
+    "re": "\\bCursor\\b",
+    "cs": true,
+    "devto": "cursor",
+    "collide": true
+   },
+   "Zed": {
+    "q": [
+     "\"zed\""
+    ],
+    "re": "\\bZed\\b",
+    "cs": true,
+    "gh": "zed-industries/zed"
+   },
+   "Antigravity": {
+    "q": [
+     "\"antigravity\""
+    ],
+    "re": "\\bantigravity\\b"
+   },
+   "Windsurf": {
+    "q": [
+     "\"windsurf\""
+    ],
+    "re": "\\bwindsurf\\b"
+   },
+   "Cline": {
+    "q": [
+     "\"cline\""
+    ],
+    "re": "\\bcline\\b",
+    "gh": "cline/cline"
+   },
+   "Kiro": {
+    "q": [
+     "\"kiro\""
+    ],
+    "re": "\\bkiro\\b(?![ -]cli)",
+    "devto": "kiro"
+   },
+   "Roo Code": {
+    "q": [
+     "\"roo code\"",
+     "\"roocode\""
+    ],
+    "re": "\\broo ?code\\b",
+    "gh": "RooCodeInc/Roo-Code"
+   },
+   "Kilo Code": {
+    "q": [
+     "\"kilo code\"",
+     "\"kilocode\""
+    ],
+    "re": "\\bkilo ?code\\b",
+    "gh": "Kilo-Org/kilocode"
+   },
+   "Neovim (CodeCompanion / avante)": {
+    "q": [
+     "\"codecompanion\"",
+     "\"avante\""
+    ],
+    "re": "\\b(?:neovim|nvim|codecompanion|avante)\\b",
+    "gh": "olimorris/codecompanion.nvim"
+   },
+   "JetBrains Junie": {
+    "q": [
+     "\"junie\""
+    ],
+    "re": "\\bjunie\\b"
+   },
+   "Emacs gptel": {
+    "q": [
+     "\"gptel\""
+    ],
+    "re": "\\bgptel\\b"
+   },
+   "Continue": {
+    "q": [
+     "\"continue.dev\""
+    ],
+    "re": "continue\\.dev"
+   },
+   "Whiteboard": {
+    "q": [
+     "\"whiteboard ide\""
+    ],
+    "re": "\\bWhiteboard\\b",
+    "cs": true,
+    "collide": true
+   },
+   "Void": {
+    "q": [
+     "\"void editor\"",
+     "\"void ide\""
+    ],
+    "re": "\\bVoid (?:editor|IDE)\\b",
+    "gh": "voideditor/void"
+   }
+  },
+  "orchestration": {
+   "Herdr": {
+    "q": [
+     "\"herdr\""
+    ],
+    "re": "\\bherdr\\b",
+    "gh": "herdrdev/herdr"
+   },
+   "tmux + git worktrees": {
+    "q": [
+     "tmux worktree",
+     "tmux worktrees"
+    ],
+    "re": "\\bworktrees?\\b"
+   },
+   "Paseo": {
+    "q": [
+     "\"paseo\""
+    ],
+    "re": "\\bpaseo\\b",
+    "gh": "getpaseo/paseo"
+   },
+   "Gas Town": {
+    "q": [
+     "\"gas town\"",
+     "\"gastown\""
+    ],
+    "re": "\\bgas ?town\\b",
+    "gh": "gastownhall/gastown"
+   },
+   "T3 Code": {
+    "q": [
+     "\"t3 code\"",
+     "\"t3code\"",
+     "\"t3.codes\""
+    ],
+    "re": "\\bt3 ?code\\b|t3\\.codes",
+    "gh": "pingdotgg/t3code"
+   },
+   "Beads": {
+    "q": [
+     "\"beads\""
+    ],
+    "re": "\\bbeads\\b",
+    "gh": "gastownhall/beads"
+   },
+   "Orca": {
+    "q": [
+     "\"orca\""
+    ],
+    "re": "\\bOrca\\b",
+    "cs": true,
+    "gh": "stablyai/orca",
+    "collide": true
+   },
+   "Conductor": {
+    "q": [
+     "\"conductor.build\"",
+     "\"conductor app\""
+    ],
+    "re": "\\bConductor\\b",
+    "cs": true,
+    "collide": true
+   },
+   "Juggler": {
+    "q": [
+     "\"juggler\""
+    ],
+    "re": "\\bjuggler\\b",
+    "gh": "juggler-ai/juggler"
+   },
+   "Ralph loop": {
+    "q": [
+     "\"ralph loop\"",
+     "\"ralph wiggum\""
+    ],
+    "re": "\\bralph\\b"
+   },
+   "Vibe Kanban": {
+    "q": [
+     "\"vibe kanban\"",
+     "\"vibe-kanban\""
+    ],
+    "re": "vibe[ -]kanban",
+    "gh": "BloopAI/vibe-kanban"
+   },
+   "Omnara": {
+    "q": [
+     "\"omnara\""
+    ],
+    "re": "\\bomnara\\b"
+   },
+   "Munder Difflin": {
+    "q": [
+     "\"munder difflin\""
+    ],
+    "re": "munder difflin"
+   },
+   "workmux": {
+    "q": [
+     "\"workmux\""
+    ],
+    "re": "\\bworkmux\\b"
+   },
+   "qm": {
+    "q": [
+     "\"qm\""
+    ],
+    "re": "\\bqm\\b",
+    "collide": true
+   },
+   "Ruflo": {
+    "q": [
+     "\"ruflo\""
+    ],
+    "re": "\\bruflo\\b"
+   },
+   "Superset": {
+    "q": [
+     "\"superset.sh\""
+    ],
+    "re": "\\bSuperset\\b",
+    "cs": true,
+    "collide": true
+   },
+   "Claude Squad": {
+    "q": [
+     "\"claude squad\"",
+     "\"claude-squad\""
+    ],
+    "re": "claude[ -]squad",
+    "gh": "smtg-ai/claude-squad"
+   },
+   "oh-my-claudecode": {
+    "q": [
+     "\"oh-my-claudecode\""
+    ],
+    "re": "oh-my-claude ?code"
+   },
+   "Sculptor": {
+    "q": [
+     "\"sculptor\""
+    ],
+    "re": "\\bSculptor\\b",
+    "cs": true,
+    "collide": true
+   },
+   "Crystal": {
+    "q": [
+     "\"crystal app\""
+    ],
+    "re": "\\bCrystal\\b",
+    "cs": true,
+    "collide": true
+   },
+   "AX (Agent Executor)": {
+    "q": [
+     "\"agent executor\""
+    ],
+    "re": "agent executor"
+   }
+  },
+  "review": {
+   "Claude Code review": {
+    "q": [
+     "\"claude code review\"",
+     "\"claude review\""
+    ],
+    "re": "claude(?: code)?(?:\\'s)? (?:code )?review|/review|claude-code-action",
+    "gh": "anthropics/claude-code-action"
+   },
+   "Copilot code review": {
+    "q": [
+     "\"copilot review\"",
+     "\"copilot code review\""
+    ],
+    "re": "copilot(?: code)? review"
+   },
+   "CodeRabbit": {
+    "q": [
+     "\"coderabbit\""
+    ],
+    "re": "\\bcode ?rabbit\\b"
+   },
+   "Cursor Bugbot": {
+    "q": [
+     "\"bugbot\""
+    ],
+    "re": "\\bbugbot\\b"
+   },
+   "Codex code review": {
+    "q": [
+     "\"codex review\"",
+     "\"codex code review\""
+    ],
+    "re": "codex(?: code)? review"
+   },
+   "Codex Security": {
+    "q": [
+     "\"codex security\""
+    ],
+    "re": "codex security"
+   },
+   "Qodo": {
+    "q": [
+     "\"qodo\""
+    ],
+    "re": "\\bqodo\\b|pr-agent",
+    "gh": "The-PR-Agent/pr-agent"
+   },
+   "Graphite": {
+    "q": [
+     "\"graphite.dev\"",
+     "\"graphite.com\"",
+     "\"graphite stacked\""
+    ],
+    "re": "\\bGraphite\\b",
+    "cs": true,
+    "collide": true
+   },
+   "Greptile": {
+    "q": [
+     "\"greptile\""
+    ],
+    "re": "\\bgreptile\\b"
+   },
+   "Open Code Review (Alibaba)": {
+    "q": [
+     "\"open code review\"",
+     "\"open-code-review\""
+    ],
+    "re": "open[ -]code[ -]review",
+    "gh": "alibaba/open-code-review"
+   },
+   "Sourcery": {
+    "q": [
+     "\"sourcery\""
+    ],
+    "re": "\\bsourcery\\b"
+   },
+   "Sphinx": {
+    "q": [
+     "\"sphinx ai\""
+    ],
+    "re": "sphinx ai",
+    "collide": true
+   }
+  },
+  "context": {
+   "AGENTS.md": {
+    "q": [
+     "\"agents.md\""
+    ],
+    "re": "agents\\.md"
+   },
+   "Agent Skills": {
+    "q": [
+     "\"agent skills\"",
+     "\"claude skills\"",
+     "\"skill.md\""
+    ],
+    "re": "agent skills|skill\\.md|agentskills|claude (?:code )?skills|\\bskills\\b"
+   },
+   "Superpowers": {
+    "q": [
+     "\"superpowers\""
+    ],
+    "re": "\\bsuperpowers\\b",
+    "gh": "obra/superpowers"
+   },
+   "Spec Kit": {
+    "q": [
+     "\"spec kit\"",
+     "\"spec-kit\"",
+     "\"speckit\""
+    ],
+    "re": "\\bspec[ -]?kit\\b",
+    "gh": "github/spec-kit"
+   },
+   "Context7": {
+    "q": [
+     "\"context7\""
+    ],
+    "re": "\\bcontext ?7\\b",
+    "gh": "upstash/context7",
+    "npm": "@upstash/context7-mcp"
+   },
+   "GitHub MCP server": {
+    "q": [
+     "\"github mcp\""
+    ],
+    "re": "github mcp|github-mcp",
+    "gh": "github/github-mcp-server"
+   },
+   "Semble": {
+    "q": [
+     "\"semble\""
+    ],
+    "re": "\\bsemble\\b",
+    "gh": "MinishLab/semble"
+   },
+   "rtk": {
+    "q": [
+     "\"rtk\""
+    ],
+    "re": "\\brtk\\b",
+    "gh": "rtk-ai/rtk"
+   },
+   "Impeccable": {
+    "q": [
+     "\"impeccable\" skill",
+     "\"impeccable.style\""
+    ],
+    "re": "\\bImpeccable\\b",
+    "cs": true,
+    "gh": "pbakaus/impeccable",
+    "collide": true
+   },
+   "Graphify": {
+    "q": [
+     "\"graphify\""
+    ],
+    "re": "\\bgraphify\\b",
+    "gh": "Graphify-Labs/graphify"
+   },
+   "Figma MCP": {
+    "q": [
+     "\"figma mcp\""
+    ],
+    "re": "figma mcp"
+   },
+   "Repomix": {
+    "q": [
+     "\"repomix\""
+    ],
+    "re": "\\brepomix\\b",
+    "gh": "yamadashy/repomix",
+    "npm": "repomix"
+   },
+   "claude-mem": {
+    "q": [
+     "\"claude-mem\""
+    ],
+    "re": "claude-mem\\b",
+    "gh": "thedotmack/claude-mem"
+   },
+   "Linear MCP": {
+    "q": [
+     "\"linear mcp\""
+    ],
+    "re": "linear mcp"
+   },
+   "Serena": {
+    "q": [
+     "\"serena mcp\"",
+     "\"serena\""
+    ],
+    "re": "\\bserena\\b",
+    "collide": true
+   },
+   "Sentry MCP": {
+    "q": [
+     "\"sentry mcp\""
+    ],
+    "re": "sentry mcp"
+   },
+   "codebase-memory-mcp": {
+    "q": [
+     "\"codebase-memory-mcp\""
+    ],
+    "re": "codebase-memory"
+   },
+   "headroom": {
+    "q": [
+     "\"headroom\" mcp"
+    ],
+    "re": "\\bheadroom\\b",
+    "collide": true
+   },
+   "context-mode": {
+    "q": [
+     "\"context-mode\""
+    ],
+    "re": "\\bcontext-mode\\b"
+   }
+  },
+  "browser": {
+   "Playwright MCP": {
+    "q": [
+     "\"playwright mcp\"",
+     "\"playwright-mcp\""
+    ],
+    "re": "playwright",
+    "gh": "microsoft/playwright-mcp",
+    "npm": "@playwright/mcp"
+   },
+   "Chrome DevTools MCP": {
+    "q": [
+     "\"chrome devtools mcp\"",
+     "\"chrome-devtools-mcp\""
+    ],
+    "re": "chrome[ -]dev ?tools[ -]mcp|devtools mcp",
+    "gh": "ChromeDevTools/chrome-devtools-mcp",
+    "npm": "chrome-devtools-mcp"
+   },
+   "agent-browser": {
+    "q": [
+     "\"agent-browser\""
+    ],
+    "re": "agent-browser",
+    "gh": "vercel-labs/agent-browser",
+    "npm": "agent-browser"
+   },
+   "Firecrawl": {
+    "q": [
+     "\"firecrawl\""
+    ],
+    "re": "\\bfirecrawl\\b",
+    "gh": "firecrawl/firecrawl"
+   },
+   "Lightpanda": {
+    "q": [
+     "\"lightpanda\""
+    ],
+    "re": "\\blightpanda\\b",
+    "gh": "lightpanda-io/browser"
+   },
+   "Stagehand": {
+    "q": [
+     "\"stagehand\""
+    ],
+    "re": "\\bstagehand\\b",
+    "gh": "browserbase/stagehand",
+    "npm": "@browserbasehq/stagehand"
+   },
+   "Claude in Chrome": {
+    "q": [
+     "\"claude in chrome\"",
+     "\"claude for chrome\""
+    ],
+    "re": "claude (?:in|for) chrome"
+   },
+   "Vibium": {
+    "q": [
+     "\"vibium\""
+    ],
+    "re": "\\bvibium\\b",
+    "gh": "VibiumDev/vibium"
+   },
+   "browser-use": {
+    "q": [
+     "\"browser-use\"",
+     "\"browser use\""
+    ],
+    "re": "browser[ -]use\\b",
+    "gh": "browser-use/browser-use",
+    "pypi": "browser-use"
+   },
+   "Scrapling": {
+    "q": [
+     "\"scrapling\""
+    ],
+    "re": "\\bscrapling\\b",
+    "gh": "D4Vinci/Scrapling",
+    "pypi": "scrapling"
+   },
+   "Browser MCP": {
+    "q": [
+     "\"browser mcp\"",
+     "\"browsermcp\""
+    ],
+    "re": "browser ?mcp"
+   },
+   "Jina Reader": {
+    "q": [
+     "\"jina reader\"",
+     "\"r.jina.ai\""
+    ],
+    "re": "jina"
+   },
+   "Browserbase": {
+    "q": [
+     "\"browserbase\""
+    ],
+    "re": "\\bbrowserbase\\b"
+   }
+  },
+  "sandbox": {
+   "bubblewrap": {
+    "q": [
+     "\"bubblewrap\"",
+     "\"bwrap\""
+    ],
+    "re": "\\bbubblewrap\\b|\\bbwrap\\b",
+    "gh": "containers/bubblewrap"
+   },
+   "Docker Sandboxes": {
+    "q": [
+     "\"docker sandbox\"",
+     "\"docker sandboxes\""
+    ],
+    "re": "docker sandbox"
+   },
+   "OpenShell": {
+    "q": [
+     "\"openshell\""
+    ],
+    "re": "\\bopenshell\\b",
+    "gh": "NVIDIA/OpenShell"
+   },
+   "Apple container": {
+    "q": [
+     "\"apple container\"",
+     "\"apple/container\"",
+     "\"apple's container\""
+    ],
+    "re": "apple(?:\\'s)?[ /]container",
+    "gh": "apple/container"
+   },
+   "Dev containers": {
+    "q": [
+     "\"devcontainer\"",
+     "\"dev container\"",
+     "\"devcontainers\""
+    ],
+    "re": "\\bdev ?containers?\\b"
+   },
+   "E2B": {
+    "q": [
+     "\"e2b\""
+    ],
+    "re": "\\be2b\\b",
+    "gh": "e2b-dev/E2B"
+   },
+   "nono": {
+    "q": [
+     "\"nono\""
+    ],
+    "re": "\\bnono\\b",
+    "gh": "nolabs-ai/nono",
+    "collide": true
+   },
+   "smolvm": {
+    "q": [
+     "\"smolvm\""
+    ],
+    "re": "\\bsmolvm\\b",
+    "gh": "smol-machines/smolvm"
+   },
+   "yoloai": {
+    "q": [
+     "\"yoloai\""
+    ],
+    "re": "\\byoloai\\b",
+    "gh": "kstenerud/yoloai"
+   },
+   "Lume": {
+    "q": [
+     "\"lume\"",
+     "\"trycua\""
+    ],
+    "re": "\\blume\\b|\\bcua\\b",
+    "gh": "trycua/cua",
+    "collide": true
+   },
+   "Daytona": {
+    "q": [
+     "\"daytona\""
+    ],
+    "re": "\\bdaytona\\b",
+    "gh": "daytonaio/daytona"
+   },
+   "Agent Safehouse": {
+    "q": [
+     "\"agent safehouse\""
+    ],
+    "re": "safehouse"
+   },
+   "Ardent": {
+    "q": [
+     "\"ardent\""
+    ],
+    "re": "\\bArdent\\b",
+    "cs": true,
+    "collide": true
+   },
+   "Sprites (Fly.io)": {
+    "q": [
+     "\"sprites.dev\"",
+     "\"fly sprites\"",
+     "\"sprites\""
+    ],
+    "re": "\\bsprites\\b",
+    "collide": true
+   },
+   "container-use": {
+    "q": [
+     "\"container-use\""
+    ],
+    "re": "container-use",
+    "gh": "dagger/container-use"
+   },
+   "Modal Sandboxes": {
+    "q": [
+     "\"modal sandbox\"",
+     "\"modal sandboxes\""
+    ],
+    "re": "modal sandbox"
+   },
+   "Vercel Sandbox": {
+    "q": [
+     "\"vercel sandbox\""
+    ],
+    "re": "vercel sandbox"
+   }
+  },
+  "local": {
+   "Ollama": {
+    "q": [
+     "\"ollama\""
+    ],
+    "re": "\\bollama\\b",
+    "gh": "ollama/ollama",
+    "devto": "ollama"
+   },
+   "llama.cpp": {
+    "q": [
+     "\"llama.cpp\""
+    ],
+    "re": "llama\\.cpp|llama-server",
+    "gh": "ggml-org/llama.cpp"
+   },
+   "MLX": {
+    "q": [
+     "\"mlx\""
+    ],
+    "re": "\\bmlx\\b",
+    "gh": "ml-explore/mlx",
+    "pypi": "mlx"
+   },
+   "LM Studio": {
+    "q": [
+     "\"lm studio\"",
+     "\"lmstudio\""
+    ],
+    "re": "\\blm ?studio\\b"
+   },
+   "Open WebUI": {
+    "q": [
+     "\"open webui\"",
+     "\"openwebui\"",
+     "\"open-webui\""
+    ],
+    "re": "open[ -]?webui",
+    "gh": "open-webui/open-webui"
+   },
+   "vLLM": {
+    "q": [
+     "\"vllm\""
+    ],
+    "re": "\\bvllm\\b",
+    "gh": "vllm-project/vllm",
+    "pypi": "vllm"
+   },
+   "Unsloth": {
+    "q": [
+     "\"unsloth\""
+    ],
+    "re": "\\bunsloth\\b",
+    "gh": "unslothai/unsloth",
+    "pypi": "unsloth"
+   },
+   "Lemonade": {
+    "q": [
+     "\"lemonade server\"",
+     "\"lemonade-server\"",
+     "\"lemonade sdk\""
+    ],
+    "re": "\\bLemonade\\b",
+    "cs": true,
+    "gh": "lemonade-sdk/lemonade",
+    "collide": true
+   },
+   "SGLang": {
+    "q": [
+     "\"sglang\""
+    ],
+    "re": "\\bsglang\\b",
+    "gh": "sgl-project/sglang",
+    "pypi": "sglang"
+   },
+   "llama-swap": {
+    "q": [
+     "\"llama-swap\""
+    ],
+    "re": "llama-swap",
+    "gh": "mostlygeek/llama-swap"
+   },
+   "Apfel": {
+    "q": [
+     "\"apfel\""
+    ],
+    "re": "\\bapfel\\b"
+   },
+   "Jan": {
+    "q": [
+     "\"jan.ai\"",
+     "\"jan app\""
+    ],
+    "re": "\\bJan\\b(?! \\d)|jan\\.ai",
+    "cs": true,
+    "gh": "janhq/jan",
+    "collide": true
+   },
+   "KoboldCpp": {
+    "q": [
+     "\"koboldcpp\""
+    ],
+    "re": "\\bkobold ?cpp\\b"
+   }
+  },
+  "gateways": {
+   "OpenRouter": {
+    "q": [
+     "\"openrouter\""
+    ],
+    "re": "\\bopen ?router\\b"
+   },
+   "AWS Bedrock": {
+    "q": [
+     "\"bedrock\""
+    ],
+    "re": "\\bbedrock\\b"
+   },
+   "LiteLLM": {
+    "q": [
+     "\"litellm\""
+    ],
+    "re": "\\blite ?llm\\b",
+    "gh": "BerriAI/litellm",
+    "pypi": "litellm"
+   },
+   "OpenCode Go / Zen": {
+    "q": [
+     "\"opencode go\"",
+     "\"opencode zen\""
+    ],
+    "re": "opencode (?:go|zen)\\b"
+   },
+   "Claude Code Router": {
+    "q": [
+     "\"claude code router\"",
+     "\"claude-code-router\""
+    ],
+    "re": "claude[ -]code[ -]router|\\bccr\\b",
+    "gh": "musistudio/claude-code-router",
+    "npm": "@musistudio/claude-code-router"
+   },
+   "llm (Simon Willison)": {
+    "q": [
+     "\"simonw/llm\"",
+     "\"llm cli\"",
+     "\"llm.datasette.io\""
+    ],
+    "re": "simon(?:w| willison)\\'?s? llm|\\bllm cli\\b|llm\\.datasette|simonw/llm",
+    "gh": "simonw/llm",
+    "pypi": "llm"
+   },
+   "Vercel AI Gateway": {
+    "q": [
+     "\"vercel ai gateway\""
+    ],
+    "re": "vercel(?:\\'s)? ai gateway"
+   },
+   "cc-switch": {
+    "q": [
+     "\"cc-switch\""
+    ],
+    "re": "cc-switch",
+    "gh": "farion1231/cc-switch"
+   },
+   "Portkey": {
+    "q": [
+     "\"portkey\""
+    ],
+    "re": "\\bportkey\\b",
+    "gh": "Portkey-AI/gateway"
+   },
+   "Chutes": {
+    "q": [
+     "\"chutes.ai\"",
+     "\"chutes\""
+    ],
+    "re": "\\bchutes\\b",
+    "collide": true
+   },
+   "OmniRoute": {
+    "q": [
+     "\"omniroute\""
+    ],
+    "re": "\\bomniroute\\b"
+   },
+   "Cloudflare AI Gateway": {
+    "q": [
+     "\"cloudflare ai gateway\""
+    ],
+    "re": "cloudflare ai gateway"
+   },
+   "Synthetic": {
+    "q": [
+     "\"synthetic.new\""
+    ],
+    "re": "synthetic\\.new|\\bSynthetic\\b(?= (?:sub|plan|api))",
+    "cs": true,
+    "collide": true
+   }
+  },
+  "frameworks": {
+   "LangChain": {
+    "q": [
+     "\"langchain\""
+    ],
+    "re": "\\blangchain\\b",
+    "gh": "langchain-ai/langchain",
+    "pypi": "langchain",
+    "devto": "langchain"
+   },
+   "Mastra": {
+    "q": [
+     "\"mastra\""
+    ],
+    "re": "\\bmastra\\b",
+    "gh": "mastra-ai/mastra",
+    "npm": "@mastra/core"
+   },
+   "Claude Agent SDK": {
+    "q": [
+     "\"claude agent sdk\"",
+     "\"agent sdk\""
+    ],
+    "re": "(?:claude )?agent sdk",
+    "gh": "anthropics/claude-agent-sdk-python",
+    "npm": "@anthropic-ai/claude-agent-sdk"
+   },
+   "LangGraph": {
+    "q": [
+     "\"langgraph\""
+    ],
+    "re": "\\blanggraph\\b",
+    "gh": "langchain-ai/langgraph",
+    "pypi": "langgraph"
+   },
+   "DSPy": {
+    "q": [
+     "\"dspy\""
+    ],
+    "re": "\\bdspy\\b",
+    "gh": "stanfordnlp/dspy",
+    "pypi": "dspy"
+   },
+   "Microsoft Agent Framework": {
+    "q": [
+     "\"microsoft agent framework\"",
+     "\"agent framework\""
+    ],
+    "re": "microsoft agent framework|semantic kernel|autogen",
+    "gh": "microsoft/agent-framework"
+   },
+   "OpenAI Agents SDK": {
+    "q": [
+     "\"openai agents sdk\"",
+     "\"agents sdk\""
+    ],
+    "re": "openai agents sdk|openai-agents",
+    "gh": "openai/openai-agents-python",
+    "pypi": "openai-agents"
+   },
+   "Google ADK": {
+    "q": [
+     "\"google adk\"",
+     "\"agent development kit\""
+    ],
+    "re": "google adk|\\badk\\b|agent development kit",
+    "gh": "google/adk-python",
+    "pypi": "google-adk"
+   },
+   "CrewAI": {
+    "q": [
+     "\"crewai\""
+    ],
+    "re": "\\bcrew ?ai\\b",
+    "gh": "crewAIInc/crewAI",
+    "pypi": "crewai"
+   },
+   "Pydantic AI": {
+    "q": [
+     "\"pydantic ai\"",
+     "\"pydantic-ai\"",
+     "\"pydanticai\""
+    ],
+    "re": "pydantic[ -]?ai",
+    "gh": "pydantic/pydantic-ai",
+    "pypi": "pydantic-ai"
+   }
+  },
+  "evals": {
+   "OpenTelemetry GenAI": {
+    "q": [
+     "\"opentelemetry\"",
+     "\"otel\""
+    ],
+    "re": "\\bopentelemetry\\b|\\botel\\b",
+    "gh": "open-telemetry/semantic-conventions"
+   },
+   "promptfoo": {
+    "q": [
+     "\"promptfoo\""
+    ],
+    "re": "\\bpromptfoo\\b",
+    "gh": "promptfoo/promptfoo",
+    "npm": "promptfoo"
+   },
+   "Langfuse": {
+    "q": [
+     "\"langfuse\""
+    ],
+    "re": "\\blangfuse\\b",
+    "gh": "langfuse/langfuse",
+    "pypi": "langfuse"
+   },
+   "Arize Phoenix": {
+    "q": [
+     "\"arize phoenix\"",
+     "\"arize\""
+    ],
+    "re": "arize",
+    "gh": "Arize-ai/phoenix",
+    "pypi": "arize-phoenix",
+    "collide": true
+   },
+   "MLflow": {
+    "q": [
+     "\"mlflow\""
+    ],
+    "re": "\\bmlflow\\b",
+    "gh": "mlflow/mlflow",
+    "pypi": "mlflow"
+   },
+   "Logfire": {
+    "q": [
+     "\"logfire\""
+    ],
+    "re": "\\blogfire\\b",
+    "gh": "pydantic/logfire",
+    "pypi": "logfire"
+   },
+   "Opik": {
+    "q": [
+     "\"opik\""
+    ],
+    "re": "\\bopik\\b",
+    "gh": "comet-ml/opik",
+    "pypi": "opik"
+   },
+   "Braintrust": {
+    "q": [
+     "\"braintrust\""
+    ],
+    "re": "\\bbraintrust\\b",
+    "pypi": "braintrust",
+    "collide": true
+   },
+   "Helicone": {
+    "q": [
+     "\"helicone\""
+    ],
+    "re": "\\bhelicone\\b",
+    "gh": "Helicone/helicone"
+   },
+   "DeepEval": {
+    "q": [
+     "\"deepeval\""
+    ],
+    "re": "\\bdeepeval\\b",
+    "gh": "confident-ai/deepeval",
+    "pypi": "deepeval"
+   },
+   "LangSmith": {
+    "q": [
+     "\"langsmith\""
+    ],
+    "re": "\\blangsmith\\b",
+    "gh": "langchain-ai/langsmith-sdk",
+    "pypi": "langsmith"
+   },
+   "Inspect AI": {
+    "q": [
+     "\"inspect ai\"",
+     "\"inspect_ai\""
+    ],
+    "re": "inspect[ _]ai",
+    "gh": "UKGovernmentBEIS/inspect_ai",
+    "pypi": "inspect-ai"
+   },
+   "garak": {
+    "q": [
+     "\"garak\" llm",
+     "\"nvidia garak\""
+    ],
+    "re": "\\bgarak\\b",
+    "gh": "NVIDIA/garak",
+    "pypi": "garak",
+    "collide": true
+   },
+   "Weights & Biases Weave": {
+    "q": [
+     "\"wandb weave\"",
+     "\"w&b weave\""
+    ],
+    "re": "(?:wandb|w&b) weave",
+    "gh": "wandb/weave",
+    "pypi": "weave"
+   },
+   "Laminar": {
+    "q": [
+     "\"lmnr\"",
+     "\"laminar\" llm"
+    ],
+    "re": "\\blmnr\\b",
+    "gh": "lmnr-ai/lmnr",
+    "pypi": "lmnr",
+    "collide": true
+   }
+  },
+  "assistants": {
+   "OpenClaw": {
+    "q": [
+     "\"openclaw\""
+    ],
+    "re": "\\bopen ?claw\\b|\\bclawdbot\\b|\\bmoltbot\\b",
+    "gh": "openclaw/openclaw",
+    "devto": "openclaw"
+   },
+   "Hermes Agent": {
+    "q": [
+     "\"hermes agent\"",
+     "\"hermes-agent\""
+    ],
+    "re": "hermes[ -]agent|\\bhermes\\b",
+    "gh": "NousResearch/hermes-agent"
+   },
+   "Muse": {
+    "q": [
+     "\"muse agent\"",
+     "\"muse app\""
+    ],
+    "re": "\\bMuse\\b(?! Code)",
+    "cs": true,
+    "collide": true
+   },
+   "Claude Cowork": {
+    "q": [
+     "\"cowork\""
+    ],
+    "re": "\\bcowork\\b"
+   },
+   "n8n": {
+    "q": [
+     "\"n8n\""
+    ],
+    "re": "\\bn8n\\b",
+    "gh": "n8n-io/n8n"
+   },
+   "NanoClaw": {
+    "q": [
+     "\"nanoclaw\""
+    ],
+    "re": "\\bnanoclaw\\b",
+    "gh": "nanocoai/nanoclaw"
+   },
+   "Home Assistant + LLM": {
+    "q": [
+     "\"home assistant\" llm",
+     "\"home assistant\" ai"
+    ],
+    "re": "home ?assistant"
+   },
+   "Claude Duet": {
+    "q": [
+     "\"claude duet\""
+    ],
+    "re": "claude duet"
+   },
+   "Dots": {
+    "q": [
+     "\"dots agent\""
+    ],
+    "re": "\\bDots\\b",
+    "cs": true,
+    "collide": true
+   },
+   "Paperclip": {
+    "q": [
+     "\"paperclip\" agents",
+     "\"paperclipai\""
+    ],
+    "re": "\\bPaperclip\\b",
+    "cs": true,
+    "gh": "paperclipai/paperclip",
+    "collide": true
+   },
+   "Claude Code Routines": {
+    "q": [
+     "\"claude code routines\"",
+     "\"claude routines\""
+    ],
+    "re": "claude(?: code)? routines"
+   },
+   "nanobot": {
+    "q": [
+     "\"nanobot\""
+    ],
+    "re": "\\bnanobot\\b"
+   },
+   "Eigent": {
+    "q": [
+     "\"eigent\""
+    ],
+    "re": "\\beigent\\b",
+    "gh": "eigent-ai/eigent"
+   }
+  }
+ }
+}

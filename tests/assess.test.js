@@ -99,7 +99,7 @@ async function readResult(page) {
 }
 
 (async () => {
-  const srv = await serve(), base = `http://localhost:${srv.address().port}/assess.html`;
+  const srv = await serve(), base = `http://localhost:${srv.address().port}/assess.html?snapshot=2026-11-07`;
   const browser = await chromium.launch();
   let failed = 0;
   const check = (name, cond, msg) => { if (!cond) { failed++; console.log(`  ✗ ${msg}`) } };
