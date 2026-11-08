@@ -95,7 +95,8 @@ def ts(date):
 
 # ---------- Ask HN setup threads ----------
 
-def discover_threads(since_ts, seeds, rejected):
+def discover_candidates(since_ts, rejected):
+    """Ask HN threads that look like setup threads. Only suggestions: the corpus is the curated list."""
     found = {}
     for q in DISCOVERY_QUERIES:
         for page in range(3):
@@ -110,12 +111,6 @@ def discover_threads(since_ts, seeds, rejected):
                     rejected[int(h["objectID"])] = {"title": h.get("title"), "num_comments": h.get("num_comments")}
             if page + 1 >= res.get("nbPages", 0):
                 break
-    for s in seeds:
-        if s not in found:
-            h = safe(lambda: get_json(f"{HN}items/{s}"))
-            if h:
-                found[s] = {"objectID": str(s), "title": h.get("title"), "created_at_i": h.get("created_at_i"),
-                            "num_comments": None, "points": h.get("points")}
     return [{"id": k, "title": v.get("title"), "date": dt.datetime.fromtimestamp(v["created_at_i"], dt.timezone.utc).date().isoformat(),
              "points": v.get("points"), "num_comments": v.get("num_comments")}
             for k, v in sorted(found.items(), key=lambda kv: kv[1]["created_at_i"])]
@@ -220,11 +215,17 @@ def main():
     prev_cats = {c["id"]: c for c in prev["categories"]}
 
     since12 = date - dt.timedelta(days=365)
-    since12_ts, devs_since_ts = ts(since12), ts(dt.date.fromisoformat(cfg["hn_devs_since"]))
+    since12_ts = ts(since12)
 
     print("discovering Ask HN setup threads...", file=sys.stderr)
     rejected = {}
-    threads = discover_threads(devs_since_ts, cfg.get("setup_threads_seed", []), rejected)
+    curated = cfg["setup_threads"]
+    candidates = [c for c in discover_candidates(ts(date - dt.timedelta(days=60)), rejected) if c["id"] not in curated]
+    threads = []
+    for tid in curated:
+        h = safe(lambda: get_json(f"{HN}items/{tid}")) or {}
+        threads.append({"id": tid, "title": h.get("title"), "points": h.get("points"),
+                        "date": dt.datetime.fromtimestamp(h["created_at_i"], dt.timezone.utc).date().isoformat() if h.get("created_at_i") else None})
     comments = []
     for th in threads:
         cs = safe(lambda: thread_comments(th["id"]), [])
@@ -236,7 +237,8 @@ def main():
     only = set(args.only.split(",")) if args.only else None
     raw = {"date": args.date, "since_12m": since12.isoformat(), "hn_devs_since": cfg["hn_devs_since"],
            "setup_threads": threads,
-           "rejected_threads": sorted(({"id": k, **v} for k, v in rejected.items() if k not in {t["id"] for t in threads}),
+           "candidate_threads": sorted(candidates, key=lambda x: -(x["num_comments"] or 0)),
+           "rejected_threads": sorted(({"id": k, **v} for k, v in rejected.items() if k not in curated),
                                       key=lambda x: -(x["num_comments"] or 0))[:150],
            "tools": {}}
     categories = []
@@ -262,7 +264,7 @@ def main():
             pts_q = {q: safe(lambda q=q: hn_title_points(q, since12_ts)) for q in t["q"]}
             r = {"name": name,
                  "hn_devs": len(authors), "hn_devs_12m": len(authors12),
-                 "hn_comments_12m": max([v for v in per_q.values() if v is not None], default=None),
+                 "hn_comments_12m": per_q[t["q"][0]],
                  "hn_title_points": max([v for v in pts_q.values() if v is not None], default=None),
                  "lobsters": None, "tone": None,
                  "github_stars": safe(lambda: github_stars(t["gh"])) if "gh" in t else None,
@@ -281,6 +283,8 @@ def main():
             r["note"] = p.get("note")
             if t.get("collide"):
                 r["collision"] = True
+            if t.get("src"):
+                r["source_query"] = True
             rows.append(r)
             raw["tools"][f"{cid}/{name}"] = {"hn_comments_12m": per_q, "name_queries": diag, "hn_title_points": pts_q, "downloads": dl,
                                              **({"collision_samples": samples} if t.get("collide") else {})}
@@ -289,7 +293,7 @@ def main():
         for i, r in enumerate(rows, 1):
             r["rank"] = i
         order = ["rank", "name", "url", "score", "tags", "hn_devs", "hn_devs_12m", "hn_comments_12m", "hn_title_points",
-                 "lobsters", "devto", "github_stars", "downloads_month", "tone", "note", "collision"]
+                 "lobsters", "devto", "github_stars", "downloads_month", "tone", "note", "collision", "source_query"]
         rows = [{k: r[k] for k in order if k in r} for r in rows]
         pc = prev_cats.get(cid, {})
         categories.append({"id": cid, "name": pc.get("name", cid), "description": pc.get("description"),
@@ -310,7 +314,8 @@ def main():
                    "tools_scored": sum(len(c["tools"]) + len(c["others"]) for c in categories)},
         "fields": {**prev["fields"],
                    "score": "Composite 0-100 recomputed by collect_snapshot.py: HN devs 40, HN comments 20, max(stars, downloads) 16, HN title points 12, each log-scaled against the category's best tracked tool, rescaled to 100",
-                   "hn_devs": f"HN developers naming the tool in Ask HN AI-setup threads since {cfg['hn_devs_since']}",
+                   "hn_devs": "HN developers naming the tool in the curated Ask HN AI-setup threads (setup_threads in the config)",
+                   "hn_comments_12m": "HN comments matching the tool's first query, last 12 months",
                    "hn_devs_12m": "Same, counting only comments from the last 12 months",
                    "hn_title_points": "Sum of points of HN stories with the tool in the title, last 12 months",
                    "devto": "dev.to posts with the tool's tag, last 12 months (only for tools with a tag)",
@@ -318,9 +323,10 @@ def main():
                    "tone": "Not collected yet"},
         "method": {"script": "scripts/collect_snapshot.py", "config": "scripts/tracked_tools.json",
                    "weights": WEIGHTS, "raw": f"data/raw/{args.date}.json",
-                   "comparable_to_baseline": ["hn_comments_12m", "github_stars", "downloads_month"],
+                   "comparable_to_baseline": ["github_stars", "downloads_month"],
+                   "comparable_per_tool": {"hn_comments_12m": "source_query"},
                    "requests": stats["requests"], "errors": stats["errors"]},
-        "notes": "Measured with our own queries, not taken from the source. Top 10 per category is re-ranked by the recomputed score among all tracked tools; `others` holds the rest. Names marked collision=true collide with common words: their counts need reading (samples in the raw file).",
+        "notes": "Measured with our own queries, not taken from the source. source_query=true marks tools whose HN comment query reproduces the source's count. Top 10 per category is re-ranked by the recomputed score among all tracked tools; `others` holds the rest. Names marked collision=true collide with common words: their counts need reading (samples in the raw file).",
         "polls": [],
         "categories": categories,
         "corrections": [],

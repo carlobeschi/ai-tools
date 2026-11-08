@@ -98,9 +98,11 @@ if (!METRICS.some(m => m.k === metric)) metric = "hn_comments_12m";
 // A snapshot taken from the source (the first one) uses the source's own method. Collected snapshots list which
 // fields are measured the same way as the source; any other field is only compared between collected snapshots.
 const comparable = (s, k) => s.kind !== "collected" || (s.method?.comparable_to_baseline || []).includes(k);
+// Per-tool comparability: e.g. HN comments are comparable with the source only for tools whose query reproduces it.
+const perTool = (s, k) => s.kind === "collected" && s.method?.comparable_per_tool?.[k];
 function series(k){
   const coll = snaps.filter(s => s.kind === "collected");
-  if (!coll.length || coll.every(s => comparable(s, k))) return snaps;
+  if (!coll.length || coll.every(s => comparable(s, k) || perTool(s, k))) return snaps;
   return coll;
 }
 
@@ -110,8 +112,10 @@ function spark(vals, kinds){
   const pts = vals.map((v,i) => [i, v]).filter(p => p[1] != null);
   if (!pts.length) return "";
   const W = 80, H = 24, n = Math.max(vals.length - 1, 1);
-  const lv = pts.map(p => Math.log10(p[1] + 1)), lo = Math.min(...lv), hi = Math.max(...lv), span = hi - lo || 1;
-  const xy = pts.map((p,j) => [p[0] / n * W, H - 2 - (hi === lo ? (H - 4) / 2 : (lv[j] - lo) / span * (H - 4))]);
+  // log scale, but never narrower than a 25% change, so small moves stay visibly small
+  const lv = pts.map(p => Math.log10(p[1] + 1)), mid = (Math.min(...lv) + Math.max(...lv)) / 2;
+  const span = Math.max(Math.max(...lv) - Math.min(...lv), Math.log10(1.25)), lo = mid - span / 2, hi = mid + span / 2;
+  const xy = pts.map((p,j) => [p[0] / n * W, H - 2 - (lv[j] - lo) / span * (H - 4)]);
   const d = xy.map((q,j) => (j ? "L" : "M") + q[0].toFixed(1) + " " + q[1].toFixed(1)).join("");
   const dots = xy.map((q,j) => `<circle class="${kinds[pts[j][0]] !== "collected" ? "b" : ""}" cx="${q[0].toFixed(1)}" cy="${q[1].toFixed(1)}" r="2"/>`).join("");
   return `<svg class="spark" viewBox="0 0 ${W} ${H}" aria-hidden="true">${pts.length > 1 ? `<path d="${d}"/>` : ""}${dots}</svg>`;
@@ -136,8 +140,9 @@ function draw(){
     const maps = ss.map(byName);
     const names = new Set(c.tools.map(t => t.name));
     if (prev) (prev.categories.find(x => x.id === c.id)?.tools || []).forEach(t => names.add(t.name));
+    const flag = perTool(last, metric), lastTool = maps[maps.length - 1];
     const rows = [...names].map(n => {
-      const vals = maps.map(mp => mp[n]?.[metric] ?? null);
+      const vals = maps.map((mp, i) => ss[i].kind !== "collected" && flag && !lastTool[n]?.[flag] && !comparable(last, metric) ? null : mp[n]?.[metric] ?? null);
       const cur = vals[vals.length - 1], before = vals.length > 1 ? vals[vals.length - 2] : null;
       const dl = delta(cur, before);
       if (dl.p != null && (before || 0) >= ({hn_devs:5, score:5, hn_comments_12m:30}[metric] ?? 1000)) movers.push({c:c.name, n, dl, cur});
@@ -155,7 +160,7 @@ function draw(){
   mv.innerHTML = prev && pick.length ? pick.map(x => `<div class="mv"><div class="k">${esc(x.c)}</div><div class="t">${esc(x.n)}</div><div class="d ${x.dl.cls}">${x.dl.txt} · ${fmt(x.cur)} ${esc(m.label.toLowerCase())}</div></div>`).join("")
     : `<p class="empty">${ss.length < 2 ? `Only one snapshot is comparable for “${esc(m.label)}” so far; changes appear after the next run.` : "No movers on this signal."}</p>`;
   const skipped = snaps.length - ss.length;
-  document.getElementById("note").innerHTML = `${esc(m.long)}. Grey dots are the first snapshot, taken from <a href="${esc(snaps[0].source.url)}" target="_blank" rel="noopener">${esc(snaps[0].source.name)}</a>; blue dots are our own runs (<a href="https://github.com/carlobeschi/ai-tools/blob/main/docs/methodology.md" target="_blank" rel="noopener">method</a>). ${skipped ? `For this signal the first snapshot is left out, because our method differs from the source's. ` : ""}Sparklines use a log scale. “≈” marks names that collide with common words (Pi, Cursor, Orca…), whose counts are less reliable.`;
+  document.getElementById("note").innerHTML = `${esc(m.long)}. Grey dots are the first snapshot, taken from <a href="${esc(snaps[0].source.url)}" target="_blank" rel="noopener">${esc(snaps[0].source.name)}</a>; blue dots are our own runs (<a href="https://github.com/carlobeschi/ai-tools/blob/main/docs/methodology.md" target="_blank" rel="noopener">method</a>). ${skipped ? `For this signal the first snapshot is left out, because our method differs from the source's. ` : perTool(snaps[snaps.length-1], metric) ? "The first snapshot is shown only for tools where our query reproduces the source's count. " : ""}Sparklines use a log scale. “≈” marks names that collide with common words (Pi, Cursor, Orca…), whose counts are less reliable.`;
 }
 
 (async () => {

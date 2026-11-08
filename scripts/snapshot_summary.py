@@ -35,8 +35,8 @@ def main(date):
            f"({new['method']['requests']} requests, {new['method']['errors']} failed).", ""]
     if prev:
         kind = "the source's own numbers" if old.get("kind") != "collected" else "our previous run"
-        out += [f"Compared with **{prev}** ({kind}). Only HN comments, stars and downloads are measured the same way as the "
-                "source; HN devs and the score are ours, so compare those between collected snapshots.", ""]
+        out += [f"Compared with **{prev}** ({kind}). Against the source, only stars, downloads and the HN comments of tools "
+                "marked `source_query` are measured the same way; compare HN devs and the score between collected snapshots.", ""]
     out += ["| Category | Top 3 now | Biggest move in HN comments (12 mo) |", "|---|---|---|"]
     for c in new["categories"]:
         top = ", ".join(f"{t['name']} ({t['hn_devs']})" for t in c["tools"][:3])
@@ -45,7 +45,8 @@ def main(date):
             ot = tools(oc[c["id"]])
             for n, t in tools(c).items():
                 p = pct(t.get("hn_comments_12m"), ot.get(n, {}).get("hn_comments_12m"))
-                if p is not None and (ot[n]["hn_comments_12m"] or 0) >= 30:
+                same = old.get("kind") == "collected" or t.get("source_query")
+                if same and p is not None and (ot[n]["hn_comments_12m"] or 0) >= 30:
                     moves.append((abs(p), f"{n} {p:+.0f}%"))
         out.append(f"| {c['name']} | {top} | {max(moves)[1] if moves else '–'} |")
     coll = [f"{c['id']}/{t['name']}" for c in new["categories"] for t in c["tools"] if t.get("collision")]
@@ -53,6 +54,12 @@ def main(date):
             "**To review before merging:** these top-10 names collide with common words; read their samples in "
             f"`data/raw/{date}.json` and correct the snapshot (add to `corrections`) if the counts are not backed: "
             + ", ".join(coll) + "."]
+    raw = json.load(open(os.path.join(ROOT, f"data/raw/{date}.json")))
+    cands = raw.get("candidate_threads", [])[:8]
+    if cands:
+        out += ["", "**New Ask HN threads that may belong in the corpus** (add good ones to `setup_threads` in "
+                "`scripts/tracked_tools.json`):", ""]
+        out += [f"- [{c['title']}](https://news.ycombinator.com/item?id={c['id']}) ({c['num_comments']} comments, {c['date']})" for c in cands]
     print("\n".join(out))
 
 

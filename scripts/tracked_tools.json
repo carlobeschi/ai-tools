@@ -1,12 +1,30 @@
 {
  "version": 1,
- "notes": "Tools tracked by scripts/collect_snapshot.py. q: HN Algolia phrases (max is used); re: regex matched against comments in the Ask HN setup threads (case-insensitive unless cs); gh/pypi/npm: sources for stars and downloads; collide: name collides with common words, so counts need reading (see docs/methodology.md).",
+ "notes": "Tools tracked by scripts/collect_snapshot.py. q: HN Algolia queries; the first one gives hn_comments_12m, the rest are kept in the raw file; src: the first query reproduces the source's own count (checked 2026-11-08), so the value is comparable with the first snapshot; re: regex matched against comments in the Ask HN setup threads (case-insensitive unless cs); gh/pypi/npm: sources for stars and downloads; collide: name collides with common words, so counts need reading (see docs/methodology.md).",
  "hn_devs_since": "2025-05-01",
- "setup_threads_seed": [
-  50366117,
+ "setup_threads_note": "Ask HN threads where developers describe their AI setup, curated by hand so the corpus only changes on purpose. Each run lists new candidate threads in the raw file and the PR; add the good ones here.",
+ "setup_threads": [
+  43959710,
+  44095189,
+  44262410,
+  44405067,
+  44572043,
+  45771870,
+  46255285,
+  46678550,
+  46691243,
+  46838946,
+  46907001,
+  46993479,
+  47388646,
+  47783940,
+  48413629,
   48445024,
+  48542100,
+  48587808,
+  48771515,
   49636239,
-  44262410
+  50366117
  ],
  "categories": {
   "terminal": {
@@ -26,7 +44,8 @@
     "re": "\\bcodex\\b",
     "gh": "openai/codex",
     "npm": "@openai/codex",
-    "devto": "codex"
+    "devto": "codex",
+    "src": true
    },
    "OpenCode": {
     "q": [
@@ -35,7 +54,8 @@
     "re": "\\bopencode\\b",
     "gh": "anomalyco/opencode",
     "npm": "opencode-ai",
-    "devto": "opencode"
+    "devto": "opencode",
+    "src": true
    },
    "Pi": {
     "q": [
@@ -48,7 +68,8 @@
     "cs": true,
     "gh": "earendil-works/pi",
     "npm": "@mariozechner/pi-coding-agent",
-    "collide": true
+    "collide": true,
+    "src": true
    },
    "DeepSeek Harness": {
     "q": [
@@ -63,17 +84,20 @@
     ],
     "re": "\\baider\\b",
     "gh": "Aider-AI/aider",
-    "pypi": "aider-chat"
+    "pypi": "aider-chat",
+    "src": true
    },
    "Gemini CLI": {
     "q": [
+     "Gemini CLI",
      "\"gemini cli\"",
      "\"gemini-cli\""
     ],
     "re": "gemini[ -]cli",
     "gh": "google-gemini/gemini-cli",
     "npm": "@google/gemini-cli",
-    "devto": "geminicli"
+    "devto": "geminicli",
+    "src": true
    },
    "Copilot CLI": {
     "q": [
@@ -100,7 +124,8 @@
      "\"vibe cli\""
     ],
     "re": "mistral vibe|vibe cli|\\bdevstral\\b",
-    "gh": "mistralai/mistral-vibe"
+    "gh": "mistralai/mistral-vibe",
+    "src": true
    },
    "Muse Code": {
     "q": [
@@ -205,6 +230,7 @@
    },
    "Cursor": {
     "q": [
+     "\"cursor\"",
      "\"cursor ide\"",
      "\"cursor editor\"",
      "\"cursor agent\"",
@@ -212,7 +238,8 @@
     ],
     "re": "(?<!mouse )(?<!text )(?<!the )\\bcursor\\b(?! (?:position|movement|keys?|blink|jump))",
     "devto": "cursor",
-    "collide": true
+    "collide": true,
+    "src": true
    },
    "Zed": {
     "q": [
@@ -220,7 +247,8 @@
     ],
     "re": "\\bZed\\b",
     "cs": true,
-    "gh": "zed-industries/zed"
+    "gh": "zed-industries/zed",
+    "src": true
    },
    "Antigravity": {
     "q": [
@@ -232,14 +260,16 @@
     "q": [
      "\"windsurf\""
     ],
-    "re": "\\bwindsurf\\b"
+    "re": "\\bwindsurf\\b",
+    "src": true
    },
    "Cline": {
     "q": [
      "\"cline\""
     ],
     "re": "\\bcline\\b",
-    "gh": "cline/cline"
+    "gh": "cline/cline",
+    "src": true
    },
    "Kiro": {
     "q": [
@@ -262,7 +292,8 @@
      "\"kilocode\""
     ],
     "re": "\\bkilo ?code\\b",
-    "gh": "Kilo-Org/kilocode"
+    "gh": "Kilo-Org/kilocode",
+    "src": true
    },
    "Neovim (CodeCompanion / avante)": {
     "q": [
@@ -270,7 +301,8 @@
      "\"avante\""
     ],
     "re": "\\b(?:neovim|nvim|codecompanion|avante)\\b",
-    "gh": "olimorris/codecompanion.nvim"
+    "gh": "olimorris/codecompanion.nvim",
+    "src": true
    },
    "JetBrains Junie": {
     "q": [
@@ -313,7 +345,8 @@
      "\"herdr\""
     ],
     "re": "\\bherdr\\b",
-    "gh": "herdrdev/herdr"
+    "gh": "herdrdev/herdr",
+    "src": true
    },
    "tmux + git worktrees": {
     "q": [
@@ -327,7 +360,8 @@
      "\"paseo\""
     ],
     "re": "\\bpaseo\\b",
-    "gh": "getpaseo/paseo"
+    "gh": "getpaseo/paseo",
+    "src": true
    },
    "Gas Town": {
     "q": [
@@ -351,7 +385,8 @@
      "\"beads\""
     ],
     "re": "\\bbeads\\b",
-    "gh": "gastownhall/beads"
+    "gh": "gastownhall/beads",
+    "src": true
    },
    "Orca": {
     "q": [
@@ -369,7 +404,8 @@
     ],
     "re": "\\bConductor\\b",
     "cs": true,
-    "collide": true
+    "collide": true,
+    "src": true
    },
    "Juggler": {
     "q": [
@@ -489,13 +525,16 @@
     "q": [
      "\"coderabbit\""
     ],
-    "re": "\\bcode ?rabbit\\b"
+    "re": "\\bcode ?rabbit\\b",
+    "src": true
    },
    "Cursor Bugbot": {
     "q": [
+     "Cursor Bugbot",
      "\"bugbot\""
     ],
-    "re": "\\bbugbot\\b"
+    "re": "\\bbugbot\\b",
+    "src": true
    },
    "Codex code review": {
     "q": [
@@ -515,23 +554,27 @@
      "\"qodo\""
     ],
     "re": "\\bqodo\\b|pr-agent",
-    "gh": "The-PR-Agent/pr-agent"
+    "gh": "The-PR-Agent/pr-agent",
+    "src": true
    },
    "Graphite": {
     "q": [
+     "\"graphite\"",
      "\"graphite.dev\"",
      "\"graphite.com\"",
      "\"graphite stacked\""
     ],
     "re": "\\bGraphite\\b",
     "cs": true,
-    "collide": true
+    "collide": true,
+    "src": true
    },
    "Greptile": {
     "q": [
      "\"greptile\""
     ],
-    "re": "\\bgreptile\\b"
+    "re": "\\bgreptile\\b",
+    "src": true
    },
    "Open Code Review (Alibaba)": {
     "q": [
@@ -560,7 +603,8 @@
     "q": [
      "\"agents.md\""
     ],
-    "re": "agents\\.md"
+    "re": "agents\\.md",
+    "src": true
    },
    "Agent Skills": {
     "q": [
@@ -575,7 +619,8 @@
      "\"superpowers\""
     ],
     "re": "\\bsuperpowers\\b",
-    "gh": "obra/superpowers"
+    "gh": "obra/superpowers",
+    "src": true
    },
    "Spec Kit": {
     "q": [
@@ -592,7 +637,8 @@
     ],
     "re": "\\bcontext ?7\\b",
     "gh": "upstash/context7",
-    "npm": "@upstash/context7-mcp"
+    "npm": "@upstash/context7-mcp",
+    "src": true
    },
    "GitHub MCP server": {
     "q": [
@@ -617,20 +663,23 @@
    },
    "Impeccable": {
     "q": [
+     "\"impeccable\"",
      "\"impeccable\" skill",
      "\"impeccable.style\""
     ],
     "re": "\\bImpeccable\\b",
     "cs": true,
     "gh": "pbakaus/impeccable",
-    "collide": true
+    "collide": true,
+    "src": true
    },
    "Graphify": {
     "q": [
      "\"graphify\""
     ],
     "re": "\\bgraphify\\b",
-    "gh": "Graphify-Labs/graphify"
+    "gh": "Graphify-Labs/graphify",
+    "src": true
    },
    "Figma MCP": {
     "q": [
@@ -696,12 +745,14 @@
   "browser": {
    "Playwright MCP": {
     "q": [
+     "Playwright MCP",
      "\"playwright mcp\"",
      "\"playwright-mcp\""
     ],
     "re": "playwright",
     "gh": "microsoft/playwright-mcp",
-    "npm": "@playwright/mcp"
+    "npm": "@playwright/mcp",
+    "src": true
    },
    "Chrome DevTools MCP": {
     "q": [
@@ -710,7 +761,8 @@
     ],
     "re": "chrome[ -]dev ?tools[ -]mcp|devtools mcp",
     "gh": "ChromeDevTools/chrome-devtools-mcp",
-    "npm": "chrome-devtools-mcp"
+    "npm": "chrome-devtools-mcp",
+    "src": true
    },
    "agent-browser": {
     "q": [
@@ -718,21 +770,24 @@
     ],
     "re": "agent-browser",
     "gh": "vercel-labs/agent-browser",
-    "npm": "agent-browser"
+    "npm": "agent-browser",
+    "src": true
    },
    "Firecrawl": {
     "q": [
      "\"firecrawl\""
     ],
     "re": "\\bfirecrawl\\b",
-    "gh": "firecrawl/firecrawl"
+    "gh": "firecrawl/firecrawl",
+    "src": true
    },
    "Lightpanda": {
     "q": [
      "\"lightpanda\""
     ],
     "re": "\\blightpanda\\b",
-    "gh": "lightpanda-io/browser"
+    "gh": "lightpanda-io/browser",
+    "src": true
    },
    "Stagehand": {
     "q": [
@@ -740,7 +795,8 @@
     ],
     "re": "\\bstagehand\\b",
     "gh": "browserbase/stagehand",
-    "npm": "@browserbasehq/stagehand"
+    "npm": "@browserbasehq/stagehand",
+    "src": true
    },
    "Claude in Chrome": {
     "q": [
@@ -754,7 +810,8 @@
      "\"vibium\""
     ],
     "re": "\\bvibium\\b",
-    "gh": "VibiumDev/vibium"
+    "gh": "VibiumDev/vibium",
+    "src": true
    },
    "browser-use": {
     "q": [
@@ -771,7 +828,8 @@
     ],
     "re": "\\bscrapling\\b",
     "gh": "D4Vinci/Scrapling",
-    "pypi": "scrapling"
+    "pypi": "scrapling",
+    "src": true
    },
    "Browser MCP": {
     "q": [
@@ -801,7 +859,8 @@
      "\"bwrap\""
     ],
     "re": "\\bbubblewrap\\b|\\bbwrap\\b",
-    "gh": "containers/bubblewrap"
+    "gh": "containers/bubblewrap",
+    "src": true
    },
    "Docker Sandboxes": {
     "q": [
@@ -815,7 +874,8 @@
      "\"openshell\""
     ],
     "re": "\\bopenshell\\b",
-    "gh": "NVIDIA/OpenShell"
+    "gh": "NVIDIA/OpenShell",
+    "src": true
    },
    "Apple container": {
     "q": [
@@ -854,14 +914,16 @@
      "\"smolvm\""
     ],
     "re": "\\bsmolvm\\b",
-    "gh": "smol-machines/smolvm"
+    "gh": "smol-machines/smolvm",
+    "src": true
    },
    "yoloai": {
     "q": [
      "\"yoloai\""
     ],
     "re": "\\byoloai\\b",
-    "gh": "kstenerud/yoloai"
+    "gh": "kstenerud/yoloai",
+    "src": true
    },
    "Lume": {
     "q": [
@@ -930,14 +992,16 @@
     ],
     "re": "\\bollama\\b",
     "gh": "ollama/ollama",
-    "devto": "ollama"
+    "devto": "ollama",
+    "src": true
    },
    "llama.cpp": {
     "q": [
      "\"llama.cpp\""
     ],
     "re": "llama\\.cpp|llama-server",
-    "gh": "ggml-org/llama.cpp"
+    "gh": "ggml-org/llama.cpp",
+    "src": true
    },
    "MLX": {
     "q": [
@@ -945,14 +1009,16 @@
     ],
     "re": "\\bmlx\\b",
     "gh": "ml-explore/mlx",
-    "pypi": "mlx"
+    "pypi": "mlx",
+    "src": true
    },
    "LM Studio": {
     "q": [
      "\"lm studio\"",
      "\"lmstudio\""
     ],
-    "re": "\\blm ?studio\\b"
+    "re": "\\blm ?studio\\b",
+    "src": true
    },
    "Open WebUI": {
     "q": [
@@ -969,7 +1035,8 @@
     ],
     "re": "\\bvllm\\b",
     "gh": "vllm-project/vllm",
-    "pypi": "vllm"
+    "pypi": "vllm",
+    "src": true
    },
    "Unsloth": {
     "q": [
@@ -977,7 +1044,8 @@
     ],
     "re": "\\bunsloth\\b",
     "gh": "unslothai/unsloth",
-    "pypi": "unsloth"
+    "pypi": "unsloth",
+    "src": true
    },
    "Lemonade": {
     "q": [
@@ -996,14 +1064,16 @@
     ],
     "re": "\\bsglang\\b",
     "gh": "sgl-project/sglang",
-    "pypi": "sglang"
+    "pypi": "sglang",
+    "src": true
    },
    "llama-swap": {
     "q": [
      "\"llama-swap\""
     ],
     "re": "llama-swap",
-    "gh": "mostlygeek/llama-swap"
+    "gh": "mostlygeek/llama-swap",
+    "src": true
    },
    "Apfel": {
     "q": [
@@ -1033,7 +1103,8 @@
     "q": [
      "\"openrouter\""
     ],
-    "re": "\\bopen ?router\\b"
+    "re": "\\bopen ?router\\b",
+    "src": true
    },
    "AWS Bedrock": {
     "q": [
@@ -1047,7 +1118,8 @@
     ],
     "re": "\\blite ?llm\\b",
     "gh": "BerriAI/litellm",
-    "pypi": "litellm"
+    "pypi": "litellm",
+    "src": true
    },
    "OpenCode Go / Zen": {
     "q": [
@@ -1097,11 +1169,12 @@
    },
    "Chutes": {
     "q": [
-     "\"chutes.ai\"",
-     "\"chutes\""
+     "\"chutes\"",
+     "\"chutes.ai\""
     ],
     "re": "\\bchutes\\b",
-    "collide": true
+    "collide": true,
+    "src": true
    },
    "OmniRoute": {
     "q": [
@@ -1127,12 +1200,14 @@
   "frameworks": {
    "LangChain": {
     "q": [
+     "LangChain",
      "\"langchain\""
     ],
     "re": "\\blangchain\\b",
     "gh": "langchain-ai/langchain",
     "pypi": "langchain",
-    "devto": "langchain"
+    "devto": "langchain",
+    "src": true
    },
    "Mastra": {
     "q": [
@@ -1140,7 +1215,8 @@
     ],
     "re": "\\bmastra\\b",
     "gh": "mastra-ai/mastra",
-    "npm": "@mastra/core"
+    "npm": "@mastra/core",
+    "src": true
    },
    "Claude Agent SDK": {
     "q": [
@@ -1157,7 +1233,8 @@
     ],
     "re": "\\blanggraph\\b",
     "gh": "langchain-ai/langgraph",
-    "pypi": "langgraph"
+    "pypi": "langgraph",
+    "src": true
    },
    "DSPy": {
     "q": [
@@ -1165,7 +1242,8 @@
     ],
     "re": "\\bdspy\\b",
     "gh": "stanfordnlp/dspy",
-    "pypi": "dspy"
+    "pypi": "dspy",
+    "src": true
    },
    "Microsoft Agent Framework": {
     "q": [
@@ -1199,7 +1277,8 @@
     ],
     "re": "\\bcrew ?ai\\b",
     "gh": "crewAIInc/crewAI",
-    "pypi": "crewai"
+    "pypi": "crewai",
+    "src": true
    },
    "Pydantic AI": {
     "q": [
@@ -1227,7 +1306,8 @@
     ],
     "re": "\\bpromptfoo\\b",
     "gh": "promptfoo/promptfoo",
-    "npm": "promptfoo"
+    "npm": "promptfoo",
+    "src": true
    },
    "Langfuse": {
     "q": [
@@ -1235,7 +1315,8 @@
     ],
     "re": "\\blangfuse\\b",
     "gh": "langfuse/langfuse",
-    "pypi": "langfuse"
+    "pypi": "langfuse",
+    "src": true
    },
    "Arize Phoenix": {
     "q": [
@@ -1253,7 +1334,8 @@
     ],
     "re": "\\bmlflow\\b",
     "gh": "mlflow/mlflow",
-    "pypi": "mlflow"
+    "pypi": "mlflow",
+    "src": true
    },
    "Logfire": {
     "q": [
@@ -1277,7 +1359,8 @@
     ],
     "re": "\\bbraintrust\\b",
     "pypi": "braintrust",
-    "collide": true
+    "collide": true,
+    "src": true
    },
    "Helicone": {
     "q": [
@@ -1348,7 +1431,8 @@
     ],
     "re": "\\bopen ?claw\\b|\\bclawdbot\\b|\\bmoltbot\\b",
     "gh": "openclaw/openclaw",
-    "devto": "openclaw"
+    "devto": "openclaw",
+    "src": true
    },
    "Hermes Agent": {
     "q": [
@@ -1369,23 +1453,27 @@
    },
    "Claude Cowork": {
     "q": [
+     "Claude Cowork",
      "\"cowork\""
     ],
-    "re": "\\bcowork\\b"
+    "re": "\\bcowork\\b",
+    "src": true
    },
    "n8n": {
     "q": [
      "\"n8n\""
     ],
     "re": "\\bn8n\\b",
-    "gh": "n8n-io/n8n"
+    "gh": "n8n-io/n8n",
+    "src": true
    },
    "NanoClaw": {
     "q": [
      "\"nanoclaw\""
     ],
     "re": "\\bnanoclaw\\b",
-    "gh": "nanocoai/nanoclaw"
+    "gh": "nanocoai/nanoclaw",
+    "src": true
    },
    "Home Assistant + LLM": {
     "q": [
