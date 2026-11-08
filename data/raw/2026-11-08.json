@@ -180,6 +180,14 @@
    "comments_fetched": 206
   },
   {
+   "id": 48859439,
+   "title": "Ask HN: How do you use Vim in the era of AI?",
+   "date": "2026-07-10",
+   "points": 49,
+   "num_comments": 99,
+   "comments_fetched": 99
+  },
+  {
    "id": 49346906,
    "title": "Ask HN: Do you feel comfortable admitting that you use AI?",
    "date": "2026-08-18",
@@ -212,13 +220,769 @@
    "comments_fetched": 691
   }
  ],
+ "rejected_threads": [
+  {
+   "id": 48406174,
+   "title": "Ask HN: What was your \"oh shit\" moment with GenAI?",
+   "num_comments": 1124
+  },
+  {
+   "id": 47282777,
+   "title": "Tell HN: I'm 60 years old. Claude Code has re-ignited a passion",
+   "num_comments": 988
+  },
+  {
+   "id": 44226145,
+   "title": "Tell HN: Help restore the tax deduction for software dev in the US (Section 174)",
+   "num_comments": 907
+  },
+  {
+   "id": 47633396,
+   "title": "Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw",
+   "num_comments": 827
+  },
+  {
+   "id": 50151036,
+   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+   "num_comments": 767
+  },
+  {
+   "id": 48420827,
+   "title": "Ask HN: Why is the HN crowd so anti-AI?",
+   "num_comments": 765
+  },
+  {
+   "id": 44713757,
+   "title": "Claude Code weekly rate limits",
+   "num_comments": 705
+  },
+  {
+   "id": 45019483,
+   "title": "Ask HN: Why hasn't x86 caught up with Apple M series?",
+   "num_comments": 620
+  },
+  {
+   "id": 47388646,
+   "title": "Ask HN: How is AI-assisted coding going for you professionally?",
+   "num_comments": 616
+  },
+  {
+   "id": 48542100,
+   "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
+   "num_comments": 563
+  },
+  {
+   "id": 47300329,
+   "title": "Ask HN: Please restrict new accounts from posting",
+   "num_comments": 515
+  },
+  {
+   "id": 46691243,
+   "title": "Ask HN: Do you have any evidence that agentic coding works?",
+   "num_comments": 455
+  },
+  {
+   "id": 44448461,
+   "title": "Ask HN: How did Soham Parekh get so many jobs?",
+   "num_comments": 419
+  },
+  {
+   "id": 46385197,
+   "title": "Ask HN: What skills do you want to develop or improve in 2026?",
+   "num_comments": 415
+  },
+  {
+   "id": 49657850,
+   "title": "Ask HN: Can we please limit the AI news flood?",
+   "num_comments": 403
+  },
+  {
+   "id": 43959710,
+   "title": "Ask HN: Cursor or Windsurf?",
+   "num_comments": 398
+  },
+  {
+   "id": 47783940,
+   "title": "Ask HN: Who is using OpenClaw?",
+   "num_comments": 383
+  },
+  {
+   "id": 49982498,
+   "title": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+   "num_comments": 349
+  },
+  {
+   "id": 45744209,
+   "title": "Ask HN: How to deal with long vibe-coded PRs?",
+   "num_comments": 349
+  },
+  {
+   "id": 47548243,
+   "title": "If you don't opt out by Apr 24 GitHub will train on your private repos",
+   "num_comments": 316
+  },
+  {
+   "id": 45864732,
+   "title": "Ask HN: How would you set up a child’s first Linux computer?",
+   "num_comments": 300
+  },
+  {
+   "id": 44071321,
+   "title": "Ask HN: What projects do you donate to?",
+   "num_comments": 289
+  },
+  {
+   "id": 44095189,
+   "title": "Ask HN: Anyone struggling to get value out of coding LLMs?",
+   "num_comments": 279
+  },
+  {
+   "id": 48370330,
+   "title": "Please don't spam people looking for employment. It's just cruel",
+   "num_comments": 273
+  },
+  {
+   "id": 44733800,
+   "title": "I launched 17 side projects. Result? I'm rich in expired domains",
+   "num_comments": 262
+  },
+  {
+   "id": 48604232,
+   "title": "Ask HN: Will programmers write more efficient code during the memory shortage?",
+   "num_comments": 248
+  },
+  {
+   "id": 47769796,
+   "title": "Tell HN: Fiverr left customer files public and searchable",
+   "num_comments": 232
+  },
+  {
+   "id": 46826277,
+   "title": "Ask HN: Do you also \"hoard\" notes/links but struggle to turn them into actions?",
+   "num_comments": 217
+  },
+  {
+   "id": 47139951,
+   "title": "1Password pricing increasing up to 33% in March",
+   "num_comments": 209
+  },
+  {
+   "id": 47475859,
+   "title": "Ask HN: AI productivity gains – do you fire devs or build better products?",
+   "num_comments": 204
+  },
+  {
+   "id": 50363461,
+   "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+   "num_comments": 200
+  },
+  {
+   "id": 47857461,
+   "title": "Tell HN: I'm sick of AI everything",
+   "num_comments": 193
+  },
+  {
+   "id": 47386813,
+   "title": "I'm 60 years old. Claude Code killed a passion",
+   "num_comments": 193
+  },
+  {
+   "id": 46838946,
+   "title": "Ask HN: Any real OpenClaw (Clawd Bot/Molt Bot) users? What's your experience?",
+   "num_comments": 189
+  },
+  {
+   "id": 45958004,
+   "title": "Ask HN: How are Markov chains so different from tiny LLMs?",
+   "num_comments": 189
+  },
+  {
+   "id": 44176510,
+   "title": "Ask HN: Startup getting spammed with PayPal disputes, what should we do?",
+   "num_comments": 185
+  },
+  {
+   "id": 46678550,
+   "title": "Ask HN: COBOL devs, how are AI coding affecting your work?",
+   "num_comments": 183
+  },
+  {
+   "id": 48668199,
+   "title": "Ask HN: Where is the programming profession going?",
+   "num_comments": 183
+  },
+  {
+   "id": 45073589,
+   "title": "Tell HN: My advice after I applied to 450 positions before getting hired",
+   "num_comments": 180
+  },
+  {
+   "id": 44393304,
+   "title": "Ask HN: Is anyone else just done with the industry?",
+   "num_comments": 178
+  },
+  {
+   "id": 49340013,
+   "title": "Ask HN: Does anyone else feel like nothing matters anymore?",
+   "num_comments": 175
+  },
+  {
+   "id": 44594790,
+   "title": "Tell HN: Notion Desktop is monitoring your audio and network",
+   "num_comments": 171
+  },
+  {
+   "id": 49577129,
+   "title": "Ask HN: Fable hacked my piano, can I release the results?",
+   "num_comments": 166
+  },
+  {
+   "id": 50352757,
+   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+   "num_comments": 163
+  },
+  {
+   "id": 47215569,
+   "title": "Ask HN: How are you all staying sane?",
+   "num_comments": 158
+  },
+  {
+   "id": 46616529,
+   "title": "Ask HN: How are you doing RAG locally?",
+   "num_comments": 156
+  },
+  {
+   "id": 50039291,
+   "title": "Ask HN: Do you want a router that has DD-WRT pre-installed?",
+   "num_comments": 151
+  },
+  {
+   "id": 46434821,
+   "title": "Ask HN: Any example of successful vibe-coded product?",
+   "num_comments": 145
+  },
+  {
+   "id": 47822940,
+   "title": "Ask HN: How did you land your first projects as a solo engineer/consultant?",
+   "num_comments": 144
+  },
+  {
+   "id": 50301479,
+   "title": "Ask HN: Are you tired too in this AI era?",
+   "num_comments": 143
+  },
+  {
+   "id": 44925438,
+   "title": "Ask HN: Do you still bookmark websites?",
+   "num_comments": 141
+  },
+  {
+   "id": 43922759,
+   "title": "Ask HN: How much better are AI IDEs vs. copy pasting into chat apps?",
+   "num_comments": 136
+  },
+  {
+   "id": 44079303,
+   "title": "Ask HN: Go deep into AI/LLMs or just use them as tools?",
+   "num_comments": 133
+  },
+  {
+   "id": 44848058,
+   "title": "Ask HN: What toolchains are people using for desktop app development in 2025?",
+   "num_comments": 132
+  },
+  {
+   "id": 44499063,
+   "title": "Tell HN: I Lost Joy of Programming",
+   "num_comments": 131
+  },
+  {
+   "id": 50067325,
+   "title": "Ask HN: CAD for wood working with LLM support?",
+   "num_comments": 128
+  },
+  {
+   "id": 46464962,
+   "title": "Tell HN: I'm having the worst career winter of my life",
+   "num_comments": 128
+  },
+  {
+   "id": 49318906,
+   "title": "Ask HN: Do you know of any company that went back to hand-written code?",
+   "num_comments": 126
+  },
+  {
+   "id": 44858310,
+   "title": "Ask HN: Would you get a CS degree today?",
+   "num_comments": 124
+  },
+  {
+   "id": 44356422,
+   "title": "Ask HN: How to get rid of Gemini?",
+   "num_comments": 118
+  },
+  {
+   "id": 45474346,
+   "title": "Ask HN: Why is software quality collapsing?",
+   "num_comments": 117
+  },
+  {
+   "id": 45572130,
+   "title": "Ask HN: Has AI stolen the satisfaction from programming?",
+   "num_comments": 113
+  },
+  {
+   "id": 46124930,
+   "title": "Microsoft won't let me pay a $24 bill, blocking thousands in Azure spending",
+   "num_comments": 107
+  },
+  {
+   "id": 46620990,
+   "title": "Ask HN: How do you safely give LLMs SSH/DB access?",
+   "num_comments": 105
+  },
+  {
+   "id": 48164173,
+   "title": "Ask HN: When did computers stop being fun?",
+   "num_comments": 105
+  },
+  {
+   "id": 43953092,
+   "title": "Ask HN: What will tech employment look like in 10 years?",
+   "num_comments": 104
+  },
+  {
+   "id": 46436872,
+   "title": "Tell HN: I write and ship code ~20–50x faster than I did 5 years ago",
+   "num_comments": 103
+  },
+  {
+   "id": 46411275,
+   "title": "Ask HN: Anti-AI Open Source License?",
+   "num_comments": 102
+  },
+  {
+   "id": 46316562,
+   "title": "Ask HN: Who here is not working on web apps/server code?",
+   "num_comments": 100
+  },
+  {
+   "id": 44606671,
+   "title": "Gmail's backup codes are useless to access account",
+   "num_comments": 99
+  },
+  {
+   "id": 49798257,
+   "title": "Tell HN: Claude Code just accepted and signed a contract for me. Without asking",
+   "num_comments": 98
+  },
+  {
+   "id": 44876289,
+   "title": "Ask HN: What alternatives to GitHub are you using?",
+   "num_comments": 97
+  },
+  {
+   "id": 43976045,
+   "title": "Ask HN: How do you store the knowledge gained in a day?",
+   "num_comments": 96
+  },
+  {
+   "id": 45451567,
+   "title": "Ask HN: Went to prison for 18 months, lost access to my GitHub. What can I do?",
+   "num_comments": 96
+  },
+  {
+   "id": 46934622,
+   "title": "Ask HN: How to get started with robotics as a hobbyist?",
+   "num_comments": 95
+  },
+  {
+   "id": 44948748,
+   "title": "What services or apps did you see abroad and wonder: why don't we have them?",
+   "num_comments": 95
+  },
+  {
+   "id": 44468375,
+   "title": "Ask HN: Worth leaving position over push to adopt vibe coding?",
+   "num_comments": 94
+  },
+  {
+   "id": 49626431,
+   "title": "Ask HN: Anyone still coding like 2021? Where do you work?",
+   "num_comments": 94
+  },
+  {
+   "id": 44152012,
+   "title": "Ask HN: How are parents who program teaching their kids today?",
+   "num_comments": 93
+  },
+  {
+   "id": 47803524,
+   "title": "Ask HN: Building a solo business is impossible?",
+   "num_comments": 93
+  },
+  {
+   "id": 46482268,
+   "title": "Ask HN: What are you working on? (Jan 2026)",
+   "num_comments": 93
+  },
+  {
+   "id": 45001551,
+   "title": "Ask HN: Best codebases to study to learn software design?",
+   "num_comments": 92
+  },
+  {
+   "id": 47394291,
+   "title": "Tell HN: AI tools are making me lose interest in CS fundamentals",
+   "num_comments": 91
+  },
+  {
+   "id": 46409375,
+   "title": "Ask HN: By what percentage has AI changed your output as a software engineer?",
+   "num_comments": 91
+  },
+  {
+   "id": 44051755,
+   "title": "Ask HN: How do you promote your personal projects with a limited budget?",
+   "num_comments": 91
+  },
+  {
+   "id": 45867176,
+   "title": "Ask HN: How do you get over the fear of sharing code?",
+   "num_comments": 91
+  },
+  {
+   "id": 47895029,
+   "title": "Tell HN: Claude 4.7 is ignoring stop hooks",
+   "num_comments": 90
+  },
+  {
+   "id": 47764215,
+   "title": "Ask HN: I quit my job over weaponized robots to start my own venture",
+   "num_comments": 90
+  },
+  {
+   "id": 45405977,
+   "title": "Ask HN: How Do I Get over My Existential Crisis?",
+   "num_comments": 90
+  },
+  {
+   "id": 47555081,
+   "title": "The risk of AI isn't making us lazy, but making \"lazy\" look productive",
+   "num_comments": 88
+  },
+  {
+   "id": 46413348,
+   "title": "Tell HN: Google ignores English searches and forces localized results",
+   "num_comments": 87
+  },
+  {
+   "id": 48128003,
+   "title": "Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing",
+   "num_comments": 85
+  },
+  {
+   "id": 46452146,
+   "title": "Ask HN: How did you learn to code?",
+   "num_comments": 85
+  },
+  {
+   "id": 45278819,
+   "title": "Ask HN: Is anyone else sick of AI splattered code",
+   "num_comments": 84
+  },
+  {
+   "id": 46710108,
+   "title": "Ask HN: How are you automating your coding work?",
+   "num_comments": 83
+  },
+  {
+   "id": 46514648,
+   "title": "Ask HN: Any Microsoft employees/devs here? What's happening to Microsoft?",
+   "num_comments": 83
+  },
+  {
+   "id": 50084969,
+   "title": "Ask HN: What is the current trajectory of a senior engineer?",
+   "num_comments": 83
+  },
+  {
+   "id": 46779535,
+   "title": "Ask HN: What's the Point Anymore?",
+   "num_comments": 82
+  },
+  {
+   "id": 44127032,
+   "title": "I am concerned about the future. Are you?",
+   "num_comments": 82
+  },
+  {
+   "id": 48687769,
+   "title": "Ask HN: Is \"no source code was copied\" still a sufficient copyright defense?",
+   "num_comments": 82
+  },
+  {
+   "id": 44952225,
+   "title": "Ask HN: Have any successful startups been made by 'vibe coding'?",
+   "num_comments": 81
+  },
+  {
+   "id": 50405250,
+   "title": "Ask HN: How did you convince family and friends to join your XMPP/Matrix server?",
+   "num_comments": 81
+  },
+  {
+   "id": 48713041,
+   "title": "We need tech news sources which exclude AI",
+   "num_comments": 81
+  },
+  {
+   "id": 46111119,
+   "title": "Ask HN: Do you believe aliens are visiting Earth?",
+   "num_comments": 80
+  },
+  {
+   "id": 47420767,
+   "title": "Ask HN: Is vibe coding a new mandatory job requirement?",
+   "num_comments": 79
+  },
+  {
+   "id": 46705676,
+   "title": "Tell HN: 2 years building a kids audio app as a solo dev – lessons learned",
+   "num_comments": 78
+  },
+  {
+   "id": 48848741,
+   "title": "Ask HN: Does anyone let AI agents play games just for fun?",
+   "num_comments": 78
+  },
+  {
+   "id": 47845050,
+   "title": "Ask HN: What skills are future proof in an AI driven job market?",
+   "num_comments": 77
+  },
+  {
+   "id": 47662112,
+   "title": "Claude Code Down",
+   "num_comments": 76
+  },
+  {
+   "id": 48337409,
+   "title": "Ask HN: What Is the State of App Development in 2026?",
+   "num_comments": 74
+  },
+  {
+   "id": 49851032,
+   "title": "Tell HN: Codex Is Down [fixed]",
+   "num_comments": 73
+  },
+  {
+   "id": 44373724,
+   "title": "Ask HN: What useful AI tools do you use every day?",
+   "num_comments": 72
+  },
+  {
+   "id": 47336163,
+   "title": "Ask HN: Is Claude down again?",
+   "num_comments": 72
+  },
+  {
+   "id": 46731068,
+   "title": "Ask HN: What's the current best local/open speech-to-speech setup?",
+   "num_comments": 71
+  },
+  {
+   "id": 46468959,
+   "title": "Ask HN: What tech job would let me get away with the least real work possible?",
+   "num_comments": 70
+  },
+  {
+   "id": 44601821,
+   "title": "Ask HN: Is Linux for laptop worth the trouble?",
+   "num_comments": 70
+  },
+  {
+   "id": 44019193,
+   "title": "Ask HN: Do people actually pay for small web tools?",
+   "num_comments": 68
+  },
+  {
+   "id": 46315658,
+   "title": "Ask HN: How do I bridge the gap between PhD and SWE experiences?",
+   "num_comments": 68
+  },
+  {
+   "id": 45195543,
+   "title": "My Workflow Is 70% AI, 20% Copy-Paste, 10% Panic. What's Yours?",
+   "num_comments": 67
+  },
+  {
+   "id": 46866165,
+   "title": "Ask HN: Anyone else struggle with how to learn coding in the AI era?",
+   "num_comments": 67
+  },
+  {
+   "id": 44553379,
+   "title": "Ask HN: How much of OpenAI code is written by AI?",
+   "num_comments": 67
+  },
+  {
+   "id": 46353704,
+   "title": "Ask HN: My mother was scammed out of all her savings. What should I do?",
+   "num_comments": 67
+  },
+  {
+   "id": 46292682,
+   "title": "Ask HN: How are you LLM-coding in an established code base?",
+   "num_comments": 66
+  },
+  {
+   "id": 45805540,
+   "title": "Claude Code refused to add rainbows and unicorns to my app",
+   "num_comments": 66
+  },
+  {
+   "id": 45558430,
+   "title": "Ask HN: Why are *most* people not interested in FOSS/OSS and can we change that",
+   "num_comments": 65
+  },
+  {
+   "id": 46851953,
+   "title": "Why do people still talk about AGI?",
+   "num_comments": 64
+  },
+  {
+   "id": 48611303,
+   "title": "Ask HN: Due to spam on GitHub, what platforms can I move my projects?",
+   "num_comments": 64
+  },
+  {
+   "id": 47368874,
+   "title": "How do you capture WHY engineering decisions were made, not just what?",
+   "num_comments": 64
+  },
+  {
+   "id": 47814832,
+   "title": "Claude Code Opus 4.7 keeps checking on malware",
+   "num_comments": 63
+  },
+  {
+   "id": 50167754,
+   "title": "Tell HN: 2x PHP RCE CVEs with CVSS 10.0 Incoming",
+   "num_comments": 63
+  },
+  {
+   "id": 45410072,
+   "title": "Gentoo Linux might be the best desktop Linux distro for advanced Linux users",
+   "num_comments": 63
+  },
+  {
+   "id": 45105532,
+   "title": "Ask HN: Is your company still hiring junior engineers?",
+   "num_comments": 62
+  },
+  {
+   "id": 47550564,
+   "title": "Tell HN: Firefox is being slowly deprecated by the industry",
+   "num_comments": 62
+  },
+  {
+   "id": 46857444,
+   "title": "Kernighan on Programming",
+   "num_comments": 62
+  },
+  {
+   "id": 48122103,
+   "title": "Ask HN: What are you working on (non-AI)?",
+   "num_comments": 61
+  },
+  {
+   "id": 46759387,
+   "title": "Ask HN: DDD was a great debugger – what would a modern equivalent look like?",
+   "num_comments": 61
+  },
+  {
+   "id": 49596976,
+   "title": "Apparently CodePen 2.0 sends data to their servers as you type",
+   "num_comments": 60
+  },
+  {
+   "id": 45918355,
+   "title": "Ask HN: Anyone else disillusioned with \"AI experts\" in their team?",
+   "num_comments": 59
+  },
+  {
+   "id": 47073838,
+   "title": "Ask HN: How do you employ LLMs for UI development?",
+   "num_comments": 59
+  },
+  {
+   "id": 44050009,
+   "title": "Ask HN: Selling software to company I work for as an employee",
+   "num_comments": 57
+  },
+  {
+   "id": 48230104,
+   "title": "Tell HN: I'm tired of AI-generated answers",
+   "num_comments": 56
+  },
+  {
+   "id": 46238354,
+   "title": "Tell HN: AI coding is sexy, but accounting is the real low-hanging target",
+   "num_comments": 55
+  },
+  {
+   "id": 49622554,
+   "title": "I'm going back to coding by hand",
+   "num_comments": 53
+  },
+  {
+   "id": 48770319,
+   "title": "AI coding is a nightmare. Am I the only one experiencing this?",
+   "num_comments": 53
+  },
+  {
+   "id": 44352476,
+   "title": "I built an app to backup Live Photos from iPhone to external hard drives",
+   "num_comments": 53
+  },
+  {
+   "id": 46339718,
+   "title": "Ask HN: Are you afraid of AI making you unemployable within the next few years?",
+   "num_comments": 52
+  },
+  {
+   "id": 45888409,
+   "title": "Ask HN: Senior people, how did your career evolve?",
+   "num_comments": 52
+  },
+  {
+   "id": 49826029,
+   "title": "Ask HN: I just talked to an AI-obsessed client, and I need a shower afterwards",
+   "num_comments": 51
+  },
+  {
+   "id": 44976292,
+   "title": "Ask HN: Is Kubernetes still a big no-no for early stages in 2025?",
+   "num_comments": 50
+  },
+  {
+   "id": 44585503,
+   "title": "Ask HN: Anyone else tired of AI being forced on you?",
+   "num_comments": 50
+  }
+ ],
  "tools": {
   "terminal/Claude Code": {
    "hn_comments_12m": {
-    "\"claude code\"": 23377
+    "\"claude code\"": 23379
+   },
+   "name_queries": {
+    "Claude Code": 65824,
+    "\"Claude Code\"": 23379
    },
    "hn_title_points": {
-    "\"claude code\"": 68472
+    "\"claude code\"": 68476
    },
    "downloads": {
     "npm": 45548488
@@ -227,6 +991,10 @@
   "terminal/Codex CLI": {
    "hn_comments_12m": {
     "\"codex\"": 15123
+   },
+   "name_queries": {
+    "Codex CLI": 10670,
+    "\"Codex CLI\"": 647
    },
    "hn_title_points": {
     "\"codex\"": 25610
@@ -238,6 +1006,10 @@
   "terminal/OpenCode": {
    "hn_comments_12m": {
     "\"opencode\"": 5262
+   },
+   "name_queries": {
+    "\"OpenCode\"": 5262,
+    "OpenCode": 6415
    },
    "hn_title_points": {
     "\"opencode\"": 6723
@@ -252,6 +1024,10 @@
     "\"pi agent\"": 161,
     "\"pi coding agent\"": 127,
     "\"pi-coding-agent\"": 127
+   },
+   "name_queries": {
+    "Pi": 143410,
+    "\"Pi\"": 8870
    },
    "hn_title_points": {
     "\"pi.dev\"": 166,
@@ -277,6 +1053,10 @@
    "hn_comments_12m": {
     "\"deepseek harness\"": 126
    },
+   "name_queries": {
+    "DeepSeek Harness": 628,
+    "\"DeepSeek Harness\"": 126
+   },
    "hn_title_points": {
     "\"deepseek harness\"": 1267
    },
@@ -285,6 +1065,10 @@
   "terminal/Aider": {
    "hn_comments_12m": {
     "\"aider\"": 332
+   },
+   "name_queries": {
+    "\"Aider\"": 332,
+    "Aider": 12215
    },
    "hn_title_points": {
     "\"aider\"": 25
@@ -298,6 +1082,10 @@
     "\"gemini cli\"": 1004,
     "\"gemini-cli\"": 1004
    },
+   "name_queries": {
+    "Gemini CLI": 2091,
+    "\"Gemini CLI\"": 1004
+   },
    "hn_title_points": {
     "\"gemini cli\"": 1110,
     "\"gemini-cli\"": 1110
@@ -309,6 +1097,10 @@
   "terminal/Copilot CLI": {
    "hn_comments_12m": {
     "\"copilot cli\"": 189
+   },
+   "name_queries": {
+    "Copilot CLI": 746,
+    "\"Copilot CLI\"": 189
    },
    "hn_title_points": {
     "\"copilot cli\"": 201
@@ -323,6 +1115,10 @@
     "\"block goose\"": 5,
     "\"block's goose\"": 1,
     "\"codename goose\"": 1
+   },
+   "name_queries": {
+    "Goose": 9426,
+    "\"Goose\"": 923
    },
    "hn_title_points": {
     "\"goose agent\"": 0,
@@ -347,6 +1143,10 @@
     "\"mistral vibe\"": 78,
     "\"vibe cli\"": 27
    },
+   "name_queries": {
+    "\"Mistral Vibe\"": 78,
+    "Mistral Vibe": 177
+   },
    "hn_title_points": {
     "\"mistral vibe\"": 780,
     "\"vibe cli\"": 750
@@ -356,6 +1156,10 @@
   "terminal/Muse Code": {
    "hn_comments_12m": {
     "\"muse code\"": 40
+   },
+   "name_queries": {
+    "\"Muse Code\"": 40,
+    "Muse Code": 5624
    },
    "hn_title_points": {
     "\"muse code\"": 365
@@ -367,6 +1171,10 @@
     "\"kimi cli\"": 35,
     "\"kimi-cli\"": 35
    },
+   "name_queries": {
+    "\"Kimi CLI\"": 35,
+    "Kimi CLI": 214
+   },
    "hn_title_points": {
     "\"kimi cli\"": 1,
     "\"kimi-cli\"": 1
@@ -377,6 +1185,10 @@
    "hn_comments_12m": {
     "\"qwen code\"": 52,
     "\"qwen-code\"": 52
+   },
+   "name_queries": {
+    "Qwen Code": 1679,
+    "\"Qwen Code\"": 52
    },
    "hn_title_points": {
     "\"qwen code\"": 6,
@@ -390,6 +1202,10 @@
    "hn_comments_12m": {
     "\"zerostack\"": 26
    },
+   "name_queries": {
+    "\"Zerostack\"": 26,
+    "Zerostack": 37
+   },
    "hn_title_points": {
     "\"zerostack\"": 624
    },
@@ -398,6 +1214,10 @@
   "terminal/Codewhale": {
    "hn_comments_12m": {
     "\"codewhale\"": 13
+   },
+   "name_queries": {
+    "\"Codewhale\"": 13,
+    "Codewhale": 82
    },
    "hn_title_points": {
     "\"codewhale\"": 0
@@ -409,6 +1229,10 @@
     "\"ampcode\"": 43,
     "\"amp code\"": 15,
     "\"sourcegraph amp\"": 4
+   },
+   "name_queries": {
+    "Amp": 985370,
+    "\"Amp\"": 1022
    },
    "hn_title_points": {
     "\"ampcode\"": 3,
@@ -426,6 +1250,9 @@
    "hn_comments_12m": {
     "\"jcode\"": 17
    },
+   "name_queries": {
+    "jcode": 739992
+   },
    "hn_title_points": {
     "\"jcode\"": 12
    },
@@ -434,6 +1261,10 @@
   "terminal/Plandex": {
    "hn_comments_12m": {
     "\"plandex\"": 1
+   },
+   "name_queries": {
+    "\"Plandex\"": 1,
+    "Plandex": 23883
    },
    "hn_title_points": {
     "\"plandex\"": 0
@@ -444,6 +1275,10 @@
    "hn_comments_12m": {
     "\"factory droid\"": 9,
     "\"droid cli\"": 2
+   },
+   "name_queries": {
+    "Droid": 2365,
+    "\"Droid\"": 1223
    },
    "hn_title_points": {
     "\"factory droid\"": 2,
@@ -459,6 +1294,10 @@
     "\"charm crush\"": 8,
     "\"crush cli\"": 0
    },
+   "name_queries": {
+    "\"Crush\"": 1126,
+    "Crush": 26395
+   },
    "hn_title_points": {
     "\"charm crush\"": 1,
     "\"crush cli\"": 0
@@ -472,6 +1311,10 @@
    "hn_comments_12m": {
     "\"open interpreter\"": 1
    },
+   "name_queries": {
+    "\"Open Interpreter\"": 1,
+    "Open Interpreter": 482
+   },
    "hn_title_points": {
     "\"open interpreter\"": 0
    },
@@ -481,6 +1324,10 @@
    "hn_comments_12m": {
     "\"kiro cli\"": 18,
     "\"kiro-cli\"": 18
+   },
+   "name_queries": {
+    "\"Kiro CLI\"": 18,
+    "Kiro CLI": 131
    },
    "hn_title_points": {
     "\"kiro cli\"": 27,
@@ -493,6 +1340,10 @@
     "\"github copilot\"": 1173,
     "\"vscode copilot\"": 51,
     "\"vs code copilot\"": 34
+   },
+   "name_queries": {
+    "\"VS Code + Copilot\"": 5,
+    "VS Code + Copilot": 89
    },
    "hn_title_points": {
     "\"github copilot\"": 4168,
@@ -508,6 +1359,10 @@
     "\"cursor agent\"": 56,
     "\"using cursor\"": 186
    },
+   "name_queries": {
+    "Cursor": 9140,
+    "\"Cursor\"": 7945
+   },
    "hn_title_points": {
     "\"cursor ide\"": 16,
     "\"cursor editor\"": 0,
@@ -522,13 +1377,17 @@
     "I am not using Cursor as my IDE I typically get Claude or Gemini to give me feedback about",
     "Interesting read! My personal experience with Cursor aligns with this. The initial result of my prompt was stunningly good",
     "I work daily in Cursor, producing around 200k lines of code per week, though only a small po",
-    "onment where I cannot pair as much as I wanted to but at least I have Cursor/Claude/Whatever. However not having that continuous interaction and h",
-    "I just ask right now Cursor-GPT about where a service was being called from, its has over 10 minu"
+    "queries that would take non trivial time to construct, even if using cursor or ChatGPT.",
+    "onment where I cannot pair as much as I wanted to but at least I have Cursor/Claude/Whatever. However not having that continuous interaction and h"
    ]
   },
   "editors/Zed": {
    "hn_comments_12m": {
     "\"zed\"": 2408
+   },
+   "name_queries": {
+    "Zed": 64797,
+    "\"Zed\"": 2408
    },
    "hn_title_points": {
     "\"zed\"": 5612
@@ -539,6 +1398,10 @@
    "hn_comments_12m": {
     "\"antigravity\"": 1760
    },
+   "name_queries": {
+    "\"Antigravity\"": 1760,
+    "Antigravity": 1856
+   },
    "hn_title_points": {
     "\"antigravity\"": 5230
    },
@@ -547,6 +1410,10 @@
   "editors/Windsurf": {
    "hn_comments_12m": {
     "\"windsurf\"": 346
+   },
+   "name_queries": {
+    "\"Windsurf\"": 346,
+    "Windsurf": 551
    },
    "hn_title_points": {
     "\"windsurf\"": 177
@@ -557,6 +1424,10 @@
    "hn_comments_12m": {
     "\"cline\"": 319
    },
+   "name_queries": {
+    "Cline": 27974,
+    "\"Cline\"": 319
+   },
    "hn_title_points": {
     "\"cline\"": 94
    },
@@ -565,6 +1436,10 @@
   "editors/Kiro": {
    "hn_comments_12m": {
     "\"kiro\"": 487
+   },
+   "name_queries": {
+    "Kiro": 30403,
+    "\"Kiro\"": 487
    },
    "hn_title_points": {
     "\"kiro\"": 244
@@ -575,6 +1450,10 @@
    "hn_comments_12m": {
     "\"roo code\"": 50,
     "\"roocode\"": 33
+   },
+   "name_queries": {
+    "Roo Code": 155,
+    "\"Roo Code\"": 50
    },
    "hn_title_points": {
     "\"roo code\"": 39,
@@ -587,6 +1466,10 @@
     "\"kilo code\"": 68,
     "\"kilocode\"": 73
    },
+   "name_queries": {
+    "Kilo Code": 898,
+    "\"Kilo Code\"": 68
+   },
    "hn_title_points": {
     "\"kilo code\"": 54,
     "\"kilocode\"": 7
@@ -598,6 +1481,10 @@
     "\"codecompanion\"": 12,
     "\"avante\"": 13
    },
+   "name_queries": {
+    "Neovim": 1254,
+    "\"Neovim\"": 1191
+   },
    "hn_title_points": {
     "\"codecompanion\"": 0,
     "\"avante\"": 0
@@ -608,6 +1495,10 @@
    "hn_comments_12m": {
     "\"junie\"": 151
    },
+   "name_queries": {
+    "\"JetBrains Junie\"": 9,
+    "JetBrains Junie": 72
+   },
    "hn_title_points": {
     "\"junie\"": 45
    },
@@ -616,6 +1507,10 @@
   "editors/Emacs gptel": {
    "hn_comments_12m": {
     "\"gptel\"": 80
+   },
+   "name_queries": {
+    "Emacs gptel": 57,
+    "\"Emacs gptel\"": 4
    },
    "hn_title_points": {
     "\"gptel\"": 6
@@ -626,6 +1521,10 @@
    "hn_comments_12m": {
     "\"continue.dev\"": 28
    },
+   "name_queries": {
+    "\"Continue\"": 25216,
+    "Continue": 110372
+   },
    "hn_title_points": {
     "\"continue.dev\"": 0
    },
@@ -634,6 +1533,10 @@
   "editors/Whiteboard": {
    "hn_comments_12m": {
     "\"whiteboard ide\"": 0
+   },
+   "name_queries": {
+    "Whiteboard": 719,
+    "\"Whiteboard\"": 523
    },
    "hn_title_points": {
     "\"whiteboard ide\"": 0
@@ -646,6 +1549,10 @@
     "\"void editor\"": 2,
     "\"void ide\"": 0
    },
+   "name_queries": {
+    "Void": 60302,
+    "\"Void\"": 2538
+   },
    "hn_title_points": {
     "\"void editor\"": 0,
     "\"void ide\"": 0
@@ -655,6 +1562,10 @@
   "orchestration/Herdr": {
    "hn_comments_12m": {
     "\"herdr\"": 549
+   },
+   "name_queries": {
+    "Herdr": 4682,
+    "\"Herdr\"": 549
    },
    "hn_title_points": {
     "\"herdr\"": 1346
@@ -666,6 +1577,10 @@
     "tmux worktree": 72,
     "tmux worktrees": 71
    },
+   "name_queries": {
+    "tmux + git worktrees": 15,
+    "\"tmux + git worktrees\"": 0
+   },
    "hn_title_points": {
     "tmux worktree": 37,
     "tmux worktrees": 37
@@ -676,6 +1591,10 @@
    "hn_comments_12m": {
     "\"paseo\"": 176
    },
+   "name_queries": {
+    "Paseo": 1070,
+    "\"Paseo\"": 176
+   },
    "hn_title_points": {
     "\"paseo\"": 127
    },
@@ -685,6 +1604,10 @@
    "hn_comments_12m": {
     "\"gas town\"": 480,
     "\"gastown\"": 219
+   },
+   "name_queries": {
+    "Gas Town": 2209,
+    "\"Gas Town\"": 480
    },
    "hn_title_points": {
     "\"gas town\"": 1457,
@@ -698,6 +1621,10 @@
     "\"t3code\"": 28,
     "\"t3.codes\"": 11
    },
+   "name_queries": {
+    "T3 Code": 119,
+    "\"T3 Code\"": 55
+   },
    "hn_title_points": {
     "\"t3 code\"": 34,
     "\"t3code\"": 0,
@@ -709,6 +1636,10 @@
    "hn_comments_12m": {
     "\"beads\"": 476
    },
+   "name_queries": {
+    "\"Beads\"": 476,
+    "Beads": 10019
+   },
    "hn_title_points": {
     "\"beads\"": 245
    },
@@ -717,6 +1648,10 @@
   "orchestration/Orca": {
    "hn_comments_12m": {
     "\"orca\"": 233
+   },
+   "name_queries": {
+    "Orca": 49982,
+    "\"Orca\"": 233
    },
    "hn_title_points": {
     "\"orca\"": 129
@@ -738,6 +1673,10 @@
     "\"conductor.build\"": 42,
     "\"conductor app\"": 1
    },
+   "name_queries": {
+    "Conductor": 1596,
+    "\"Conductor\"": 599
+   },
    "hn_title_points": {
     "\"conductor.build\"": 5,
     "\"conductor app\"": 0
@@ -758,6 +1697,10 @@
    "hn_comments_12m": {
     "\"juggler\"": 86
    },
+   "name_queries": {
+    "Juggler": 2058,
+    "\"Juggler\"": 86
+   },
    "hn_title_points": {
     "\"juggler\"": 325
    },
@@ -767,6 +1710,10 @@
    "hn_comments_12m": {
     "\"ralph loop\"": 130,
     "\"ralph wiggum\"": 93
+   },
+   "name_queries": {
+    "Ralph loop": 347,
+    "\"Ralph loop\"": 130
    },
    "hn_title_points": {
     "\"ralph loop\"": 33,
@@ -779,6 +1726,10 @@
     "\"vibe kanban\"": 29,
     "\"vibe-kanban\"": 29
    },
+   "name_queries": {
+    "Vibe Kanban": 53,
+    "\"Vibe Kanban\"": 29
+   },
    "hn_title_points": {
     "\"vibe kanban\"": 4,
     "\"vibe-kanban\"": 4
@@ -789,6 +1740,10 @@
    "hn_comments_12m": {
     "\"omnara\"": 49
    },
+   "name_queries": {
+    "\"Omnara\"": 49,
+    "Omnara": 85
+   },
    "hn_title_points": {
     "\"omnara\"": 261
    },
@@ -797,6 +1752,10 @@
   "orchestration/Munder Difflin": {
    "hn_comments_12m": {
     "\"munder difflin\"": 8
+   },
+   "name_queries": {
+    "Munder Difflin": 1423,
+    "\"Munder Difflin\"": 8
    },
    "hn_title_points": {
     "\"munder difflin\"": 313
@@ -807,6 +1766,9 @@
    "hn_comments_12m": {
     "\"workmux\"": 16
    },
+   "name_queries": {
+    "workmux": 1217
+   },
    "hn_title_points": {
     "\"workmux\"": 12
    },
@@ -815,6 +1777,9 @@
   "orchestration/qm": {
    "hn_comments_12m": {
     "\"qm\"": 295
+   },
+   "name_queries": {
+    "qm": 1167
    },
    "hn_title_points": {
     "\"qm\"": 695
@@ -826,6 +1791,10 @@
    "hn_comments_12m": {
     "\"ruflo\"": 6
    },
+   "name_queries": {
+    "\"Ruflo\"": 6,
+    "Ruflo": 490
+   },
    "hn_title_points": {
     "\"ruflo\"": 7
    },
@@ -834,6 +1803,10 @@
   "orchestration/Superset": {
    "hn_comments_12m": {
     "\"superset.sh\"": 19
+   },
+   "name_queries": {
+    "Superset": 4940,
+    "\"Superset\"": 569
    },
    "hn_title_points": {
     "\"superset.sh\"": 0
@@ -848,6 +1821,10 @@
     "\"claude squad\"": 5,
     "\"claude-squad\"": 5
    },
+   "name_queries": {
+    "Claude Squad": 281,
+    "\"Claude Squad\"": 5
+   },
    "hn_title_points": {
     "\"claude squad\"": 0,
     "\"claude-squad\"": 0
@@ -858,6 +1835,9 @@
    "hn_comments_12m": {
     "\"oh-my-claudecode\"": 2
    },
+   "name_queries": {
+    "oh-my-claudecode": 3
+   },
    "hn_title_points": {
     "\"oh-my-claudecode\"": 2
    },
@@ -866,6 +1846,10 @@
   "orchestration/Sculptor": {
    "hn_comments_12m": {
     "\"sculptor\"": 64
+   },
+   "name_queries": {
+    "Sculptor": 709,
+    "\"Sculptor\"": 64
    },
    "hn_title_points": {
     "\"sculptor\"": 21
@@ -877,6 +1861,10 @@
    "hn_comments_12m": {
     "\"crystal app\"": 0
    },
+   "name_queries": {
+    "\"Crystal\"": 1612,
+    "Crystal": 3824
+   },
    "hn_title_points": {
     "\"crystal app\"": 0
    },
@@ -887,6 +1875,10 @@
    "hn_comments_12m": {
     "\"agent executor\"": 0
    },
+   "name_queries": {
+    "\"AX\"": 448,
+    "AX": 9177
+   },
    "hn_title_points": {
     "\"agent executor\"": 4
    },
@@ -896,6 +1888,10 @@
    "hn_comments_12m": {
     "\"claude code review\"": 19,
     "\"claude review\"": 57
+   },
+   "name_queries": {
+    "Claude Code review": 2956,
+    "\"Claude Code review\"": 19
    },
    "hn_title_points": {
     "\"claude code review\"": 12,
@@ -908,6 +1904,10 @@
     "\"copilot review\"": 20,
     "\"copilot code review\"": 15
    },
+   "name_queries": {
+    "Copilot code review": 244,
+    "\"Copilot code review\"": 15
+   },
    "hn_title_points": {
     "\"copilot review\"": 0,
     "\"copilot code review\"": 336
@@ -918,6 +1918,10 @@
    "hn_comments_12m": {
     "\"coderabbit\"": 147
    },
+   "name_queries": {
+    "CodeRabbit": 167,
+    "\"CodeRabbit\"": 147
+   },
    "hn_title_points": {
     "\"coderabbit\"": 59
    },
@@ -926,6 +1930,10 @@
   "review/Cursor Bugbot": {
    "hn_comments_12m": {
     "\"bugbot\"": 51
+   },
+   "name_queries": {
+    "Cursor Bugbot": 27,
+    "\"Cursor Bugbot\"": 17
    },
    "hn_title_points": {
     "\"bugbot\"": 55
@@ -937,6 +1945,10 @@
     "\"codex review\"": 54,
     "\"codex code review\"": 2
    },
+   "name_queries": {
+    "\"Codex code review\"": 2,
+    "Codex code review": 8591
+   },
    "hn_title_points": {
     "\"codex review\"": 16,
     "\"codex code review\"": 0
@@ -947,6 +1959,10 @@
    "hn_comments_12m": {
     "\"codex security\"": 48
    },
+   "name_queries": {
+    "Codex Security": 6795,
+    "\"Codex Security\"": 48
+   },
    "hn_title_points": {
     "\"codex security\"": 662
    },
@@ -955,6 +1971,10 @@
   "review/Qodo": {
    "hn_comments_12m": {
     "\"qodo\"": 14
+   },
+   "name_queries": {
+    "Qodo": 5590,
+    "\"Qodo\"": 14
    },
    "hn_title_points": {
     "\"qodo\"": 5
@@ -966,6 +1986,10 @@
     "\"graphite.dev\"": 3,
     "\"graphite.com\"": 8,
     "\"graphite stacked\"": 0
+   },
+   "name_queries": {
+    "Graphite": 6017,
+    "\"Graphite\"": 360
    },
    "hn_title_points": {
     "\"graphite.dev\"": 0,
@@ -979,6 +2003,10 @@
    "hn_comments_12m": {
     "\"greptile\"": 64
    },
+   "name_queries": {
+    "Greptile": 354,
+    "\"Greptile\"": 64
+   },
    "hn_title_points": {
     "\"greptile\"": 30
    },
@@ -988,6 +2016,10 @@
    "hn_comments_12m": {
     "\"open code review\"": 16,
     "\"open-code-review\"": 16
+   },
+   "name_queries": {
+    "Open Code Review": 1428,
+    "\"Open Code Review\"": 16
    },
    "hn_title_points": {
     "\"open code review\"": 294,
@@ -999,6 +2031,10 @@
    "hn_comments_12m": {
     "\"sourcery\"": 16
    },
+   "name_queries": {
+    "Sourcery": 99093,
+    "\"Sourcery\"": 16
+   },
    "hn_title_points": {
     "\"sourcery\"": 6
    },
@@ -1007,6 +2043,10 @@
   "review/Sphinx": {
    "hn_comments_12m": {
     "\"sphinx ai\"": 0
+   },
+   "name_queries": {
+    "\"Sphinx\"": 79,
+    "Sphinx": 127
    },
    "hn_title_points": {
     "\"sphinx ai\"": 0
@@ -1017,6 +2057,10 @@
   "context/AGENTS.md": {
    "hn_comments_12m": {
     "\"agents.md\"": 1981
+   },
+   "name_queries": {
+    "\"AGENTS.md\"": 1981,
+    "AGENTS.md": 2120
    },
    "hn_title_points": {
     "\"agents.md\"": 3100
@@ -1029,6 +2073,10 @@
     "\"claude skills\"": 172,
     "\"skill.md\"": 336
    },
+   "name_queries": {
+    "Agent Skills": 6642,
+    "\"Agent Skills\"": 315
+   },
    "hn_title_points": {
     "\"agent skills\"": 2684,
     "\"claude skills\"": 144,
@@ -1039,6 +2087,10 @@
   "context/Superpowers": {
    "hn_comments_12m": {
     "\"superpowers\"": 863
+   },
+   "name_queries": {
+    "Superpowers": 2149,
+    "\"Superpowers\"": 863
    },
    "hn_title_points": {
     "\"superpowers\"": 1220
@@ -1051,6 +2103,10 @@
     "\"spec-kit\"": 83,
     "\"speckit\"": 41
    },
+   "name_queries": {
+    "\"Spec Kit\"": 83,
+    "Spec Kit": 1697
+   },
    "hn_title_points": {
     "\"spec kit\"": 16,
     "\"spec-kit\"": 16,
@@ -1061,6 +2117,10 @@
   "context/Context7": {
    "hn_comments_12m": {
     "\"context7\"": 92
+   },
+   "name_queries": {
+    "\"Context7\"": 92,
+    "Context7": 60804
    },
    "hn_title_points": {
     "\"context7\"": 8
@@ -1073,6 +2133,10 @@
    "hn_comments_12m": {
     "\"github mcp\"": 36
    },
+   "name_queries": {
+    "\"GitHub MCP server\"": 9,
+    "GitHub MCP server": 748
+   },
    "hn_title_points": {
     "\"github mcp\"": 3
    },
@@ -1081,6 +2145,10 @@
   "context/Semble": {
    "hn_comments_12m": {
     "\"semble\"": 44
+   },
+   "name_queries": {
+    "\"Semble\"": 44,
+    "Semble": 1064
    },
    "hn_title_points": {
     "\"semble\"": 461
@@ -1091,6 +2159,9 @@
    "hn_comments_12m": {
     "\"rtk\"": 218
    },
+   "name_queries": {
+    "rtk": 18941
+   },
    "hn_title_points": {
     "\"rtk\"": 528
    },
@@ -1100,6 +2171,10 @@
    "hn_comments_12m": {
     "\"impeccable\" skill": 54,
     "\"impeccable.style\"": 14
+   },
+   "name_queries": {
+    "Impeccable": 233,
+    "\"Impeccable\"": 190
    },
    "hn_title_points": {
     "\"impeccable\" skill": 0,
@@ -1112,6 +2187,10 @@
    "hn_comments_12m": {
     "\"graphify\"": 31
    },
+   "name_queries": {
+    "\"Graphify\"": 31,
+    "Graphify": 10568
+   },
    "hn_title_points": {
     "\"graphify\"": 134
    },
@@ -1121,6 +2200,10 @@
    "hn_comments_12m": {
     "\"figma mcp\"": 39
    },
+   "name_queries": {
+    "\"Figma MCP\"": 39,
+    "Figma MCP": 171
+   },
    "hn_title_points": {
     "\"figma mcp\"": 48
    },
@@ -1129,6 +2212,10 @@
   "context/Repomix": {
    "hn_comments_12m": {
     "\"repomix\"": 16
+   },
+   "name_queries": {
+    "Repomix": 7485,
+    "\"Repomix\"": 16
    },
    "hn_title_points": {
     "\"repomix\"": 0
@@ -1141,6 +2228,9 @@
    "hn_comments_12m": {
     "\"claude-mem\"": 22
    },
+   "name_queries": {
+    "claude-mem": 55
+   },
    "hn_title_points": {
     "\"claude-mem\"": 10
    },
@@ -1149,6 +2239,10 @@
   "context/Linear MCP": {
    "hn_comments_12m": {
     "\"linear mcp\"": 19
+   },
+   "name_queries": {
+    "Linear MCP": 388,
+    "\"Linear MCP\"": 19
    },
    "hn_title_points": {
     "\"linear mcp\"": 7
@@ -1159,6 +2253,10 @@
    "hn_comments_12m": {
     "\"serena mcp\"": 8,
     "\"serena\"": 53
+   },
+   "name_queries": {
+    "Serena": 661,
+    "\"Serena\"": 53
    },
    "hn_title_points": {
     "\"serena mcp\"": 0,
@@ -1171,6 +2269,10 @@
    "hn_comments_12m": {
     "\"sentry mcp\"": 5
    },
+   "name_queries": {
+    "Sentry MCP": 332,
+    "\"Sentry MCP\"": 5
+   },
    "hn_title_points": {
     "\"sentry mcp\"": 1
    },
@@ -1180,6 +2282,9 @@
    "hn_comments_12m": {
     "\"codebase-memory-mcp\"": 11
    },
+   "name_queries": {
+    "codebase-memory-mcp": 11
+   },
    "hn_title_points": {
     "\"codebase-memory-mcp\"": 0
    },
@@ -1188,6 +2293,10 @@
   "context/headroom": {
    "hn_comments_12m": {
     "\"headroom\" mcp": 21
+   },
+   "name_queries": {
+    "\"headroom\"": 469,
+    "headroom": 478
    },
    "hn_title_points": {
     "\"headroom\" mcp": 0
@@ -1199,6 +2308,9 @@
    "hn_comments_12m": {
     "\"context-mode\"": 53
    },
+   "name_queries": {
+    "context-mode": 118
+   },
    "hn_title_points": {
     "\"context-mode\"": 90
    },
@@ -1208,6 +2320,10 @@
    "hn_comments_12m": {
     "\"playwright mcp\"": 119,
     "\"playwright-mcp\"": 119
+   },
+   "name_queries": {
+    "\"Playwright MCP\"": 119,
+    "Playwright MCP": 295
    },
    "hn_title_points": {
     "\"playwright mcp\"": 21,
@@ -1222,6 +2338,10 @@
     "\"chrome devtools mcp\"": 42,
     "\"chrome-devtools-mcp\"": 42
    },
+   "name_queries": {
+    "Chrome DevTools MCP": 83,
+    "\"Chrome DevTools MCP\"": 42
+   },
    "hn_title_points": {
     "\"chrome devtools mcp\"": 619,
     "\"chrome-devtools-mcp\"": 619
@@ -1234,6 +2354,9 @@
    "hn_comments_12m": {
     "\"agent-browser\"": 101
    },
+   "name_queries": {
+    "agent-browser": 124
+   },
    "hn_title_points": {
     "\"agent-browser\"": 97
    },
@@ -1245,6 +2368,10 @@
    "hn_comments_12m": {
     "\"firecrawl\"": 71
    },
+   "name_queries": {
+    "\"Firecrawl\"": 71,
+    "Firecrawl": 112
+   },
    "hn_title_points": {
     "\"firecrawl\"": 48
    },
@@ -1254,6 +2381,10 @@
    "hn_comments_12m": {
     "\"lightpanda\"": 48
    },
+   "name_queries": {
+    "\"Lightpanda\"": 48,
+    "Lightpanda": 48
+   },
    "hn_title_points": {
     "\"lightpanda\"": 474
    },
@@ -1262,6 +2393,10 @@
   "browser/Stagehand": {
    "hn_comments_12m": {
     "\"stagehand\"": 43
+   },
+   "name_queries": {
+    "Stagehand": 50,
+    "\"Stagehand\"": 43
    },
    "hn_title_points": {
     "\"stagehand\"": 7
@@ -1275,6 +2410,10 @@
     "\"claude in chrome\"": 38,
     "\"claude for chrome\"": 15
    },
+   "name_queries": {
+    "Claude in Chrome": 390,
+    "\"Claude in Chrome\"": 38
+   },
    "hn_title_points": {
     "\"claude in chrome\"": 322,
     "\"claude for chrome\"": 6
@@ -1285,6 +2424,10 @@
    "hn_comments_12m": {
     "\"vibium\"": 50
    },
+   "name_queries": {
+    "\"Vibium\"": 50,
+    "Vibium": 130
+   },
    "hn_title_points": {
     "\"vibium\"": 448
    },
@@ -1294,6 +2437,9 @@
    "hn_comments_12m": {
     "\"browser-use\"": 232,
     "\"browser use\"": 232
+   },
+   "name_queries": {
+    "browser-use": 448
    },
    "hn_title_points": {
     "\"browser-use\"": 73,
@@ -1307,6 +2453,10 @@
    "hn_comments_12m": {
     "\"scrapling\"": 6
    },
+   "name_queries": {
+    "\"Scrapling\"": 6,
+    "Scrapling": 8140
+   },
    "hn_title_points": {
     "\"scrapling\"": 0
    },
@@ -1319,6 +2469,10 @@
     "\"browser mcp\"": 26,
     "\"browsermcp\"": 4
    },
+   "name_queries": {
+    "\"Browser MCP\"": 26,
+    "Browser MCP": 1160
+   },
    "hn_title_points": {
     "\"browser mcp\"": 11,
     "\"browsermcp\"": 0
@@ -1330,6 +2484,10 @@
     "\"jina reader\"": 3,
     "\"r.jina.ai\"": 3
    },
+   "name_queries": {
+    "Jina Reader": 54,
+    "\"Jina Reader\"": 3
+   },
    "hn_title_points": {
     "\"jina reader\"": 2,
     "\"r.jina.ai\"": 0
@@ -1340,6 +2498,10 @@
    "hn_comments_12m": {
     "\"browserbase\"": 37
    },
+   "name_queries": {
+    "Browserbase": 42,
+    "\"Browserbase\"": 37
+   },
    "hn_title_points": {
     "\"browserbase\"": 18
    },
@@ -1349,6 +2511,9 @@
    "hn_comments_12m": {
     "\"bubblewrap\"": 371,
     "\"bwrap\"": 161
+   },
+   "name_queries": {
+    "bubblewrap": 412
    },
    "hn_title_points": {
     "\"bubblewrap\"": 319,
@@ -1361,6 +2526,10 @@
     "\"docker sandbox\"": 73,
     "\"docker sandboxes\"": 65
    },
+   "name_queries": {
+    "\"Docker Sandboxes\"": 65,
+    "Docker Sandboxes": 587
+   },
    "hn_title_points": {
     "\"docker sandbox\"": 102,
     "\"docker sandboxes\"": 921
@@ -1370,6 +2539,10 @@
   "sandbox/OpenShell": {
    "hn_comments_12m": {
     "\"openshell\"": 65
+   },
+   "name_queries": {
+    "OpenShell": 105,
+    "\"OpenShell\"": 65
    },
    "hn_title_points": {
     "\"openshell\"": 585
@@ -1381,6 +2554,10 @@
     "\"apple container\"": 101,
     "\"apple/container\"": 101,
     "\"apple's container\"": 17
+   },
+   "name_queries": {
+    "Apple container": 436,
+    "\"Apple container\"": 101
    },
    "hn_title_points": {
     "\"apple container\"": 622,
@@ -1395,6 +2572,10 @@
     "\"dev container\"": 57,
     "\"devcontainers\"": 134
    },
+   "name_queries": {
+    "Dev containers": 1021,
+    "\"Dev containers\"": 68
+   },
    "hn_title_points": {
     "\"devcontainer\"": 12,
     "\"dev container\"": 61,
@@ -1406,6 +2587,10 @@
    "hn_comments_12m": {
     "\"e2b\"": 242
    },
+   "name_queries": {
+    "E2B": 46393,
+    "\"E2B\"": 242
+   },
    "hn_title_points": {
     "\"e2b\"": 556
    },
@@ -1414,6 +2599,9 @@
   "sandbox/nono": {
    "hn_comments_12m": {
     "\"nono\"": 146
+   },
+   "name_queries": {
+    "nono": 130136
    },
    "hn_title_points": {
     "\"nono\"": 20
@@ -1431,6 +2619,9 @@
    "hn_comments_12m": {
     "\"smolvm\"": 137
    },
+   "name_queries": {
+    "smolvm": 215
+   },
    "hn_title_points": {
     "\"smolvm\"": 13
    },
@@ -1439,6 +2630,9 @@
   "sandbox/yoloai": {
    "hn_comments_12m": {
     "\"yoloai\"": 73
+   },
+   "name_queries": {
+    "yoloai": 253
    },
    "hn_title_points": {
     "\"yoloai\"": 2
@@ -1449,6 +2643,10 @@
    "hn_comments_12m": {
     "\"lume\"": 47,
     "\"trycua\"": 10
+   },
+   "name_queries": {
+    "Lume": 11944,
+    "\"Lume\"": 47
    },
    "hn_title_points": {
     "\"lume\"": 180,
@@ -1461,6 +2659,10 @@
    "hn_comments_12m": {
     "\"daytona\"": 74
    },
+   "name_queries": {
+    "\"Daytona\"": 74,
+    "Daytona": 158
+   },
    "hn_title_points": {
     "\"daytona\"": 35
    },
@@ -1470,6 +2672,10 @@
    "hn_comments_12m": {
     "\"agent safehouse\"": 30
    },
+   "name_queries": {
+    "Agent Safehouse": 42,
+    "\"Agent Safehouse\"": 30
+   },
    "hn_title_points": {
     "\"agent safehouse\"": 823
    },
@@ -1478,6 +2684,10 @@
   "sandbox/Ardent": {
    "hn_comments_12m": {
     "\"ardent\"": 139
+   },
+   "name_queries": {
+    "\"Ardent\"": 139,
+    "Ardent": 75485
    },
    "hn_title_points": {
     "\"ardent\"": 111
@@ -1490,6 +2700,10 @@
     "\"sprites.dev\"": 60,
     "\"fly sprites\"": 13,
     "\"sprites\"": 600
+   },
+   "name_queries": {
+    "Sprites": 16735,
+    "\"Sprites\"": 600
    },
    "hn_title_points": {
     "\"sprites.dev\"": 42,
@@ -1505,6 +2719,9 @@
    "hn_comments_12m": {
     "\"container-use\"": 18
    },
+   "name_queries": {
+    "container-use": 59
+   },
    "hn_title_points": {
     "\"container-use\"": 0
    },
@@ -1514,6 +2731,10 @@
    "hn_comments_12m": {
     "\"modal sandbox\"": 1,
     "\"modal sandboxes\"": 6
+   },
+   "name_queries": {
+    "\"Modal Sandboxes\"": 6,
+    "Modal Sandboxes": 1001
    },
    "hn_title_points": {
     "\"modal sandbox\"": 0,
@@ -1525,6 +2746,10 @@
    "hn_comments_12m": {
     "\"vercel sandbox\"": 2
    },
+   "name_queries": {
+    "\"Vercel Sandbox\"": 2,
+    "Vercel Sandbox": 36
+   },
    "hn_title_points": {
     "\"vercel sandbox\"": 15
    },
@@ -1533,6 +2758,10 @@
   "local/Ollama": {
    "hn_comments_12m": {
     "\"ollama\"": 1998
+   },
+   "name_queries": {
+    "Ollama": 6001,
+    "\"Ollama\"": 1998
    },
    "hn_title_points": {
     "\"ollama\"": 3468
@@ -1543,6 +2772,9 @@
    "hn_comments_12m": {
     "\"llama.cpp\"": 2074
    },
+   "name_queries": {
+    "llama.cpp": 2082
+   },
    "hn_title_points": {
     "\"llama.cpp\"": 1589
    },
@@ -1551,6 +2783,10 @@
   "local/MLX": {
    "hn_comments_12m": {
     "\"mlx\"": 698
+   },
+   "name_queries": {
+    "\"MLX\"": 698,
+    "MLX": 54158
    },
    "hn_title_points": {
     "\"mlx\"": 1736
@@ -1564,6 +2800,10 @@
     "\"lm studio\"": 624,
     "\"lmstudio\"": 215
    },
+   "name_queries": {
+    "LM Studio": 822,
+    "\"LM Studio\"": 624
+   },
    "hn_title_points": {
     "\"lm studio\"": 1042,
     "\"lmstudio\"": 5
@@ -1576,6 +2816,10 @@
     "\"openwebui\"": 93,
     "\"open-webui\"": 104
    },
+   "name_queries": {
+    "Open WebUI": 3508,
+    "\"Open WebUI\"": 104
+   },
    "hn_title_points": {
     "\"open webui\"": 8,
     "\"openwebui\"": 10,
@@ -1587,6 +2831,10 @@
    "hn_comments_12m": {
     "\"vllm\"": 919
    },
+   "name_queries": {
+    "vLLM": 151090,
+    "\"vLLM\"": 919
+   },
    "hn_title_points": {
     "\"vllm\"": 1872
    },
@@ -1597,6 +2845,10 @@
   "local/Unsloth": {
    "hn_comments_12m": {
     "\"unsloth\"": 818
+   },
+   "name_queries": {
+    "\"Unsloth\"": 818,
+    "Unsloth": 1236
    },
    "hn_title_points": {
     "\"unsloth\"": 1273
@@ -1610,6 +2862,10 @@
     "\"lemonade server\"": 26,
     "\"lemonade-server\"": 26,
     "\"lemonade sdk\"": 10
+   },
+   "name_queries": {
+    "Lemonade": 656,
+    "\"Lemonade\"": 335
    },
    "hn_title_points": {
     "\"lemonade server\"": 0,
@@ -1625,6 +2881,10 @@
    "hn_comments_12m": {
     "\"sglang\"": 166
    },
+   "name_queries": {
+    "\"SGLang\"": 166,
+    "SGLang": 853
+   },
    "hn_title_points": {
     "\"sglang\"": 162
    },
@@ -1636,6 +2896,9 @@
    "hn_comments_12m": {
     "\"llama-swap\"": 53
    },
+   "name_queries": {
+    "llama-swap": 55
+   },
    "hn_title_points": {
     "\"llama-swap\"": 2
    },
@@ -1644,6 +2907,10 @@
   "local/Apfel": {
    "hn_comments_12m": {
     "\"apfel\"": 46
+   },
+   "name_queries": {
+    "Apfel": 385,
+    "\"Apfel\"": 46
    },
    "hn_title_points": {
     "\"apfel\"": 757
@@ -1654,6 +2921,10 @@
    "hn_comments_12m": {
     "\"jan.ai\"": 16,
     "\"jan app\"": 0
+   },
+   "name_queries": {
+    "Jan": 118843,
+    "\"Jan\"": 2132
    },
    "hn_title_points": {
     "\"jan.ai\"": 1,
@@ -1666,6 +2937,10 @@
    "hn_comments_12m": {
     "\"koboldcpp\"": 21
    },
+   "name_queries": {
+    "KoboldCpp": 21,
+    "\"KoboldCpp\"": 21
+   },
    "hn_title_points": {
     "\"koboldcpp\"": 3
    },
@@ -1674,6 +2949,10 @@
   "gateways/OpenRouter": {
    "hn_comments_12m": {
     "\"openrouter\"": 3860
+   },
+   "name_queries": {
+    "\"OpenRouter\"": 3860,
+    "OpenRouter": 4167
    },
    "hn_title_points": {
     "\"openrouter\"": 6377
@@ -1684,6 +2963,10 @@
    "hn_comments_12m": {
     "\"bedrock\"": 1315
    },
+   "name_queries": {
+    "AWS Bedrock": 1283,
+    "\"AWS Bedrock\"": 270
+   },
    "hn_title_points": {
     "\"bedrock\"": 1356
    },
@@ -1692,6 +2975,10 @@
   "gateways/LiteLLM": {
    "hn_comments_12m": {
     "\"litellm\"": 430
+   },
+   "name_queries": {
+    "LiteLLM": 531,
+    "\"LiteLLM\"": 430
    },
    "hn_title_points": {
     "\"litellm\"": 3414
@@ -1705,6 +2992,10 @@
     "\"opencode go\"": 430,
     "\"opencode zen\"": 71
    },
+   "name_queries": {
+    "OpenCode Go / Zen": 93,
+    "\"OpenCode Go / Zen\"": 6
+   },
    "hn_title_points": {
     "\"opencode go\"": 85,
     "\"opencode zen\"": 6
@@ -1715,6 +3006,10 @@
    "hn_comments_12m": {
     "\"claude code router\"": 25,
     "\"claude-code-router\"": 25
+   },
+   "name_queries": {
+    "\"Claude Code Router\"": 25,
+    "Claude Code Router": 346
    },
    "hn_title_points": {
     "\"claude code router\"": 1,
@@ -1730,6 +3025,10 @@
     "\"llm cli\"": 26,
     "\"llm.datasette.io\"": 10
    },
+   "name_queries": {
+    "llm": 198127,
+    "\"llm\"": 133613
+   },
    "hn_title_points": {
     "\"simonw/llm\"": 0,
     "\"llm cli\"": 13,
@@ -1743,6 +3042,10 @@
    "hn_comments_12m": {
     "\"vercel ai gateway\"": 19
    },
+   "name_queries": {
+    "\"Vercel AI Gateway\"": 19,
+    "Vercel AI Gateway": 32
+   },
    "hn_title_points": {
     "\"vercel ai gateway\"": 10
    },
@@ -1751,6 +3054,9 @@
   "gateways/cc-switch": {
    "hn_comments_12m": {
     "\"cc-switch\"": 3
+   },
+   "name_queries": {
+    "cc-switch": 5
    },
    "hn_title_points": {
     "\"cc-switch\"": 3
@@ -1761,6 +3067,10 @@
    "hn_comments_12m": {
     "\"portkey\"": 6
    },
+   "name_queries": {
+    "Portkey": 2309,
+    "\"Portkey\"": 6
+   },
    "hn_title_points": {
     "\"portkey\"": 9
    },
@@ -1770,6 +3080,10 @@
    "hn_comments_12m": {
     "\"chutes.ai\"": 6,
     "\"chutes\"": 33
+   },
+   "name_queries": {
+    "Chutes": 225,
+    "\"Chutes\"": 33
    },
    "hn_title_points": {
     "\"chutes.ai\"": 3,
@@ -1784,6 +3098,10 @@
    "hn_comments_12m": {
     "\"omniroute\"": 1
    },
+   "name_queries": {
+    "\"OmniRoute\"": 1,
+    "OmniRoute": 221
+   },
    "hn_title_points": {
     "\"omniroute\"": 0
    },
@@ -1793,6 +3111,10 @@
    "hn_comments_12m": {
     "\"cloudflare ai gateway\"": 17
    },
+   "name_queries": {
+    "Cloudflare AI Gateway": 52,
+    "\"Cloudflare AI Gateway\"": 17
+   },
    "hn_title_points": {
     "\"cloudflare ai gateway\"": 4
    },
@@ -1801,6 +3123,10 @@
   "gateways/Synthetic": {
    "hn_comments_12m": {
     "\"synthetic.new\"": 29
+   },
+   "name_queries": {
+    "Synthetic": 7367,
+    "\"Synthetic\"": 2544
    },
    "hn_title_points": {
     "\"synthetic.new\"": 14
@@ -1814,6 +3140,10 @@
    "hn_comments_12m": {
     "\"langchain\"": 807
    },
+   "name_queries": {
+    "LangChain": 817,
+    "\"LangChain\"": 807
+   },
    "hn_title_points": {
     "\"langchain\"": 227
    },
@@ -1824,6 +3154,10 @@
   "frameworks/Mastra": {
    "hn_comments_12m": {
     "\"mastra\"": 115
+   },
+   "name_queries": {
+    "\"Mastra\"": 115,
+    "Mastra": 8993
    },
    "hn_title_points": {
     "\"mastra\"": 240
@@ -1837,6 +3171,10 @@
     "\"claude agent sdk\"": 132,
     "\"agent sdk\"": 301
    },
+   "name_queries": {
+    "\"Claude Agent SDK\"": 132,
+    "Claude Agent SDK": 2203
+   },
    "hn_title_points": {
     "\"claude agent sdk\"": 106,
     "\"agent sdk\"": 387
@@ -1849,6 +3187,10 @@
    "hn_comments_12m": {
     "\"langgraph\"": 466
    },
+   "name_queries": {
+    "LangGraph": 472,
+    "\"LangGraph\"": 466
+   },
    "hn_title_points": {
     "\"langgraph\"": 215
    },
@@ -1859,6 +3201,10 @@
   "frameworks/DSPy": {
    "hn_comments_12m": {
     "\"dspy\"": 130
+   },
+   "name_queries": {
+    "\"DSPy\"": 130,
+    "DSPy": 5996
    },
    "hn_title_points": {
     "\"dspy\"": 392
@@ -1872,6 +3218,10 @@
     "\"microsoft agent framework\"": 8,
     "\"agent framework\"": 272
    },
+   "name_queries": {
+    "\"Microsoft Agent Framework\"": 8,
+    "Microsoft Agent Framework": 61
+   },
    "hn_title_points": {
     "\"microsoft agent framework\"": 72,
     "\"agent framework\"": 907
@@ -1882,6 +3232,10 @@
    "hn_comments_12m": {
     "\"openai agents sdk\"": 32,
     "\"agents sdk\"": 84
+   },
+   "name_queries": {
+    "OpenAI Agents SDK": 386,
+    "\"OpenAI Agents SDK\"": 32
    },
    "hn_title_points": {
     "\"openai agents sdk\"": 13,
@@ -1896,6 +3250,10 @@
     "\"google adk\"": 46,
     "\"agent development kit\"": 22
    },
+   "name_queries": {
+    "\"Google ADK\"": 46,
+    "Google ADK": 16825
+   },
    "hn_title_points": {
     "\"google adk\"": 12,
     "\"agent development kit\"": 5
@@ -1907,6 +3265,10 @@
   "frameworks/CrewAI": {
    "hn_comments_12m": {
     "\"crewai\"": 156
+   },
+   "name_queries": {
+    "\"CrewAI\"": 156,
+    "CrewAI": 199
    },
    "hn_title_points": {
     "\"crewai\"": 28
@@ -1920,6 +3282,10 @@
     "\"pydantic ai\"": 69,
     "\"pydantic-ai\"": 69,
     "\"pydanticai\"": 30
+   },
+   "name_queries": {
+    "Pydantic AI": 246,
+    "\"Pydantic AI\"": 69
    },
    "hn_title_points": {
     "\"pydantic ai\"": 37,
@@ -1935,8 +3301,12 @@
     "\"opentelemetry\"": 303,
     "\"otel\"": 320
    },
+   "name_queries": {
+    "\"OpenTelemetry GenAI\"": 1,
+    "OpenTelemetry GenAI": 9
+   },
    "hn_title_points": {
-    "\"opentelemetry\"": 869,
+    "\"opentelemetry\"": 874,
     "\"otel\"": 394
    },
    "downloads": {}
@@ -1944,6 +3314,9 @@
   "evals/promptfoo": {
    "hn_comments_12m": {
     "\"promptfoo\"": 48
+   },
+   "name_queries": {
+    "promptfoo": 60
    },
    "hn_title_points": {
     "\"promptfoo\"": 62
@@ -1955,6 +3328,10 @@
   "evals/Langfuse": {
    "hn_comments_12m": {
     "\"langfuse\"": 125
+   },
+   "name_queries": {
+    "\"Langfuse\"": 125,
+    "Langfuse": 126
    },
    "hn_title_points": {
     "\"langfuse\"": 264
@@ -1968,6 +3345,10 @@
     "\"arize phoenix\"": 5,
     "\"arize\"": 9
    },
+   "name_queries": {
+    "Arize Phoenix": 6,
+    "\"Arize Phoenix\"": 5
+   },
    "hn_title_points": {
     "\"arize phoenix\"": 0,
     "\"arize\"": 3
@@ -1975,20 +3356,15 @@
    "downloads": {
     "pypi": 626210
    },
-   "collision_samples": [
-    "of data' is a bunch of news/media/content feeds that needs to be summarized/parsed/guessed at. [0] https://platform.openai.com/tokenizer",
-    "ail app that's like Google Inbox in that it uses bundles. It also summarizes emails and extracts expiry and due dates.",
-    "s while I write the document. The last straw was when I got it to summarize a doc, and then got it to do work based off the doc it wrote. It woul",
-    "Thank you for this. Used an LLM to summarize some key files of an old project of mine and the summary was excellen",
-    "essages. I ramble my general essay to ChatGPT/Claude, get them to summarize rewrite a few lines in my own voice. Stops me spending an hour crafti",
-    "ention just one: good reading. Read \"Be a new homunculus\" [1]. To summarize, visualize yourself like you are the \"thing that lives in your brain\"",
-    "s X is written in language Y). Ask it to look at the project to familiarize. 2. Tell it you want to refactor the code to achieve goal Z. Tell it",
-    "If you're deleting those artifacts after job being done - do you summarize those specs into the Jira ticket or whatever system you use."
-   ]
+   "collision_samples": []
   },
   "evals/MLflow": {
    "hn_comments_12m": {
     "\"mlflow\"": 55
+   },
+   "name_queries": {
+    "\"MLflow\"": 55,
+    "MLflow": 60
    },
    "hn_title_points": {
     "\"mlflow\"": 14
@@ -2001,6 +3377,10 @@
    "hn_comments_12m": {
     "\"logfire\"": 14
    },
+   "name_queries": {
+    "\"Logfire\"": 14,
+    "Logfire": 572
+   },
    "hn_title_points": {
     "\"logfire\"": 29
    },
@@ -2012,6 +3392,10 @@
    "hn_comments_12m": {
     "\"opik\"": 5
    },
+   "name_queries": {
+    "Opik": 38154,
+    "\"Opik\"": 5
+   },
    "hn_title_points": {
     "\"opik\"": 11
    },
@@ -2022,6 +3406,10 @@
   "evals/Braintrust": {
    "hn_comments_12m": {
     "\"braintrust\"": 32
+   },
+   "name_queries": {
+    "\"Braintrust\"": 32,
+    "Braintrust": 53
    },
    "hn_title_points": {
     "\"braintrust\"": 4
@@ -2035,6 +3423,10 @@
    "hn_comments_12m": {
     "\"helicone\"": 13
    },
+   "name_queries": {
+    "Helicone": 481,
+    "\"Helicone\"": 13
+   },
    "hn_title_points": {
     "\"helicone\"": 18
    },
@@ -2043,6 +3435,10 @@
   "evals/DeepEval": {
    "hn_comments_12m": {
     "\"deepeval\"": 11
+   },
+   "name_queries": {
+    "DeepEval": 13,
+    "\"DeepEval\"": 11
    },
    "hn_title_points": {
     "\"deepeval\"": 2
@@ -2054,6 +3450,10 @@
   "evals/LangSmith": {
    "hn_comments_12m": {
     "\"langsmith\"": 67
+   },
+   "name_queries": {
+    "LangSmith": 69,
+    "\"LangSmith\"": 67
    },
    "hn_title_points": {
     "\"langsmith\"": 18
@@ -2067,6 +3467,10 @@
     "\"inspect ai\"": 3,
     "\"inspect_ai\"": 3
    },
+   "name_queries": {
+    "\"Inspect AI\"": 3,
+    "Inspect AI": 478
+   },
    "hn_title_points": {
     "\"inspect ai\"": 3,
     "\"inspect_ai\"": 3
@@ -2079,6 +3483,10 @@
    "hn_comments_12m": {
     "\"garak\" llm": 4,
     "\"nvidia garak\"": 0
+   },
+   "name_queries": {
+    "\"garak\"": 13,
+    "garak": 3547
    },
    "hn_title_points": {
     "\"garak\" llm": 0,
@@ -2094,6 +3502,10 @@
     "\"wandb weave\"": 0,
     "\"w&b weave\"": 0
    },
+   "name_queries": {
+    "\"Weights & Biases Weave\"": 0,
+    "Weights & Biases Weave": 20
+   },
    "hn_title_points": {
     "\"wandb weave\"": 0,
     "\"w&b weave\"": 0
@@ -2106,6 +3518,10 @@
    "hn_comments_12m": {
     "\"lmnr\"": 0,
     "\"laminar\" llm": 9
+   },
+   "name_queries": {
+    "\"Laminar\"": 65,
+    "Laminar": 1006
    },
    "hn_title_points": {
     "\"lmnr\"": 0,
@@ -2120,6 +3536,10 @@
    "hn_comments_12m": {
     "\"openclaw\"": 5014
    },
+   "name_queries": {
+    "\"OpenClaw\"": 5014,
+    "OpenClaw": 5317
+   },
    "hn_title_points": {
     "\"openclaw\"": 13329
    },
@@ -2129,6 +3549,10 @@
    "hn_comments_12m": {
     "\"hermes agent\"": 216,
     "\"hermes-agent\"": 216
+   },
+   "name_queries": {
+    "Hermes Agent": 2196,
+    "\"Hermes Agent\"": 216
    },
    "hn_title_points": {
     "\"hermes agent\"": 227,
@@ -2140,6 +3564,10 @@
    "hn_comments_12m": {
     "\"muse agent\"": 14,
     "\"muse app\"": 12
+   },
+   "name_queries": {
+    "\"Muse\"": 1394,
+    "Muse": 59358
    },
    "hn_title_points": {
     "\"muse agent\"": 11,
@@ -2161,6 +3589,10 @@
    "hn_comments_12m": {
     "\"cowork\"": 842
    },
+   "name_queries": {
+    "Claude Cowork": 970,
+    "\"Claude Cowork\"": 352
+   },
    "hn_title_points": {
     "\"cowork\"": 5683
    },
@@ -2170,6 +3602,9 @@
    "hn_comments_12m": {
     "\"n8n\"": 429
    },
+   "name_queries": {
+    "n8n": 129364
+   },
    "hn_title_points": {
     "\"n8n\"": 635
    },
@@ -2178,6 +3613,10 @@
   "assistants/NanoClaw": {
    "hn_comments_12m": {
     "\"nanoclaw\"": 199
+   },
+   "name_queries": {
+    "NanoClaw": 322,
+    "\"NanoClaw\"": 199
    },
    "hn_title_points": {
     "\"nanoclaw\"": 1486
@@ -2189,6 +3628,10 @@
     "\"home assistant\" llm": 113,
     "\"home assistant\" ai": 139
    },
+   "name_queries": {
+    "Home Assistant + LLM": 29,
+    "\"Home Assistant + LLM\"": 0
+   },
    "hn_title_points": {
     "\"home assistant\" llm": 2,
     "\"home assistant\" ai": 6
@@ -2199,6 +3642,10 @@
    "hn_comments_12m": {
     "\"claude duet\"": 19
    },
+   "name_queries": {
+    "\"Claude Duet\"": 19,
+    "Claude Duet": 1139
+   },
    "hn_title_points": {
     "\"claude duet\"": 792
    },
@@ -2207,6 +3654,10 @@
   "assistants/Dots": {
    "hn_comments_12m": {
     "\"dots agent\"": 0
+   },
+   "name_queries": {
+    "Dots": 830092,
+    "\"Dots\"": 1739
    },
    "hn_title_points": {
     "\"dots agent\"": 0
@@ -2228,6 +3679,10 @@
     "\"paperclip\" agents": 73,
     "\"paperclipai\"": 3
    },
+   "name_queries": {
+    "\"Paperclip\"": 556,
+    "Paperclip": 856
+   },
    "hn_title_points": {
     "\"paperclip\" agents": 17,
     "\"paperclipai\"": 4
@@ -2243,6 +3698,10 @@
     "\"claude code routines\"": 10,
     "\"claude routines\"": 6
    },
+   "name_queries": {
+    "\"Claude Code Routines\"": 10,
+    "Claude Code Routines": 357
+   },
    "hn_title_points": {
     "\"claude code routines\"": 722,
     "\"claude routines\"": 0
@@ -2253,6 +3712,9 @@
    "hn_comments_12m": {
     "\"nanobot\"": 44
    },
+   "name_queries": {
+    "nanobot": 372
+   },
    "hn_title_points": {
     "\"nanobot\"": 265
    },
@@ -2261,6 +3723,10 @@
   "assistants/Eigent": {
    "hn_comments_12m": {
     "\"eigent\"": 2
+   },
+   "name_queries": {
+    "\"Eigent\"": 2,
+    "Eigent": 1029
    },
    "hn_title_points": {
     "\"eigent\"": 38

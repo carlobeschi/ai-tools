@@ -14,8 +14,8 @@
   "retrieved_at": "2026-11-08"
  },
  "corpus": {
-  "hn_comments": 3522,
-  "ask_hn_threads": 26,
+  "hn_comments": 3621,
+  "ask_hn_threads": 27,
   "tools_scored": 184
  },
  "fields": {
@@ -46,7 +46,7 @@
    "github_stars",
    "downloads_month"
   ],
-  "requests": 760,
+  "requests": 1126,
   "errors": 0
  },
  "notes": "Measured with our own queries, not taken from the source. Top 10 per category is re-ranked by the recomputed score among all tracked tools; `others` holds the rest. Names marked collision=true collide with common words: their counts need reading (samples in the raw file).",
@@ -64,10 +64,10 @@
      "url": "https://code.claude.com",
      "score": 99.3,
      "tags": [],
-     "hn_devs": 304,
-     "hn_devs_12m": 287,
-     "hn_comments_12m": 23377,
-     "hn_title_points": 68472,
+     "hn_devs": 314,
+     "hn_devs_12m": 297,
+     "hn_comments_12m": 23379,
+     "hn_title_points": 68476,
      "lobsters": null,
      "devto": 5712,
      "github_stars": 154948,
@@ -79,12 +79,12 @@
      "rank": 2,
      "name": "Codex CLI",
      "url": "https://developers.openai.com/codex",
-     "score": 95.7,
+     "score": 95.6,
      "tags": [
       "Open source"
      ],
-     "hn_devs": 232,
-     "hn_devs_12m": 218,
+     "hn_devs": 236,
+     "hn_devs_12m": 222,
      "hn_comments_12m": 15123,
      "hn_title_points": 25610,
      "lobsters": null,
@@ -102,13 +102,13 @@
      "tags": [
       "Open source"
      ],
-     "hn_devs": 131,
-     "hn_devs_12m": 128,
+     "hn_devs": 134,
+     "hn_devs_12m": 131,
      "hn_comments_12m": 5262,
      "hn_title_points": 6723,
      "lobsters": null,
      "devto": 147,
-     "github_stars": 225381,
+     "github_stars": 225383,
      "downloads_month": 14089770,
      "tone": null,
      "note": "Open harness for any model"
@@ -117,7 +117,7 @@
      "rank": 4,
      "name": "Pi",
      "url": "https://pi.dev",
-     "score": 69.8,
+     "score": 69.7,
      "tags": [
       "Open source"
      ],
@@ -137,7 +137,7 @@
      "rank": 5,
      "name": "Aider",
      "url": "https://aider.chat",
-     "score": 59.3,
+     "score": 59.1,
      "tags": [
       "Open source"
      ],
@@ -156,7 +156,7 @@
      "rank": 6,
      "name": "Gemini CLI",
      "url": "https://github.com/google-gemini/gemini-cli",
-     "score": 57.6,
+     "score": 57.5,
      "tags": [
       "Open source"
      ],
@@ -175,7 +175,7 @@
      "rank": 7,
      "name": "DeepSeek Harness",
      "url": "https://deepseek.com/harness/en/",
-     "score": 56.2,
+     "score": 56.1,
      "tags": [
       "Open source"
      ],
@@ -185,7 +185,7 @@
      "hn_title_points": 1267,
      "lobsters": null,
      "devto": null,
-     "github_stars": 276072,
+     "github_stars": 276080,
      "downloads_month": null,
      "tone": null,
      "note": "DeepSeek's own desktop and TUI harness"
@@ -230,7 +230,7 @@
      "rank": 10,
      "name": "Goose",
      "url": "https://block.github.io/goose",
-     "score": 38.2,
+     "score": 38.1,
      "tags": [
       "Open source"
      ],
@@ -240,7 +240,7 @@
      "hn_title_points": 0,
      "lobsters": null,
      "devto": null,
-     "github_stars": 56346,
+     "github_stars": 56347,
      "downloads_month": null,
      "tone": null,
      "note": "Block's agent, now under the Linux Foundation",
@@ -266,7 +266,7 @@
      "rank": 11,
      "name": "Muse Code",
      "url": null,
-     "score": 33.9,
+     "score": 33.8,
      "tags": [],
      "hn_devs": 9,
      "hn_devs_12m": 9,
@@ -283,7 +283,7 @@
      "rank": 12,
      "name": "Qwen Code",
      "url": null,
-     "score": 31.8,
+     "score": 31.7,
      "tags": [],
      "hn_devs": 1,
      "hn_devs_12m": 1,
@@ -335,7 +335,7 @@
      "rank": 15,
      "name": "Amp",
      "url": null,
-     "score": 21.3,
+     "score": 21.2,
      "tags": [],
      "hn_devs": 3,
      "hn_devs_12m": 3,
@@ -387,7 +387,7 @@
      "rank": 18,
      "name": "Droid",
      "url": null,
-     "score": 12.1,
+     "score": 12.0,
      "tags": [],
      "hn_devs": 1,
      "hn_devs_12m": 0,
@@ -405,7 +405,7 @@
      "rank": 19,
      "name": "Codewhale",
      "url": null,
-     "score": 11.5,
+     "score": 11.4,
      "tags": [],
      "hn_devs": 1,
      "hn_devs_12m": 1,
@@ -481,17 +481,17 @@
      "rank": 1,
      "name": "Zed",
      "url": "https://zed.dev",
-     "score": 92.2,
+     "score": 89.6,
      "tags": [
       "Open source"
      ],
-     "hn_devs": 27,
-     "hn_devs_12m": 22,
+     "hn_devs": 28,
+     "hn_devs_12m": 23,
      "hn_comments_12m": 2408,
      "hn_title_points": 5612,
      "lobsters": null,
      "devto": null,
-     "github_stars": 94405,
+     "github_stars": 94407,
      "downloads_month": null,
      "tone": null,
      "note": "Fast Rust editor with ACP agents"
@@ -500,10 +500,10 @@
      "rank": 2,
      "name": "Antigravity",
      "url": "https://antigravity.google",
-     "score": 72.6,
+     "score": 70.0,
      "tags": [],
-     "hn_devs": 26,
-     "hn_devs_12m": 26,
+     "hn_devs": 27,
+     "hn_devs_12m": 27,
      "hn_comments_12m": 1760,
      "hn_title_points": 5230,
      "lobsters": null,
@@ -517,7 +517,7 @@
      "rank": 3,
      "name": "VS Code + Copilot",
      "url": "https://code.visualstudio.com/docs/copilot/overview",
-     "score": 71.8,
+     "score": 68.8,
      "tags": [],
      "hn_devs": 28,
      "hn_devs_12m": 26,
@@ -532,9 +532,27 @@
     },
     {
      "rank": 4,
+     "name": "Cursor",
+     "url": "https://cursor.com",
+     "score": 66.1,
+     "tags": [],
+     "hn_devs": 78,
+     "hn_devs_12m": 67,
+     "hn_comments_12m": 186,
+     "hn_title_points": 29,
+     "lobsters": null,
+     "devto": 1369,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": "Usage limits push people to Claude",
+     "collision": true
+    },
+    {
+     "rank": 5,
      "name": "Cline",
      "url": "https://cline.bot",
-     "score": 67.8,
+     "score": 65.7,
      "tags": [
       "Open source"
      ],
@@ -550,28 +568,29 @@
      "note": "VS Code extension for cheap or local models"
     },
     {
-     "rank": 5,
-     "name": "Cursor",
-     "url": "https://cursor.com",
-     "score": 66.1,
-     "tags": [],
-     "hn_devs": 55,
-     "hn_devs_12m": 45,
-     "hn_comments_12m": 186,
-     "hn_title_points": 29,
+     "rank": 6,
+     "name": "Neovim (CodeCompanion / avante)",
+     "url": "https://github.com/olimorris/codecompanion.nvim",
+     "score": 59.3,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 36,
+     "hn_devs_12m": 33,
+     "hn_comments_12m": 13,
+     "hn_title_points": 0,
      "lobsters": null,
-     "devto": 1366,
-     "github_stars": null,
+     "devto": null,
+     "github_stars": 6929,
      "downloads_month": null,
      "tone": null,
-     "note": "Usage limits push people to Claude",
-     "collision": true
+     "note": "AI plugins for Neovim"
     },
     {
-     "rank": 6,
+     "rank": 7,
      "name": "Kilo Code",
      "url": "https://kilocode.ai",
-     "score": 55.4,
+     "score": 53.8,
      "tags": [
       "Open source"
      ],
@@ -587,10 +606,10 @@
      "note": "Roo Code fork"
     },
     {
-     "rank": 7,
+     "rank": 8,
      "name": "Kiro",
      "url": "https://kiro.dev",
-     "score": 53.8,
+     "score": 51.7,
      "tags": [],
      "hn_devs": 10,
      "hn_devs_12m": 10,
@@ -604,29 +623,10 @@
      "note": "Amazon's spec-driven VS Code fork"
     },
     {
-     "rank": 8,
-     "name": "Neovim (CodeCompanion / avante)",
-     "url": "https://github.com/olimorris/codecompanion.nvim",
-     "score": 53.0,
-     "tags": [
-      "Open source"
-     ],
-     "hn_devs": 15,
-     "hn_devs_12m": 12,
-     "hn_comments_12m": 13,
-     "hn_title_points": 0,
-     "lobsters": null,
-     "devto": null,
-     "github_stars": 6929,
-     "downloads_month": null,
-     "tone": null,
-     "note": "AI plugins for Neovim"
-    },
-    {
      "rank": 9,
      "name": "Roo Code",
      "url": "https://roocode.com",
-     "score": 45.7,
+     "score": 44.8,
      "tags": [
       "Open source"
      ],
@@ -645,7 +645,7 @@
      "rank": 10,
      "name": "Windsurf",
      "url": "https://windsurf.com",
-     "score": 43.4,
+     "score": 42.0,
      "tags": [],
      "hn_devs": 4,
      "hn_devs_12m": 4,
@@ -671,7 +671,7 @@
      "rank": 11,
      "name": "Continue",
      "url": null,
-     "score": 35.8,
+     "score": 33.8,
      "tags": [],
      "hn_devs": 9,
      "hn_devs_12m": 1,
@@ -688,7 +688,7 @@
      "rank": 12,
      "name": "Emacs gptel",
      "url": null,
-     "score": 31.6,
+     "score": 30.3,
      "tags": [],
      "hn_devs": 3,
      "hn_devs_12m": 3,
@@ -705,7 +705,7 @@
      "rank": 13,
      "name": "JetBrains Junie",
      "url": null,
-     "score": 28.5,
+     "score": 27.9,
      "tags": [],
      "hn_devs": 1,
      "hn_devs_12m": 1,
@@ -765,17 +765,17 @@
      "rank": 1,
      "name": "Herdr",
      "url": "https://herdr.dev",
-     "score": 94.8,
+     "score": 95.4,
      "tags": [
       "Open source"
      ],
-     "hn_devs": 38,
-     "hn_devs_12m": 38,
+     "hn_devs": 41,
+     "hn_devs_12m": 41,
      "hn_comments_12m": 549,
      "hn_title_points": 1346,
      "lobsters": null,
      "devto": null,
-     "github_stars": 49242,
+     "github_stars": 49245,
      "downloads_month": null,
      "tone": null,
      "note": "Terminal workspace for many sessions"
@@ -784,7 +784,7 @@
      "rank": 2,
      "name": "Gas Town",
      "url": "https://github.com/gastownhall/gastown",
-     "score": 74.9,
+     "score": 74.8,
      "tags": [
       "Open source"
      ],
@@ -803,7 +803,7 @@
      "rank": 3,
      "name": "Orca",
      "url": "https://github.com/stablyai/orca",
-     "score": 73.2,
+     "score": 73.1,
      "tags": [
       "Open source"
      ],
@@ -813,7 +813,7 @@
      "hn_title_points": 129,
      "lobsters": null,
      "devto": null,
-     "github_stars": 118875,
+     "github_stars": 118879,
      "downloads_month": null,
      "tone": null,
      "note": "Agent IDE for worktrees and remote use",
@@ -823,7 +823,7 @@
      "rank": 4,
      "name": "Paseo",
      "url": "https://github.com/getpaseo/paseo",
-     "score": 71.7,
+     "score": 71.6,
      "tags": [],
      "hn_devs": 11,
      "hn_devs_12m": 11,
@@ -831,7 +831,7 @@
      "hn_title_points": 127,
      "lobsters": null,
      "devto": null,
-     "github_stars": 23445,
+     "github_stars": 23448,
      "downloads_month": null,
      "tone": null,
      "note": "Desktop and mobile agent front end"
@@ -842,8 +842,8 @@
      "url": "https://git-scm.com/docs/git-worktree",
      "score": 67.7,
      "tags": [],
-     "hn_devs": 53,
-     "hn_devs_12m": 52,
+     "hn_devs": 54,
+     "hn_devs_12m": 53,
      "hn_comments_12m": 72,
      "hn_title_points": 37,
      "lobsters": null,
@@ -857,7 +857,7 @@
      "rank": 6,
      "name": "T3 Code",
      "url": "https://t3.codes",
-     "score": 65.4,
+     "score": 65.2,
      "tags": [
       "Open source"
      ],
@@ -867,7 +867,7 @@
      "hn_title_points": 34,
      "lobsters": null,
      "devto": null,
-     "github_stars": 51703,
+     "github_stars": 51711,
      "downloads_month": null,
      "tone": null,
      "note": "GUI for several harnesses"
@@ -876,7 +876,7 @@
      "rank": 7,
      "name": "Beads",
      "url": "https://github.com/steveyegge/beads",
-     "score": 64.3,
+     "score": 64.2,
      "tags": [
       "Open source"
      ],
@@ -914,7 +914,7 @@
      "rank": 9,
      "name": "Conductor",
      "url": "https://conductor.build",
-     "score": 41.9,
+     "score": 41.8,
      "tags": [],
      "hn_devs": 8,
      "hn_devs_12m": 8,
@@ -932,7 +932,7 @@
      "rank": 10,
      "name": "Ralph loop",
      "url": "https://ghuntley.com/ralph/",
-     "score": 39.5,
+     "score": 39.4,
      "tags": [],
      "hn_devs": 2,
      "hn_devs_12m": 2,
@@ -965,7 +965,7 @@
      "rank": 11,
      "name": "Munder Difflin",
      "url": null,
-     "score": 34.5,
+     "score": 34.4,
      "tags": [],
      "hn_devs": 3,
      "hn_devs_12m": 3,
@@ -1185,8 +1185,8 @@
      "tags": [
       "Open source"
      ],
-     "hn_devs": 9,
-     "hn_devs_12m": 8,
+     "hn_devs": 10,
+     "hn_devs_12m": 9,
      "hn_comments_12m": 57,
      "hn_title_points": 12,
      "lobsters": null,
@@ -1200,7 +1200,7 @@
      "rank": 2,
      "name": "CodeRabbit",
      "url": "https://coderabbit.ai",
-     "score": 58.7,
+     "score": 57.6,
      "tags": [],
      "hn_devs": 3,
      "hn_devs_12m": 3,
@@ -1217,7 +1217,7 @@
      "rank": 3,
      "name": "Copilot code review",
      "url": "https://docs.github.com/en/copilot/concepts/agents/code-review",
-     "score": 47.7,
+     "score": 46.9,
      "tags": [],
      "hn_devs": 2,
      "hn_devs_12m": 2,
@@ -1234,7 +1234,7 @@
      "rank": 4,
      "name": "Codex code review",
      "url": "https://developers.openai.com/codex/integrations/github",
-     "score": 45.9,
+     "score": 45.0,
      "tags": [],
      "hn_devs": 2,
      "hn_devs_12m": 2,
@@ -1270,7 +1270,7 @@
      "rank": 6,
      "name": "Cursor Bugbot",
      "url": "https://cursor.com/bugbot",
-     "score": 40.1,
+     "score": 39.6,
      "tags": [],
      "hn_devs": 1,
      "hn_devs_12m": 1,
@@ -1297,7 +1297,7 @@
      "hn_title_points": 5,
      "lobsters": null,
      "devto": null,
-     "github_stars": 15514,
+     "github_stars": 15515,
      "downloads_month": null,
      "tone": null,
      "note": "Teams often drop it over noise"
@@ -1405,45 +1405,9 @@
    "tools": [
     {
      "rank": 1,
-     "name": "Agent Skills",
-     "url": "https://agentskills.io",
-     "score": 76.3,
-     "tags": [],
-     "hn_devs": 93,
-     "hn_devs_12m": 85,
-     "hn_comments_12m": 336,
-     "hn_title_points": 2684,
-     "lobsters": null,
-     "devto": null,
-     "github_stars": null,
-     "downloads_month": null,
-     "tone": null,
-     "note": "Reusable instruction packs"
-    },
-    {
-     "rank": 2,
-     "name": "Superpowers",
-     "url": "https://github.com/obra/superpowers",
-     "score": 69.9,
-     "tags": [
-      "Open source"
-     ],
-     "hn_devs": 6,
-     "hn_devs_12m": 6,
-     "hn_comments_12m": 863,
-     "hn_title_points": 1220,
-     "lobsters": null,
-     "devto": null,
-     "github_stars": 314325,
-     "downloads_month": null,
-     "tone": null,
-     "note": "Brainstorm-plan-build skills pack"
-    },
-    {
-     "rank": 3,
      "name": "AGENTS.md",
      "url": "https://agents.md",
-     "score": 68.2,
+     "score": 81.8,
      "tags": [],
      "hn_devs": 23,
      "hn_devs_12m": 21,
@@ -1457,10 +1421,46 @@
      "note": "Default project-rules format"
     },
     {
+     "rank": 2,
+     "name": "Superpowers",
+     "url": "https://github.com/obra/superpowers",
+     "score": 78.3,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 6,
+     "hn_devs_12m": 6,
+     "hn_comments_12m": 863,
+     "hn_title_points": 1220,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 314328,
+     "downloads_month": null,
+     "tone": null,
+     "note": "Brainstorm-plan-build skills pack"
+    },
+    {
+     "rank": 3,
+     "name": "Agent Skills",
+     "url": "https://agentskills.io",
+     "score": 70.5,
+     "tags": [],
+     "hn_devs": 15,
+     "hn_devs_12m": 14,
+     "hn_comments_12m": 336,
+     "hn_title_points": 2684,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": "Reusable instruction packs"
+    },
+    {
      "rank": 4,
      "name": "Spec Kit",
      "url": "https://github.com/github/spec-kit",
-     "score": 49.0,
+     "score": 55.0,
      "tags": [
       "Open source"
      ],
@@ -1470,35 +1470,16 @@
      "hn_title_points": 16,
      "lobsters": null,
      "devto": null,
-     "github_stars": 148537,
+     "github_stars": 148540,
      "downloads_month": null,
      "tone": null,
      "note": "Spec-driven toolkit; document volume complaints"
     },
     {
      "rank": 5,
-     "name": "rtk",
-     "url": "https://github.com/rtk-ai/rtk",
-     "score": 43.1,
-     "tags": [
-      "Open source"
-     ],
-     "hn_devs": 0,
-     "hn_devs_12m": 0,
-     "hn_comments_12m": 218,
-     "hn_title_points": 528,
-     "lobsters": null,
-     "devto": null,
-     "github_stars": 85868,
-     "downloads_month": null,
-     "tone": null,
-     "note": "Compresses command output; benchmarks disagree"
-    },
-    {
-     "rank": 6,
      "name": "Context7",
      "url": "https://context7.com",
-     "score": 42.4,
+     "score": 45.4,
      "tags": [
       "Open source"
      ],
@@ -1514,29 +1495,29 @@
      "note": "Current library docs via MCP"
     },
     {
-     "rank": 7,
-     "name": "Graphify",
-     "url": "https://github.com/Graphify-Labs/graphify",
-     "score": 35.8,
+     "rank": 6,
+     "name": "rtk",
+     "url": "https://github.com/rtk-ai/rtk",
+     "score": 43.1,
      "tags": [
       "Open source"
      ],
      "hn_devs": 0,
      "hn_devs_12m": 0,
-     "hn_comments_12m": 31,
-     "hn_title_points": 134,
+     "hn_comments_12m": 218,
+     "hn_title_points": 528,
      "lobsters": null,
      "devto": null,
-     "github_stars": 144179,
+     "github_stars": 85867,
      "downloads_month": null,
      "tone": null,
-     "note": "Codebase knowledge graph"
+     "note": "Compresses command output; benchmarks disagree"
     },
     {
-     "rank": 8,
+     "rank": 7,
      "name": "GitHub MCP server",
      "url": "https://github.com/github/github-mcp-server",
-     "score": 35.1,
+     "score": 38.1,
      "tags": [
       "Open source"
      ],
@@ -1550,6 +1531,25 @@
      "downloads_month": null,
      "tone": null,
      "note": "Official GitHub API MCP server"
+    },
+    {
+     "rank": 8,
+     "name": "Graphify",
+     "url": "https://github.com/Graphify-Labs/graphify",
+     "score": 35.8,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 0,
+     "hn_devs_12m": 0,
+     "hn_comments_12m": 31,
+     "hn_title_points": 134,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 144182,
+     "downloads_month": null,
+     "tone": null,
+     "note": "Codebase knowledge graph"
     },
     {
      "rank": 9,
@@ -1582,7 +1582,7 @@
      "hn_title_points": 10,
      "lobsters": null,
      "devto": null,
-     "github_stars": 114659,
+     "github_stars": 114660,
      "downloads_month": null,
      "tone": null,
      "note": null
@@ -1591,8 +1591,8 @@
    "also_scored": [
     "Impeccable",
     "Repomix",
-    "context-mode",
     "Linear MCP",
+    "context-mode",
     "Figma MCP",
     "Serena",
     "headroom",
@@ -1614,7 +1614,7 @@
      "hn_title_points": 0,
      "lobsters": null,
      "devto": null,
-     "github_stars": 105828,
+     "github_stars": 105830,
      "downloads_month": null,
      "tone": null,
      "note": "Design skill; high token use",
@@ -1639,14 +1639,14 @@
     },
     {
      "rank": 13,
-     "name": "context-mode",
+     "name": "Linear MCP",
      "url": null,
-     "score": 19.6,
+     "score": 22.4,
      "tags": [],
-     "hn_devs": 0,
-     "hn_devs_12m": 0,
-     "hn_comments_12m": 53,
-     "hn_title_points": 90,
+     "hn_devs": 1,
+     "hn_devs_12m": 1,
+     "hn_comments_12m": 19,
+     "hn_title_points": 7,
      "lobsters": null,
      "devto": null,
      "github_stars": null,
@@ -1656,14 +1656,14 @@
     },
     {
      "rank": 14,
-     "name": "Linear MCP",
+     "name": "context-mode",
      "url": null,
-     "score": 19.4,
+     "score": 19.6,
      "tags": [],
-     "hn_devs": 1,
-     "hn_devs_12m": 1,
-     "hn_comments_12m": 19,
-     "hn_title_points": 7,
+     "hn_devs": 0,
+     "hn_devs_12m": 0,
+     "hn_comments_12m": 53,
+     "hn_title_points": 90,
      "lobsters": null,
      "devto": null,
      "github_stars": null,
@@ -1818,7 +1818,7 @@
      "hn_title_points": 97,
      "lobsters": null,
      "devto": null,
-     "github_stars": 47165,
+     "github_stars": 47170,
      "downloads_month": 8108787,
      "tone": null,
      "note": "Vercel's browser CLI"
@@ -1973,7 +1973,7 @@
      "hn_title_points": 0,
      "lobsters": null,
      "devto": null,
-     "github_stars": 99524,
+     "github_stars": 99527,
      "downloads_month": 919855,
      "tone": null,
      "note": "Stealthy Python scraping library"
@@ -2371,12 +2371,12 @@
      "rank": 2,
      "name": "llama.cpp",
      "url": "https://github.com/ggml-org/llama.cpp",
-     "score": 89.4,
+     "score": 89.8,
      "tags": [
       "Open source"
      ],
-     "hn_devs": 25,
-     "hn_devs_12m": 10,
+     "hn_devs": 26,
+     "hn_devs_12m": 11,
      "hn_comments_12m": 2074,
      "hn_title_points": 1589,
      "lobsters": null,
@@ -2650,7 +2650,7 @@
      "hn_title_points": 3414,
      "lobsters": null,
      "devto": null,
-     "github_stars": 62895,
+     "github_stars": 62896,
      "downloads_month": 92239101,
      "tone": null,
      "note": "Gateway; PyPI supply-chain talk"
@@ -2701,7 +2701,7 @@
      "hn_title_points": 3,
      "lobsters": null,
      "devto": null,
-     "github_stars": 152673,
+     "github_stars": 152674,
      "downloads_month": null,
      "tone": null,
      "note": null
@@ -2888,7 +2888,7 @@
      "hn_title_points": 907,
      "lobsters": null,
      "devto": null,
-     "github_stars": 14583,
+     "github_stars": 14584,
      "downloads_month": null,
      "tone": null,
      "note": null
@@ -3024,32 +3024,14 @@
    "tools": [
     {
      "rank": 1,
-     "name": "Arize Phoenix",
-     "url": "https://github.com/Arize-ai/phoenix",
-     "score": 73.6,
-     "tags": [],
-     "hn_devs": 18,
-     "hn_devs_12m": 14,
-     "hn_comments_12m": 9,
-     "hn_title_points": 3,
-     "lobsters": null,
-     "devto": null,
-     "github_stars": 12201,
-     "downloads_month": 626210,
-     "tone": null,
-     "note": "Source lists 30 HN devs; independent check found 0 'phoenix' mentions in the main Ask HN setup threads and only 5 'Arize Phoenix' comments on all of HN in 12 months. Most likely a name collision (Elixir Phoenix, Phoenix AZ), so set to 0. Its composite score is likely inflated too.",
-     "collision": true
-    },
-    {
-     "rank": 2,
      "name": "OpenTelemetry GenAI",
      "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
-     "score": 64.6,
+     "score": 93.1,
      "tags": [],
      "hn_devs": 2,
      "hn_devs_12m": 2,
      "hn_comments_12m": 320,
-     "hn_title_points": 869,
+     "hn_title_points": 874,
      "lobsters": null,
      "devto": null,
      "github_stars": 684,
@@ -3058,10 +3040,10 @@
      "note": null
     },
     {
-     "rank": 3,
+     "rank": 2,
      "name": "promptfoo",
      "url": "https://github.com/promptfoo/promptfoo",
-     "score": 52.0,
+     "score": 70.0,
      "tags": [],
      "hn_devs": 1,
      "hn_devs_12m": 1,
@@ -3075,7 +3057,7 @@
      "note": null
     },
     {
-     "rank": 4,
+     "rank": 3,
      "name": "Langfuse",
      "url": "https://github.com/langfuse/langfuse",
      "score": 48.5,
@@ -3086,13 +3068,13 @@
      "hn_title_points": 264,
      "lobsters": null,
      "devto": null,
-     "github_stars": 37140,
+     "github_stars": 37141,
      "downloads_month": 23563200,
      "tone": null,
      "note": null
     },
     {
-     "rank": 5,
+     "rank": 4,
      "name": "LangSmith",
      "url": null,
      "score": 40.7,
@@ -3109,7 +3091,7 @@
      "note": null
     },
     {
-     "rank": 6,
+     "rank": 5,
      "name": "MLflow",
      "url": "https://github.com/mlflow/mlflow",
      "score": 39.0,
@@ -3126,7 +3108,7 @@
      "note": null
     },
     {
-     "rank": 7,
+     "rank": 6,
      "name": "Logfire",
      "url": "https://github.com/pydantic/logfire",
      "score": 33.9,
@@ -3143,7 +3125,7 @@
      "note": null
     },
     {
-     "rank": 8,
+     "rank": 7,
      "name": "Braintrust",
      "url": "https://www.braintrust.dev",
      "score": 32.7,
@@ -3161,7 +3143,7 @@
      "collision": true
     },
     {
-     "rank": 9,
+     "rank": 8,
      "name": "Helicone",
      "url": "https://github.com/Helicone/helicone",
      "score": 31.4,
@@ -3178,7 +3160,7 @@
      "note": null
     },
     {
-     "rank": 10,
+     "rank": 9,
      "name": "Opik",
      "url": "https://github.com/comet-ml/opik",
      "score": 29.4,
@@ -3193,18 +3175,9 @@
      "downloads_month": 1741711,
      "tone": null,
      "note": null
-    }
-   ],
-   "also_scored": [
-    "DeepEval",
-    "Laminar",
-    "Inspect AI",
-    "garak",
-    "Weights & Biases Weave"
-   ],
-   "others": [
+    },
     {
-     "rank": 11,
+     "rank": 10,
      "name": "DeepEval",
      "url": "https://github.com/confident-ai/deepeval",
      "score": 29.1,
@@ -3219,6 +3192,33 @@
      "downloads_month": 2584198,
      "tone": null,
      "note": null
+    }
+   ],
+   "also_scored": [
+    "Arize Phoenix",
+    "Laminar",
+    "Inspect AI",
+    "garak",
+    "Weights & Biases Weave"
+   ],
+   "others": [
+    {
+     "rank": 11,
+     "name": "Arize Phoenix",
+     "url": "https://github.com/Arize-ai/phoenix",
+     "score": 28.1,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_devs_12m": 0,
+     "hn_comments_12m": 9,
+     "hn_title_points": 3,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 12201,
+     "downloads_month": 626210,
+     "tone": null,
+     "note": "Source lists 30 HN devs; independent check found 0 'phoenix' mentions in the main Ask HN setup threads and only 5 'Arize Phoenix' comments on all of HN in 12 months. Most likely a name collision (Elixir Phoenix, Phoenix AZ), so set to 0. Its composite score is likely inflated too.",
+     "collision": true
     },
     {
      "rank": 12,
@@ -3327,7 +3327,7 @@
      "hn_title_points": 227,
      "lobsters": null,
      "devto": null,
-     "github_stars": 261596,
+     "github_stars": 261597,
      "downloads_month": null,
      "tone": null,
      "note": null
@@ -3344,7 +3344,7 @@
      "hn_title_points": 635,
      "lobsters": null,
      "devto": null,
-     "github_stars": 209804,
+     "github_stars": 209803,
      "downloads_month": null,
      "tone": null,
      "note": null
@@ -3413,7 +3413,7 @@
      "hn_title_points": 17,
      "lobsters": null,
      "devto": null,
-     "github_stars": 112143,
+     "github_stars": 112145,
      "downloads_month": null,
      "tone": null,
      "note": null,
