@@ -67,13 +67,6 @@
    "comments_fetched": 455
   },
   {
-   "id": 46838946,
-   "title": "Ask HN: Any real OpenClaw (Clawd Bot/Molt Bot) users? What's your experience?",
-   "points": 121,
-   "date": "2026-01-31",
-   "comments_fetched": 189
-  },
-  {
    "id": 46907001,
    "title": "Ask HN: Anyone Using a Mac Studio for Local AI/LLM?",
    "points": 57,
@@ -93,13 +86,6 @@
    "points": 434,
    "date": "2026-03-15",
    "comments_fetched": 615
-  },
-  {
-   "id": 47783940,
-   "title": "Ask HN: Who is using OpenClaw?",
-   "points": 342,
-   "date": "2026-04-15",
-   "comments_fetched": 383
   },
   {
    "id": 48413629,
@@ -325,11 +311,11 @@
     "\"claude code\"": 23379
    },
    "name_queries": {
-    "Claude Code": 36543,
-    "\"Claude Code\"": 23379
+    "\"Claude Code\"": 23379,
+    "Claude Code": 36599
    },
    "hn_title_points": {
-    "\"claude code\"": 68477
+    "\"claude code\"": 68482
    },
    "downloads": {
     "npm": 45548488
@@ -341,7 +327,7 @@
    },
    "name_queries": {
     "\"Codex CLI\"": 647,
-    "Codex CLI": 11669
+    "Codex CLI": 11670
    },
    "hn_title_points": {
     "\"codex\"": 25610
@@ -356,7 +342,7 @@
    },
    "name_queries": {
     "\"OpenCode\"": 5262,
-    "OpenCode": 6464
+    "OpenCode": 6465
    },
    "hn_title_points": {
     "\"opencode\"": 6723
@@ -373,7 +359,7 @@
     "\"pi-coding-agent\"": 127
    },
    "name_queries": {
-    "Pi": 142138,
+    "Pi": 142834,
     "\"Pi\"": 8870
    },
    "hn_title_points": {
@@ -388,12 +374,12 @@
    "collision_samples": [
     "Mixed feelings. I use Opus 4.6 with pi.dev (one agent). I give detailed instructions what to do. I essentially u",
     ", and Codex (especially for review). I do a bunch of niche stuff with Pi and OpenCode. My productivity is up. Some nuances with working with o",
-    "Interesting. How's the performance on the Pi? I also have a Pi 4 running a few containers and thought about runnin",
-    "I have a series of skills and scripts that I manually invoke using Pi. It checks my calendar, Slack, email, etc. and keeps pretty good trac",
     "I use PI ( https://pi.dev ) and ( https://hermes-agent.nousresearch.com/ ) as the main drive",
     "operly connected and I still got a title generated). So I settled for Pi, but I strongly disliked the idea that the agent could, at any point,",
     "Tldr; just teach them to talk to Codex and show Pi to ambitious ones. Raw Codex, both app and cli. On windows 11 which i",
-    "Claude Code, Codex, Pi clis all for varying levels of work. VS Code when needed. I review ag"
+    "Claude Code, Codex, Pi clis all for varying levels of work. VS Code when needed. I review ag",
+    "rminal threads (love this!) + Remote machine Devcontainers + Claude + Pi [1] Zed https://zed.dev/ [2] Terminal threads https://zed.dev/blo",
+    "you're writing the 5th version of \"little-coder\" or similar using the Pi library ahh shit, you just read an article that `tools` are actually"
    ]
   },
   "terminal/DeepSeek Harness": {
@@ -401,7 +387,7 @@
     "\"deepseek harness\"": 126
    },
    "name_queries": {
-    "DeepSeek Harness": 599,
+    "DeepSeek Harness": 629,
     "\"DeepSeek Harness\"": 126
    },
    "hn_title_points": {
@@ -414,7 +400,7 @@
     "\"aider\"": 332
    },
    "name_queries": {
-    "Aider": 4844,
+    "Aider": 12215,
     "\"Aider\"": 332
    },
    "hn_title_points": {
@@ -434,7 +420,7 @@
     "\"Gemini CLI\"": 1004
    },
    "hn_title_points": {
-    "Gemini CLI": 1328,
+    "Gemini CLI": 1325,
     "\"gemini cli\"": 1110,
     "\"gemini-cli\"": 1110
    },
@@ -447,8 +433,8 @@
     "\"copilot cli\"": 189
    },
    "name_queries": {
-    "\"Copilot CLI\"": 189,
-    "Copilot CLI": 783
+    "Copilot CLI": 767,
+    "\"Copilot CLI\"": 189
    },
    "hn_title_points": {
     "\"copilot cli\"": 201
@@ -465,7 +451,7 @@
     "\"codename goose\"": 1
    },
    "name_queries": {
-    "Goose": 9426,
+    "Goose": 2866,
     "\"Goose\"": 923
    },
    "hn_title_points": {
@@ -493,7 +479,7 @@
    },
    "name_queries": {
     "\"Mistral Vibe\"": 78,
-    "Mistral Vibe": 178
+    "Mistral Vibe": 176
    },
    "hn_title_points": {
     "\"mistral vibe\"": 780,
@@ -506,8 +492,8 @@
     "\"muse code\"": 40
    },
    "name_queries": {
-    "\"Muse Code\"": 40,
-    "Muse Code": 6009
+    "Muse Code": 6010,
+    "\"Muse Code\"": 40
    },
    "hn_title_points": {
     "\"muse code\"": 365
@@ -520,8 +506,8 @@
     "\"kimi-cli\"": 35
    },
    "name_queries": {
-    "\"Kimi CLI\"": 35,
-    "Kimi CLI": 248
+    "Kimi CLI": 230,
+    "\"Kimi CLI\"": 35
    },
    "hn_title_points": {
     "\"kimi cli\"": 1,
@@ -535,8 +521,8 @@
     "\"qwen-code\"": 52
    },
    "name_queries": {
-    "Qwen Code": 1636,
-    "\"Qwen Code\"": 52
+    "\"Qwen Code\"": 52,
+    "Qwen Code": 1701
    },
    "hn_title_points": {
     "\"qwen code\"": 6,
@@ -551,8 +537,8 @@
     "\"zerostack\"": 26
    },
    "name_queries": {
-    "\"Zerostack\"": 26,
-    "Zerostack": 38
+    "Zerostack": 35,
+    "\"Zerostack\"": 26
    },
    "hn_title_points": {
     "\"zerostack\"": 624
@@ -564,7 +550,7 @@
     "\"codewhale\"": 13
    },
    "name_queries": {
-    "Codewhale": 60,
+    "Codewhale": 82,
     "\"Codewhale\"": 13
    },
    "hn_title_points": {
@@ -579,7 +565,7 @@
     "\"sourcegraph amp\"": 4
    },
    "name_queries": {
-    "Amp": 850402,
+    "Amp": 827175,
     "\"Amp\"": 1022
    },
    "hn_title_points": {
@@ -601,7 +587,7 @@
     "\"jcode\"": 17
    },
    "name_queries": {
-    "jcode": 580424
+    "jcode": 683969
    },
    "hn_title_points": {
     "\"jcode\"": 12
@@ -613,8 +599,8 @@
     "\"plandex\"": 1
    },
    "name_queries": {
-    "Plandex": 23883,
-    "\"Plandex\"": 1
+    "\"Plandex\"": 1,
+    "Plandex": 23883
    },
    "hn_title_points": {
     "\"plandex\"": 0
@@ -627,8 +613,8 @@
     "\"droid cli\"": 2
    },
    "name_queries": {
-    "Droid": 2365,
-    "\"Droid\"": 1223
+    "\"Droid\"": 1223,
+    "Droid": 2365
    },
    "hn_title_points": {
     "\"factory droid\"": 2,
@@ -661,8 +647,8 @@
     "\"open interpreter\"": 1
    },
    "name_queries": {
-    "Open Interpreter": 265,
-    "\"Open Interpreter\"": 1
+    "\"Open Interpreter\"": 1,
+    "Open Interpreter": 265
    },
    "hn_title_points": {
     "\"open interpreter\"": 0
@@ -675,8 +661,8 @@
     "\"kiro-cli\"": 18
    },
    "name_queries": {
-    "Kiro CLI": 125,
-    "\"Kiro CLI\"": 18
+    "\"Kiro CLI\"": 18,
+    "Kiro CLI": 131
    },
    "hn_title_points": {
     "\"kiro cli\"": 27,
@@ -691,8 +677,8 @@
     "\"vs code copilot\"": 34
    },
    "name_queries": {
-    "VS Code + Copilot": 89,
-    "\"VS Code + Copilot\"": 5
+    "\"VS Code + Copilot\"": 5,
+    "VS Code + Copilot": 89
    },
    "hn_title_points": {
     "\"github copilot\"": 4168,
@@ -703,15 +689,15 @@
   },
   "editors/Cursor": {
    "hn_comments_12m": {
-    "\"cursor\"": 7945,
+    "\"cursor\"": 7946,
     "\"cursor ide\"": 32,
     "\"cursor editor\"": 4,
     "\"cursor agent\"": 56,
     "\"using cursor\"": 186
    },
    "name_queries": {
-    "Cursor": 9140,
-    "\"Cursor\"": 7945
+    "Cursor": 9141,
+    "\"Cursor\"": 7946
    },
    "hn_title_points": {
     "\"cursor\"": 15906,
@@ -737,8 +723,8 @@
     "\"zed\"": 2408
    },
    "name_queries": {
-    "Zed": 63529,
-    "\"Zed\"": 2408
+    "\"Zed\"": 2408,
+    "Zed": 65913
    },
    "hn_title_points": {
     "\"zed\"": 5612
@@ -763,8 +749,8 @@
     "\"windsurf\"": 346
    },
    "name_queries": {
-    "Windsurf": 551,
-    "\"Windsurf\"": 346
+    "\"Windsurf\"": 346,
+    "Windsurf": 551
    },
    "hn_title_points": {
     "\"windsurf\"": 177
@@ -776,8 +762,8 @@
     "\"cline\"": 319
    },
    "name_queries": {
-    "\"Cline\"": 319,
-    "Cline": 27975
+    "Cline": 27638,
+    "\"Cline\"": 319
    },
    "hn_title_points": {
     "\"cline\"": 94
@@ -789,8 +775,8 @@
     "\"kiro\"": 487
    },
    "name_queries": {
-    "Kiro": 30403,
-    "\"Kiro\"": 487
+    "\"Kiro\"": 487,
+    "Kiro": 30403
    },
    "hn_title_points": {
     "\"kiro\"": 244
@@ -803,8 +789,8 @@
     "\"roocode\"": 33
    },
    "name_queries": {
-    "\"Roo Code\"": 50,
-    "Roo Code": 649
+    "Roo Code": 649,
+    "\"Roo Code\"": 50
    },
    "hn_title_points": {
     "\"roo code\"": 39,
@@ -818,8 +804,8 @@
     "\"kilocode\"": 73
    },
    "name_queries": {
-    "Kilo Code": 891,
-    "\"Kilo Code\"": 68
+    "\"Kilo Code\"": 68,
+    "Kilo Code": 898
    },
    "hn_title_points": {
     "\"kilo code\"": 54,
@@ -847,8 +833,8 @@
     "\"junie\"": 151
    },
    "name_queries": {
-    "\"JetBrains Junie\"": 9,
-    "JetBrains Junie": 72
+    "JetBrains Junie": 72,
+    "\"JetBrains Junie\"": 9
    },
    "hn_title_points": {
     "\"junie\"": 45
@@ -873,8 +859,8 @@
     "\"continue.dev\"": 28
    },
    "name_queries": {
-    "Continue": 110129,
-    "\"Continue\"": 25216
+    "\"Continue\"": 25216,
+    "Continue": 110130
    },
    "hn_title_points": {
     "\"continue.dev\"": 0
@@ -912,11 +898,11 @@
   },
   "orchestration/Herdr": {
    "hn_comments_12m": {
-    "\"herdr\"": 549
+    "\"herdr\"": 550
    },
    "name_queries": {
-    "Herdr": 4683,
-    "\"Herdr\"": 549
+    "\"Herdr\"": 550,
+    "Herdr": 4684
    },
    "hn_title_points": {
     "\"herdr\"": 1346
@@ -929,8 +915,8 @@
     "tmux worktrees": 71
    },
    "name_queries": {
-    "\"tmux + git worktrees\"": 0,
-    "tmux + git worktrees": 15
+    "tmux + git worktrees": 15,
+    "\"tmux + git worktrees\"": 0
    },
    "hn_title_points": {
     "tmux worktree": 37,
@@ -943,8 +929,8 @@
     "\"paseo\"": 176
    },
    "name_queries": {
-    "\"Paseo\"": 176,
-    "Paseo": 1153
+    "Paseo": 1153,
+    "\"Paseo\"": 176
    },
    "hn_title_points": {
     "\"paseo\"": 127
@@ -957,7 +943,7 @@
     "\"gastown\"": 219
    },
    "name_queries": {
-    "Gas Town": 2950,
+    "Gas Town": 1329,
     "\"Gas Town\"": 480
    },
    "hn_title_points": {
@@ -973,8 +959,8 @@
     "\"t3.codes\"": 11
    },
    "name_queries": {
-    "T3 Code": 119,
-    "\"T3 Code\"": 55
+    "\"T3 Code\"": 55,
+    "T3 Code": 119
    },
    "hn_title_points": {
     "\"t3 code\"": 34,
@@ -989,7 +975,7 @@
    },
    "name_queries": {
     "\"Beads\"": 476,
-    "Beads": 31101
+    "Beads": 31121
    },
    "hn_title_points": {
     "\"beads\"": 245
@@ -1001,8 +987,8 @@
     "\"orca\"": 233
    },
    "name_queries": {
-    "\"Orca\"": 233,
-    "Orca": 50088
+    "Orca": 50089,
+    "\"Orca\"": 233
    },
    "hn_title_points": {
     "\"orca\"": 129
@@ -1025,7 +1011,7 @@
     "\"conductor app\"": 1
    },
    "name_queries": {
-    "Conductor": 3860,
+    "Conductor": 8604,
     "\"Conductor\"": 599
    },
    "hn_title_points": {
@@ -1048,7 +1034,7 @@
     "\"juggler\"": 86
    },
    "name_queries": {
-    "Juggler": 725,
+    "Juggler": 2117,
     "\"Juggler\"": 86
    },
    "hn_title_points": {
@@ -1077,8 +1063,8 @@
     "\"vibe-kanban\"": 29
    },
    "name_queries": {
-    "\"Vibe Kanban\"": 29,
-    "Vibe Kanban": 53
+    "Vibe Kanban": 52,
+    "\"Vibe Kanban\"": 29
    },
    "hn_title_points": {
     "\"vibe kanban\"": 4,
@@ -1104,7 +1090,7 @@
     "\"munder difflin\"": 8
    },
    "name_queries": {
-    "Munder Difflin": 1423,
+    "Munder Difflin": 931,
     "\"Munder Difflin\"": 8
    },
    "hn_title_points": {
@@ -1143,7 +1129,7 @@
    },
    "name_queries": {
     "\"Ruflo\"": 6,
-    "Ruflo": 486
+    "Ruflo": 490
    },
    "hn_title_points": {
     "\"ruflo\"": 7
@@ -1155,7 +1141,7 @@
     "\"superset.sh\"": 19
    },
    "name_queries": {
-    "Superset": 6486,
+    "Superset": 4991,
     "\"Superset\"": 569
    },
    "hn_title_points": {
@@ -1198,7 +1184,7 @@
     "\"sculptor\"": 64
    },
    "name_queries": {
-    "Sculptor": 709,
+    "Sculptor": 515,
     "\"Sculptor\"": 64
    },
    "hn_title_points": {
@@ -1213,7 +1199,7 @@
    },
    "name_queries": {
     "\"Crystal\"": 1612,
-    "Crystal": 3817
+    "Crystal": 3553
    },
    "hn_title_points": {
     "\"crystal app\"": 0
@@ -1240,8 +1226,8 @@
     "\"claude review\"": 57
    },
    "name_queries": {
-    "Claude Code review": 2957,
-    "\"Claude Code review\"": 19
+    "\"Claude Code review\"": 19,
+    "Claude Code review": 2957
    },
    "hn_title_points": {
     "\"claude code review\"": 12,
@@ -1297,8 +1283,8 @@
     "\"codex code review\"": 2
    },
    "name_queries": {
-    "\"Codex code review\"": 2,
-    "Codex code review": 8595
+    "Codex code review": 8595,
+    "\"Codex code review\"": 2
    },
    "hn_title_points": {
     "\"codex review\"": 16,
@@ -1312,7 +1298,7 @@
    },
    "name_queries": {
     "\"Codex Security\"": 48,
-    "Codex Security": 6800
+    "Codex Security": 6803
    },
    "hn_title_points": {
     "\"codex security\"": 662
@@ -1324,8 +1310,8 @@
     "\"qodo\"": 14
    },
    "name_queries": {
-    "\"Qodo\"": 14,
-    "Qodo": 5590
+    "Qodo": 5590,
+    "\"Qodo\"": 14
    },
    "hn_title_points": {
     "\"qodo\"": 5
@@ -1340,8 +1326,8 @@
     "\"graphite stacked\"": 0
    },
    "name_queries": {
-    "Graphite": 11438,
-    "\"Graphite\"": 360
+    "\"Graphite\"": 360,
+    "Graphite": 6108
    },
    "hn_title_points": {
     "\"graphite\"": 731,
@@ -1357,8 +1343,8 @@
     "\"greptile\"": 64
    },
    "name_queries": {
-    "Greptile": 113,
-    "\"Greptile\"": 64
+    "\"Greptile\"": 64,
+    "Greptile": 593
    },
    "hn_title_points": {
     "\"greptile\"": 30
@@ -1371,8 +1357,8 @@
     "\"open-code-review\"": 16
    },
    "name_queries": {
-    "\"Open Code Review\"": 16,
-    "Open Code Review": 1428
+    "Open Code Review": 1432,
+    "\"Open Code Review\"": 16
    },
    "hn_title_points": {
     "\"open code review\"": 294,
@@ -1385,8 +1371,8 @@
     "\"sourcery\"": 16
    },
    "name_queries": {
-    "Sourcery": 99101,
-    "\"Sourcery\"": 16
+    "\"Sourcery\"": 16,
+    "Sourcery": 99104
    },
    "hn_title_points": {
     "\"sourcery\"": 6
@@ -1398,8 +1384,8 @@
     "\"sphinx ai\"": 0
    },
    "name_queries": {
-    "\"Sphinx\"": 79,
-    "Sphinx": 127
+    "Sphinx": 127,
+    "\"Sphinx\"": 79
    },
    "hn_title_points": {
     "\"sphinx ai\"": 0
@@ -1442,8 +1428,8 @@
     "\"superpowers\"": 863
    },
    "name_queries": {
-    "\"Superpowers\"": 863,
-    "Superpowers": 2149
+    "Superpowers": 2147,
+    "\"Superpowers\"": 863
    },
    "hn_title_points": {
     "\"superpowers\"": 1220
@@ -1457,8 +1443,8 @@
     "\"speckit\"": 41
    },
    "name_queries": {
-    "\"Spec Kit\"": 83,
-    "Spec Kit": 1651
+    "Spec Kit": 1697,
+    "\"Spec Kit\"": 83
    },
    "hn_title_points": {
     "\"spec kit\"": 16,
@@ -1473,7 +1459,7 @@
    },
    "name_queries": {
     "\"Context7\"": 92,
-    "Context7": 60806
+    "Context7": 60537
    },
    "hn_title_points": {
     "\"context7\"": 8
@@ -1487,7 +1473,7 @@
     "\"github mcp\"": 36
    },
    "name_queries": {
-    "GitHub MCP server": 745,
+    "GitHub MCP server": 748,
     "\"GitHub MCP server\"": 9
    },
    "hn_title_points": {
@@ -1500,7 +1486,7 @@
     "\"semble\"": 44
    },
    "name_queries": {
-    "Semble": 642,
+    "Semble": 1064,
     "\"Semble\"": 44
    },
    "hn_title_points": {
@@ -1523,11 +1509,11 @@
   "context/Impeccable": {
    "hn_comments_12m": {
     "\"impeccable\"": 190,
-    "\"impeccable\" skill": 54,
+    "\"impeccable\" skill": 47,
     "\"impeccable.style\"": 14
    },
    "name_queries": {
-    "Impeccable": 210,
+    "Impeccable": 248,
     "\"Impeccable\"": 190
    },
    "hn_title_points": {
@@ -1543,8 +1529,8 @@
     "\"graphify\"": 31
    },
    "name_queries": {
-    "\"Graphify\"": 31,
-    "Graphify": 7099
+    "Graphify": 137,
+    "\"Graphify\"": 31
    },
    "hn_title_points": {
     "\"graphify\"": 134
@@ -1557,7 +1543,7 @@
    },
    "name_queries": {
     "\"Figma MCP\"": 39,
-    "Figma MCP": 155
+    "Figma MCP": 171
    },
    "hn_title_points": {
     "\"figma mcp\"": 48
@@ -1570,7 +1556,7 @@
    },
    "name_queries": {
     "\"Repomix\"": 16,
-    "Repomix": 7486
+    "Repomix": 2589
    },
    "hn_title_points": {
     "\"repomix\"": 0
@@ -1584,7 +1570,7 @@
     "\"claude-mem\"": 22
    },
    "name_queries": {
-    "claude-mem": 59
+    "claude-mem": 61
    },
    "hn_title_points": {
     "\"claude-mem\"": 10
@@ -1597,7 +1583,7 @@
    },
    "name_queries": {
     "\"Linear MCP\"": 19,
-    "Linear MCP": 388
+    "Linear MCP": 389
    },
    "hn_title_points": {
     "\"linear mcp\"": 7
@@ -1627,8 +1613,8 @@
     "\"sentry mcp\"": 5
    },
    "name_queries": {
-    "\"Sentry MCP\"": 5,
-    "Sentry MCP": 50
+    "Sentry MCP": 143,
+    "\"Sentry MCP\"": 5
    },
    "hn_title_points": {
     "\"sentry mcp\"": 1
@@ -1652,15 +1638,14 @@
     "\"headroom\" mcp": 21
    },
    "name_queries": {
-    "headroom": 479,
-    "\"headroom\"": 469
+    "\"headroom\"": 469,
+    "headroom": 486
    },
    "hn_title_points": {
     "\"headroom\" mcp": 0
    },
    "downloads": {},
    "collision_samples": [
-    "has the quantized models. I’ve test Kimi though don’t have quite the headroom at home for it, and I don’t yet see a significant enough difference b",
     "enter gear, much less with the big proprietary suppliers; the compute headroom is too small to begin with once the model is in RAM) but rather to im",
     "n/qwen3.6-35b-a3b mlx with my 48GB M4 MBP which leaves me just enough headroom for docker dev-container and other basics. I use LM Studio to run and",
     "ort. I point it at the tailnet DNS (https://llama.<tailnet>:<port>) - Headroom ( https://github.com/chopratejas/headroom ) to maximize the 80k conte"
@@ -1671,7 +1656,7 @@
     "\"context-mode\"": 53
    },
    "name_queries": {
-    "context-mode": 120
+    "context-mode": 118
    },
    "hn_title_points": {
     "\"context-mode\"": 90
@@ -1702,8 +1687,8 @@
     "\"chrome-devtools-mcp\"": 42
    },
    "name_queries": {
-    "\"Chrome DevTools MCP\"": 42,
-    "Chrome DevTools MCP": 83
+    "Chrome DevTools MCP": 83,
+    "\"Chrome DevTools MCP\"": 42
    },
    "hn_title_points": {
     "\"chrome devtools mcp\"": 619,
@@ -1732,7 +1717,7 @@
     "\"firecrawl\"": 71
    },
    "name_queries": {
-    "Firecrawl": 73,
+    "Firecrawl": 112,
     "\"Firecrawl\"": 71
    },
    "hn_title_points": {
@@ -1745,8 +1730,8 @@
     "\"lightpanda\"": 48
    },
    "name_queries": {
-    "\"Lightpanda\"": 48,
-    "Lightpanda": 67
+    "Lightpanda": 77,
+    "\"Lightpanda\"": 48
    },
    "hn_title_points": {
     "\"lightpanda\"": 474
@@ -1758,7 +1743,7 @@
     "\"stagehand\"": 43
    },
    "name_queries": {
-    "Stagehand": 49,
+    "Stagehand": 47,
     "\"Stagehand\"": 43
    },
    "hn_title_points": {
@@ -1802,7 +1787,7 @@
     "\"browser use\"": 232
    },
    "name_queries": {
-    "browser-use": 445
+    "browser-use": 448
    },
    "hn_title_points": {
     "\"browser-use\"": 73,
@@ -1817,7 +1802,7 @@
     "\"scrapling\"": 6
    },
    "name_queries": {
-    "Scrapling": 8098,
+    "Scrapling": 12885,
     "\"Scrapling\"": 6
    },
    "hn_title_points": {
@@ -1833,8 +1818,8 @@
     "\"browsermcp\"": 4
    },
    "name_queries": {
-    "Browser MCP": 1165,
-    "\"Browser MCP\"": 26
+    "\"Browser MCP\"": 26,
+    "Browser MCP": 1170
    },
    "hn_title_points": {
     "\"browser mcp\"": 11,
@@ -1848,7 +1833,7 @@
     "\"r.jina.ai\"": 3
    },
    "name_queries": {
-    "Jina Reader": 55,
+    "Jina Reader": 52,
     "\"Jina Reader\"": 3
    },
    "hn_title_points": {
@@ -1862,8 +1847,8 @@
     "\"browserbase\"": 37
    },
    "name_queries": {
-    "\"Browserbase\"": 37,
-    "Browserbase": 86
+    "Browserbase": 86,
+    "\"Browserbase\"": 37
    },
    "hn_title_points": {
     "\"browserbase\"": 18
@@ -1890,7 +1875,7 @@
     "\"docker sandboxes\"": 65
    },
    "name_queries": {
-    "Docker Sandboxes": 619,
+    "Docker Sandboxes": 617,
     "\"Docker Sandboxes\"": 65
    },
    "hn_title_points": {
@@ -1936,8 +1921,8 @@
     "\"devcontainers\"": 134
    },
    "name_queries": {
-    "Dev containers": 903,
-    "\"Dev containers\"": 68
+    "\"Dev containers\"": 68,
+    "Dev containers": 903
    },
    "hn_title_points": {
     "\"devcontainer\"": 12,
@@ -1951,8 +1936,8 @@
     "\"e2b\"": 242
    },
    "name_queries": {
-    "\"E2B\"": 242,
-    "E2B": 46414
+    "E2B": 46393,
+    "\"E2B\"": 242
    },
    "hn_title_points": {
     "\"e2b\"": 556
@@ -1964,7 +1949,7 @@
     "\"nono\"": 146
    },
    "name_queries": {
-    "nono": 129671
+    "nono": 130139
    },
    "hn_title_points": {
     "\"nono\"": 20
@@ -2023,8 +2008,8 @@
     "\"daytona\"": 74
    },
    "name_queries": {
-    "Daytona": 158,
-    "\"Daytona\"": 74
+    "\"Daytona\"": 74,
+    "Daytona": 319
    },
    "hn_title_points": {
     "\"daytona\"": 35
@@ -2036,8 +2021,8 @@
     "\"agent safehouse\"": 30
    },
    "name_queries": {
-    "\"Agent Safehouse\"": 30,
-    "Agent Safehouse": 42
+    "Agent Safehouse": 42,
+    "\"Agent Safehouse\"": 30
    },
    "hn_title_points": {
     "\"agent safehouse\"": 823
@@ -2049,7 +2034,7 @@
     "\"ardent\"": 139
    },
    "name_queries": {
-    "Ardent": 75485,
+    "Ardent": 75486,
     "\"Ardent\"": 139
    },
    "hn_title_points": {
@@ -2065,7 +2050,7 @@
     "\"sprites\"": 600
    },
    "name_queries": {
-    "Sprites": 7803,
+    "Sprites": 1720,
     "\"Sprites\"": 600
    },
    "hn_title_points": {
@@ -2094,8 +2079,8 @@
     "\"modal sandboxes\"": 6
    },
    "name_queries": {
-    "Modal Sandboxes": 1060,
-    "\"Modal Sandboxes\"": 6
+    "\"Modal Sandboxes\"": 6,
+    "Modal Sandboxes": 1001
    },
    "hn_title_points": {
     "\"modal sandbox\"": 0,
@@ -2108,8 +2093,8 @@
     "\"vercel sandbox\"": 2
    },
    "name_queries": {
-    "Vercel Sandbox": 36,
-    "\"Vercel Sandbox\"": 2
+    "\"Vercel Sandbox\"": 2,
+    "Vercel Sandbox": 36
    },
    "hn_title_points": {
     "\"vercel sandbox\"": 15
@@ -2121,8 +2106,8 @@
     "\"ollama\"": 1998
    },
    "name_queries": {
-    "Ollama": 6001,
-    "\"Ollama\"": 1998
+    "\"Ollama\"": 1998,
+    "Ollama": 6001
    },
    "hn_title_points": {
     "\"ollama\"": 3468
@@ -2146,7 +2131,7 @@
     "\"mlx\"": 698
    },
    "name_queries": {
-    "MLX": 54159,
+    "MLX": 54081,
     "\"MLX\"": 698
    },
    "hn_title_points": {
@@ -2178,8 +2163,8 @@
     "\"open-webui\"": 104
    },
    "name_queries": {
-    "Open WebUI": 3509,
-    "\"Open WebUI\"": 104
+    "\"Open WebUI\"": 104,
+    "Open WebUI": 3509
    },
    "hn_title_points": {
     "\"open webui\"": 8,
@@ -2193,7 +2178,7 @@
     "\"vllm\"": 919
    },
    "name_queries": {
-    "vLLM": 372255,
+    "vLLM": 151081,
     "\"vLLM\"": 919
    },
    "hn_title_points": {
@@ -2208,8 +2193,8 @@
     "\"unsloth\"": 818
    },
    "name_queries": {
-    "\"Unsloth\"": 818,
-    "Unsloth": 840
+    "Unsloth": 1236,
+    "\"Unsloth\"": 818
    },
    "hn_title_points": {
     "\"unsloth\"": 1273
@@ -2225,8 +2210,8 @@
     "\"lemonade sdk\"": 10
    },
    "name_queries": {
-    "\"Lemonade\"": 335,
-    "Lemonade": 656
+    "Lemonade": 656,
+    "\"Lemonade\"": 335
    },
    "hn_title_points": {
     "\"lemonade server\"": 0,
@@ -2245,8 +2230,8 @@
     "\"sglang\"": 166
    },
    "name_queries": {
-    "\"SGLang\"": 166,
-    "SGLang": 853
+    "SGLang": 853,
+    "\"SGLang\"": 166
    },
    "hn_title_points": {
     "\"sglang\"": 162
@@ -2272,8 +2257,8 @@
     "\"apfel\"": 46
    },
    "name_queries": {
-    "\"Apfel\"": 46,
-    "Apfel": 386
+    "Apfel": 386,
+    "\"Apfel\"": 46
    },
    "hn_title_points": {
     "\"apfel\"": 757
@@ -2286,7 +2271,7 @@
     "\"jan app\"": 0
    },
    "name_queries": {
-    "Jan": 136084,
+    "Jan": 136109,
     "\"Jan\"": 2133
    },
    "hn_title_points": {
@@ -2296,7 +2281,6 @@
    "downloads": {},
    "collision_samples": [
     "atform teams at Heroku and Segment. Project type: new startup started Jan ‘26 at https://housecat.com . Pitch is “dev tools for non developers",
-    "I used it for a bit in Jan. And found it to be a much worse version of Claude Code. But I'm expl",
     "were fine with the coding models of yesterday (i.e. Claude Opus from Jan/Feb of 2026), you will be fine with either Kimi K2.6 or DeepSeek v4 P"
    ]
   },
@@ -2305,8 +2289,8 @@
     "\"koboldcpp\"": 21
    },
    "name_queries": {
-    "KoboldCpp": 21,
-    "\"KoboldCpp\"": 21
+    "\"KoboldCpp\"": 21,
+    "KoboldCpp": 21
    },
    "hn_title_points": {
     "\"koboldcpp\"": 3
@@ -2318,8 +2302,8 @@
     "\"openrouter\"": 3860
    },
    "name_queries": {
-    "OpenRouter": 4164,
-    "\"OpenRouter\"": 3860
+    "\"OpenRouter\"": 3860,
+    "OpenRouter": 4164
    },
    "hn_title_points": {
     "\"openrouter\"": 6377
@@ -2332,7 +2316,7 @@
    },
    "name_queries": {
     "\"AWS Bedrock\"": 270,
-    "AWS Bedrock": 888
+    "AWS Bedrock": 707
    },
    "hn_title_points": {
     "\"bedrock\"": 1356
@@ -2345,7 +2329,7 @@
    },
    "name_queries": {
     "\"LiteLLM\"": 430,
-    "LiteLLM": 531
+    "LiteLLM": 442
    },
    "hn_title_points": {
     "\"litellm\"": 3414
@@ -2361,7 +2345,7 @@
    },
    "name_queries": {
     "\"OpenCode Go / Zen\"": 6,
-    "OpenCode Go / Zen": 88
+    "OpenCode Go / Zen": 93
    },
    "hn_title_points": {
     "\"opencode go\"": 85,
@@ -2375,8 +2359,8 @@
     "\"claude-code-router\"": 25
    },
    "name_queries": {
-    "Claude Code Router": 347,
-    "\"Claude Code Router\"": 25
+    "\"Claude Code Router\"": 25,
+    "Claude Code Router": 346
    },
    "hn_title_points": {
     "\"claude code router\"": 1,
@@ -2393,8 +2377,8 @@
     "\"llm.datasette.io\"": 10
    },
    "name_queries": {
-    "llm": 196136,
-    "\"llm\"": 133168
+    "llm": 198144,
+    "\"llm\"": 133618
    },
    "hn_title_points": {
     "\"simonw/llm\"": 0,
@@ -2410,8 +2394,8 @@
     "\"vercel ai gateway\"": 19
    },
    "name_queries": {
-    "\"Vercel AI Gateway\"": 19,
-    "Vercel AI Gateway": 32
+    "Vercel AI Gateway": 32,
+    "\"Vercel AI Gateway\"": 19
    },
    "hn_title_points": {
     "\"vercel ai gateway\"": 10
@@ -2435,8 +2419,8 @@
     "\"portkey\"": 6
    },
    "name_queries": {
-    "\"Portkey\"": 6,
-    "Portkey": 32
+    "Portkey": 32,
+    "\"Portkey\"": 6
    },
    "hn_title_points": {
     "\"portkey\"": 9
@@ -2467,8 +2451,8 @@
     "\"omniroute\"": 1
    },
    "name_queries": {
-    "OmniRoute": 222,
-    "\"OmniRoute\"": 1
+    "\"OmniRoute\"": 1,
+    "OmniRoute": 222
    },
    "hn_title_points": {
     "\"omniroute\"": 0
@@ -2480,8 +2464,8 @@
     "\"cloudflare ai gateway\"": 17
    },
    "name_queries": {
-    "Cloudflare AI Gateway": 52,
-    "\"Cloudflare AI Gateway\"": 17
+    "\"Cloudflare AI Gateway\"": 17,
+    "Cloudflare AI Gateway": 52
    },
    "hn_title_points": {
     "\"cloudflare ai gateway\"": 4
@@ -2493,8 +2477,8 @@
     "\"synthetic.new\"": 29
    },
    "name_queries": {
-    "\"Synthetic\"": 2544,
-    "Synthetic": 2913
+    "Synthetic": 7367,
+    "\"Synthetic\"": 2544
    },
    "hn_title_points": {
     "\"synthetic.new\"": 14
@@ -2525,8 +2509,8 @@
     "\"mastra\"": 115
    },
    "name_queries": {
-    "\"Mastra\"": 115,
-    "Mastra": 7371
+    "Mastra": 3997,
+    "\"Mastra\"": 115
    },
    "hn_title_points": {
     "\"mastra\"": 240
@@ -2541,8 +2525,8 @@
     "\"agent sdk\"": 301
    },
    "name_queries": {
-    "Claude Agent SDK": 2204,
-    "\"Claude Agent SDK\"": 132
+    "\"Claude Agent SDK\"": 132,
+    "Claude Agent SDK": 2205
    },
    "hn_title_points": {
     "\"claude agent sdk\"": 106,
@@ -2603,8 +2587,8 @@
     "\"agents sdk\"": 84
    },
    "name_queries": {
-    "OpenAI Agents SDK": 386,
-    "\"OpenAI Agents SDK\"": 32
+    "\"OpenAI Agents SDK\"": 32,
+    "OpenAI Agents SDK": 386
    },
    "hn_title_points": {
     "\"openai agents sdk\"": 13,
@@ -2621,7 +2605,7 @@
    },
    "name_queries": {
     "\"Google ADK\"": 46,
-    "Google ADK": 16826
+    "Google ADK": 16866
    },
    "hn_title_points": {
     "\"google adk\"": 12,
@@ -2636,8 +2620,8 @@
     "\"crewai\"": 156
    },
    "name_queries": {
-    "CrewAI": 199,
-    "\"CrewAI\"": 156
+    "\"CrewAI\"": 156,
+    "CrewAI": 199
    },
    "hn_title_points": {
     "\"crewai\"": 28
@@ -2654,7 +2638,7 @@
    },
    "name_queries": {
     "\"Pydantic AI\"": 69,
-    "Pydantic AI": 366
+    "Pydantic AI": 301
    },
    "hn_title_points": {
     "\"pydantic ai\"": 37,
@@ -2671,11 +2655,11 @@
     "\"otel\"": 320
    },
    "name_queries": {
-    "\"OpenTelemetry GenAI\"": 1,
-    "OpenTelemetry GenAI": 9
+    "OpenTelemetry GenAI": 9,
+    "\"OpenTelemetry GenAI\"": 1
    },
    "hn_title_points": {
-    "\"opentelemetry\"": 879,
+    "\"opentelemetry\"": 880,
     "\"otel\"": 394
    },
    "downloads": {}
@@ -2685,7 +2669,7 @@
     "\"promptfoo\"": 48
    },
    "name_queries": {
-    "promptfoo": 60
+    "promptfoo": 81
    },
    "hn_title_points": {
     "\"promptfoo\"": 62
@@ -2699,7 +2683,7 @@
     "\"langfuse\"": 125
    },
    "name_queries": {
-    "Langfuse": 291,
+    "Langfuse": 373,
     "\"Langfuse\"": 125
    },
    "hn_title_points": {
@@ -2732,8 +2716,8 @@
     "\"mlflow\"": 55
    },
    "name_queries": {
-    "MLflow": 60,
-    "\"MLflow\"": 55
+    "\"MLflow\"": 55,
+    "MLflow": 60
    },
    "hn_title_points": {
     "\"mlflow\"": 14
@@ -2747,8 +2731,8 @@
     "\"logfire\"": 14
    },
    "name_queries": {
-    "Logfire": 573,
-    "\"Logfire\"": 14
+    "\"Logfire\"": 14,
+    "Logfire": 58
    },
    "hn_title_points": {
     "\"logfire\"": 29
@@ -2762,7 +2746,7 @@
     "\"opik\"": 5
    },
    "name_queries": {
-    "Opik": 38163,
+    "Opik": 38135,
     "\"Opik\"": 5
    },
    "hn_title_points": {
@@ -2777,8 +2761,8 @@
     "\"braintrust\"": 32
    },
    "name_queries": {
-    "\"Braintrust\"": 32,
-    "Braintrust": 53
+    "Braintrust": 54,
+    "\"Braintrust\"": 32
    },
    "hn_title_points": {
     "\"braintrust\"": 4
@@ -2793,7 +2777,7 @@
     "\"helicone\"": 13
    },
    "name_queries": {
-    "Helicone": 1442,
+    "Helicone": 530,
     "\"Helicone\"": 13
    },
    "hn_title_points": {
@@ -2806,8 +2790,8 @@
     "\"deepeval\"": 11
    },
    "name_queries": {
-    "DeepEval": 13,
-    "\"DeepEval\"": 11
+    "\"DeepEval\"": 11,
+    "DeepEval": 33
    },
    "hn_title_points": {
     "\"deepeval\"": 2
@@ -2821,8 +2805,8 @@
     "\"langsmith\"": 67
    },
    "name_queries": {
-    "LangSmith": 70,
-    "\"LangSmith\"": 67
+    "\"LangSmith\"": 67,
+    "LangSmith": 70
    },
    "hn_title_points": {
     "\"langsmith\"": 18
@@ -2838,7 +2822,7 @@
    },
    "name_queries": {
     "\"Inspect AI\"": 3,
-    "Inspect AI": 826
+    "Inspect AI": 479
    },
    "hn_title_points": {
     "\"inspect ai\"": 3,
@@ -2854,8 +2838,8 @@
     "\"nvidia garak\"": 0
    },
    "name_queries": {
-    "garak": 3663,
-    "\"garak\"": 13
+    "\"garak\"": 13,
+    "garak": 3117
    },
    "hn_title_points": {
     "\"garak\" llm": 0,
@@ -2872,8 +2856,8 @@
     "\"w&b weave\"": 0
    },
    "name_queries": {
-    "\"Weights & Biases Weave\"": 0,
-    "Weights & Biases Weave": 20
+    "Weights & Biases Weave": 20,
+    "\"Weights & Biases Weave\"": 0
    },
    "hn_title_points": {
     "\"wandb weave\"": 0,
@@ -2889,8 +2873,8 @@
     "\"laminar\" llm": 9
    },
    "name_queries": {
-    "Laminar": 1005,
-    "\"Laminar\"": 65
+    "\"Laminar\"": 65,
+    "Laminar": 368
    },
    "hn_title_points": {
     "\"lmnr\"": 0,
@@ -2936,7 +2920,7 @@
    },
    "name_queries": {
     "\"Muse\"": 1394,
-    "Muse": 59371
+    "Muse": 54475
    },
    "hn_title_points": {
     "\"muse agent\"": 11,
@@ -2956,7 +2940,7 @@
   },
   "assistants/Claude Cowork": {
    "hn_comments_12m": {
-    "Claude Cowork": 969,
+    "Claude Cowork": 970,
     "\"cowork\"": 842
    },
    "name_queries": {
@@ -2973,7 +2957,7 @@
     "\"n8n\"": 429
    },
    "name_queries": {
-    "n8n": 129365
+    "n8n": 129304
    },
    "hn_title_points": {
     "\"n8n\"": 635
@@ -2985,8 +2969,8 @@
     "\"nanoclaw\"": 199
    },
    "name_queries": {
-    "NanoClaw": 320,
-    "\"NanoClaw\"": 199
+    "\"NanoClaw\"": 199,
+    "NanoClaw": 345
    },
    "hn_title_points": {
     "\"nanoclaw\"": 1486
@@ -3000,7 +2984,7 @@
    },
    "name_queries": {
     "\"Home Assistant + LLM\"": 0,
-    "Home Assistant + LLM": 29
+    "Home Assistant + LLM": 28
    },
    "hn_title_points": {
     "\"home assistant\" llm": 2,
@@ -3014,7 +2998,7 @@
    },
    "name_queries": {
     "\"Claude Duet\"": 19,
-    "Claude Duet": 1115
+    "Claude Duet": 1162
    },
    "hn_title_points": {
     "\"claude duet\"": 792
@@ -3026,7 +3010,7 @@
     "\"dots agent\"": 0
    },
    "name_queries": {
-    "Dots": 979987,
+    "Dots": 794131,
     "\"Dots\"": 1739
    },
    "hn_title_points": {
@@ -3050,8 +3034,8 @@
     "\"paperclipai\"": 3
    },
    "name_queries": {
-    "Paperclip": 874,
-    "\"Paperclip\"": 556
+    "\"Paperclip\"": 556,
+    "Paperclip": 879
    },
    "hn_title_points": {
     "\"paperclip\" agents": 17,
@@ -3069,8 +3053,8 @@
     "\"claude routines\"": 6
    },
    "name_queries": {
-    "Claude Code Routines": 359,
-    "\"Claude Code Routines\"": 10
+    "\"Claude Code Routines\"": 10,
+    "Claude Code Routines": 359
    },
    "hn_title_points": {
     "\"claude code routines\"": 722,
@@ -3083,7 +3067,7 @@
     "\"nanobot\"": 44
    },
    "name_queries": {
-    "nanobot": 897
+    "nanobot": 895
    },
    "hn_title_points": {
     "\"nanobot\"": 265
@@ -3095,8 +3079,8 @@
     "\"eigent\"": 2
    },
    "name_queries": {
-    "Eigent": 1029,
-    "\"Eigent\"": 2
+    "\"Eigent\"": 2,
+    "Eigent": 1008
    },
    "hn_title_points": {
     "\"eigent\"": 38
