@@ -4,292 +4,159 @@
  "hn_devs_since": "2025-05-01",
  "setup_threads": [
   {
-   "id": 44112357,
-   "title": "Ask HN: Is anyone using AI conversation partners?",
-   "date": "2025-05-28",
-   "points": 22,
-   "num_comments": 35,
-   "comments_fetched": 35
+   "id": 43959710,
+   "title": "Ask HN: Cursor or Windsurf?",
+   "points": 316,
+   "date": "2025-05-12",
+   "comments_fetched": 398
+  },
+  {
+   "id": 44095189,
+   "title": "Ask HN: Anyone struggling to get value out of coding LLMs?",
+   "points": 345,
+   "date": "2025-05-26",
+   "comments_fetched": 279
   },
   {
    "id": 44262410,
    "title": "Ask HN: What is your ultimate AI-assisted coding setup?",
-   "date": "2025-06-12",
    "points": 6,
-   "num_comments": null,
+   "date": "2025-06-12",
    "comments_fetched": 15
-  },
-  {
-   "id": 44352762,
-   "title": "Ask HN: Using AI daily but not seeing productivity gains – is it just me?",
-   "date": "2025-06-23",
-   "points": 23,
-   "num_comments": 41,
-   "comments_fetched": 41
   },
   {
    "id": 44405067,
    "title": "Ask HN: What are you actually using LLMs for in production?",
-   "date": "2025-06-28",
    "points": 49,
-   "num_comments": 67,
+   "date": "2025-06-28",
    "comments_fetched": 67
-  },
-  {
-   "id": 44426233,
-   "title": "Ask HN: What's the 2025 stack for a self-hosted photo library with local AI?",
-   "date": "2025-06-30",
-   "points": 230,
-   "num_comments": 121,
-   "comments_fetched": 121
-  },
-  {
-   "id": 44538855,
-   "title": "Ask HN: To what extend have you stopped or limited your use of AI?",
-   "date": "2025-07-12",
-   "points": 25,
-   "num_comments": 56,
-   "comments_fetched": 56
   },
   {
    "id": 44572043,
    "title": "Ask HN: What's Your Useful Local LLM Stack?",
-   "date": "2025-07-15",
    "points": 91,
-   "num_comments": 54,
+   "date": "2025-07-15",
    "comments_fetched": 54
-  },
-  {
-   "id": 44811457,
-   "title": "Ask HN: Do you struggle with flow state when using AI assisted coding tools?",
-   "date": "2025-08-06",
-   "points": 58,
-   "num_comments": 53,
-   "comments_fetched": 53
-  },
-  {
-   "id": 45679390,
-   "title": "Ask HN: Am I the only one not using AI?",
-   "date": "2025-10-23",
-   "points": 26,
-   "num_comments": 37,
-   "comments_fetched": 37
   },
   {
    "id": 45771870,
    "title": "Ask HN: Who uses open LLMs and coding assistants locally? Share setup and laptop",
-   "date": "2025-10-31",
    "points": 350,
-   "num_comments": 192,
+   "date": "2025-10-31",
    "comments_fetched": 192
   },
   {
    "id": 46255285,
    "title": "Ask HN: How can I get better at using AI for programming?",
-   "date": "2025-12-13",
    "points": 471,
-   "num_comments": 469,
+   "date": "2025-12-13",
    "comments_fetched": 469
   },
   {
-   "id": 46456400,
-   "title": "Ask HN: When do we expose \"Humans as Tools\" so LLM agents can call us on demand?",
-   "date": "2026-01-01",
-   "points": 48,
-   "num_comments": 31,
-   "comments_fetched": 31
+   "id": 46678550,
+   "title": "Ask HN: COBOL devs, how are AI coding affecting your work?",
+   "points": 169,
+   "date": "2026-01-19",
+   "comments_fetched": 183
+  },
+  {
+   "id": 46691243,
+   "title": "Ask HN: Do you have any evidence that agentic coding works?",
+   "points": 461,
+   "date": "2026-01-20",
+   "comments_fetched": 455
+  },
+  {
+   "id": 46838946,
+   "title": "Ask HN: Any real OpenClaw (Clawd Bot/Molt Bot) users? What's your experience?",
+   "points": 121,
+   "date": "2026-01-31",
+   "comments_fetched": 189
   },
   {
    "id": 46907001,
    "title": "Ask HN: Anyone Using a Mac Studio for Local AI/LLM?",
-   "date": "2026-02-05",
    "points": 57,
-   "num_comments": 35,
+   "date": "2026-02-05",
    "comments_fetched": 35
   },
   {
    "id": 46993479,
    "title": "Ask HN: Are you using an agent orchestrator to write code?",
-   "date": "2026-02-12",
    "points": 41,
-   "num_comments": 60,
+   "date": "2026-02-12",
    "comments_fetched": 60
   },
   {
-   "id": 47581097,
-   "title": "Ask HN: Are you too getting addicted to the dev workflow of coding with agents?",
-   "date": "2026-03-30",
-   "points": 41,
-   "num_comments": 45,
-   "comments_fetched": 45
+   "id": 47388646,
+   "title": "Ask HN: How is AI-assisted coding going for you professionally?",
+   "points": 434,
+   "date": "2026-03-15",
+   "comments_fetched": 615
+  },
+  {
+   "id": 47783940,
+   "title": "Ask HN: Who is using OpenClaw?",
+   "points": 342,
+   "date": "2026-04-15",
+   "comments_fetched": 383
   },
   {
    "id": 48413629,
    "title": "Ask HN: What is your (AI) dev tech stack / workflow?",
-   "date": "2026-06-05",
    "points": 171,
-   "num_comments": 136,
+   "date": "2026-06-05",
    "comments_fetched": 136
   },
   {
    "id": 48445024,
    "title": "Ask HN: What is the AI setup for an experienced dev starting on a new project?",
-   "date": "2026-06-08",
    "points": 5,
-   "num_comments": null,
+   "date": "2026-06-08",
    "comments_fetched": 10
   },
   {
-   "id": 48449187,
-   "title": "Ask HN: What are tools you have made for yourself since the advent of AI?",
-   "date": "2026-06-08",
-   "points": 445,
-   "num_comments": 788,
-   "comments_fetched": 788
-  },
-  {
-   "id": 48492118,
-   "title": "Ask HN: How do you get into a flow state when using AI to code?",
-   "date": "2026-06-11",
-   "points": 98,
-   "num_comments": 124,
-   "comments_fetched": 124
+   "id": 48542100,
+   "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
+   "points": 1318,
+   "date": "2026-06-15",
+   "comments_fetched": 563
   },
   {
    "id": 48587808,
    "title": "Ask HN: What tools are you using for AI-assisted code review?",
-   "date": "2026-06-18",
    "points": 26,
-   "num_comments": 31,
+   "date": "2026-06-18",
    "comments_fetched": 31
-  },
-  {
-   "id": 48641160,
-   "title": "Ask HN: Anthropic banned me from using Claude Code and I don't know what to do",
-   "date": "2026-06-23",
-   "points": 82,
-   "num_comments": 94,
-   "comments_fetched": 94
   },
   {
    "id": 48771515,
    "title": "Ask HN: Is anyone experimenting with different ways of using LLMs for coding?",
-   "date": "2026-07-03",
    "points": 212,
-   "num_comments": 206,
+   "date": "2026-07-03",
    "comments_fetched": 206
-  },
-  {
-   "id": 48859439,
-   "title": "Ask HN: How do you use Vim in the era of AI?",
-   "date": "2026-07-10",
-   "points": 49,
-   "num_comments": 99,
-   "comments_fetched": 99
-  },
-  {
-   "id": 49346906,
-   "title": "Ask HN: Do you feel comfortable admitting that you use AI?",
-   "date": "2026-08-18",
-   "points": 13,
-   "num_comments": 32,
-   "comments_fetched": 32
-  },
-  {
-   "id": 49510066,
-   "title": "Ask HN: What would happen if your company stopped using all AI tomorrow?",
-   "date": "2026-08-31",
-   "points": 40,
-   "num_comments": 94,
-   "comments_fetched": 94
   },
   {
    "id": 49636239,
    "title": "Ask HN: What's your AI coding set up?",
-   "date": "2026-09-09",
    "points": 6,
-   "num_comments": null,
+   "date": "2026-09-09",
    "comments_fetched": 5
   },
   {
    "id": 50366117,
    "title": "Ask HN: What's your current AI agentic setup?",
-   "date": "2026-11-04",
    "points": 557,
-   "num_comments": 691,
+   "date": "2026-11-04",
    "comments_fetched": 691
   }
  ],
+ "candidate_threads": [],
  "rejected_threads": [
-  {
-   "id": 48406174,
-   "title": "Ask HN: What was your \"oh shit\" moment with GenAI?",
-   "num_comments": 1124
-  },
-  {
-   "id": 47282777,
-   "title": "Tell HN: I'm 60 years old. Claude Code has re-ignited a passion",
-   "num_comments": 988
-  },
-  {
-   "id": 44226145,
-   "title": "Tell HN: Help restore the tax deduction for software dev in the US (Section 174)",
-   "num_comments": 907
-  },
-  {
-   "id": 47633396,
-   "title": "Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw",
-   "num_comments": 827
-  },
   {
    "id": 50151036,
    "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
    "num_comments": 767
-  },
-  {
-   "id": 48420827,
-   "title": "Ask HN: Why is the HN crowd so anti-AI?",
-   "num_comments": 765
-  },
-  {
-   "id": 44713757,
-   "title": "Claude Code weekly rate limits",
-   "num_comments": 705
-  },
-  {
-   "id": 45019483,
-   "title": "Ask HN: Why hasn't x86 caught up with Apple M series?",
-   "num_comments": 620
-  },
-  {
-   "id": 47388646,
-   "title": "Ask HN: How is AI-assisted coding going for you professionally?",
-   "num_comments": 616
-  },
-  {
-   "id": 48542100,
-   "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
-   "num_comments": 563
-  },
-  {
-   "id": 47300329,
-   "title": "Ask HN: Please restrict new accounts from posting",
-   "num_comments": 515
-  },
-  {
-   "id": 46691243,
-   "title": "Ask HN: Do you have any evidence that agentic coding works?",
-   "num_comments": 455
-  },
-  {
-   "id": 44448461,
-   "title": "Ask HN: How did Soham Parekh get so many jobs?",
-   "num_comments": 419
-  },
-  {
-   "id": 46385197,
-   "title": "Ask HN: What skills do you want to develop or improve in 2026?",
-   "num_comments": 415
   },
   {
    "id": 49657850,
@@ -297,79 +164,9 @@
    "num_comments": 403
   },
   {
-   "id": 43959710,
-   "title": "Ask HN: Cursor or Windsurf?",
-   "num_comments": 398
-  },
-  {
-   "id": 47783940,
-   "title": "Ask HN: Who is using OpenClaw?",
-   "num_comments": 383
-  },
-  {
    "id": 49982498,
    "title": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
    "num_comments": 349
-  },
-  {
-   "id": 45744209,
-   "title": "Ask HN: How to deal with long vibe-coded PRs?",
-   "num_comments": 349
-  },
-  {
-   "id": 47548243,
-   "title": "If you don't opt out by Apr 24 GitHub will train on your private repos",
-   "num_comments": 316
-  },
-  {
-   "id": 45864732,
-   "title": "Ask HN: How would you set up a child’s first Linux computer?",
-   "num_comments": 300
-  },
-  {
-   "id": 44071321,
-   "title": "Ask HN: What projects do you donate to?",
-   "num_comments": 289
-  },
-  {
-   "id": 44095189,
-   "title": "Ask HN: Anyone struggling to get value out of coding LLMs?",
-   "num_comments": 279
-  },
-  {
-   "id": 48370330,
-   "title": "Please don't spam people looking for employment. It's just cruel",
-   "num_comments": 273
-  },
-  {
-   "id": 44733800,
-   "title": "I launched 17 side projects. Result? I'm rich in expired domains",
-   "num_comments": 262
-  },
-  {
-   "id": 48604232,
-   "title": "Ask HN: Will programmers write more efficient code during the memory shortage?",
-   "num_comments": 248
-  },
-  {
-   "id": 47769796,
-   "title": "Tell HN: Fiverr left customer files public and searchable",
-   "num_comments": 232
-  },
-  {
-   "id": 46826277,
-   "title": "Ask HN: Do you also \"hoard\" notes/links but struggle to turn them into actions?",
-   "num_comments": 217
-  },
-  {
-   "id": 47139951,
-   "title": "1Password pricing increasing up to 33% in March",
-   "num_comments": 209
-  },
-  {
-   "id": 47475859,
-   "title": "Ask HN: AI productivity gains – do you fire devs or build better products?",
-   "num_comments": 204
   },
   {
    "id": 50363461,
@@ -377,79 +174,9 @@
    "num_comments": 200
   },
   {
-   "id": 47857461,
-   "title": "Tell HN: I'm sick of AI everything",
-   "num_comments": 193
-  },
-  {
-   "id": 47386813,
-   "title": "I'm 60 years old. Claude Code killed a passion",
-   "num_comments": 193
-  },
-  {
-   "id": 46838946,
-   "title": "Ask HN: Any real OpenClaw (Clawd Bot/Molt Bot) users? What's your experience?",
-   "num_comments": 189
-  },
-  {
-   "id": 45958004,
-   "title": "Ask HN: How are Markov chains so different from tiny LLMs?",
-   "num_comments": 189
-  },
-  {
-   "id": 44176510,
-   "title": "Ask HN: Startup getting spammed with PayPal disputes, what should we do?",
-   "num_comments": 185
-  },
-  {
-   "id": 46678550,
-   "title": "Ask HN: COBOL devs, how are AI coding affecting your work?",
-   "num_comments": 183
-  },
-  {
-   "id": 48668199,
-   "title": "Ask HN: Where is the programming profession going?",
-   "num_comments": 183
-  },
-  {
-   "id": 45073589,
-   "title": "Tell HN: My advice after I applied to 450 positions before getting hired",
-   "num_comments": 180
-  },
-  {
-   "id": 44393304,
-   "title": "Ask HN: Is anyone else just done with the industry?",
-   "num_comments": 178
-  },
-  {
-   "id": 49340013,
-   "title": "Ask HN: Does anyone else feel like nothing matters anymore?",
-   "num_comments": 175
-  },
-  {
-   "id": 44594790,
-   "title": "Tell HN: Notion Desktop is monitoring your audio and network",
-   "num_comments": 171
-  },
-  {
-   "id": 49577129,
-   "title": "Ask HN: Fable hacked my piano, can I release the results?",
-   "num_comments": 166
-  },
-  {
    "id": 50352757,
    "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
    "num_comments": 163
-  },
-  {
-   "id": 47215569,
-   "title": "Ask HN: How are you all staying sane?",
-   "num_comments": 158
-  },
-  {
-   "id": 46616529,
-   "title": "Ask HN: How are you doing RAG locally?",
-   "num_comments": 156
   },
   {
    "id": 50039291,
@@ -457,44 +184,9 @@
    "num_comments": 151
   },
   {
-   "id": 46434821,
-   "title": "Ask HN: Any example of successful vibe-coded product?",
-   "num_comments": 145
-  },
-  {
-   "id": 47822940,
-   "title": "Ask HN: How did you land your first projects as a solo engineer/consultant?",
-   "num_comments": 144
-  },
-  {
    "id": 50301479,
    "title": "Ask HN: Are you tired too in this AI era?",
    "num_comments": 143
-  },
-  {
-   "id": 44925438,
-   "title": "Ask HN: Do you still bookmark websites?",
-   "num_comments": 141
-  },
-  {
-   "id": 43922759,
-   "title": "Ask HN: How much better are AI IDEs vs. copy pasting into chat apps?",
-   "num_comments": 136
-  },
-  {
-   "id": 44079303,
-   "title": "Ask HN: Go deep into AI/LLMs or just use them as tools?",
-   "num_comments": 133
-  },
-  {
-   "id": 44848058,
-   "title": "Ask HN: What toolchains are people using for desktop app development in 2025?",
-   "num_comments": 132
-  },
-  {
-   "id": 44499063,
-   "title": "Tell HN: I Lost Joy of Programming",
-   "num_comments": 131
   },
   {
    "id": 50067325,
@@ -502,109 +194,9 @@
    "num_comments": 128
   },
   {
-   "id": 46464962,
-   "title": "Tell HN: I'm having the worst career winter of my life",
-   "num_comments": 128
-  },
-  {
-   "id": 49318906,
-   "title": "Ask HN: Do you know of any company that went back to hand-written code?",
-   "num_comments": 126
-  },
-  {
-   "id": 44858310,
-   "title": "Ask HN: Would you get a CS degree today?",
-   "num_comments": 124
-  },
-  {
-   "id": 44356422,
-   "title": "Ask HN: How to get rid of Gemini?",
-   "num_comments": 118
-  },
-  {
-   "id": 45474346,
-   "title": "Ask HN: Why is software quality collapsing?",
-   "num_comments": 117
-  },
-  {
-   "id": 45572130,
-   "title": "Ask HN: Has AI stolen the satisfaction from programming?",
-   "num_comments": 113
-  },
-  {
-   "id": 46124930,
-   "title": "Microsoft won't let me pay a $24 bill, blocking thousands in Azure spending",
-   "num_comments": 107
-  },
-  {
-   "id": 46620990,
-   "title": "Ask HN: How do you safely give LLMs SSH/DB access?",
-   "num_comments": 105
-  },
-  {
-   "id": 48164173,
-   "title": "Ask HN: When did computers stop being fun?",
-   "num_comments": 105
-  },
-  {
-   "id": 43953092,
-   "title": "Ask HN: What will tech employment look like in 10 years?",
-   "num_comments": 104
-  },
-  {
-   "id": 46436872,
-   "title": "Tell HN: I write and ship code ~20–50x faster than I did 5 years ago",
-   "num_comments": 103
-  },
-  {
-   "id": 46411275,
-   "title": "Ask HN: Anti-AI Open Source License?",
-   "num_comments": 102
-  },
-  {
-   "id": 46316562,
-   "title": "Ask HN: Who here is not working on web apps/server code?",
-   "num_comments": 100
-  },
-  {
-   "id": 44606671,
-   "title": "Gmail's backup codes are useless to access account",
-   "num_comments": 99
-  },
-  {
    "id": 49798257,
    "title": "Tell HN: Claude Code just accepted and signed a contract for me. Without asking",
    "num_comments": 98
-  },
-  {
-   "id": 44876289,
-   "title": "Ask HN: What alternatives to GitHub are you using?",
-   "num_comments": 97
-  },
-  {
-   "id": 43976045,
-   "title": "Ask HN: How do you store the knowledge gained in a day?",
-   "num_comments": 96
-  },
-  {
-   "id": 45451567,
-   "title": "Ask HN: Went to prison for 18 months, lost access to my GitHub. What can I do?",
-   "num_comments": 96
-  },
-  {
-   "id": 46934622,
-   "title": "Ask HN: How to get started with robotics as a hobbyist?",
-   "num_comments": 95
-  },
-  {
-   "id": 44948748,
-   "title": "What services or apps did you see abroad and wonder: why don't we have them?",
-   "num_comments": 95
-  },
-  {
-   "id": 44468375,
-   "title": "Ask HN: Worth leaving position over push to adopt vibe coding?",
-   "num_comments": 94
   },
   {
    "id": 49626431,
@@ -612,119 +204,9 @@
    "num_comments": 94
   },
   {
-   "id": 44152012,
-   "title": "Ask HN: How are parents who program teaching their kids today?",
-   "num_comments": 93
-  },
-  {
-   "id": 47803524,
-   "title": "Ask HN: Building a solo business is impossible?",
-   "num_comments": 93
-  },
-  {
-   "id": 46482268,
-   "title": "Ask HN: What are you working on? (Jan 2026)",
-   "num_comments": 93
-  },
-  {
-   "id": 45001551,
-   "title": "Ask HN: Best codebases to study to learn software design?",
-   "num_comments": 92
-  },
-  {
-   "id": 47394291,
-   "title": "Tell HN: AI tools are making me lose interest in CS fundamentals",
-   "num_comments": 91
-  },
-  {
-   "id": 46409375,
-   "title": "Ask HN: By what percentage has AI changed your output as a software engineer?",
-   "num_comments": 91
-  },
-  {
-   "id": 44051755,
-   "title": "Ask HN: How do you promote your personal projects with a limited budget?",
-   "num_comments": 91
-  },
-  {
-   "id": 45867176,
-   "title": "Ask HN: How do you get over the fear of sharing code?",
-   "num_comments": 91
-  },
-  {
-   "id": 47895029,
-   "title": "Tell HN: Claude 4.7 is ignoring stop hooks",
-   "num_comments": 90
-  },
-  {
-   "id": 47764215,
-   "title": "Ask HN: I quit my job over weaponized robots to start my own venture",
-   "num_comments": 90
-  },
-  {
-   "id": 45405977,
-   "title": "Ask HN: How Do I Get over My Existential Crisis?",
-   "num_comments": 90
-  },
-  {
-   "id": 47555081,
-   "title": "The risk of AI isn't making us lazy, but making \"lazy\" look productive",
-   "num_comments": 88
-  },
-  {
-   "id": 46413348,
-   "title": "Tell HN: Google ignores English searches and forces localized results",
-   "num_comments": 87
-  },
-  {
-   "id": 48128003,
-   "title": "Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing",
-   "num_comments": 85
-  },
-  {
-   "id": 46452146,
-   "title": "Ask HN: How did you learn to code?",
-   "num_comments": 85
-  },
-  {
-   "id": 45278819,
-   "title": "Ask HN: Is anyone else sick of AI splattered code",
-   "num_comments": 84
-  },
-  {
-   "id": 46710108,
-   "title": "Ask HN: How are you automating your coding work?",
-   "num_comments": 83
-  },
-  {
-   "id": 46514648,
-   "title": "Ask HN: Any Microsoft employees/devs here? What's happening to Microsoft?",
-   "num_comments": 83
-  },
-  {
    "id": 50084969,
    "title": "Ask HN: What is the current trajectory of a senior engineer?",
    "num_comments": 83
-  },
-  {
-   "id": 46779535,
-   "title": "Ask HN: What's the Point Anymore?",
-   "num_comments": 82
-  },
-  {
-   "id": 44127032,
-   "title": "I am concerned about the future. Are you?",
-   "num_comments": 82
-  },
-  {
-   "id": 48687769,
-   "title": "Ask HN: Is \"no source code was copied\" still a sufficient copyright defense?",
-   "num_comments": 82
-  },
-  {
-   "id": 44952225,
-   "title": "Ask HN: Have any successful startups been made by 'vibe coding'?",
-   "num_comments": 81
   },
   {
    "id": 50405250,
@@ -732,139 +214,9 @@
    "num_comments": 81
   },
   {
-   "id": 48713041,
-   "title": "We need tech news sources which exclude AI",
-   "num_comments": 81
-  },
-  {
-   "id": 46111119,
-   "title": "Ask HN: Do you believe aliens are visiting Earth?",
-   "num_comments": 80
-  },
-  {
-   "id": 47420767,
-   "title": "Ask HN: Is vibe coding a new mandatory job requirement?",
-   "num_comments": 79
-  },
-  {
-   "id": 46705676,
-   "title": "Tell HN: 2 years building a kids audio app as a solo dev – lessons learned",
-   "num_comments": 78
-  },
-  {
-   "id": 48848741,
-   "title": "Ask HN: Does anyone let AI agents play games just for fun?",
-   "num_comments": 78
-  },
-  {
-   "id": 47845050,
-   "title": "Ask HN: What skills are future proof in an AI driven job market?",
-   "num_comments": 77
-  },
-  {
-   "id": 47662112,
-   "title": "Claude Code Down",
-   "num_comments": 76
-  },
-  {
-   "id": 48337409,
-   "title": "Ask HN: What Is the State of App Development in 2026?",
-   "num_comments": 74
-  },
-  {
    "id": 49851032,
    "title": "Tell HN: Codex Is Down [fixed]",
    "num_comments": 73
-  },
-  {
-   "id": 44373724,
-   "title": "Ask HN: What useful AI tools do you use every day?",
-   "num_comments": 72
-  },
-  {
-   "id": 47336163,
-   "title": "Ask HN: Is Claude down again?",
-   "num_comments": 72
-  },
-  {
-   "id": 46731068,
-   "title": "Ask HN: What's the current best local/open speech-to-speech setup?",
-   "num_comments": 71
-  },
-  {
-   "id": 46468959,
-   "title": "Ask HN: What tech job would let me get away with the least real work possible?",
-   "num_comments": 70
-  },
-  {
-   "id": 44601821,
-   "title": "Ask HN: Is Linux for laptop worth the trouble?",
-   "num_comments": 70
-  },
-  {
-   "id": 44019193,
-   "title": "Ask HN: Do people actually pay for small web tools?",
-   "num_comments": 68
-  },
-  {
-   "id": 46315658,
-   "title": "Ask HN: How do I bridge the gap between PhD and SWE experiences?",
-   "num_comments": 68
-  },
-  {
-   "id": 45195543,
-   "title": "My Workflow Is 70% AI, 20% Copy-Paste, 10% Panic. What's Yours?",
-   "num_comments": 67
-  },
-  {
-   "id": 46866165,
-   "title": "Ask HN: Anyone else struggle with how to learn coding in the AI era?",
-   "num_comments": 67
-  },
-  {
-   "id": 44553379,
-   "title": "Ask HN: How much of OpenAI code is written by AI?",
-   "num_comments": 67
-  },
-  {
-   "id": 46353704,
-   "title": "Ask HN: My mother was scammed out of all her savings. What should I do?",
-   "num_comments": 67
-  },
-  {
-   "id": 46292682,
-   "title": "Ask HN: How are you LLM-coding in an established code base?",
-   "num_comments": 66
-  },
-  {
-   "id": 45805540,
-   "title": "Claude Code refused to add rainbows and unicorns to my app",
-   "num_comments": 66
-  },
-  {
-   "id": 45558430,
-   "title": "Ask HN: Why are *most* people not interested in FOSS/OSS and can we change that",
-   "num_comments": 65
-  },
-  {
-   "id": 46851953,
-   "title": "Why do people still talk about AGI?",
-   "num_comments": 64
-  },
-  {
-   "id": 48611303,
-   "title": "Ask HN: Due to spam on GitHub, what platforms can I move my projects?",
-   "num_comments": 64
-  },
-  {
-   "id": 47368874,
-   "title": "How do you capture WHY engineering decisions were made, not just what?",
-   "num_comments": 64
-  },
-  {
-   "id": 47814832,
-   "title": "Claude Code Opus 4.7 keeps checking on malware",
-   "num_comments": 63
   },
   {
    "id": 50167754,
@@ -872,89 +224,9 @@
    "num_comments": 63
   },
   {
-   "id": 45410072,
-   "title": "Gentoo Linux might be the best desktop Linux distro for advanced Linux users",
-   "num_comments": 63
-  },
-  {
-   "id": 45105532,
-   "title": "Ask HN: Is your company still hiring junior engineers?",
-   "num_comments": 62
-  },
-  {
-   "id": 47550564,
-   "title": "Tell HN: Firefox is being slowly deprecated by the industry",
-   "num_comments": 62
-  },
-  {
-   "id": 46857444,
-   "title": "Kernighan on Programming",
-   "num_comments": 62
-  },
-  {
-   "id": 48122103,
-   "title": "Ask HN: What are you working on (non-AI)?",
-   "num_comments": 61
-  },
-  {
-   "id": 46759387,
-   "title": "Ask HN: DDD was a great debugger – what would a modern equivalent look like?",
-   "num_comments": 61
-  },
-  {
-   "id": 49596976,
-   "title": "Apparently CodePen 2.0 sends data to their servers as you type",
-   "num_comments": 60
-  },
-  {
-   "id": 45918355,
-   "title": "Ask HN: Anyone else disillusioned with \"AI experts\" in their team?",
-   "num_comments": 59
-  },
-  {
-   "id": 47073838,
-   "title": "Ask HN: How do you employ LLMs for UI development?",
-   "num_comments": 59
-  },
-  {
-   "id": 44050009,
-   "title": "Ask HN: Selling software to company I work for as an employee",
-   "num_comments": 57
-  },
-  {
-   "id": 48230104,
-   "title": "Tell HN: I'm tired of AI-generated answers",
-   "num_comments": 56
-  },
-  {
-   "id": 46238354,
-   "title": "Tell HN: AI coding is sexy, but accounting is the real low-hanging target",
-   "num_comments": 55
-  },
-  {
    "id": 49622554,
    "title": "I'm going back to coding by hand",
    "num_comments": 53
-  },
-  {
-   "id": 48770319,
-   "title": "AI coding is a nightmare. Am I the only one experiencing this?",
-   "num_comments": 53
-  },
-  {
-   "id": 44352476,
-   "title": "I built an app to backup Live Photos from iPhone to external hard drives",
-   "num_comments": 53
-  },
-  {
-   "id": 46339718,
-   "title": "Ask HN: Are you afraid of AI making you unemployable within the next few years?",
-   "num_comments": 52
-  },
-  {
-   "id": 45888409,
-   "title": "Ask HN: Senior people, how did your career evolve?",
-   "num_comments": 52
   },
   {
    "id": 49826029,
@@ -962,14 +234,89 @@
    "num_comments": 51
   },
   {
-   "id": 44976292,
-   "title": "Ask HN: Is Kubernetes still a big no-no for early stages in 2025?",
-   "num_comments": 50
+   "id": 49934037,
+   "title": "Ask HN: Is anybody producing good code with coding agents?",
+   "num_comments": 48
   },
   {
-   "id": 44585503,
-   "title": "Ask HN: Anyone else tired of AI being forced on you?",
-   "num_comments": 50
+   "id": 50331001,
+   "title": "In LLM era, can software startup survive?",
+   "num_comments": 47
+  },
+  {
+   "id": 50354336,
+   "title": "Gitbook Breached",
+   "num_comments": 45
+  },
+  {
+   "id": 49768826,
+   "title": "Ask HN: How do you interview devs in a post-AI world?",
+   "num_comments": 43
+  },
+  {
+   "id": 49674396,
+   "title": "How SaaS startup guys get first 100 customers first, make fkn $500k ARR fast?",
+   "num_comments": 43
+  },
+  {
+   "id": 49645683,
+   "title": "Apple is no longer thinking different",
+   "num_comments": 42
+  },
+  {
+   "id": 49802417,
+   "title": "Ask HN: Should we still learn coding?",
+   "num_comments": 41
+  },
+  {
+   "id": 50387483,
+   "title": "Ask HN: What are forgotten topics in computing that deserve a new revisit?",
+   "num_comments": 40
+  },
+  {
+   "id": 49873913,
+   "title": "Management is forcing us to use AI",
+   "num_comments": 37
+  },
+  {
+   "id": 49874609,
+   "title": "An Antidote to Roko's Basilisk",
+   "num_comments": 36
+  },
+  {
+   "id": 50121562,
+   "title": "Anthropic Console overcharged my card 100x due to internationalization input bug",
+   "num_comments": 36
+  },
+  {
+   "id": 49861047,
+   "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+   "num_comments": 36
+  },
+  {
+   "id": 50204125,
+   "title": "Median product \"lifespan\" has fallen from ~4y down to ~1.5y",
+   "num_comments": 35
+  },
+  {
+   "id": 49989504,
+   "title": "Tell HN: HN has lost the joy for me",
+   "num_comments": 32
+  },
+  {
+   "id": 49764727,
+   "title": "Ask HN: Losing motivation to work in the IT field, need advice",
+   "num_comments": 30
+  },
+  {
+   "id": 50344065,
+   "title": "Ask HN: Does anyone enjoy work anymore?",
+   "num_comments": 30
+  },
+  {
+   "id": 49682920,
+   "title": "Ask HN: Career paths to consider if I am better at supporting than creating?",
+   "num_comments": 30
   }
  ],
  "tools": {
@@ -978,11 +325,11 @@
     "\"claude code\"": 23379
    },
    "name_queries": {
-    "Claude Code": 65824,
+    "Claude Code": 36543,
     "\"Claude Code\"": 23379
    },
    "hn_title_points": {
-    "\"claude code\"": 68476
+    "\"claude code\"": 68477
    },
    "downloads": {
     "npm": 45548488
@@ -990,11 +337,11 @@
   },
   "terminal/Codex CLI": {
    "hn_comments_12m": {
-    "\"codex\"": 15123
+    "\"codex\"": 15124
    },
    "name_queries": {
-    "Codex CLI": 10670,
-    "\"Codex CLI\"": 647
+    "\"Codex CLI\"": 647,
+    "Codex CLI": 11669
    },
    "hn_title_points": {
     "\"codex\"": 25610
@@ -1009,7 +356,7 @@
    },
    "name_queries": {
     "\"OpenCode\"": 5262,
-    "OpenCode": 6415
+    "OpenCode": 6464
    },
    "hn_title_points": {
     "\"opencode\"": 6723
@@ -1026,7 +373,7 @@
     "\"pi-coding-agent\"": 127
    },
    "name_queries": {
-    "Pi": 143410,
+    "Pi": 142138,
     "\"Pi\"": 8870
    },
    "hn_title_points": {
@@ -1039,14 +386,14 @@
     "npm": 1454845
    },
    "collision_samples": [
+    "Mixed feelings. I use Opus 4.6 with pi.dev (one agent). I give detailed instructions what to do. I essentially u",
+    ", and Codex (especially for review). I do a bunch of niche stuff with Pi and OpenCode. My productivity is up. Some nuances with working with o",
+    "Interesting. How's the performance on the Pi? I also have a Pi 4 running a few containers and thought about runnin",
+    "I have a series of skills and scripts that I manually invoke using Pi. It checks my calendar, Slack, email, etc. and keeps pretty good trac",
     "I use PI ( https://pi.dev ) and ( https://hermes-agent.nousresearch.com/ ) as the main drive",
     "operly connected and I still got a title generated). So I settled for Pi, but I strongly disliked the idea that the agent could, at any point,",
     "Tldr; just teach them to talk to Codex and show Pi to ambitious ones. Raw Codex, both app and cli. On windows 11 which i",
-    "Claude Code, Codex, Pi clis all for varying levels of work. VS Code when needed. I review ag",
-    "rminal threads (love this!) + Remote machine Devcontainers + Claude + Pi [1] Zed https://zed.dev/ [2] Terminal threads https://zed.dev/blo",
-    "you're writing the 5th version of \"little-coder\" or similar using the Pi library ahh shit, you just read an article that `tools` are actually",
-    "LXC containers. I have a base container. \"A\" to make a new instance. Pi.dev when I hit enter on any container. Hot swap anthropic enterprise",
-    "MacOS, Ghostty, Neovim, Pi (with a fair bit of customization to each). I'm relatively new to Pi"
+    "Claude Code, Codex, Pi clis all for varying levels of work. VS Code when needed. I review ag"
    ]
   },
   "terminal/DeepSeek Harness": {
@@ -1054,7 +401,7 @@
     "\"deepseek harness\"": 126
    },
    "name_queries": {
-    "DeepSeek Harness": 628,
+    "DeepSeek Harness": 599,
     "\"DeepSeek Harness\"": 126
    },
    "hn_title_points": {
@@ -1067,8 +414,8 @@
     "\"aider\"": 332
    },
    "name_queries": {
-    "\"Aider\"": 332,
-    "Aider": 12215
+    "Aider": 4844,
+    "\"Aider\"": 332
    },
    "hn_title_points": {
     "\"aider\"": 25
@@ -1079,14 +426,15 @@
   },
   "terminal/Gemini CLI": {
    "hn_comments_12m": {
+    "Gemini CLI": 2091,
     "\"gemini cli\"": 1004,
     "\"gemini-cli\"": 1004
    },
    "name_queries": {
-    "Gemini CLI": 2091,
     "\"Gemini CLI\"": 1004
    },
    "hn_title_points": {
+    "Gemini CLI": 1328,
     "\"gemini cli\"": 1110,
     "\"gemini-cli\"": 1110
    },
@@ -1099,8 +447,8 @@
     "\"copilot cli\"": 189
    },
    "name_queries": {
-    "Copilot CLI": 746,
-    "\"Copilot CLI\"": 189
+    "\"Copilot CLI\"": 189,
+    "Copilot CLI": 783
    },
    "hn_title_points": {
     "\"copilot cli\"": 201
@@ -1129,7 +477,7 @@
    "downloads": {},
    "collision_samples": [
     "f when I’m done, my backlog has a todo that’s basically using Block’s Goose + local R1 for that kind of thing because it’s a non-interactive batc",
-    "ndbreaking for the whole industry, clearly. You have found the golden goose.",
+    "If I didn't know that I could have easily been sent on multiple wild goose chases.",
     "space for a specific bug/feature - Ramble into the input box. I use a goose neck microphone and Spokenly (with Parakeet as the model ) for local",
     ". Started with running all the usual suspects pi, claude code, codex, goose, but mostly migrated to own agent (ha!) for greater level of control.",
     "me to orchestrate difference other coding agent : like Codex + claude/Goose ...etc Also : give out product agent notebook workbench : https://ge",
@@ -1145,7 +493,7 @@
    },
    "name_queries": {
     "\"Mistral Vibe\"": 78,
-    "Mistral Vibe": 177
+    "Mistral Vibe": 178
    },
    "hn_title_points": {
     "\"mistral vibe\"": 780,
@@ -1159,7 +507,7 @@
    },
    "name_queries": {
     "\"Muse Code\"": 40,
-    "Muse Code": 5624
+    "Muse Code": 6009
    },
    "hn_title_points": {
     "\"muse code\"": 365
@@ -1173,7 +521,7 @@
    },
    "name_queries": {
     "\"Kimi CLI\"": 35,
-    "Kimi CLI": 214
+    "Kimi CLI": 248
    },
    "hn_title_points": {
     "\"kimi cli\"": 1,
@@ -1187,7 +535,7 @@
     "\"qwen-code\"": 52
    },
    "name_queries": {
-    "Qwen Code": 1679,
+    "Qwen Code": 1636,
     "\"Qwen Code\"": 52
    },
    "hn_title_points": {
@@ -1204,7 +552,7 @@
    },
    "name_queries": {
     "\"Zerostack\"": 26,
-    "Zerostack": 37
+    "Zerostack": 38
    },
    "hn_title_points": {
     "\"zerostack\"": 624
@@ -1216,8 +564,8 @@
     "\"codewhale\"": 13
    },
    "name_queries": {
-    "\"Codewhale\"": 13,
-    "Codewhale": 82
+    "Codewhale": 60,
+    "\"Codewhale\"": 13
    },
    "hn_title_points": {
     "\"codewhale\"": 0
@@ -1231,7 +579,7 @@
     "\"sourcegraph amp\"": 4
    },
    "name_queries": {
-    "Amp": 985370,
+    "Amp": 850402,
     "\"Amp\"": 1022
    },
    "hn_title_points": {
@@ -1241,6 +589,8 @@
    },
    "downloads": {},
    "collision_samples": [
+    "Amp. Early access waitlist -> ampcode.com",
+    "last month, I've made heavy use of agentic coding (a bit of Junie and Amp, but mostly Antigravity) to ship https://www.ratatui-ruby.dev from",
     "lated cloud environment. There are a bazillion services for this now ampcode, hoplite.sh, cursor's cloud agents, devin.ai cloud, and more. I haven",
     "oo much on anthropic or openai tooling, but rapidly increasing use of Amp, including their orbs (vm) and local runners I like the direction in",
     "for multiple repos in one session. Separately I'm evaluating https://ampcode.com/ which is very polished, but I feel like the diff-reading part i"
@@ -1251,7 +601,7 @@
     "\"jcode\"": 17
    },
    "name_queries": {
-    "jcode": 739992
+    "jcode": 580424
    },
    "hn_title_points": {
     "\"jcode\"": 12
@@ -1263,8 +613,8 @@
     "\"plandex\"": 1
    },
    "name_queries": {
-    "\"Plandex\"": 1,
-    "Plandex": 23883
+    "Plandex": 23883,
+    "\"Plandex\"": 1
    },
    "hn_title_points": {
     "\"plandex\"": 0
@@ -1285,9 +635,7 @@
     "\"droid cli\"": 0
    },
    "downloads": {},
-   "collision_samples": [
-    "to share). I have the client on my Android mobile, Fire tablet (via F-Droid), and my Windows laptop. My initial motivation was to replace \"cloud\""
-   ]
+   "collision_samples": []
   },
   "terminal/Crush": {
    "hn_comments_12m": {
@@ -1295,8 +643,8 @@
     "\"crush cli\"": 0
    },
    "name_queries": {
-    "\"Crush\"": 1126,
-    "Crush": 26395
+    "Crush": 26395,
+    "\"Crush\"": 1126
    },
    "hn_title_points": {
     "\"charm crush\"": 1,
@@ -1304,7 +652,8 @@
    },
    "downloads": {},
    "collision_samples": [
-    "gpt-oss-120b keeps stopping for me in Codex. (Also in Crush.) I have to say \"continue\" constantly."
+    "gpt-oss-120b keeps stopping for me in Codex. (Also in Crush.) I have to say \"continue\" constantly.",
+    "tuff (gaming) when I'm not using it with coding tasks. CLI/Harness: - Crush harness ( https://github.com/charmbracelet/crush ) less feature rich"
    ]
   },
   "terminal/Open Interpreter": {
@@ -1312,8 +661,8 @@
     "\"open interpreter\"": 1
    },
    "name_queries": {
-    "\"Open Interpreter\"": 1,
-    "Open Interpreter": 482
+    "Open Interpreter": 265,
+    "\"Open Interpreter\"": 1
    },
    "hn_title_points": {
     "\"open interpreter\"": 0
@@ -1326,8 +675,8 @@
     "\"kiro-cli\"": 18
    },
    "name_queries": {
-    "\"Kiro CLI\"": 18,
-    "Kiro CLI": 131
+    "Kiro CLI": 125,
+    "\"Kiro CLI\"": 18
    },
    "hn_title_points": {
     "\"kiro cli\"": 27,
@@ -1342,8 +691,8 @@
     "\"vs code copilot\"": 34
    },
    "name_queries": {
-    "\"VS Code + Copilot\"": 5,
-    "VS Code + Copilot": 89
+    "VS Code + Copilot": 89,
+    "\"VS Code + Copilot\"": 5
    },
    "hn_title_points": {
     "\"github copilot\"": 4168,
@@ -1354,6 +703,7 @@
   },
   "editors/Cursor": {
    "hn_comments_12m": {
+    "\"cursor\"": 7945,
     "\"cursor ide\"": 32,
     "\"cursor editor\"": 4,
     "\"cursor agent\"": 56,
@@ -1364,6 +714,7 @@
     "\"Cursor\"": 7945
    },
    "hn_title_points": {
+    "\"cursor\"": 15906,
     "\"cursor ide\"": 16,
     "\"cursor editor\"": 0,
     "\"cursor agent\"": 29,
@@ -1371,14 +722,14 @@
    },
    "downloads": {},
    "collision_samples": [
-    "he steps, and changes the final screen to reflect this new data type. Cursor does the engineering very well. I think it's become common recently t",
-    "ork. Shared markdown is in the code and we review it. Combine it with Cursor and you don't have to drag and drop or download anything. I just set",
-    "3 weeks ago pair programming with Cursor in \"Ask\" mode and ignoring all agents was the most productive I could",
-    "I am not using Cursor as my IDE I typically get Claude or Gemini to give me feedback about",
-    "Interesting read! My personal experience with Cursor aligns with this. The initial result of my prompt was stunningly good",
-    "I work daily in Cursor, producing around 200k lines of code per week, though only a small po",
-    "queries that would take non trivial time to construct, even if using cursor or ChatGPT.",
-    "onment where I cannot pair as much as I wanted to but at least I have Cursor/Claude/Whatever. However not having that continuous interaction and h"
+    "But can they surpass Cursor?",
+    "Cursor itself is making 200 million a year now so I presume yes.",
+    "Cursor can index your codebase efficiently using vector embeddings rather th",
+    "For me, it's Cursor, sometimes Augment. Gemini 2.5 + Claude 3.7 work very well",
+    "ke this with a grain of salt, but I've seen and experienced this when Cursor chats start to get very long (eg the context starts to really fill up",
+    "The only thing preventing me to keep using Cursor/Windsurf it's the lack of sync feature. I use different machines and",
+    "Personally, I've been using Cursor since day 1. Lately with Gemini 2.5 Pro. I've also started experiment",
+    "Latest cursor update where they started charging for tokens is pretty good. I don't"
    ]
   },
   "editors/Zed": {
@@ -1386,7 +737,7 @@
     "\"zed\"": 2408
    },
    "name_queries": {
-    "Zed": 64797,
+    "Zed": 63529,
     "\"Zed\"": 2408
    },
    "hn_title_points": {
@@ -1400,7 +751,7 @@
    },
    "name_queries": {
     "\"Antigravity\"": 1760,
-    "Antigravity": 1856
+    "Antigravity": 1857
    },
    "hn_title_points": {
     "\"antigravity\"": 5230
@@ -1412,8 +763,8 @@
     "\"windsurf\"": 346
    },
    "name_queries": {
-    "\"Windsurf\"": 346,
-    "Windsurf": 551
+    "Windsurf": 551,
+    "\"Windsurf\"": 346
    },
    "hn_title_points": {
     "\"windsurf\"": 177
@@ -1425,8 +776,8 @@
     "\"cline\"": 319
    },
    "name_queries": {
-    "Cline": 27974,
-    "\"Cline\"": 319
+    "\"Cline\"": 319,
+    "Cline": 27975
    },
    "hn_title_points": {
     "\"cline\"": 94
@@ -1452,8 +803,8 @@
     "\"roocode\"": 33
    },
    "name_queries": {
-    "Roo Code": 155,
-    "\"Roo Code\"": 50
+    "\"Roo Code\"": 50,
+    "Roo Code": 649
    },
    "hn_title_points": {
     "\"roo code\"": 39,
@@ -1467,7 +818,7 @@
     "\"kilocode\"": 73
    },
    "name_queries": {
-    "Kilo Code": 898,
+    "Kilo Code": 891,
     "\"Kilo Code\"": 68
    },
    "hn_title_points": {
@@ -1509,8 +860,8 @@
     "\"gptel\"": 80
    },
    "name_queries": {
-    "Emacs gptel": 57,
-    "\"Emacs gptel\"": 4
+    "\"Emacs gptel\"": 4,
+    "Emacs gptel": 57
    },
    "hn_title_points": {
     "\"gptel\"": 6
@@ -1522,8 +873,8 @@
     "\"continue.dev\"": 28
    },
    "name_queries": {
-    "\"Continue\"": 25216,
-    "Continue": 110372
+    "Continue": 110129,
+    "\"Continue\"": 25216
    },
    "hn_title_points": {
     "\"continue.dev\"": 0
@@ -1550,8 +901,8 @@
     "\"void ide\"": 0
    },
    "name_queries": {
-    "Void": 60302,
-    "\"Void\"": 2538
+    "\"Void\"": 2538,
+    "Void": 60144
    },
    "hn_title_points": {
     "\"void editor\"": 0,
@@ -1564,7 +915,7 @@
     "\"herdr\"": 549
    },
    "name_queries": {
-    "Herdr": 4682,
+    "Herdr": 4683,
     "\"Herdr\"": 549
    },
    "hn_title_points": {
@@ -1578,8 +929,8 @@
     "tmux worktrees": 71
    },
    "name_queries": {
-    "tmux + git worktrees": 15,
-    "\"tmux + git worktrees\"": 0
+    "\"tmux + git worktrees\"": 0,
+    "tmux + git worktrees": 15
    },
    "hn_title_points": {
     "tmux worktree": 37,
@@ -1592,8 +943,8 @@
     "\"paseo\"": 176
    },
    "name_queries": {
-    "Paseo": 1070,
-    "\"Paseo\"": 176
+    "\"Paseo\"": 176,
+    "Paseo": 1153
    },
    "hn_title_points": {
     "\"paseo\"": 127
@@ -1606,7 +957,7 @@
     "\"gastown\"": 219
    },
    "name_queries": {
-    "Gas Town": 2209,
+    "Gas Town": 2950,
     "\"Gas Town\"": 480
    },
    "hn_title_points": {
@@ -1638,7 +989,7 @@
    },
    "name_queries": {
     "\"Beads\"": 476,
-    "Beads": 10019
+    "Beads": 31101
    },
    "hn_title_points": {
     "\"beads\"": 245
@@ -1650,8 +1001,8 @@
     "\"orca\"": 233
    },
    "name_queries": {
-    "Orca": 49982,
-    "\"Orca\"": 233
+    "\"Orca\"": 233,
+    "Orca": 50088
    },
    "hn_title_points": {
     "\"orca\"": 129
@@ -1674,7 +1025,7 @@
     "\"conductor app\"": 1
    },
    "name_queries": {
-    "Conductor": 1596,
+    "Conductor": 3860,
     "\"Conductor\"": 599
    },
    "hn_title_points": {
@@ -1683,12 +1034,11 @@
    },
    "downloads": {},
    "collision_samples": [
+    "d so many tools. Cursor, Claude and Codex, open source coding agents, Conductor, building my own CLIs and online dev environments. Tool churn is a ch",
     "Hey -- we've loved using Conductor here at Digits. I've been using it since February and only recently s",
     "I'm biased (I'm the creator) but I use Conductor every day. I've recently switched to Opus 4.8 (fast mode always on) a",
     "devs: Claude, Codex and Cursor. All on the $20 subscription. Then use Conductor for worktrees w/ Claude/Codex for mid-size tasks and code review. Cur",
     "etailed skills has worked really really well. I use Claude Opus 4.8 + Conductor as my daily driver",
-    "e project serially, working on main, rather than in parallel like how Conductor does with the help of worktrees.",
-    "I wrote a terminal based version of Conductor, heavily based on my own preferred workflows: https://github.com/bak",
     "d OpenCode side by side, each in its own worktree. Where it goes past Conductor is the step after: walkthroughs to actually understand each diff and",
     "Models: Claude and ChatGPT Workspace orchestration: Conductor.build (RIP) Looking for a substitute, recommendations welcome. Skill"
    ]
@@ -1698,7 +1048,7 @@
     "\"juggler\"": 86
    },
    "name_queries": {
-    "Juggler": 2058,
+    "Juggler": 725,
     "\"Juggler\"": 86
    },
    "hn_title_points": {
@@ -1712,7 +1062,7 @@
     "\"ralph wiggum\"": 93
    },
    "name_queries": {
-    "Ralph loop": 347,
+    "Ralph loop": 346,
     "\"Ralph loop\"": 130
    },
    "hn_title_points": {
@@ -1727,8 +1077,8 @@
     "\"vibe-kanban\"": 29
    },
    "name_queries": {
-    "Vibe Kanban": 53,
-    "\"Vibe Kanban\"": 29
+    "\"Vibe Kanban\"": 29,
+    "Vibe Kanban": 53
    },
    "hn_title_points": {
     "\"vibe kanban\"": 4,
@@ -1741,8 +1091,8 @@
     "\"omnara\"": 49
    },
    "name_queries": {
-    "\"Omnara\"": 49,
-    "Omnara": 85
+    "Omnara": 85,
+    "\"Omnara\"": 49
    },
    "hn_title_points": {
     "\"omnara\"": 261
@@ -1793,7 +1143,7 @@
    },
    "name_queries": {
     "\"Ruflo\"": 6,
-    "Ruflo": 490
+    "Ruflo": 486
    },
    "hn_title_points": {
     "\"ruflo\"": 7
@@ -1805,7 +1155,7 @@
     "\"superset.sh\"": 19
    },
    "name_queries": {
-    "Superset": 4940,
+    "Superset": 6486,
     "\"Superset\"": 569
    },
    "hn_title_points": {
@@ -1863,7 +1213,7 @@
    },
    "name_queries": {
     "\"Crystal\"": 1612,
-    "Crystal": 3824
+    "Crystal": 3817
    },
    "hn_title_points": {
     "\"crystal app\"": 0
@@ -1890,7 +1240,7 @@
     "\"claude review\"": 57
    },
    "name_queries": {
-    "Claude Code review": 2956,
+    "Claude Code review": 2957,
     "\"Claude Code review\"": 19
    },
    "hn_title_points": {
@@ -1905,8 +1255,8 @@
     "\"copilot code review\"": 15
    },
    "name_queries": {
-    "Copilot code review": 244,
-    "\"Copilot code review\"": 15
+    "\"Copilot code review\"": 15,
+    "Copilot code review": 244
    },
    "hn_title_points": {
     "\"copilot review\"": 0,
@@ -1929,13 +1279,14 @@
   },
   "review/Cursor Bugbot": {
    "hn_comments_12m": {
+    "Cursor Bugbot": 27,
     "\"bugbot\"": 51
    },
    "name_queries": {
-    "Cursor Bugbot": 27,
     "\"Cursor Bugbot\"": 17
    },
    "hn_title_points": {
+    "Cursor Bugbot": 1,
     "\"bugbot\"": 55
    },
    "downloads": {}
@@ -1947,7 +1298,7 @@
    },
    "name_queries": {
     "\"Codex code review\"": 2,
-    "Codex code review": 8591
+    "Codex code review": 8595
    },
    "hn_title_points": {
     "\"codex review\"": 16,
@@ -1960,8 +1311,8 @@
     "\"codex security\"": 48
    },
    "name_queries": {
-    "Codex Security": 6795,
-    "\"Codex Security\"": 48
+    "\"Codex Security\"": 48,
+    "Codex Security": 6800
    },
    "hn_title_points": {
     "\"codex security\"": 662
@@ -1973,8 +1324,8 @@
     "\"qodo\"": 14
    },
    "name_queries": {
-    "Qodo": 5590,
-    "\"Qodo\"": 14
+    "\"Qodo\"": 14,
+    "Qodo": 5590
    },
    "hn_title_points": {
     "\"qodo\"": 5
@@ -1983,15 +1334,17 @@
   },
   "review/Graphite": {
    "hn_comments_12m": {
+    "\"graphite\"": 360,
     "\"graphite.dev\"": 3,
     "\"graphite.com\"": 8,
     "\"graphite stacked\"": 0
    },
    "name_queries": {
-    "Graphite": 6017,
+    "Graphite": 11438,
     "\"Graphite\"": 360
    },
    "hn_title_points": {
+    "\"graphite\"": 731,
     "\"graphite.dev\"": 0,
     "\"graphite.com\"": 0,
     "\"graphite stacked\"": 0
@@ -2004,7 +1357,7 @@
     "\"greptile\"": 64
    },
    "name_queries": {
-    "Greptile": 354,
+    "Greptile": 113,
     "\"Greptile\"": 64
    },
    "hn_title_points": {
@@ -2018,8 +1371,8 @@
     "\"open-code-review\"": 16
    },
    "name_queries": {
-    "Open Code Review": 1428,
-    "\"Open Code Review\"": 16
+    "\"Open Code Review\"": 16,
+    "Open Code Review": 1428
    },
    "hn_title_points": {
     "\"open code review\"": 294,
@@ -2032,7 +1385,7 @@
     "\"sourcery\"": 16
    },
    "name_queries": {
-    "Sourcery": 99093,
+    "Sourcery": 99101,
     "\"Sourcery\"": 16
    },
    "hn_title_points": {
@@ -2089,8 +1442,8 @@
     "\"superpowers\"": 863
    },
    "name_queries": {
-    "Superpowers": 2149,
-    "\"Superpowers\"": 863
+    "\"Superpowers\"": 863,
+    "Superpowers": 2149
    },
    "hn_title_points": {
     "\"superpowers\"": 1220
@@ -2105,7 +1458,7 @@
    },
    "name_queries": {
     "\"Spec Kit\"": 83,
-    "Spec Kit": 1697
+    "Spec Kit": 1651
    },
    "hn_title_points": {
     "\"spec kit\"": 16,
@@ -2120,7 +1473,7 @@
    },
    "name_queries": {
     "\"Context7\"": 92,
-    "Context7": 60804
+    "Context7": 60806
    },
    "hn_title_points": {
     "\"context7\"": 8
@@ -2134,8 +1487,8 @@
     "\"github mcp\"": 36
    },
    "name_queries": {
-    "\"GitHub MCP server\"": 9,
-    "GitHub MCP server": 748
+    "GitHub MCP server": 745,
+    "\"GitHub MCP server\"": 9
    },
    "hn_title_points": {
     "\"github mcp\"": 3
@@ -2147,8 +1500,8 @@
     "\"semble\"": 44
    },
    "name_queries": {
-    "\"Semble\"": 44,
-    "Semble": 1064
+    "Semble": 642,
+    "\"Semble\"": 44
    },
    "hn_title_points": {
     "\"semble\"": 461
@@ -2169,14 +1522,16 @@
   },
   "context/Impeccable": {
    "hn_comments_12m": {
+    "\"impeccable\"": 190,
     "\"impeccable\" skill": 54,
     "\"impeccable.style\"": 14
    },
    "name_queries": {
-    "Impeccable": 233,
+    "Impeccable": 210,
     "\"Impeccable\"": 190
    },
    "hn_title_points": {
+    "\"impeccable\"": 453,
     "\"impeccable\" skill": 0,
     "\"impeccable.style\"": 0
    },
@@ -2189,7 +1544,7 @@
    },
    "name_queries": {
     "\"Graphify\"": 31,
-    "Graphify": 10568
+    "Graphify": 7099
    },
    "hn_title_points": {
     "\"graphify\"": 134
@@ -2202,7 +1557,7 @@
    },
    "name_queries": {
     "\"Figma MCP\"": 39,
-    "Figma MCP": 171
+    "Figma MCP": 155
    },
    "hn_title_points": {
     "\"figma mcp\"": 48
@@ -2214,8 +1569,8 @@
     "\"repomix\"": 16
    },
    "name_queries": {
-    "Repomix": 7485,
-    "\"Repomix\"": 16
+    "\"Repomix\"": 16,
+    "Repomix": 7486
    },
    "hn_title_points": {
     "\"repomix\"": 0
@@ -2229,7 +1584,7 @@
     "\"claude-mem\"": 22
    },
    "name_queries": {
-    "claude-mem": 55
+    "claude-mem": 59
    },
    "hn_title_points": {
     "\"claude-mem\"": 10
@@ -2241,8 +1596,8 @@
     "\"linear mcp\"": 19
    },
    "name_queries": {
-    "Linear MCP": 388,
-    "\"Linear MCP\"": 19
+    "\"Linear MCP\"": 19,
+    "Linear MCP": 388
    },
    "hn_title_points": {
     "\"linear mcp\"": 7
@@ -2255,7 +1610,7 @@
     "\"serena\"": 53
    },
    "name_queries": {
-    "Serena": 661,
+    "Serena": 670,
     "\"Serena\"": 53
    },
    "hn_title_points": {
@@ -2263,15 +1618,17 @@
     "\"serena\"": 7
    },
    "downloads": {},
-   "collision_samples": []
+   "collision_samples": [
+    "lly the specs, requirements, design, and exec tasks scripts that plus serena mcp to replace all of gemini cli's agent tools actually gets it to wo"
+   ]
   },
   "context/Sentry MCP": {
    "hn_comments_12m": {
     "\"sentry mcp\"": 5
    },
    "name_queries": {
-    "Sentry MCP": 332,
-    "\"Sentry MCP\"": 5
+    "\"Sentry MCP\"": 5,
+    "Sentry MCP": 50
    },
    "hn_title_points": {
     "\"sentry mcp\"": 1
@@ -2295,21 +1652,26 @@
     "\"headroom\" mcp": 21
    },
    "name_queries": {
-    "\"headroom\"": 469,
-    "headroom": 478
+    "headroom": 479,
+    "\"headroom\"": 469
    },
    "hn_title_points": {
     "\"headroom\" mcp": 0
    },
    "downloads": {},
-   "collision_samples": []
+   "collision_samples": [
+    "has the quantized models. I’ve test Kimi though don’t have quite the headroom at home for it, and I don’t yet see a significant enough difference b",
+    "enter gear, much less with the big proprietary suppliers; the compute headroom is too small to begin with once the model is in RAM) but rather to im",
+    "n/qwen3.6-35b-a3b mlx with my 48GB M4 MBP which leaves me just enough headroom for docker dev-container and other basics. I use LM Studio to run and",
+    "ort. I point it at the tailnet DNS (https://llama.<tailnet>:<port>) - Headroom ( https://github.com/chopratejas/headroom ) to maximize the 80k conte"
+   ]
   },
   "context/context-mode": {
    "hn_comments_12m": {
     "\"context-mode\"": 53
    },
    "name_queries": {
-    "context-mode": 118
+    "context-mode": 120
    },
    "hn_title_points": {
     "\"context-mode\"": 90
@@ -2318,14 +1680,15 @@
   },
   "browser/Playwright MCP": {
    "hn_comments_12m": {
+    "Playwright MCP": 295,
     "\"playwright mcp\"": 119,
     "\"playwright-mcp\"": 119
    },
    "name_queries": {
-    "\"Playwright MCP\"": 119,
-    "Playwright MCP": 295
+    "\"Playwright MCP\"": 119
    },
    "hn_title_points": {
+    "Playwright MCP": 35,
     "\"playwright mcp\"": 21,
     "\"playwright-mcp\"": 21
    },
@@ -2339,8 +1702,8 @@
     "\"chrome-devtools-mcp\"": 42
    },
    "name_queries": {
-    "Chrome DevTools MCP": 83,
-    "\"Chrome DevTools MCP\"": 42
+    "\"Chrome DevTools MCP\"": 42,
+    "Chrome DevTools MCP": 83
    },
    "hn_title_points": {
     "\"chrome devtools mcp\"": 619,
@@ -2369,8 +1732,8 @@
     "\"firecrawl\"": 71
    },
    "name_queries": {
-    "\"Firecrawl\"": 71,
-    "Firecrawl": 112
+    "Firecrawl": 73,
+    "\"Firecrawl\"": 71
    },
    "hn_title_points": {
     "\"firecrawl\"": 48
@@ -2383,7 +1746,7 @@
    },
    "name_queries": {
     "\"Lightpanda\"": 48,
-    "Lightpanda": 48
+    "Lightpanda": 67
    },
    "hn_title_points": {
     "\"lightpanda\"": 474
@@ -2395,7 +1758,7 @@
     "\"stagehand\"": 43
    },
    "name_queries": {
-    "Stagehand": 50,
+    "Stagehand": 49,
     "\"Stagehand\"": 43
    },
    "hn_title_points": {
@@ -2411,8 +1774,8 @@
     "\"claude for chrome\"": 15
    },
    "name_queries": {
-    "Claude in Chrome": 390,
-    "\"Claude in Chrome\"": 38
+    "\"Claude in Chrome\"": 38,
+    "Claude in Chrome": 390
    },
    "hn_title_points": {
     "\"claude in chrome\"": 322,
@@ -2439,7 +1802,7 @@
     "\"browser use\"": 232
    },
    "name_queries": {
-    "browser-use": 448
+    "browser-use": 445
    },
    "hn_title_points": {
     "\"browser-use\"": 73,
@@ -2454,8 +1817,8 @@
     "\"scrapling\"": 6
    },
    "name_queries": {
-    "\"Scrapling\"": 6,
-    "Scrapling": 8140
+    "Scrapling": 8098,
+    "\"Scrapling\"": 6
    },
    "hn_title_points": {
     "\"scrapling\"": 0
@@ -2470,8 +1833,8 @@
     "\"browsermcp\"": 4
    },
    "name_queries": {
-    "\"Browser MCP\"": 26,
-    "Browser MCP": 1160
+    "Browser MCP": 1165,
+    "\"Browser MCP\"": 26
    },
    "hn_title_points": {
     "\"browser mcp\"": 11,
@@ -2485,7 +1848,7 @@
     "\"r.jina.ai\"": 3
    },
    "name_queries": {
-    "Jina Reader": 54,
+    "Jina Reader": 55,
     "\"Jina Reader\"": 3
    },
    "hn_title_points": {
@@ -2499,8 +1862,8 @@
     "\"browserbase\"": 37
    },
    "name_queries": {
-    "Browserbase": 42,
-    "\"Browserbase\"": 37
+    "\"Browserbase\"": 37,
+    "Browserbase": 86
    },
    "hn_title_points": {
     "\"browserbase\"": 18
@@ -2513,7 +1876,7 @@
     "\"bwrap\"": 161
    },
    "name_queries": {
-    "bubblewrap": 412
+    "bubblewrap": 527
    },
    "hn_title_points": {
     "\"bubblewrap\"": 319,
@@ -2527,8 +1890,8 @@
     "\"docker sandboxes\"": 65
    },
    "name_queries": {
-    "\"Docker Sandboxes\"": 65,
-    "Docker Sandboxes": 587
+    "Docker Sandboxes": 619,
+    "\"Docker Sandboxes\"": 65
    },
    "hn_title_points": {
     "\"docker sandbox\"": 102,
@@ -2541,8 +1904,8 @@
     "\"openshell\"": 65
    },
    "name_queries": {
-    "OpenShell": 105,
-    "\"OpenShell\"": 65
+    "\"OpenShell\"": 65,
+    "OpenShell": 105
    },
    "hn_title_points": {
     "\"openshell\"": 585
@@ -2556,7 +1919,7 @@
     "\"apple's container\"": 17
    },
    "name_queries": {
-    "Apple container": 436,
+    "Apple container": 439,
     "\"Apple container\"": 101
    },
    "hn_title_points": {
@@ -2573,7 +1936,7 @@
     "\"devcontainers\"": 134
    },
    "name_queries": {
-    "Dev containers": 1021,
+    "Dev containers": 903,
     "\"Dev containers\"": 68
    },
    "hn_title_points": {
@@ -2588,8 +1951,8 @@
     "\"e2b\"": 242
    },
    "name_queries": {
-    "E2B": 46393,
-    "\"E2B\"": 242
+    "\"E2B\"": 242,
+    "E2B": 46414
    },
    "hn_title_points": {
     "\"e2b\"": 556
@@ -2601,7 +1964,7 @@
     "\"nono\"": 146
    },
    "name_queries": {
-    "nono": 130136
+    "nono": 129671
    },
    "hn_title_points": {
     "\"nono\"": 20
@@ -2645,8 +2008,8 @@
     "\"trycua\"": 10
    },
    "name_queries": {
-    "Lume": 11944,
-    "\"Lume\"": 47
+    "\"Lume\"": 47,
+    "Lume": 19858
    },
    "hn_title_points": {
     "\"lume\"": 180,
@@ -2660,8 +2023,8 @@
     "\"daytona\"": 74
    },
    "name_queries": {
-    "\"Daytona\"": 74,
-    "Daytona": 158
+    "Daytona": 158,
+    "\"Daytona\"": 74
    },
    "hn_title_points": {
     "\"daytona\"": 35
@@ -2673,8 +2036,8 @@
     "\"agent safehouse\"": 30
    },
    "name_queries": {
-    "Agent Safehouse": 42,
-    "\"Agent Safehouse\"": 30
+    "\"Agent Safehouse\"": 30,
+    "Agent Safehouse": 42
    },
    "hn_title_points": {
     "\"agent safehouse\"": 823
@@ -2686,8 +2049,8 @@
     "\"ardent\"": 139
    },
    "name_queries": {
-    "\"Ardent\"": 139,
-    "Ardent": 75485
+    "Ardent": 75485,
+    "\"Ardent\"": 139
    },
    "hn_title_points": {
     "\"ardent\"": 111
@@ -2702,7 +2065,7 @@
     "\"sprites\"": 600
    },
    "name_queries": {
-    "Sprites": 16735,
+    "Sprites": 7803,
     "\"Sprites\"": 600
    },
    "hn_title_points": {
@@ -2711,9 +2074,7 @@
     "\"sprites\"": 398
    },
    "downloads": {},
-   "collision_samples": [
-    "a, which I found very enjoyable. Before that I was learning about Fly Sprites, which it turns out are a little broken, but it was still interesting"
-   ]
+   "collision_samples": []
   },
   "sandbox/container-use": {
    "hn_comments_12m": {
@@ -2733,8 +2094,8 @@
     "\"modal sandboxes\"": 6
    },
    "name_queries": {
-    "\"Modal Sandboxes\"": 6,
-    "Modal Sandboxes": 1001
+    "Modal Sandboxes": 1060,
+    "\"Modal Sandboxes\"": 6
    },
    "hn_title_points": {
     "\"modal sandbox\"": 0,
@@ -2747,8 +2108,8 @@
     "\"vercel sandbox\"": 2
    },
    "name_queries": {
-    "\"Vercel Sandbox\"": 2,
-    "Vercel Sandbox": 36
+    "Vercel Sandbox": 36,
+    "\"Vercel Sandbox\"": 2
    },
    "hn_title_points": {
     "\"vercel sandbox\"": 15
@@ -2785,8 +2146,8 @@
     "\"mlx\"": 698
    },
    "name_queries": {
-    "\"MLX\"": 698,
-    "MLX": 54158
+    "MLX": 54159,
+    "\"MLX\"": 698
    },
    "hn_title_points": {
     "\"mlx\"": 1736
@@ -2817,7 +2178,7 @@
     "\"open-webui\"": 104
    },
    "name_queries": {
-    "Open WebUI": 3508,
+    "Open WebUI": 3509,
     "\"Open WebUI\"": 104
    },
    "hn_title_points": {
@@ -2832,7 +2193,7 @@
     "\"vllm\"": 919
    },
    "name_queries": {
-    "vLLM": 151090,
+    "vLLM": 372255,
     "\"vLLM\"": 919
    },
    "hn_title_points": {
@@ -2848,7 +2209,7 @@
    },
    "name_queries": {
     "\"Unsloth\"": 818,
-    "Unsloth": 1236
+    "Unsloth": 840
    },
    "hn_title_points": {
     "\"unsloth\"": 1273
@@ -2864,8 +2225,8 @@
     "\"lemonade sdk\"": 10
    },
    "name_queries": {
-    "Lemonade": 656,
-    "\"Lemonade\"": 335
+    "\"Lemonade\"": 335,
+    "Lemonade": 656
    },
    "hn_title_points": {
     "\"lemonade server\"": 0,
@@ -2874,7 +2235,9 @@
    },
    "downloads": {},
    "collision_samples": [
-    "infinite loop after some messages. But then i often start a new chat. Lemonade-server runs with llama.cpp, vllm seems to be scaling better thoug, bu"
+    "infinite loop after some messages. But then i often start a new chat. Lemonade-server runs with llama.cpp, vllm seems to be scaling better thoug, bu",
+    "SD jail? I started to experiment with locale LLMs, through ollama and Lemonade. Enough to throw simple prompts with code excerpts and get small scop",
+    "Running AMD Lemonade as the daily rig, Started with Ollama then over to LMStudio and now s"
    ]
   },
   "local/SGLang": {
@@ -2909,8 +2272,8 @@
     "\"apfel\"": 46
    },
    "name_queries": {
-    "Apfel": 385,
-    "\"Apfel\"": 46
+    "\"Apfel\"": 46,
+    "Apfel": 386
    },
    "hn_title_points": {
     "\"apfel\"": 757
@@ -2923,15 +2286,19 @@
     "\"jan app\"": 0
    },
    "name_queries": {
-    "Jan": 118843,
-    "\"Jan\"": 2132
+    "Jan": 136084,
+    "\"Jan\"": 2133
    },
    "hn_title_points": {
     "\"jan.ai\"": 1,
     "\"jan app\"": 0
    },
    "downloads": {},
-   "collision_samples": []
+   "collision_samples": [
+    "atform teams at Heroku and Segment. Project type: new startup started Jan ‘26 at https://housecat.com . Pitch is “dev tools for non developers",
+    "I used it for a bit in Jan. And found it to be a much worse version of Claude Code. But I'm expl",
+    "were fine with the coding models of yesterday (i.e. Claude Opus from Jan/Feb of 2026), you will be fine with either Kimi K2.6 or DeepSeek v4 P"
+   ]
   },
   "local/KoboldCpp": {
    "hn_comments_12m": {
@@ -2951,8 +2318,8 @@
     "\"openrouter\"": 3860
    },
    "name_queries": {
-    "\"OpenRouter\"": 3860,
-    "OpenRouter": 4167
+    "OpenRouter": 4164,
+    "\"OpenRouter\"": 3860
    },
    "hn_title_points": {
     "\"openrouter\"": 6377
@@ -2964,8 +2331,8 @@
     "\"bedrock\"": 1315
    },
    "name_queries": {
-    "AWS Bedrock": 1283,
-    "\"AWS Bedrock\"": 270
+    "\"AWS Bedrock\"": 270,
+    "AWS Bedrock": 888
    },
    "hn_title_points": {
     "\"bedrock\"": 1356
@@ -2977,8 +2344,8 @@
     "\"litellm\"": 430
    },
    "name_queries": {
-    "LiteLLM": 531,
-    "\"LiteLLM\"": 430
+    "\"LiteLLM\"": 430,
+    "LiteLLM": 531
    },
    "hn_title_points": {
     "\"litellm\"": 3414
@@ -2993,8 +2360,8 @@
     "\"opencode zen\"": 71
    },
    "name_queries": {
-    "OpenCode Go / Zen": 93,
-    "\"OpenCode Go / Zen\"": 6
+    "\"OpenCode Go / Zen\"": 6,
+    "OpenCode Go / Zen": 88
    },
    "hn_title_points": {
     "\"opencode go\"": 85,
@@ -3008,8 +2375,8 @@
     "\"claude-code-router\"": 25
    },
    "name_queries": {
-    "\"Claude Code Router\"": 25,
-    "Claude Code Router": 346
+    "Claude Code Router": 347,
+    "\"Claude Code Router\"": 25
    },
    "hn_title_points": {
     "\"claude code router\"": 1,
@@ -3026,8 +2393,8 @@
     "\"llm.datasette.io\"": 10
    },
    "name_queries": {
-    "llm": 198127,
-    "\"llm\"": 133613
+    "llm": 196136,
+    "\"llm\"": 133168
    },
    "hn_title_points": {
     "\"simonw/llm\"": 0,
@@ -3068,8 +2435,8 @@
     "\"portkey\"": 6
    },
    "name_queries": {
-    "Portkey": 2309,
-    "\"Portkey\"": 6
+    "\"Portkey\"": 6,
+    "Portkey": 32
    },
    "hn_title_points": {
     "\"portkey\"": 9
@@ -3078,19 +2445,20 @@
   },
   "gateways/Chutes": {
    "hn_comments_12m": {
-    "\"chutes.ai\"": 6,
-    "\"chutes\"": 33
+    "\"chutes\"": 33,
+    "\"chutes.ai\"": 6
    },
    "name_queries": {
     "Chutes": 225,
     "\"Chutes\"": 33
    },
    "hn_title_points": {
-    "\"chutes.ai\"": 3,
-    "\"chutes\"": 3
+    "\"chutes\"": 3,
+    "\"chutes.ai\"": 3
    },
    "downloads": {},
    "collision_samples": [
+    "and it fixed it. I'm using openrouter/google/gemma-3-27b-it:free via chutes. Not a frontier model in the slightest.",
     "use them (cli, api, etc). 2) OpenCode Go subscription, backstopped by Chutes Plus subscription, OpenRouter with $10 in credit (for very rare use o"
    ]
   },
@@ -3099,8 +2467,8 @@
     "\"omniroute\"": 1
    },
    "name_queries": {
-    "\"OmniRoute\"": 1,
-    "OmniRoute": 221
+    "OmniRoute": 222,
+    "\"OmniRoute\"": 1
    },
    "hn_title_points": {
     "\"omniroute\"": 0
@@ -3125,8 +2493,8 @@
     "\"synthetic.new\"": 29
    },
    "name_queries": {
-    "Synthetic": 7367,
-    "\"Synthetic\"": 2544
+    "\"Synthetic\"": 2544,
+    "Synthetic": 2913
    },
    "hn_title_points": {
     "\"synthetic.new\"": 14
@@ -3138,13 +2506,14 @@
   },
   "frameworks/LangChain": {
    "hn_comments_12m": {
+    "LangChain": 817,
     "\"langchain\"": 807
    },
    "name_queries": {
-    "LangChain": 817,
     "\"LangChain\"": 807
    },
    "hn_title_points": {
+    "LangChain": 229,
     "\"langchain\"": 227
    },
    "downloads": {
@@ -3157,7 +2526,7 @@
    },
    "name_queries": {
     "\"Mastra\"": 115,
-    "Mastra": 8993
+    "Mastra": 7371
    },
    "hn_title_points": {
     "\"mastra\"": 240
@@ -3172,8 +2541,8 @@
     "\"agent sdk\"": 301
    },
    "name_queries": {
-    "\"Claude Agent SDK\"": 132,
-    "Claude Agent SDK": 2203
+    "Claude Agent SDK": 2204,
+    "\"Claude Agent SDK\"": 132
    },
    "hn_title_points": {
     "\"claude agent sdk\"": 106,
@@ -3188,8 +2557,8 @@
     "\"langgraph\"": 466
    },
    "name_queries": {
-    "LangGraph": 472,
-    "\"LangGraph\"": 466
+    "\"LangGraph\"": 466,
+    "LangGraph": 472
    },
    "hn_title_points": {
     "\"langgraph\"": 215
@@ -3203,8 +2572,8 @@
     "\"dspy\"": 130
    },
    "name_queries": {
-    "\"DSPy\"": 130,
-    "DSPy": 5996
+    "DSPy": 8029,
+    "\"DSPy\"": 130
    },
    "hn_title_points": {
     "\"dspy\"": 392
@@ -3252,7 +2621,7 @@
    },
    "name_queries": {
     "\"Google ADK\"": 46,
-    "Google ADK": 16825
+    "Google ADK": 16826
    },
    "hn_title_points": {
     "\"google adk\"": 12,
@@ -3267,8 +2636,8 @@
     "\"crewai\"": 156
    },
    "name_queries": {
-    "\"CrewAI\"": 156,
-    "CrewAI": 199
+    "CrewAI": 199,
+    "\"CrewAI\"": 156
    },
    "hn_title_points": {
     "\"crewai\"": 28
@@ -3284,8 +2653,8 @@
     "\"pydanticai\"": 30
    },
    "name_queries": {
-    "Pydantic AI": 246,
-    "\"Pydantic AI\"": 69
+    "\"Pydantic AI\"": 69,
+    "Pydantic AI": 366
    },
    "hn_title_points": {
     "\"pydantic ai\"": 37,
@@ -3306,7 +2675,7 @@
     "OpenTelemetry GenAI": 9
    },
    "hn_title_points": {
-    "\"opentelemetry\"": 874,
+    "\"opentelemetry\"": 879,
     "\"otel\"": 394
    },
    "downloads": {}
@@ -3330,8 +2699,8 @@
     "\"langfuse\"": 125
    },
    "name_queries": {
-    "\"Langfuse\"": 125,
-    "Langfuse": 126
+    "Langfuse": 291,
+    "\"Langfuse\"": 125
    },
    "hn_title_points": {
     "\"langfuse\"": 264
@@ -3363,8 +2732,8 @@
     "\"mlflow\"": 55
    },
    "name_queries": {
-    "\"MLflow\"": 55,
-    "MLflow": 60
+    "MLflow": 60,
+    "\"MLflow\"": 55
    },
    "hn_title_points": {
     "\"mlflow\"": 14
@@ -3378,8 +2747,8 @@
     "\"logfire\"": 14
    },
    "name_queries": {
-    "\"Logfire\"": 14,
-    "Logfire": 572
+    "Logfire": 573,
+    "\"Logfire\"": 14
    },
    "hn_title_points": {
     "\"logfire\"": 29
@@ -3393,7 +2762,7 @@
     "\"opik\"": 5
    },
    "name_queries": {
-    "Opik": 38154,
+    "Opik": 38163,
     "\"Opik\"": 5
    },
    "hn_title_points": {
@@ -3424,7 +2793,7 @@
     "\"helicone\"": 13
    },
    "name_queries": {
-    "Helicone": 481,
+    "Helicone": 1442,
     "\"Helicone\"": 13
    },
    "hn_title_points": {
@@ -3452,7 +2821,7 @@
     "\"langsmith\"": 67
    },
    "name_queries": {
-    "LangSmith": 69,
+    "LangSmith": 70,
     "\"LangSmith\"": 67
    },
    "hn_title_points": {
@@ -3469,7 +2838,7 @@
    },
    "name_queries": {
     "\"Inspect AI\"": 3,
-    "Inspect AI": 478
+    "Inspect AI": 826
    },
    "hn_title_points": {
     "\"inspect ai\"": 3,
@@ -3485,8 +2854,8 @@
     "\"nvidia garak\"": 0
    },
    "name_queries": {
-    "\"garak\"": 13,
-    "garak": 3547
+    "garak": 3663,
+    "\"garak\"": 13
    },
    "hn_title_points": {
     "\"garak\" llm": 0,
@@ -3520,8 +2889,8 @@
     "\"laminar\" llm": 9
    },
    "name_queries": {
-    "\"Laminar\"": 65,
-    "Laminar": 1006
+    "Laminar": 1005,
+    "\"Laminar\"": 65
    },
    "hn_title_points": {
     "\"lmnr\"": 0,
@@ -3538,7 +2907,7 @@
    },
    "name_queries": {
     "\"OpenClaw\"": 5014,
-    "OpenClaw": 5317
+    "OpenClaw": 5652
    },
    "hn_title_points": {
     "\"openclaw\"": 13329
@@ -3551,7 +2920,7 @@
     "\"hermes-agent\"": 216
    },
    "name_queries": {
-    "Hermes Agent": 2196,
+    "Hermes Agent": 2197,
     "\"Hermes Agent\"": 216
    },
    "hn_title_points": {
@@ -3567,7 +2936,7 @@
    },
    "name_queries": {
     "\"Muse\"": 1394,
-    "Muse": 59358
+    "Muse": 59371
    },
    "hn_title_points": {
     "\"muse agent\"": 11,
@@ -3587,13 +2956,14 @@
   },
   "assistants/Claude Cowork": {
    "hn_comments_12m": {
+    "Claude Cowork": 969,
     "\"cowork\"": 842
    },
    "name_queries": {
-    "Claude Cowork": 970,
     "\"Claude Cowork\"": 352
    },
    "hn_title_points": {
+    "Claude Cowork": 3682,
     "\"cowork\"": 5683
    },
    "downloads": {}
@@ -3603,7 +2973,7 @@
     "\"n8n\"": 429
    },
    "name_queries": {
-    "n8n": 129364
+    "n8n": 129365
    },
    "hn_title_points": {
     "\"n8n\"": 635
@@ -3615,7 +2985,7 @@
     "\"nanoclaw\"": 199
    },
    "name_queries": {
-    "NanoClaw": 322,
+    "NanoClaw": 320,
     "\"NanoClaw\"": 199
    },
    "hn_title_points": {
@@ -3629,8 +2999,8 @@
     "\"home assistant\" ai": 139
    },
    "name_queries": {
-    "Home Assistant + LLM": 29,
-    "\"Home Assistant + LLM\"": 0
+    "\"Home Assistant + LLM\"": 0,
+    "Home Assistant + LLM": 29
    },
    "hn_title_points": {
     "\"home assistant\" llm": 2,
@@ -3644,7 +3014,7 @@
    },
    "name_queries": {
     "\"Claude Duet\"": 19,
-    "Claude Duet": 1139
+    "Claude Duet": 1115
    },
    "hn_title_points": {
     "\"claude duet\"": 792
@@ -3656,7 +3026,7 @@
     "\"dots agent\"": 0
    },
    "name_queries": {
-    "Dots": 830092,
+    "Dots": 979987,
     "\"Dots\"": 1739
    },
    "hn_title_points": {
@@ -3680,8 +3050,8 @@
     "\"paperclipai\"": 3
    },
    "name_queries": {
-    "\"Paperclip\"": 556,
-    "Paperclip": 856
+    "Paperclip": 874,
+    "\"Paperclip\"": 556
    },
    "hn_title_points": {
     "\"paperclip\" agents": 17,
@@ -3699,8 +3069,8 @@
     "\"claude routines\"": 6
    },
    "name_queries": {
-    "\"Claude Code Routines\"": 10,
-    "Claude Code Routines": 357
+    "Claude Code Routines": 359,
+    "\"Claude Code Routines\"": 10
    },
    "hn_title_points": {
     "\"claude code routines\"": 722,
@@ -3713,7 +3083,7 @@
     "\"nanobot\"": 44
    },
    "name_queries": {
-    "nanobot": 372
+    "nanobot": 897
    },
    "hn_title_points": {
     "\"nanobot\"": 265
@@ -3725,8 +3095,8 @@
     "\"eigent\"": 2
    },
    "name_queries": {
-    "\"Eigent\"": 2,
-    "Eigent": 1029
+    "Eigent": 1029,
+    "\"Eigent\"": 2
    },
    "hn_title_points": {
     "\"eigent\"": 38
