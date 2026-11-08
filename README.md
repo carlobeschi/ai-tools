@@ -17,6 +17,14 @@ Each pick scores `sqrt(devs naming it / devs naming the category leader)`; tools
 is the mean of its picks and the headline is the mean of answered categories. Answers stay in the browser
 (localStorage) and the result is shareable through the URL hash, e.g. `assess.html#terminal=Claude%20Code&editors=Zed`.
 
+### Tests
+
+`node tests/assess.test.js` plays seven developer scenarios in headless Chromium (category leaders everywhere, strong
+runners-up, a mixed stack, only invented tool names, free text matching a known tool, niche-but-scored tools, and
+someone who uses nothing). It checks score, label, markers and the shared link against values worked out by hand from
+the 2026-11-07 snapshot, so update the expected numbers when the scoring or the latest snapshot changes. Needs
+Playwright; set `D3_PATH` to a local `d3.min.js` if the CDN is unreachable.
+
 ## Data
 
 - `data/snapshots/<date>.json`: one snapshot per research run (schema_version 1). Each has the source, corpus size,
