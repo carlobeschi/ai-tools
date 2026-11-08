@@ -1,0 +1,2370 @@
+{
+ "schema_version": 1,
+ "snapshot_date": "2026-11-07",
+ "edition": "November 2026",
+ "source": {
+  "name": "AI Dev Tools Field Guide",
+  "author": "Alexis Santos",
+  "url": "https://alexissantos.dev/ai-dev-tools/",
+  "data_url": "https://alexissantos.dev/ai-dev-tools/tools.json",
+  "retrieved_at": "2026-11-08"
+ },
+ "corpus": {
+  "hn_comments": 6323,
+  "ask_hn_threads": 24,
+  "hn_stories": 3229,
+  "lobsters_stories": 2979,
+  "devto_posts": 42357,
+  "tools_scored": 191
+ },
+ "fields": {
+  "score": "Alexis's composite score, 0-100, normalised to the category leader",
+  "hn_devs": "HN developers naming the tool in Ask HN setup threads (May 2025 - Nov 2026)",
+  "hn_comments_12m": "HN comments mentioning the tool, last 12 months",
+  "hn_title_points": "HN front-page points on stories about the tool",
+  "lobsters": "Lobsters stories",
+  "devto": "dev.to posts",
+  "github_stars": "GitHub stars",
+  "downloads_month": "npm/PyPI downloads last month",
+  "tone": "HN sentiment, -1 to 1",
+  "tags": "Rising, Fading, New in 2026, Open source"
+ },
+ "notes": "Categories marked verbatim=false (and gateways ranks 5-10) were transcribed from the rendered page, not the JSON; numbers are rounded (e.g. stars 38k) and URLs missing. Re-fetch tools.json to fill gaps.",
+ "polls": [
+  {
+   "id": "hn-agentic-setup-2026-11",
+   "title": "Ask HN: What's your current AI agentic setup?",
+   "url": "https://news.ycombinator.com/item?id=50366117",
+   "respondents": 538,
+   "results": [
+    {
+     "name": "Claude Code",
+     "count": 140
+    },
+    {
+     "name": "Codex CLI",
+     "count": 128
+    },
+    {
+     "name": "OpenCode",
+     "count": 89
+    },
+    {
+     "name": "Their own harness",
+     "count": 58
+    },
+    {
+     "name": "Pi",
+     "count": 45
+    },
+    {
+     "name": "Cursor",
+     "count": 25
+    },
+    {
+     "name": "VS Code/Copilot",
+     "count": 24
+    },
+    {
+     "name": "Zed",
+     "count": 15
+    },
+    {
+     "name": "Antigravity",
+     "count": 9
+    },
+    {
+     "name": "DeepSeek Harness",
+     "count": 9
+    },
+    {
+     "name": "Kiro",
+     "count": 7
+    },
+    {
+     "name": "Aider",
+     "count": 5
+    }
+   ]
+  }
+ ],
+ "categories": [
+  {
+   "id": "terminal",
+   "name": "Terminal agents",
+   "description": null,
+   "verbatim": true,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "Claude Code",
+     "url": "https://code.claude.com",
+     "score": 100.0,
+     "tags": [],
+     "hn_devs": 463,
+     "hn_comments_12m": 32941,
+     "hn_title_points": 78331,
+     "lobsters": 6,
+     "devto": 1913,
+     "github_stars": 154893,
+     "downloads_month": 47376016,
+     "tone": 0.46,
+     "note": "Default harness in HN setup threads; praised for UX and skills, complaints about usage burn"
+    },
+    {
+     "rank": 2,
+     "name": "Codex CLI",
+     "url": "https://developers.openai.com/codex",
+     "score": 88.1,
+     "tags": [
+      "Open source",
+      "Rising"
+     ],
+     "hn_devs": 277,
+     "hn_comments_12m": 15265,
+     "hn_title_points": 26411,
+     "lobsters": 0,
+     "devto": 231,
+     "github_stars": 133573,
+     "downloads_month": 95594449,
+     "tone": 0.27,
+     "note": "Usually the second subscription beside Claude"
+    },
+    {
+     "rank": 3,
+     "name": "OpenCode",
+     "url": "https://opencode.ai",
+     "score": 84.5,
+     "tags": [
+      "Open source",
+      "Rising"
+     ],
+     "hn_devs": 136,
+     "hn_comments_12m": 5264,
+     "hn_title_points": 6953,
+     "lobsters": 2,
+     "devto": 41,
+     "github_stars": 225234,
+     "downloads_month": 14195259,
+     "tone": 0.46,
+     "note": "Open harness for any model"
+    },
+    {
+     "rank": 4,
+     "name": "Pi",
+     "url": "https://pi.dev",
+     "score": 67.5,
+     "tags": [
+      "Open source",
+      "Rising"
+     ],
+     "hn_devs": 67,
+     "hn_comments_12m": 375,
+     "hn_title_points": 166,
+     "lobsters": 0,
+     "devto": 6,
+     "github_stars": 120619,
+     "downloads_month": 1509211,
+     "tone": 0.73,
+     "note": "Minimal, hackable harness"
+    },
+    {
+     "rank": 5,
+     "name": "DeepSeek Harness",
+     "url": "https://deepseek.com/harness/en/",
+     "score": 60.1,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 10,
+     "hn_comments_12m": 499,
+     "hn_title_points": 1265,
+     "lobsters": 1,
+     "devto": 6,
+     "github_stars": 275634,
+     "downloads_month": null,
+     "tone": 0.7,
+     "note": "DeepSeek's own desktop and TUI harness"
+    },
+    {
+     "rank": 6,
+     "name": "Aider",
+     "url": "https://aider.chat",
+     "score": 57.6,
+     "tags": [
+      "Open source",
+      "Fading"
+     ],
+     "hn_devs": 64,
+     "hn_comments_12m": 324,
+     "hn_title_points": 512,
+     "lobsters": 0,
+     "devto": 2,
+     "github_stars": 50007,
+     "downloads_month": 260509,
+     "tone": 0.12,
+     "note": "Pre-agent pair programmer"
+    },
+    {
+     "rank": 7,
+     "name": "Gemini CLI",
+     "url": "https://github.com/google-gemini/gemini-cli",
+     "score": 52.6,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 14,
+     "hn_comments_12m": 1953,
+     "hn_title_points": 4160,
+     "lobsters": 0,
+     "devto": 97,
+     "github_stars": 108766,
+     "downloads_month": 1627950,
+     "tone": -0.05,
+     "note": "Called deprecated for subscribers"
+    },
+    {
+     "rank": 8,
+     "name": "Copilot CLI",
+     "url": "https://github.com/features/copilot/cli",
+     "score": 48.0,
+     "tags": [],
+     "hn_devs": 5,
+     "hn_comments_12m": 657,
+     "hn_title_points": 316,
+     "lobsters": 0,
+     "devto": 18,
+     "github_stars": 11375,
+     "downloads_month": 6685193,
+     "tone": 0.44,
+     "note": "Used where work pays for Copilot"
+    },
+    {
+     "rank": 9,
+     "name": "Goose",
+     "url": "https://block.github.io/goose",
+     "score": 42.7,
+     "tags": [
+      "Open source",
+      "Rising"
+     ],
+     "hn_devs": 10,
+     "hn_comments_12m": 59,
+     "hn_title_points": 485,
+     "lobsters": 1,
+     "devto": 34,
+     "github_stars": 56330,
+     "downloads_month": null,
+     "tone": -0.07,
+     "note": "Block's agent, now under the Linux Foundation"
+    },
+    {
+     "rank": 10,
+     "name": "Mistral Vibe",
+     "url": "https://mistral.ai/news/devstral-2-vibe-cli",
+     "score": 35.4,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 2,
+     "hn_comments_12m": 83,
+     "hn_title_points": 779,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": 5331,
+     "downloads_month": null,
+     "tone": 0.43,
+     "note": "Cheap way to run hosted models"
+    }
+   ],
+   "also_scored": [
+    "Muse Code",
+    "Kimi CLI",
+    "Qwen Code",
+    "Zerostack",
+    "Codewhale",
+    "Amp",
+    "jcode",
+    "Plandex",
+    "Droid",
+    "Crush",
+    "Open Interpreter",
+    "Kiro CLI"
+   ]
+  },
+  {
+   "id": "editors",
+   "name": "Editors & IDEs",
+   "description": null,
+   "verbatim": true,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "VS Code + Copilot",
+     "url": "https://code.visualstudio.com/docs/copilot/overview",
+     "score": 87.7,
+     "tags": [
+      "Fading"
+     ],
+     "hn_devs": 130,
+     "hn_comments_12m": 1923,
+     "hn_title_points": 5969,
+     "lobsters": 7,
+     "devto": 183,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.04,
+     "note": "Work-paid option"
+    },
+    {
+     "rank": 2,
+     "name": "Cursor",
+     "url": "https://cursor.com",
+     "score": 86.9,
+     "tags": [
+      "Fading"
+     ],
+     "hn_devs": 244,
+     "hn_comments_12m": 7647,
+     "hn_title_points": 25602,
+     "lobsters": 3,
+     "devto": 247,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": -0.2,
+     "note": "Usage limits push people to Claude"
+    },
+    {
+     "rank": 3,
+     "name": "Zed",
+     "url": "https://zed.dev",
+     "score": 83.7,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 70,
+     "hn_comments_12m": 2405,
+     "hn_title_points": 11616,
+     "lobsters": 1,
+     "devto": 8,
+     "github_stars": 94166,
+     "downloads_month": null,
+     "tone": 0.31,
+     "note": "Fast Rust editor with ACP agents"
+    },
+    {
+     "rank": 4,
+     "name": "Antigravity",
+     "url": "https://antigravity.google",
+     "score": 69.0,
+     "tags": [],
+     "hn_devs": 29,
+     "hn_comments_12m": 1584,
+     "hn_title_points": 5200,
+     "lobsters": 0,
+     "devto": 90,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.23,
+     "note": "Google's agent IDE and CLI"
+    },
+    {
+     "rank": 5,
+     "name": "Windsurf",
+     "url": "https://windsurf.com",
+     "score": 64.0,
+     "tags": [
+      "Fading"
+     ],
+     "hn_devs": 62,
+     "hn_comments_12m": 379,
+     "hn_title_points": 5115,
+     "lobsters": 0,
+     "devto": 16,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.08,
+     "note": "Team now at Google"
+    },
+    {
+     "rank": 6,
+     "name": "Cline",
+     "url": "https://cline.bot",
+     "score": 63.9,
+     "tags": [
+      "Open source",
+      "Fading"
+     ],
+     "hn_devs": 35,
+     "hn_comments_12m": 325,
+     "hn_title_points": 879,
+     "lobsters": 0,
+     "devto": 10,
+     "github_stars": 71447,
+     "downloads_month": null,
+     "tone": 0.12,
+     "note": "VS Code extension for cheap or local models"
+    },
+    {
+     "rank": 7,
+     "name": "Kiro",
+     "url": "https://kiro.dev",
+     "score": 56.7,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 13,
+     "hn_comments_12m": 433,
+     "hn_title_points": 1797,
+     "lobsters": 0,
+     "devto": 98,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.16,
+     "note": "Amazon's spec-driven VS Code fork"
+    },
+    {
+     "rank": 8,
+     "name": "Roo Code",
+     "url": "https://roocode.com",
+     "score": 48.8,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 13,
+     "hn_comments_12m": 72,
+     "hn_title_points": 76,
+     "lobsters": 0,
+     "devto": 2,
+     "github_stars": 24240,
+     "downloads_month": null,
+     "tone": 0.46,
+     "note": "Discontinued; forks continue"
+    },
+    {
+     "rank": 9,
+     "name": "Kilo Code",
+     "url": "https://kilocode.ai",
+     "score": 46.6,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 6,
+     "hn_comments_12m": 69,
+     "hn_title_points": 169,
+     "lobsters": 0,
+     "devto": 0,
+     "github_stars": 27898,
+     "downloads_month": null,
+     "tone": 0.4,
+     "note": "Roo Code fork"
+    },
+    {
+     "rank": 10,
+     "name": "Neovim (CodeCompanion / avante)",
+     "url": "https://github.com/olimorris/codecompanion.nvim",
+     "score": 46.2,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 38,
+     "hn_comments_12m": 12,
+     "hn_title_points": 1,
+     "lobsters": 1,
+     "devto": 13,
+     "github_stars": 6927,
+     "downloads_month": null,
+     "tone": 0.44,
+     "note": "AI plugins for Neovim"
+    }
+   ],
+   "also_scored": [
+    "JetBrains Junie",
+    "Emacs gptel",
+    "Continue",
+    "Whiteboard",
+    "Void"
+   ]
+  },
+  {
+   "id": "orchestration",
+   "name": "Running many agents",
+   "description": null,
+   "verbatim": true,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "Herdr",
+     "url": "https://herdr.dev",
+     "score": 83.6,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 41,
+     "hn_comments_12m": 552,
+     "hn_title_points": 1346,
+     "lobsters": 0,
+     "devto": 3,
+     "github_stars": 49030,
+     "downloads_month": null,
+     "tone": 0.42,
+     "note": "Terminal workspace for many sessions"
+    },
+    {
+     "rank": 2,
+     "name": "tmux + git worktrees",
+     "url": "https://git-scm.com/docs/git-worktree",
+     "score": 72.9,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 109,
+     "hn_comments_12m": 10,
+     "hn_title_points": 0,
+     "lobsters": 2,
+     "devto": 53,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.42,
+     "note": "DIY baseline, not a product"
+    },
+    {
+     "rank": 3,
+     "name": "Paseo",
+     "url": "https://github.com/getpaseo/paseo",
+     "score": 65.2,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 11,
+     "hn_comments_12m": 175,
+     "hn_title_points": 127,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": 23394,
+     "downloads_month": null,
+     "tone": 0.43,
+     "note": "Desktop and mobile agent front end"
+    },
+    {
+     "rank": 4,
+     "name": "Gas Town",
+     "url": "https://github.com/gastownhall/gastown",
+     "score": 61.8,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 11,
+     "hn_comments_12m": 609,
+     "hn_title_points": 1532,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": 18725,
+     "downloads_month": null,
+     "tone": -0.52,
+     "note": "Yegge's orchestrator; mostly a punchline"
+    },
+    {
+     "rank": 5,
+     "name": "T3 Code",
+     "url": "https://t3.codes",
+     "score": 60.5,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 10,
+     "hn_comments_12m": 64,
+     "hn_title_points": 32,
+     "lobsters": 0,
+     "devto": 3,
+     "github_stars": 50869,
+     "downloads_month": null,
+     "tone": 0.65,
+     "note": "GUI for several harnesses"
+    },
+    {
+     "rank": 6,
+     "name": "Beads",
+     "url": "https://github.com/steveyegge/beads",
+     "score": 60.3,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 10,
+     "hn_comments_12m": 459,
+     "hn_title_points": 338,
+     "lobsters": 0,
+     "devto": 4,
+     "github_stars": 28572,
+     "downloads_month": null,
+     "tone": 0.48,
+     "note": "Git-backed issue tracker for agents"
+    },
+    {
+     "rank": 7,
+     "name": "Orca",
+     "url": "https://github.com/stablyai/orca",
+     "score": 51.2,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 12,
+     "hn_comments_12m": 9,
+     "hn_title_points": 0,
+     "lobsters": 0,
+     "devto": 2,
+     "github_stars": 118432,
+     "downloads_month": null,
+     "tone": 0.52,
+     "note": "Agent IDE for worktrees and remote use"
+    },
+    {
+     "rank": 8,
+     "name": "Conductor",
+     "url": "https://conductor.build",
+     "score": 49.5,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 14,
+     "hn_comments_12m": 42,
+     "hn_title_points": 5,
+     "lobsters": 3,
+     "devto": 2,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.09,
+     "note": "Mac app, reportedly winding down"
+    },
+    {
+     "rank": 9,
+     "name": "Juggler",
+     "url": "https://github.com/juggler-ai/juggler",
+     "score": 39.7,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 2,
+     "hn_comments_12m": 98,
+     "hn_title_points": 330,
+     "lobsters": 0,
+     "devto": 0,
+     "github_stars": 853,
+     "downloads_month": null,
+     "tone": 0.27,
+     "note": "GUI agent from JUCE's creator"
+    },
+    {
+     "rank": 10,
+     "name": "Ralph loop",
+     "url": "https://ghuntley.com/ralph/",
+     "score": 39.2,
+     "tags": [],
+     "hn_devs": 3,
+     "hn_comments_12m": 51,
+     "hn_title_points": 72,
+     "lobsters": 0,
+     "devto": 8,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.07,
+     "note": "Prompting pattern, not a product"
+    }
+   ],
+   "also_scored": [
+    "Vibe Kanban",
+    "Omnara",
+    "Munder Difflin",
+    "workmux",
+    "qm",
+    "Ruflo",
+    "Superset",
+    "Claude Squad",
+    "oh-my-claudecode",
+    "Sculptor",
+    "Crystal",
+    "AX (Agent Executor)"
+   ]
+  },
+  {
+   "id": "review",
+   "name": "Code review & PR agents",
+   "description": null,
+   "verbatim": true,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "Claude Code review",
+     "url": "https://code.claude.com/docs/en/code-review",
+     "score": 57.6,
+     "tags": [
+      "Open source",
+      "Rising"
+     ],
+     "hn_devs": 13,
+     "hn_comments_12m": 552,
+     "hn_title_points": 29,
+     "lobsters": 0,
+     "devto": 12,
+     "github_stars": 9827,
+     "downloads_month": null,
+     "tone": -0.31,
+     "note": "Complaints about price per review"
+    },
+    {
+     "rank": 2,
+     "name": "Copilot code review",
+     "url": "https://docs.github.com/en/copilot/concepts/agents/code-review",
+     "score": 55.1,
+     "tags": [],
+     "hn_devs": 3,
+     "hn_comments_12m": 75,
+     "hn_title_points": 353,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": -0.13,
+     "note": "Noisy comments; Actions-minutes billing"
+    },
+    {
+     "rank": 3,
+     "name": "CodeRabbit",
+     "url": "https://coderabbit.ai",
+     "score": 45.9,
+     "tags": [],
+     "hn_devs": 1,
+     "hn_comments_12m": 149,
+     "hn_title_points": 773,
+     "lobsters": 0,
+     "devto": 3,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": -0.08,
+     "note": "The reference-point PR bot"
+    },
+    {
+     "rank": 4,
+     "name": "Cursor Bugbot",
+     "url": "https://cursor.com/bugbot",
+     "score": 42.4,
+     "tags": [],
+     "hn_devs": 4,
+     "hn_comments_12m": 25,
+     "hn_title_points": 3,
+     "lobsters": 0,
+     "devto": 2,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.44,
+     "note": "Most praised bot here"
+    },
+    {
+     "rank": 5,
+     "name": "Codex code review",
+     "url": "https://developers.openai.com/codex/integrations/github",
+     "score": 39.3,
+     "tags": [],
+     "hn_devs": 1,
+     "hn_comments_12m": 560,
+     "hn_title_points": 14,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.18,
+     "note": "Cross-vendor second opinion"
+    },
+    {
+     "rank": 6,
+     "name": "Codex Security",
+     "url": "https://openai.com/index/codex-security/",
+     "score": 34.6,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": 112,
+     "hn_title_points": 662,
+     "lobsters": 1,
+     "devto": 0,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": -0.17,
+     "note": "Refusal complaints on defensive work"
+    },
+    {
+     "rank": 7,
+     "name": "Qodo",
+     "url": "https://www.qodo.ai",
+     "score": 30.1,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 14,
+     "hn_title_points": 204,
+     "lobsters": 0,
+     "devto": 0,
+     "github_stars": 15406,
+     "downloads_month": null,
+     "tone": -0.33,
+     "note": "Teams often drop it over noise"
+    },
+    {
+     "rank": 8,
+     "name": "Graphite",
+     "url": "https://graphite.com",
+     "score": 28.8,
+     "tags": [],
+     "hn_devs": 2,
+     "hn_comments_12m": 359,
+     "hn_title_points": 981,
+     "lobsters": 0,
+     "devto": 2,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.0,
+     "note": "Stacked PRs; now part of Cursor"
+    },
+    {
+     "rank": 9,
+     "name": "Greptile",
+     "url": "https://greptile.com",
+     "score": 26.6,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": 64,
+     "hn_title_points": 90,
+     "lobsters": 0,
+     "devto": 0,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.25,
+     "note": "Codebase-aware reviewer"
+    },
+    {
+     "rank": 10,
+     "name": "Open Code Review (Alibaba)",
+     "url": "https://github.com/alibaba/open-code-review",
+     "score": 24.6,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 9,
+     "hn_title_points": 0,
+     "lobsters": 0,
+     "devto": 0,
+     "github_stars": 49613,
+     "downloads_month": null,
+     "tone": 0.22,
+     "note": "Alibaba's open CLI review tool"
+    }
+   ],
+   "also_scored": [
+    "Sourcery",
+    "Sphinx"
+   ]
+  },
+  {
+   "id": "context",
+   "name": "Context, MCP & skills",
+   "description": null,
+   "verbatim": true,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "AGENTS.md",
+     "url": "https://agents.md",
+     "score": 94.1,
+     "tags": [
+      "Fading"
+     ],
+     "hn_devs": 90,
+     "hn_comments_12m": 2004,
+     "hn_title_points": 4010,
+     "lobsters": 0,
+     "devto": 161,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.42,
+     "note": "Default project-rules format"
+    },
+    {
+     "rank": 2,
+     "name": "Agent Skills",
+     "url": "https://agentskills.io",
+     "score": 81.0,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 26,
+     "hn_comments_12m": 1741,
+     "hn_title_points": 233,
+     "lobsters": 1,
+     "devto": 122,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.24,
+     "note": "Reusable instruction packs"
+    },
+    {
+     "rank": 3,
+     "name": "Superpowers",
+     "url": "https://github.com/obra/superpowers",
+     "score": 56.5,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 10,
+     "hn_comments_12m": 909,
+     "hn_title_points": 1746,
+     "lobsters": 2,
+     "devto": 15,
+     "github_stars": 313991,
+     "downloads_month": null,
+     "tone": 0.2,
+     "note": "Brainstorm-plan-build skills pack"
+    },
+    {
+     "rank": 4,
+     "name": "Spec Kit",
+     "url": "https://github.com/github/spec-kit",
+     "score": 52.4,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 4,
+     "hn_comments_12m": 138,
+     "hn_title_points": 209,
+     "lobsters": 0,
+     "devto": 6,
+     "github_stars": 148358,
+     "downloads_month": null,
+     "tone": -0.06,
+     "note": "Spec-driven toolkit; document volume complaints"
+    },
+    {
+     "rank": 5,
+     "name": "Context7",
+     "url": "https://context7.com",
+     "score": 52.3,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 6,
+     "hn_comments_12m": 92,
+     "hn_title_points": 28,
+     "lobsters": 0,
+     "devto": 7,
+     "github_stars": 64316,
+     "downloads_month": 3176334,
+     "tone": 0.72,
+     "note": "Current library docs via MCP"
+    },
+    {
+     "rank": 6,
+     "name": "GitHub MCP server",
+     "url": "https://github.com/github/github-mcp-server",
+     "score": 47.4,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 3,
+     "hn_comments_12m": 56,
+     "hn_title_points": 28,
+     "lobsters": 0,
+     "devto": 7,
+     "github_stars": 34301,
+     "downloads_month": null,
+     "tone": 0.36,
+     "note": "Official GitHub API MCP server"
+    },
+    {
+     "rank": 7,
+     "name": "Semble",
+     "url": "https://github.com/MinishLab/semble",
+     "score": 37.4,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 9,
+     "hn_comments_12m": 58,
+     "hn_title_points": 464,
+     "lobsters": 0,
+     "devto": 15,
+     "github_stars": 6377,
+     "downloads_month": null,
+     "tone": 0.33,
+     "note": "Code search claimed cheaper than grep"
+    },
+    {
+     "rank": 8,
+     "name": "rtk",
+     "url": "https://github.com/rtk-ai/rtk",
+     "score": 36.0,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 64,
+     "hn_title_points": 339,
+     "lobsters": 0,
+     "devto": 3,
+     "github_stars": 85816,
+     "downloads_month": null,
+     "tone": -0.08,
+     "note": "Compresses command output; benchmarks disagree"
+    },
+    {
+     "rank": 9,
+     "name": "Impeccable",
+     "url": "https://github.com/pbakaus/impeccable",
+     "score": 35.9,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 1,
+     "hn_comments_12m": 190,
+     "hn_title_points": 455,
+     "lobsters": 0,
+     "devto": 5,
+     "github_stars": 105331,
+     "downloads_month": null,
+     "tone": 0.33,
+     "note": "Design skill; high token use"
+    },
+    {
+     "rank": 10,
+     "name": "Graphify",
+     "url": "https://github.com/Graphify-Labs/graphify",
+     "score": 31.8,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 31,
+     "hn_title_points": 134,
+     "lobsters": 0,
+     "devto": 4,
+     "github_stars": 143885,
+     "downloads_month": null,
+     "tone": 0.0,
+     "note": "Codebase knowledge graph"
+    }
+   ],
+   "also_scored": [
+    "Figma MCP",
+    "Repomix",
+    "claude-mem",
+    "Linear MCP",
+    "Serena",
+    "Sentry MCP",
+    "codebase-memory-mcp",
+    "headroom",
+    "context-mode"
+   ]
+  },
+  {
+   "id": "browser",
+   "name": "Browser & web for agents",
+   "description": null,
+   "verbatim": true,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "Playwright MCP",
+     "url": "https://github.com/microsoft/playwright-mcp",
+     "score": 90.8,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 13,
+     "hn_comments_12m": 270,
+     "hn_title_points": 495,
+     "lobsters": 1,
+     "devto": 84,
+     "github_stars": 39303,
+     "downloads_month": 30936316,
+     "tone": 0.23,
+     "note": "Default agent browser; slow, heavy context"
+    },
+    {
+     "rank": 2,
+     "name": "Chrome DevTools MCP",
+     "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+     "score": 58.2,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 2,
+     "hn_comments_12m": 44,
+     "hn_title_points": 659,
+     "lobsters": 0,
+     "devto": 15,
+     "github_stars": 54930,
+     "downloads_month": 8604227,
+     "tone": 0.53,
+     "note": "Real DevTools access"
+    },
+    {
+     "rank": 3,
+     "name": "agent-browser",
+     "url": "https://github.com/vercel-labs/agent-browser",
+     "score": 48.8,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 1,
+     "hn_comments_12m": 94,
+     "hn_title_points": 99,
+     "lobsters": 0,
+     "devto": 5,
+     "github_stars": 46631,
+     "downloads_month": 8262982,
+     "tone": 0.36,
+     "note": "Vercel's browser CLI"
+    },
+    {
+     "rank": 4,
+     "name": "Firecrawl",
+     "url": "https://firecrawl.dev",
+     "score": 40.5,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 73,
+     "hn_title_points": 53,
+     "lobsters": 0,
+     "devto": 3,
+     "github_stars": 199456,
+     "downloads_month": null,
+     "tone": 0.17,
+     "note": "Scraping API; request-logging criticism"
+    },
+    {
+     "rank": 5,
+     "name": "Lightpanda",
+     "url": "https://lightpanda.io",
+     "score": 38.7,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 48,
+     "hn_title_points": 957,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": 41556,
+     "downloads_month": null,
+     "tone": -0.25,
+     "note": "Headless browser in Zig"
+    },
+    {
+     "rank": 6,
+     "name": "Stagehand",
+     "url": "https://www.stagehand.dev",
+     "score": 38.1,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 44,
+     "hn_title_points": 342,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": 25978,
+     "downloads_month": 8473095,
+     "tone": 0.0,
+     "note": "Browserbase's AI automation framework"
+    },
+    {
+     "rank": 7,
+     "name": "Claude in Chrome",
+     "url": "https://claude.com/chrome",
+     "score": 35.7,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": 112,
+     "hn_title_points": 322,
+     "lobsters": 0,
+     "devto": 4,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.5,
+     "note": "Chrome extension agent"
+    },
+    {
+     "rank": 8,
+     "name": "Vibium",
+     "url": "https://github.com/VibiumDev/vibium",
+     "score": 35.2,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 50,
+     "hn_title_points": 448,
+     "lobsters": 0,
+     "devto": 0,
+     "github_stars": 2955,
+     "downloads_month": null,
+     "tone": 0.08,
+     "note": "Browser automation from Selenium's creator"
+    },
+    {
+     "rank": 9,
+     "name": "browser-use",
+     "url": "https://browser-use.com",
+     "score": 29.5,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 337,
+     "hn_title_points": 413,
+     "lobsters": 0,
+     "devto": 4,
+     "github_stars": 120256,
+     "downloads_month": 8061974,
+     "tone": 0.0,
+     "note": "Framework for LLM web agents"
+    },
+    {
+     "rank": 10,
+     "name": "Scrapling",
+     "url": "https://github.com/D4Vinci/Scrapling",
+     "score": 27.0,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 6,
+     "hn_title_points": 1,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": 99200,
+     "downloads_month": 919855,
+     "tone": 0.67,
+     "note": "Stealthy Python scraping library"
+    }
+   ],
+   "also_scored": [
+    "Browser MCP",
+    "Jina Reader",
+    "Browserbase"
+   ]
+  },
+  {
+   "id": "sandbox",
+   "name": "Sandboxes & safety",
+   "description": null,
+   "verbatim": true,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "bubblewrap",
+     "url": "https://github.com/containers/bubblewrap",
+     "score": 76.7,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 7,
+     "hn_comments_12m": 372,
+     "hn_title_points": 326,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": 9405,
+     "downloads_month": null,
+     "tone": 0.5,
+     "note": "Linux namespace sandbox"
+    },
+    {
+     "rank": 2,
+     "name": "Docker Sandboxes",
+     "url": "https://www.docker.com/products/docker-sandboxes/",
+     "score": 76.5,
+     "tags": [],
+     "hn_devs": 6,
+     "hn_comments_12m": 430,
+     "hn_title_points": 1084,
+     "lobsters": 1,
+     "devto": 2,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.55,
+     "note": "MicroVM sandboxes; closed source"
+    },
+    {
+     "rank": 3,
+     "name": "OpenShell",
+     "url": "https://github.com/NVIDIA/OpenShell",
+     "score": 57.5,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 2,
+     "hn_comments_12m": 64,
+     "hn_title_points": 585,
+     "lobsters": 0,
+     "devto": 2,
+     "github_stars": 21245,
+     "downloads_month": null,
+     "tone": 0.0,
+     "note": "NVIDIA policy runtime"
+    },
+    {
+     "rank": 4,
+     "name": "Apple container",
+     "url": "https://github.com/apple/container",
+     "score": 52.2,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 1,
+     "hn_comments_12m": 195,
+     "hn_title_points": 1275,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": 51090,
+     "downloads_month": null,
+     "tone": 0.25,
+     "note": "Linux VM containers on macOS"
+    },
+    {
+     "rank": 5,
+     "name": "Dev containers",
+     "url": "https://containers.dev",
+     "score": 49.8,
+     "tags": [],
+     "hn_devs": 6,
+     "hn_comments_12m": 27,
+     "hn_title_points": 0,
+     "lobsters": 0,
+     "devto": 4,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.6,
+     "note": "Guards against agent mistakes, not malice"
+    },
+    {
+     "rank": 6,
+     "name": "E2B",
+     "url": "https://e2b.dev",
+     "score": 49.6,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 1,
+     "hn_comments_12m": 60,
+     "hn_title_points": 12,
+     "lobsters": 0,
+     "devto": 9,
+     "github_stars": 14761,
+     "downloads_month": null,
+     "tone": 0.5,
+     "note": "Hosted Firecracker sandboxes; lock-in"
+    },
+    {
+     "rank": 7,
+     "name": "nono",
+     "url": "https://github.com/nolabs-ai/nono",
+     "score": 47.7,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 3,
+     "hn_comments_12m": 9,
+     "hn_title_points": 8,
+     "lobsters": 0,
+     "devto": 2,
+     "github_stars": 4886,
+     "downloads_month": null,
+     "tone": 0.33,
+     "note": "Landlock/Seatbelt sandbox, no VM"
+    },
+    {
+     "rank": 8,
+     "name": "smolvm",
+     "url": "https://github.com/smol-machines/smolvm",
+     "score": 45.4,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 1,
+     "hn_comments_12m": 141,
+     "hn_title_points": 13,
+     "lobsters": 0,
+     "devto": 0,
+     "github_stars": 7020,
+     "downloads_month": null,
+     "tone": 0.33,
+     "note": "Cross-platform microVMs"
+    },
+    {
+     "rank": 9,
+     "name": "yoloai",
+     "url": "https://github.com/kstenerud/yoloai",
+     "score": 39.6,
+     "tags": [
+      "Open source",
+      "New in 2026"
+     ],
+     "hn_devs": 2,
+     "hn_comments_12m": 72,
+     "hn_title_points": 2,
+     "lobsters": 0,
+     "devto": 0,
+     "github_stars": 227,
+     "downloads_month": null,
+     "tone": 0.0,
+     "note": "Copy-and-diff sandbox"
+    },
+    {
+     "rank": 10,
+     "name": "Lume",
+     "url": "https://github.com/trycua/cua",
+     "score": 35.2,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": 16,
+     "hn_title_points": 468,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": 31942,
+     "downloads_month": null,
+     "tone": 0.0,
+     "note": "macOS/Linux VMs on Apple Silicon"
+    }
+   ],
+   "also_scored": [
+    "Daytona",
+    "Agent Safehouse",
+    "Ardent",
+    "Sprites (Fly.io)",
+    "container-use",
+    "Modal Sandboxes",
+    "Vercel Sandbox"
+   ]
+  },
+  {
+   "id": "local",
+   "name": "Local models & inference",
+   "description": null,
+   "verbatim": true,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "Ollama",
+     "url": "https://ollama.com",
+     "score": 100.0,
+     "tags": [
+      "Open source",
+      "Fading"
+     ],
+     "hn_devs": 61,
+     "hn_comments_12m": 1987,
+     "hn_title_points": 8641,
+     "lobsters": 1,
+     "devto": 126,
+     "github_stars": 186256,
+     "downloads_month": null,
+     "tone": 0.6,
+     "note": "Easy local runner; paid cloud tier"
+    },
+    {
+     "rank": 2,
+     "name": "llama.cpp",
+     "url": "https://github.com/ggml-org/llama.cpp",
+     "score": 88.5,
+     "tags": [
+      "Open source",
+      "Fading"
+     ],
+     "hn_devs": 27,
+     "hn_comments_12m": 2075,
+     "hn_title_points": 3159,
+     "lobsters": 1,
+     "devto": 29,
+     "github_stars": 133652,
+     "downloads_month": null,
+     "tone": 0.39,
+     "note": "C/C++ engine and llama-server"
+    },
+    {
+     "rank": 3,
+     "name": "MLX",
+     "url": "https://github.com/ml-explore/mlx",
+     "score": 75.2,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 10,
+     "hn_comments_12m": 715,
+     "hn_title_points": 2846,
+     "lobsters": 1,
+     "devto": 8,
+     "github_stars": 29089,
+     "downloads_month": 544885,
+     "tone": 0.61,
+     "note": "Apple Silicon ML framework"
+    },
+    {
+     "rank": 4,
+     "name": "LM Studio",
+     "url": "https://lmstudio.ai",
+     "score": 69.5,
+     "tags": [
+      "Fading"
+     ],
+     "hn_devs": 18,
+     "hn_comments_12m": 596,
+     "hn_title_points": 1405,
+     "lobsters": 0,
+     "devto": 11,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.52,
+     "note": "Desktop GUI for local models"
+    },
+    {
+     "rank": 5,
+     "name": "Open WebUI",
+     "url": "https://openwebui.com",
+     "score": 69.1,
+     "tags": [
+      "Fading"
+     ],
+     "hn_devs": 18,
+     "hn_comments_12m": 118,
+     "hn_title_points": 261,
+     "lobsters": 0,
+     "devto": 8,
+     "github_stars": 158019,
+     "downloads_month": null,
+     "tone": 0.43,
+     "note": "Self-hosted chat UI"
+    },
+    {
+     "rank": 6,
+     "name": "vLLM",
+     "url": "https://github.com/vllm-project/vllm",
+     "score": 68.4,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 5,
+     "hn_comments_12m": 924,
+     "hn_title_points": 2272,
+     "lobsters": 4,
+     "devto": 36,
+     "github_stars": 96519,
+     "downloads_month": 1857414,
+     "tone": 0.24,
+     "note": "GPU serving engine"
+    },
+    {
+     "rank": 7,
+     "name": "Unsloth",
+     "url": "https://unsloth.ai",
+     "score": 57.2,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 4,
+     "hn_comments_12m": 822,
+     "hn_title_points": 1331,
+     "lobsters": 0,
+     "devto": 2,
+     "github_stars": 79152,
+     "downloads_month": 885608,
+     "tone": 0.2,
+     "note": "Quantized GGUF source"
+    },
+    {
+     "rank": 8,
+     "name": "Lemonade",
+     "url": "https://lemonade-server.ai",
+     "score": 46.3,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 3,
+     "hn_comments_12m": 35,
+     "hn_title_points": 617,
+     "lobsters": 0,
+     "devto": 4,
+     "github_stars": 6140,
+     "downloads_month": null,
+     "tone": 0.5,
+     "note": "AMD local server"
+    },
+    {
+     "rank": 9,
+     "name": "SGLang",
+     "url": "https://github.com/sgl-project/sglang",
+     "score": 40.8,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 1,
+     "hn_comments_12m": 167,
+     "hn_title_points": 208,
+     "lobsters": 0,
+     "devto": 7,
+     "github_stars": 38559,
+     "downloads_month": 2984581,
+     "tone": -0.23,
+     "note": "Datacenter serving framework"
+    },
+    {
+     "rank": 10,
+     "name": "llama-swap",
+     "url": "https://github.com/mostlygeek/llama-swap",
+     "score": 36.5,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 3,
+     "hn_comments_12m": 53,
+     "hn_title_points": 2,
+     "lobsters": 0,
+     "devto": 0,
+     "github_stars": 6205,
+     "downloads_month": null,
+     "tone": 0.53,
+     "note": "Model-swapping proxy"
+    }
+   ],
+   "also_scored": [
+    "Apfel",
+    "Jan",
+    "KoboldCpp"
+   ]
+  },
+  {
+   "id": "gateways",
+   "name": "Model access & routing",
+   "description": null,
+   "verbatim": "partial (ranks 1-4 verbatim)",
+   "tools": [
+    {
+     "rank": 1,
+     "name": "OpenRouter",
+     "url": "https://openrouter.ai",
+     "score": 98.5,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 80,
+     "hn_comments_12m": 3866,
+     "hn_title_points": 6626,
+     "lobsters": 1,
+     "devto": 18,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.62,
+     "note": "Pay-as-you-go router"
+    },
+    {
+     "rank": 2,
+     "name": "AWS Bedrock",
+     "url": "https://aws.amazon.com/bedrock/",
+     "score": 58.4,
+     "tags": [],
+     "hn_devs": 6,
+     "hn_comments_12m": 461,
+     "hn_title_points": 976,
+     "lobsters": 0,
+     "devto": 116,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.36,
+     "note": "How companies buy Claude"
+    },
+    {
+     "rank": 3,
+     "name": "LiteLLM",
+     "url": "https://github.com/BerriAI/litellm",
+     "score": 55.6,
+     "tags": [
+      "Open source"
+     ],
+     "hn_devs": 3,
+     "hn_comments_12m": 431,
+     "hn_title_points": 3453,
+     "lobsters": 0,
+     "devto": 45,
+     "github_stars": 62870,
+     "downloads_month": 92239101,
+     "tone": -0.14,
+     "note": "Gateway; PyPI supply-chain talk"
+    },
+    {
+     "rank": 4,
+     "name": "OpenCode Go / Zen",
+     "url": "https://opencode.ai/go",
+     "score": 54.3,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 32,
+     "hn_comments_12m": 35,
+     "hn_title_points": 0,
+     "lobsters": 0,
+     "devto": 1,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": 0.65,
+     "note": "$10 plan, mostly DeepSeek Flash"
+    },
+    {
+     "rank": 5,
+     "name": "Claude Code Router",
+     "url": "https://github.com/musistudio/claude-code-router",
+     "score": 35.9,
+     "tags": [],
+     "hn_devs": null,
+     "hn_comments_12m": 33,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 38000,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 6,
+     "name": "llm (Simon Willison)",
+     "url": null,
+     "score": 34,
+     "tags": [],
+     "hn_devs": 9,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 13000,
+     "downloads_month": 488000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 7,
+     "name": "Vercel AI Gateway",
+     "url": null,
+     "score": 28,
+     "tags": [],
+     "hn_devs": 1,
+     "hn_comments_12m": 25,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 8,
+     "name": "cc-switch",
+     "url": null,
+     "score": 25,
+     "tags": [],
+     "hn_devs": 1,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 153000,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 9,
+     "name": "Portkey",
+     "url": null,
+     "score": 21,
+     "tags": [],
+     "hn_devs": null,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 13000,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 10,
+     "name": "Chutes",
+     "url": null,
+     "score": 20,
+     "tags": [],
+     "hn_devs": 2,
+     "hn_comments_12m": 32,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    }
+   ],
+   "also_scored": [
+    "OmniRoute",
+    "Cloudflare AI Gateway",
+    "Synthetic"
+   ]
+  },
+  {
+   "id": "frameworks",
+   "name": "Build your own agent",
+   "description": "SDKs for shipping agents in your product; weakest HN signal, so downloads weigh more.",
+   "verbatim": false,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "LangChain",
+     "url": null,
+     "score": 74,
+     "tags": [],
+     "hn_devs": 4,
+     "hn_comments_12m": 816,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 149000,
+     "downloads_month": 170500000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 2,
+     "name": "Mastra",
+     "url": null,
+     "score": 58,
+     "tags": [],
+     "hn_devs": 2,
+     "hn_comments_12m": 118,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 29000,
+     "downloads_month": 10400000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 3,
+     "name": "Claude Agent SDK",
+     "url": null,
+     "score": 54,
+     "tags": [],
+     "hn_devs": 2,
+     "hn_comments_12m": 395,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": 58500000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 4,
+     "name": "LangGraph",
+     "url": null,
+     "score": 54,
+     "tags": [],
+     "hn_devs": 1,
+     "hn_comments_12m": 465,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 45000,
+     "downloads_month": 44800000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 5,
+     "name": "DSPy",
+     "url": null,
+     "score": 53,
+     "tags": [],
+     "hn_devs": 2,
+     "hn_comments_12m": 130,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 39000,
+     "downloads_month": 5300000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 6,
+     "name": "Microsoft Agent Framework",
+     "url": null,
+     "score": 50,
+     "tags": [],
+     "hn_devs": 3,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 15000,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 7,
+     "name": "OpenAI Agents SDK",
+     "url": null,
+     "score": 49,
+     "tags": [],
+     "hn_devs": 1,
+     "hn_comments_12m": 55,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 31000,
+     "downloads_month": 12400000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 8,
+     "name": "Google ADK",
+     "url": null,
+     "score": 43,
+     "tags": [],
+     "hn_devs": 1,
+     "hn_comments_12m": 71,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 22000,
+     "downloads_month": 10100000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 9,
+     "name": "CrewAI",
+     "url": null,
+     "score": 42,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": 156,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 61000,
+     "downloads_month": 2400000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 10,
+     "name": "Pydantic AI",
+     "url": null,
+     "score": 41,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": 110,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 21000,
+     "downloads_month": 5400000,
+     "tone": null,
+     "note": null
+    }
+   ],
+   "also_scored": []
+  },
+  {
+   "id": "evals",
+   "name": "Evals & observability",
+   "description": "Traces, evals and regression tests; thin on HN, a shortlist rather than a verdict.",
+   "verbatim": false,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "OpenTelemetry GenAI",
+     "url": null,
+     "score": 55,
+     "tags": [],
+     "hn_devs": 3,
+     "hn_comments_12m": 49,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 2,
+     "name": "promptfoo",
+     "url": null,
+     "score": 48,
+     "tags": [],
+     "hn_devs": 1,
+     "hn_comments_12m": 48,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 27000,
+     "downloads_month": 4000000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 3,
+     "name": "Langfuse",
+     "url": null,
+     "score": 46,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": 125,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 37000,
+     "downloads_month": 23600000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 4,
+     "name": "Arize Phoenix",
+     "url": null,
+     "score": 42,
+     "tags": [
+      "Fading"
+     ],
+     "hn_devs": 30,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 12000,
+     "downloads_month": 626000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 5,
+     "name": "MLflow",
+     "url": null,
+     "score": 38,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": 55,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 29000,
+     "downloads_month": 19900000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 6,
+     "name": "Logfire",
+     "url": null,
+     "score": 33,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 4500,
+     "downloads_month": 13000000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 7,
+     "name": "Opik",
+     "url": null,
+     "score": 29,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 23000,
+     "downloads_month": 1700000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 8,
+     "name": "Braintrust",
+     "url": null,
+     "score": 29,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": 32,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": 6600000,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 9,
+     "name": "Helicone",
+     "url": null,
+     "score": 28,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 6300,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 10,
+     "name": "DeepEval",
+     "url": null,
+     "score": 28,
+     "tags": [],
+     "hn_devs": 0,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 19000,
+     "downloads_month": 2600000,
+     "tone": null,
+     "note": null
+    }
+   ],
+   "also_scored": [
+    "LangSmith",
+    "Inspect AI",
+    "garak",
+    "Weights & Biases Weave",
+    "Laminar"
+   ]
+  },
+  {
+   "id": "assistants",
+   "name": "Always-on agents",
+   "description": "Personal agents on a server or Mac mini that run while you are away.",
+   "verbatim": false,
+   "tools": [
+    {
+     "rank": 1,
+     "name": "OpenClaw",
+     "url": null,
+     "score": 93,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 72,
+     "hn_comments_12m": 5100,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 394000,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 2,
+     "name": "Hermes Agent",
+     "url": null,
+     "score": 82,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 54,
+     "hn_comments_12m": 507,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 261000,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 3,
+     "name": "Muse",
+     "url": null,
+     "score": 67,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 21,
+     "hn_comments_12m": 86,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 4,
+     "name": "Claude Cowork",
+     "url": null,
+     "score": 60,
+     "tags": [],
+     "hn_devs": 40,
+     "hn_comments_12m": 937,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 5,
+     "name": "n8n",
+     "url": null,
+     "score": 60,
+     "tags": [],
+     "hn_devs": 4,
+     "hn_comments_12m": 429,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 210000,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 6,
+     "name": "NanoClaw",
+     "url": null,
+     "score": 48,
+     "tags": [
+      "New in 2026"
+     ],
+     "hn_devs": 3,
+     "hn_comments_12m": 200,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 31000,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 7,
+     "name": "Home Assistant + LLM",
+     "url": null,
+     "score": 47,
+     "tags": [
+      "Rising"
+     ],
+     "hn_devs": 13,
+     "hn_comments_12m": 93,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 8,
+     "name": "Claude Duet",
+     "url": null,
+     "score": 37,
+     "tags": [],
+     "hn_devs": 3,
+     "hn_comments_12m": 32,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 9,
+     "name": "Dots",
+     "url": null,
+     "score": 22,
+     "tags": [],
+     "hn_devs": 1,
+     "hn_comments_12m": 24,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": null,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    },
+    {
+     "rank": 10,
+     "name": "Paperclip",
+     "url": null,
+     "score": 20,
+     "tags": [
+      "New in 2026"
+     ],
+     "hn_devs": 0,
+     "hn_comments_12m": null,
+     "hn_title_points": null,
+     "lobsters": null,
+     "devto": null,
+     "github_stars": 112000,
+     "downloads_month": null,
+     "tone": null,
+     "note": null
+    }
+   ],
+   "also_scored": [
+    "Claude Code Routines",
+    "nanobot",
+    "Eigent"
+   ]
+  }
+ ]
+}

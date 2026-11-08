@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta charset="utf-8">
+<title>AI Dev Tools Treemap</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a header with the metric switch, then a grid of category cards, each one a squarified treemap (one tile per tool, area = share). */
+:root{
+  --bg:#f5f6fa; --surface:#ffffff; --ink:#1d2160; --fg:#1b1d2b; --muted:#5d6278; --line:#d9dbe7;
+  --tile:#c9cef0; --tile-fg:#1d2160; --rising:#3446d4; --rising-fg:#ffffff; --new:#0f8a7e; --new-fg:#ffffff;
+  --fading:#e3e4ea; --fading-fg:#3d4157; --hatch:#cfd1db;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12131c; --surface:#1a1c28; --ink:#b9c0ff; --fg:#e6e7f0; --muted:#9a9eb5; --line:#2c2f42;
+  --tile:#2e3466; --tile-fg:#e3e6ff; --rising:#5b6cff; --rising-fg:#ffffff; --new:#1fa597; --new-fg:#04120f;
+  --fading:#242633; --fading-fg:#9a9eb5; --hatch:#30334a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12131c; --surface:#1a1c28; --ink:#b9c0ff; --fg:#e6e7f0; --muted:#9a9eb5; --line:#2c2f42;
+  --tile:#2e3466; --tile-fg:#e3e6ff; --rising:#5b6cff; --rising-fg:#ffffff; --new:#1fa597; --new-fg:#04120f;
+  --fading:#242633; --fading-fg:#9a9eb5; --hatch:#30334a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:24px}
+header{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:end;justify-content:space-between}
+h1{font:700 clamp(28px,4vw,42px)/1.05 var(--display);color:var(--ink);margin:0;text-wrap:balance;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:6px 0 0;max-width:62ch}
+.sub a{color:var(--ink)}
+.controls{display:flex;flex-direction:column;gap:8px;min-width:0}
+.label{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:3px;gap:2px;flex-wrap:wrap}
+.seg button{font:500 13px var(--body);border:0;background:none;color:var(--muted);padding:6px 12px;border-radius:6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.seg button:focus-visible{outline:2px solid var(--rising);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:2px;display:inline-block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,370px),1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 14px 12px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card h2{font:700 19px/1.15 var(--display);margin:0;color:var(--ink);display:flex;gap:10px;align-items:baseline}
+.card h2 .n{font:500 12px var(--mono);color:var(--muted)}
+.tm{position:relative;width:100%;aspect-ratio:4/3;max-width:100%}
+.tile{position:absolute;border:1.5px solid var(--surface);border-radius:3px;overflow:hidden;padding:5px 6px;cursor:pointer;
+  background:var(--tile);color:var(--tile-fg);display:flex;flex-direction:column;justify-content:flex-start;transition:filter .15s}
+.tile:hover,.tile:focus-visible{filter:brightness(1.08);outline:2px solid var(--ink);outline-offset:-2px;z-index:2}
+.tile.rising{background:var(--rising);color:var(--rising-fg)}
+.tile.new{background:var(--new);color:var(--new-fg)}
+.tile.fading{background:repeating-linear-gradient(135deg,var(--fading) 0 6px,var(--hatch) 6px 7px);color:var(--fading-fg)}
+.tile .nm{font:600 13px/1.15 var(--body);overflow-wrap:anywhere}
+.tile .v{font:400 11.5px/1.2 var(--mono);opacity:.85;margin-top:2px}
+.tile.big .nm{font:700 clamp(16px,2.2vw,22px)/1.05 var(--display)}
+.tile.tiny .nm,.tile.tiny .v{display:none}
+.tile.small .v{display:none}
+.foot{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+.foot b{font-weight:500;color:var(--fg)}
+.flag{font:500 11px var(--mono);color:var(--muted);border:1px dashed var(--line);border-radius:4px;padding:1px 6px}
+#tip{position:fixed;z-index:20;max-width:300px;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:8px;
+  padding:10px 12px;font-size:13px;box-shadow:0 8px 24px rgba(0,0,0,.18);pointer-events:none}
+#tip h3{margin:0 0 4px;font:700 15px var(--display);color:var(--ink)}
+#tip dl{display:grid;grid-template-columns:auto auto;gap:2px 12px;margin:6px 0 0;font:12px var(--mono);font-variant-numeric:tabular-nums}
+#tip dt{color:var(--muted)} #tip dd{margin:0;text-align:right}
+#tip p{margin:0;color:var(--muted)}
+.note{font-size:13px;color:var(--muted);max-width:80ch}
+@media (prefers-reduced-motion:reduce){.tile{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Which AI dev tools developers actually use</h1>
+      <p class="sub" id="sub">One treemap per category. Tile area is the tool's share within its category.</p>
+    </div>
+    <div class="controls">
+      <span class="label" id="mlabel">Size tiles by</span>
+      <div class="seg" role="group" aria-labelledby="mlabel">
+        <button id="m-devs" data-m="hn_devs" aria-pressed="true">Devs naming it</button>
+        <button id="m-score" data-m="score" aria-pressed="false">Composite score</button>
+      </div>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--rising)"></i>Rising</span>
+        <span><i class="sw" style="background:var(--new)"></i>New in 2026</span>
+        <span><i class="sw" style="background:var(--tile)"></i>Steady</span>
+        <span><i class="sw" style="background:repeating-linear-gradient(135deg,var(--fading) 0 3px,var(--hatch) 3px 4px);border:1px solid var(--line)"></i>Fading</span>
+      </div>
+    </div>
+  </header>
+  <div class="grid" id="grid"></div>
+  <p class="note" id="note"></p>
+</div>
+<div id="tip" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const fmt = n => n==null ? "–" : n>=1e6 ? (n/1e6).toFixed(n>=1e7?0:1)+"M" : n>=1e3 ? (n/1e3).toFixed(n>=1e4?0:1)+"k" : String(n);
+let snap, metric = "hn_devs";
+try { metric = localStorage.getItem("tm-metric") || metric } catch(e){}
+
+function cls(t){
+  const tags=t.tags||[];
+  return tags.includes("New in 2026")?"new":tags.includes("Rising")?"rising":tags.includes("Fading")?"fading":"";
+}
+
+function draw(){
+  document.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.m===metric));
+  const grid=document.getElementById("grid"); grid.innerHTML="";
+  for(const c of snap.categories){
+    const card=document.createElement("section"); card.className="card";
+    const used=c.tools.filter(t=>(t[metric]||0)>0), unused=c.tools.filter(t=>!((t[metric]||0)>0));
+    const total=d3.sum(used,t=>t[metric]);
+    card.innerHTML=`<h2>${c.name}<span class="n">${metric==="hn_devs"?total+" devs":"top 10"}</span></h2><div class="tm"></div><div class="foot"></div>`;
+    grid.appendChild(card);
+    const box=card.querySelector(".tm");
+    const W=box.clientWidth, H=box.clientHeight;
+    const root=d3.hierarchy({children:used}).sum(d=>d[metric]||0).sort((a,b)=>b.value-a.value);
+    d3.treemap().size([W,H]).tile(d3.treemapSquarify.ratio(1.2)).round(true)(root);
+    for(const l of root.leaves()){
+      const t=l.data, w=l.x1-l.x0, h=l.y1-l.y0, share=l.value/total;
+      const el=document.createElement(t.url?"a":"div");
+      if(t.url){el.href=t.url; el.target="_blank"; el.rel="noopener"}
+      el.tabIndex=0;
+      el.className="tile "+cls(t)+(w*h>W*H*.18&&w>110?" big":"")+(w<46||h<30?" tiny":(w<80||h<44?" small":""));
+      Object.assign(el.style,{left:l.x0+"px",top:l.y0+"px",width:w+"px",height:h+"px",textDecoration:"none"});
+      const val = metric==="hn_devs" ? `${Math.round(share*100)}% · ${t.hn_devs}` : `${t.score}`;
+      el.innerHTML=`<span class="nm">${t.name}</span><span class="v">${val}</span>`;
+      el.setAttribute("aria-label",`${t.name}: ${metric==="hn_devs"?t.hn_devs+" developers, "+Math.round(share*100)+"% of category":"score "+t.score}`);
+      el.addEventListener("pointerenter",e=>tip(t,share,e)); el.addEventListener("pointermove",move);
+      el.addEventListener("pointerleave",()=>tipEl.hidden=true);
+      el.addEventListener("focus",e=>{const r=el.getBoundingClientRect();tip(t,share,{clientX:r.left+8,clientY:r.bottom})});
+      el.addEventListener("blur",()=>tipEl.hidden=true);
+      box.appendChild(el);
+    }
+    const foot=card.querySelector(".foot");
+    if(unused.length) foot.innerHTML=`<span>Not named by any HN dev:</span> <b>${unused.map(t=>t.name).join(", ")}</b>`;
+    if(c.verbatim!==true) foot.innerHTML+=` <span class="flag">numbers approximate</span>`;
+  }
+}
+
+const tipEl=document.getElementById("tip");
+function tip(t,share,e){
+  tipEl.innerHTML=`<h3>${t.name}</h3>${t.note?`<p>${t.note}</p>`:""}<dl>
+   <dt>HN devs naming it</dt><dd>${fmt(t.hn_devs)}${metric==="hn_devs"?` (${Math.round(share*100)}%)`:""}</dd>
+   <dt>Composite score</dt><dd>${t.score}</dd>
+   <dt>HN comments, 12 mo</dt><dd>${fmt(t.hn_comments_12m)}</dd>
+   <dt>GitHub stars</dt><dd>${fmt(t.github_stars)}</dd>
+   <dt>Downloads / month</dt><dd>${fmt(t.downloads_month)}</dd>
+   <dt>HN tone</dt><dd>${t.tone==null?"–":t.tone}</dd></dl>
+   ${t.tags&&t.tags.length?`<p style="margin-top:6px">${t.tags.join(" · ")}</p>`:""}`;
+  tipEl.hidden=false; move(e);
+}
+function move(e){
+  const r=tipEl.getBoundingClientRect(), pad=14;
+  let x=e.clientX+pad, y=e.clientY+pad;
+  if(x+r.width>innerWidth-8) x=e.clientX-r.width-pad;
+  if(y+r.height>innerHeight-8) y=Math.max(8,e.clientY-r.height-pad);
+  tipEl.style.left=Math.max(8,x)+"px"; tipEl.style.top=y+"px";
+}
+
+document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>{
+  metric=b.dataset.m; try{localStorage.setItem("tm-metric",metric)}catch(e){} draw();
+}));
+let rt; addEventListener("resize",()=>{clearTimeout(rt); rt=setTimeout(draw,120)});
+
+(async()=>{
+  const idx=await (await fetch("data/snapshots/index.json")).json();
+  snap=await (await fetch(`data/snapshots/${idx.latest}.json`)).json();
+  const s=snap.source;
+  document.getElementById("sub").innerHTML=`Snapshot ${snap.snapshot_date}, from <a href="${s.url}" target="_blank" rel="noopener">${s.name}</a> by ${s.author}: ${snap.corpus.hn_comments.toLocaleString("en")} Hacker News comments across ${snap.corpus.ask_hn_threads} “what's your setup” threads. Tile area is the tool's share within its category; hover a tile for details.`;
+  document.getElementById("note").textContent="“Devs naming it” counts Hacker News developers who say they use the tool, so it is the closest proxy for share of users. HN skews senior and terminal-first. “Composite score” is Alexis's blend of mentions, comment volume, stars, downloads, Lobsters and dev.to. Cards marked “numbers approximate” were transcribed from the rendered page and will be refreshed from the source JSON.";
+  draw();
+})();
+</script>
