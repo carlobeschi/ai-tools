@@ -1,3 +1,4 @@
+# Note: data/snapshots/2026-11-07.json was later hand-corrected for the evals category (see its "corrections" field); re-running this script drops those fixes.
 import json
 N=None
 F=["rank","name","url","score","tags","hn_devs","hn_comments_12m","hn_title_points","lobsters","devto","github_stars","downloads_month","tone","note"]
