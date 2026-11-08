@@ -83,7 +83,8 @@
      "url": "https://developers.openai.com/codex",
      "score": 94.7,
      "tags": [
-      "Open source"
+      "Open source",
+      "Rising"
      ],
      "hn_devs": 257,
      "hn_devs_12m": 236,
@@ -103,7 +104,8 @@
      "url": "https://opencode.ai",
      "score": 86.2,
      "tags": [
-      "Open source"
+      "Open source",
+      "Rising"
      ],
      "hn_devs": 149,
      "hn_devs_12m": 146,
@@ -123,7 +125,8 @@
      "url": "https://pi.dev",
      "score": 71.0,
      "tags": [
-      "Open source"
+      "Open source",
+      "Rising"
      ],
      "hn_devs": 82,
      "hn_devs_12m": 82,
@@ -144,7 +147,8 @@
      "url": "https://aider.chat",
      "score": 64.4,
      "tags": [
-      "Open source"
+      "Open source",
+      "Fading"
      ],
      "hn_devs": 62,
      "hn_devs_12m": 22,
@@ -184,7 +188,8 @@
      "url": "https://deepseek.com/harness/en/",
      "score": 55.4,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 9,
      "hn_devs_12m": 9,
@@ -240,7 +245,8 @@
      "url": "https://block.github.io/goose",
      "score": 35.0,
      "tags": [
-      "Open source"
+      "Open source",
+      "Rising"
      ],
      "hn_devs": 9,
      "hn_devs_12m": 8,
@@ -510,7 +516,9 @@
      "name": "Cursor",
      "url": "https://cursor.com",
      "score": 81.8,
-     "tags": [],
+     "tags": [
+      "Fading"
+     ],
      "hn_devs": 194,
      "hn_devs_12m": 92,
      "hn_comments_12m": 7946,
@@ -530,7 +538,8 @@
      "url": "https://cline.bot",
      "score": 67.8,
      "tags": [
-      "Open source"
+      "Open source",
+      "Fading"
      ],
      "hn_devs": 28,
      "hn_devs_12m": 8,
@@ -549,7 +558,9 @@
      "name": "VS Code + Copilot",
      "url": "https://code.visualstudio.com/docs/copilot/overview",
      "score": 64.6,
-     "tags": [],
+     "tags": [
+      "Fading"
+     ],
      "hn_devs": 57,
      "hn_devs_12m": 41,
      "hn_comments_12m": 1173,
@@ -583,7 +594,9 @@
      "name": "Windsurf",
      "url": "https://windsurf.com",
      "score": 56.7,
-     "tags": [],
+     "tags": [
+      "Fading"
+     ],
      "hn_devs": 54,
      "hn_devs_12m": 3,
      "hn_comments_12m": 346,
@@ -641,7 +654,9 @@
      "name": "Kiro",
      "url": "https://kiro.dev",
      "score": 46.8,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 14,
      "hn_devs_12m": 14,
      "hn_comments_12m": 487,
@@ -781,7 +796,8 @@
      "url": "https://herdr.dev",
      "score": 96.0,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 37,
      "hn_devs_12m": 37,
@@ -840,7 +856,8 @@
      "url": "https://github.com/stablyai/orca",
      "score": 74.1,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 9,
      "hn_devs_12m": 9,
@@ -859,7 +876,9 @@
      "name": "Paseo",
      "url": "https://github.com/getpaseo/paseo",
      "score": 72.7,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 11,
      "hn_devs_12m": 11,
      "hn_comments_12m": 176,
@@ -877,7 +896,9 @@
      "name": "tmux + git worktrees",
      "url": "https://git-scm.com/docs/git-worktree",
      "score": 67.7,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 46,
      "hn_devs_12m": 45,
      "hn_comments_12m": 72,
@@ -895,7 +916,8 @@
      "url": "https://t3.codes",
      "score": 66.3,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 10,
      "hn_devs_12m": 10,
@@ -914,7 +936,8 @@
      "url": "https://github.com/juggler-ai/juggler",
      "score": 50.4,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 2,
      "hn_devs_12m": 2,
@@ -949,7 +972,9 @@
      "name": "Conductor",
      "url": "https://conductor.build",
      "score": 41.4,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 7,
      "hn_devs_12m": 7,
      "hn_comments_12m": 42,
@@ -1201,7 +1226,8 @@
      "url": "https://code.claude.com/docs/en/code-review",
      "score": 77.8,
      "tags": [
-      "Open source"
+      "Open source",
+      "Rising"
      ],
      "hn_devs": 10,
      "hn_devs_12m": 9,
@@ -1290,7 +1316,8 @@
      "url": "https://github.com/alibaba/open-code-review",
      "score": 40.9,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 0,
      "hn_devs_12m": 0,
@@ -1431,7 +1458,9 @@
      "name": "AGENTS.md",
      "url": "https://agents.md",
      "score": 81.8,
-     "tags": [],
+     "tags": [
+      "Fading"
+     ],
      "hn_devs": 37,
      "hn_devs_12m": 35,
      "hn_comments_12m": 1981,
@@ -1469,7 +1498,9 @@
      "name": "Agent Skills",
      "url": "https://agentskills.io",
      "score": 68.1,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 19,
      "hn_devs_12m": 18,
      "hn_comments_12m": 315,
@@ -1526,7 +1557,8 @@
      "url": "https://github.com/rtk-ai/rtk",
      "score": 43.1,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 0,
      "hn_devs_12m": 0,
@@ -1545,7 +1577,8 @@
      "url": "https://github.com/MinishLab/semble",
      "score": 43.0,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 1,
      "hn_devs_12m": 1,
@@ -1602,7 +1635,8 @@
      "url": "https://github.com/Graphify-Labs/graphify",
      "score": 35.8,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 0,
      "hn_devs_12m": 0,
@@ -1840,7 +1874,8 @@
      "url": "https://github.com/vercel-labs/agent-browser",
      "score": 58.1,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 1,
      "hn_devs_12m": 1,
@@ -2082,7 +2117,8 @@
      "url": "https://github.com/nolabs-ai/nono",
      "score": 78.2,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 5,
      "hn_devs_12m": 5,
@@ -2136,7 +2172,8 @@
      "url": "https://github.com/NVIDIA/OpenShell",
      "score": 69.0,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 2,
      "hn_devs_12m": 2,
@@ -2214,7 +2251,8 @@
      "url": "https://github.com/kstenerud/yoloai",
      "score": 42.7,
      "tags": [
-      "Open source"
+      "Open source",
+      "New in 2026"
      ],
      "hn_devs": 1,
      "hn_devs_12m": 1,
@@ -2394,7 +2432,8 @@
      "url": "https://ollama.com",
      "score": 99.9,
      "tags": [
-      "Open source"
+      "Open source",
+      "Fading"
      ],
      "hn_devs": 77,
      "hn_devs_12m": 38,
@@ -2414,7 +2453,8 @@
      "url": "https://github.com/ggml-org/llama.cpp",
      "score": 95.3,
      "tags": [
-      "Open source"
+      "Open source",
+      "Fading"
      ],
      "hn_devs": 58,
      "hn_devs_12m": 43,
@@ -2493,7 +2533,9 @@
      "name": "Open WebUI",
      "url": "https://openwebui.com",
      "score": 68.0,
-     "tags": [],
+     "tags": [
+      "Fading"
+     ],
      "hn_devs": 21,
      "hn_devs_12m": 8,
      "hn_comments_12m": 104,
@@ -2510,7 +2552,9 @@
      "name": "LM Studio",
      "url": "https://lmstudio.ai",
      "score": 65.9,
-     "tags": [],
+     "tags": [
+      "Fading"
+     ],
      "hn_devs": 28,
      "hn_devs_12m": 13,
      "hn_comments_12m": 624,
@@ -2655,7 +2699,9 @@
      "name": "OpenRouter",
      "url": "https://openrouter.ai",
      "score": 81.8,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 89,
      "hn_devs_12m": 83,
      "hn_comments_12m": 3860,
@@ -2673,7 +2719,9 @@
      "name": "OpenCode Go / Zen",
      "url": "https://opencode.ai/go",
      "score": 59.2,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 33,
      "hn_devs_12m": 33,
      "hn_comments_12m": 430,
@@ -3267,7 +3315,9 @@
      "name": "Arize Phoenix",
      "url": "https://github.com/Arize-ai/phoenix",
      "score": 26.2,
-     "tags": [],
+     "tags": [
+      "Fading"
+     ],
      "hn_devs": 0,
      "hn_devs_12m": 0,
      "hn_comments_12m": 5,
@@ -3363,7 +3413,9 @@
      "name": "OpenClaw",
      "url": null,
      "score": 97.2,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 47,
      "hn_devs_12m": 47,
      "hn_comments_12m": 5014,
@@ -3381,7 +3433,9 @@
      "name": "Hermes Agent",
      "url": null,
      "score": 85.2,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 61,
      "hn_devs_12m": 61,
      "hn_comments_12m": 216,
@@ -3416,7 +3470,9 @@
      "name": "NanoClaw",
      "url": null,
      "score": 54.5,
-     "tags": [],
+     "tags": [
+      "New in 2026"
+     ],
      "hn_devs": 3,
      "hn_devs_12m": 3,
      "hn_comments_12m": 199,
@@ -3452,7 +3508,9 @@
      "name": "Muse",
      "url": null,
      "score": 46.7,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 25,
      "hn_devs_12m": 25,
      "hn_comments_12m": 14,
@@ -3470,7 +3528,9 @@
      "name": "Paperclip",
      "url": null,
      "score": 44.1,
-     "tags": [],
+     "tags": [
+      "New in 2026"
+     ],
      "hn_devs": 2,
      "hn_devs_12m": 2,
      "hn_comments_12m": 73,
@@ -3488,7 +3548,9 @@
      "name": "Home Assistant + LLM",
      "url": null,
      "score": 33.2,
-     "tags": [],
+     "tags": [
+      "Rising"
+     ],
      "hn_devs": 4,
      "hn_devs_12m": 4,
      "hn_comments_12m": 113,
@@ -3596,5 +3658,15 @@
    ]
   }
  ],
- "corrections": []
+ "corrections": [
+  {
+   "date": "2026-11-08",
+   "category": "(all)",
+   "tool": "(42 tools)",
+   "field": "tags",
+   "from": "Open source only",
+   "to": "tags of 2026-11-07",
+   "reason": "The collector dropped the source's Rising / Fading / New in 2026 labels, so the treemap lost its colours. They are now carried forward from the previous snapshot."
+  }
+ ]
 }
