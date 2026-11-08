@@ -95,7 +95,7 @@ What it measures, per tool:
 
 Lobsters and tone are not collected (null).
 
-Setup threads are a hand-curated list (21 threads, May 2025 onward) so the corpus changes only on purpose. Each
+Setup threads are a hand-curated list (19 general threads, none about a single tool, May 2025 onward) so the corpus changes only on purpose. Each
 run also searches Ask HN stories from the last 60 days with at least 30 comments whose title talks about an AI
 setup, workflow or stack, and lists them as candidates in the raw file and the PR; add the good ones to
 `setup_threads`.
