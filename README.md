@@ -9,6 +9,14 @@ a toggle switches to Alexis's composite score. Hover a tile for the details.
 
 Open it with any static server (it loads the JSON with `fetch`), e.g. `python3 -m http.server`, or via GitHub Pages.
 
+## Stack self-assessment
+
+`assess.html` asks which tools you use in each category (top 10 chips, Alexis's other scored tools, or free text), then
+shows the same treemaps with a person marker on your picks and a 0-100 mainstream-vs-niche bar.
+Each pick scores `sqrt(devs naming it / devs naming the category leader)`; tools outside the top 10 score 0; a category
+is the mean of its picks and the headline is the mean of answered categories. Answers stay in the browser
+(localStorage) and the result is shareable through the URL hash, e.g. `assess.html#terminal=Claude%20Code&editors=Zed`.
+
 ## Data
 
 - `data/snapshots/<date>.json`: one snapshot per research run (schema_version 1). Each has the source, corpus size,

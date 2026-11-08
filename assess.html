@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta charset="utf-8">
+<title>AI Stack Check</title>
+<meta name="description" content="Pick the AI dev tools you use and see where your stack sits against Hacker News developers: mainstream or niche.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Two views on one page: a questionnaire (one card per category, tool chips) and a result
+   (mainstream-vs-niche bar, then the category treemaps with a person marker on each picked tile). */
+:root{
+  --bg:#f5f6fa; --surface:#ffffff; --ink:#1d2160; --fg:#1b1d2b; --muted:#5d6278; --line:#d9dbe7;
+  --tile:#c9cef0; --tile-fg:#1d2160; --rising:#3446d4; --rising-fg:#ffffff; --new:#0f8a7e; --new-fg:#ffffff;
+  --fading:#e3e4ea; --fading-fg:#3d4157; --hatch:#cfd1db;
+  --me:#e8590c; --me-fg:#ffffff; --chip:#eef0f8; --dim:.42;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12131c; --surface:#1a1c28; --ink:#b9c0ff; --fg:#e6e7f0; --muted:#9a9eb5; --line:#2c2f42;
+  --tile:#2e3466; --tile-fg:#e3e6ff; --rising:#5b6cff; --rising-fg:#ffffff; --new:#1fa597; --new-fg:#04120f;
+  --fading:#242633; --fading-fg:#9a9eb5; --hatch:#30334a; --me:#ff8a3d; --me-fg:#1a0d04; --chip:#23263a; --dim:.35; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12131c; --surface:#1a1c28; --ink:#b9c0ff; --fg:#e6e7f0; --muted:#9a9eb5; --line:#2c2f42;
+  --tile:#2e3466; --tile-fg:#e3e6ff; --rising:#5b6cff; --rising-fg:#ffffff; --new:#1fa597; --new-fg:#04120f;
+  --fading:#242633; --fading-fg:#9a9eb5; --hatch:#30334a; --me:#ff8a3d; --me-fg:#1a0d04; --chip:#23263a; --dim:.35; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 96px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:24px}
+nav{display:flex;gap:16px;font:500 13px var(--body)}
+nav a{color:var(--muted);text-decoration:none}
+nav a[aria-current]{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+h1{font:700 clamp(28px,4vw,42px)/1.05 var(--display);color:var(--ink);margin:0;text-wrap:balance;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:6px 0 0;max-width:66ch}
+.sub a{color:var(--ink)}
+.label{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,370px),1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 14px 12px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card h2{font:700 19px/1.15 var(--display);margin:0;color:var(--ink);display:flex;gap:10px;align-items:baseline;justify-content:space-between}
+.card h2 .n{font:500 12px var(--mono);color:var(--muted);white-space:nowrap}
+.btn{font:600 14px var(--body);border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:9px 16px;border-radius:8px;cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn:focus-visible,.chip:focus-visible,.linkbtn:focus-visible{outline:2px solid var(--rising);outline-offset:2px}
+.linkbtn{font:500 13px var(--body);border:0;background:none;color:var(--ink);padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* questionnaire */
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 13px/1.2 var(--body);border:1px solid var(--line);background:var(--chip);color:var(--fg);padding:6px 10px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip[aria-pressed="true"]{background:var(--me);border-color:var(--me);color:var(--me-fg)}
+.chip.ghost{background:none;border-style:dashed;color:var(--muted)}
+.chip.none[aria-pressed="true"]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.more{display:flex;flex-direction:column;gap:8px}
+.more[hidden]{display:none}
+.other{display:flex;gap:6px}
+.other input{flex:1;min-width:0;font:14px var(--body);padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
+.hint{font-size:12.5px;color:var(--muted);margin:0}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:10;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(8px);border-top:1px solid var(--line);
+  padding:12px max(16px,env(safe-area-inset-left,0px)) calc(12px + env(safe-area-inset-bottom,0px));}
+.dock .in{max-width:1240px;margin:0 auto;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.dock .cnt{font-size:13.5px;color:var(--muted)}
+.dock .cnt b{color:var(--fg)}
+
+/* result: summary */
+.summary{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px clamp(16px,3vw,28px) 22px;display:flex;flex-direction:column;gap:18px}
+.verdict{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline}
+.verdict .big{font:700 clamp(40px,7vw,64px)/1 var(--display);color:var(--me);font-variant-numeric:tabular-nums}
+.verdict .what{font:700 clamp(20px,3vw,28px)/1.1 var(--display);color:var(--ink)}
+.verdict p{flex-basis:100%;margin:0;color:var(--muted);max-width:70ch}
+.scale{position:relative;padding:44px 0 34px}
+.bar{height:14px;border-radius:999px;background:linear-gradient(90deg,var(--new),var(--tile) 50%,var(--rising))}
+.ticks{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.me-pin{position:absolute;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;transition:left .6s cubic-bezier(.2,.8,.2,1)}
+.me-pin .badge{width:34px;height:34px;border-radius:50%;background:var(--me);color:var(--me-fg);display:grid;place-items:center;box-shadow:0 0 0 3px var(--surface)}
+.me-pin .stem{width:2px;height:16px;background:var(--me)}
+.cdot{position:absolute;top:47px;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:var(--surface);border:2px solid var(--fg);cursor:default}
+.cdot:hover,.cdot:focus-visible{transform:scale(1.4);outline:none}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px 24px}
+.facts h3{margin:0 0 4px;font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.facts ul{margin:0;padding:0;list-style:none;font-size:14px}
+.facts li{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px solid var(--line)}
+.facts li span:last-child{font:12.5px var(--mono);color:var(--muted);white-space:nowrap}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.actions .ok{font-size:13px;color:var(--muted)}
+
+/* result: treemaps */
+.tm{position:relative;width:100%;aspect-ratio:4/3;max-width:100%}
+.tile{position:absolute;border:1.5px solid var(--surface);border-radius:3px;overflow:hidden;padding:5px 6px;
+  background:var(--tile);color:var(--tile-fg);display:flex;flex-direction:column;justify-content:flex-start}
+.tile.rising{background:var(--rising);color:var(--rising-fg)}
+.tile.new{background:var(--new);color:var(--new-fg)}
+.tile.fading{background:repeating-linear-gradient(135deg,var(--fading) 0 6px,var(--hatch) 6px 7px);color:var(--fading-fg)}
+.tm.has-me .tile:not(.mine){opacity:var(--dim)}
+.tile.mine{outline:3px solid var(--me);outline-offset:-3px;z-index:2}
+.tile .nm{font:600 13px/1.15 var(--body);overflow-wrap:anywhere}
+.tile .v{font:400 11.5px/1.2 var(--mono);opacity:.85;margin-top:2px}
+.tile.big .nm{font:700 clamp(16px,2.2vw,22px)/1.05 var(--display)}
+.tile.tiny .nm,.tile.tiny .v{display:none}
+.tile.small .v{display:none}
+.pin{position:absolute;z-index:3;transform:translate(-50%,-50%);width:30px;height:30px;border-radius:50%;background:var(--me);color:var(--me-fg);
+  display:grid;place-items:center;box-shadow:0 0 0 2.5px var(--surface),0 3px 10px rgba(0,0,0,.25);pointer-events:none}
+.pin.sm{width:20px;height:20px}
+.pin svg{width:62%;height:62%}
+.card.skipped{opacity:.7}
+.card.skipped .tm{opacity:.55}
+.foot{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.foot b{font-weight:500;color:var(--fg)}
+.mine-line{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px}
+.tag{display:inline-flex;align-items:center;gap:5px;font:500 12.5px var(--body);padding:3px 8px 3px 4px;border-radius:999px;background:var(--me);color:var(--me-fg)}
+.tag.out{background:none;color:var(--me);border:1.5px dashed var(--me)}
+.tag svg{width:14px;height:14px}
+.flag{font:500 11px var(--mono);color:var(--muted);border:1px dashed var(--line);border-radius:4px;padding:1px 6px}
+.meter{font:500 12px var(--mono);color:var(--me)}
+.note{font-size:13px;color:var(--muted);max-width:80ch;margin:0}
+.view[hidden]{display:none}
+@media (prefers-reduced-motion:reduce){.me-pin{transition:none}}
+</style>
+
+<div class="wrap">
+  <nav><a href="./">Treemaps</a><a href="assess.html" aria-current="page">Check your stack</a></nav>
+
+  <!-- 1. Questionnaire -->
+  <section class="view" id="quiz">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <header>
+        <h1>Where does your AI stack sit?</h1>
+        <p class="sub" id="qsub">Tap the tools you actually use in each category, then see how mainstream or niche your setup is compared with the developers in the data. Skip any category you don't touch.</p>
+      </header>
+      <div class="grid" id="qgrid"></div>
+    </div>
+  </section>
+
+  <!-- 2. Result -->
+  <section class="view" id="result" hidden>
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <header>
+        <h1>Your stack, on the map</h1>
+        <p class="sub" id="rsub"></p>
+      </header>
+      <div class="summary">
+        <div class="verdict">
+          <span class="big" id="score">–</span>
+          <span class="what" id="label">–</span>
+          <p id="blurb"></p>
+        </div>
+        <div class="scale" id="scale" aria-hidden="true">
+          <div class="bar"></div>
+          <div class="ticks"><span>← Niche</span><span>Balanced</span><span>Mainstream →</span></div>
+        </div>
+        <div class="facts" id="facts"></div>
+        <div class="actions">
+          <button class="btn" id="edit">Change answers</button>
+          <button class="btn" id="copy">Copy link to this result</button>
+          <button class="linkbtn" id="reset">Start over</button>
+          <span class="ok" id="copied" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="grid" id="rgrid"></div>
+      <p class="note" id="method"></p>
+    </div>
+  </section>
+</div>
+
+<div class="dock" id="dock">
+  <div class="in">
+    <span class="cnt" id="cnt"><b>0</b> of 12 categories answered</span>
+    <button class="btn primary" id="go" disabled>Show my position</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const PERSON = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="7.5" r="4.2"/><path d="M3.5 21.5c.6-4.6 4.1-7.6 8.5-7.6s7.9 3 8.5 7.6z"/></svg>`;
+const NONE = "__none__";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let snap;
+// picks: { categoryId: Set(tool names, or NONE) }
+let picks = {};
+
+/* ---------- scoring ----------
+   Each pick gets a "mainstream" value in 0..1: sqrt(devs naming it / devs naming the category leader).
+   The square root keeps a solid #2 (e.g. Codex CLI behind Claude Code) from reading as niche.
+   Tools outside the top 10, or that no HN dev names, score 0. A category's value is the mean of its picks;
+   the overall score is the mean over the categories you answered (skipped and "none" are left out). */
+function toolValue(c, name){
+  const leader = d3.max(c.tools, t => t.hn_devs || 0) || 1;
+  const t = c.tools.find(t => t.name === name);
+  return t && t.hn_devs ? Math.sqrt(t.hn_devs / leader) : 0;
+}
+function share(c, name){
+  const total = d3.sum(c.tools, t => t.hn_devs || 0);
+  const t = c.tools.find(t => t.name === name);
+  return t && t.hn_devs && total ? t.hn_devs / total : 0;
+}
+function catDevs(c){ return d3.sum(c.tools, t => t.hn_devs || 0) }
+function compute(){
+  const rows = [];
+  for (const c of snap.categories){
+    const p = [...(picks[c.id] || [])].filter(x => x !== NONE);
+    if (!p.length) continue;
+    const vals = p.map(n => ({name:n, v:toolValue(c,n), share:share(c,n), top:c.tools.some(t => t.name === n)}));
+    rows.push({c, vals, v:d3.mean(vals, x => x.v)});
+  }
+  return {rows, score: rows.length ? Math.round(d3.mean(rows, r => r.v) * 100) : null};
+}
+function verdict(s){
+  if (s >= 80) return ["Right with the crowd", "You use what most developers on Hacker News use. Easy to find help, examples and colleagues on the same tools."];
+  if (s >= 60) return ["Mainstream", "Mostly well-trodden picks, with a few personal choices mixed in."];
+  if (s >= 40) return ["Balanced", "Half popular defaults, half tools only a minority of developers mention."];
+  if (s >= 20) return ["Explorer", "You lean towards tools that a small share of developers name. Early-adopter territory."];
+  return ["Deep niche", "Your stack is mostly tools few developers on Hacker News mention, or ones outside the top 10."];
+}
+
+/* ---------- state <-> URL hash ---------- */
+function toHash(){
+  const parts = [];
+  for (const c of snap.categories){
+    const s = picks[c.id]; if (s && s.size) parts.push(c.id + "=" + [...s].map(encodeURIComponent).join("|"));
+  }
+  return parts.join("&");
+}
+function fromHash(h){
+  const out = {};
+  for (const kv of h.replace(/^#/, "").split("&")){
+    const i = kv.indexOf("="); if (i < 1) continue;
+    const id = kv.slice(0, i); if (!snap.categories.some(c => c.id === id)) continue;
+    out[id] = new Set(kv.slice(i + 1).split("|").filter(Boolean).map(decodeURIComponent));
+  }
+  return out;
+}
+function save(){ try { localStorage.setItem("stack-picks", toHash()) } catch(e){} }
+
+/* ---------- questionnaire ---------- */
+function buildQuiz(){
+  const g = document.getElementById("qgrid"); g.innerHTML = "";
+  for (const c of snap.categories){
+    const card = document.createElement("section"); card.className = "card"; card.dataset.id = c.id;
+    const top = [...c.tools].sort((a,b) => a.name.localeCompare(b.name));
+    const also = (c.also_scored || []).filter(n => !c.tools.some(t => t.name === n)).sort();
+    card.innerHTML = `<h2>${esc(c.name)}<span class="n" data-n></span></h2>
+      <div class="chips" data-top></div>
+      <div class="chips"><button type="button" class="chip ghost" data-moreb aria-expanded="false">+ Something else</button>
+        <button type="button" class="chip ghost none" data-none aria-pressed="false">I don't use any</button></div>
+      <div class="more" data-more hidden>
+        ${also.length ? `<p class="hint">Also scored, outside the top 10:</p><div class="chips" data-also></div>` : ""}
+        <form class="other" data-other><input type="text" placeholder="Another tool, type its name" aria-label="Another tool in ${esc(c.name)}"><button class="btn" type="submit">Add</button></form>
+        <div class="chips" data-custom></div>
+      </div>`;
+    g.appendChild(card);
+    const add = (box, name) => {
+      const b = document.createElement("button"); b.type = "button"; b.className = "chip"; b.textContent = name; b.dataset.tool = name;
+      b.addEventListener("click", () => toggle(c.id, name)); box.appendChild(b);
+    };
+    top.forEach(t => add(card.querySelector("[data-top]"), t.name));
+    if (also.length) also.forEach(n => add(card.querySelector("[data-also]"), n));
+    // custom picks restored from a saved state
+    const known = new Set([...c.tools.map(t => t.name), ...also]);
+    for (const n of picks[c.id] || []) if (n !== NONE && !known.has(n)) add(card.querySelector("[data-custom]"), n);
+    const more = card.querySelector("[data-more]"), mb = card.querySelector("[data-moreb]");
+    mb.addEventListener("click", () => { more.hidden = !more.hidden; mb.setAttribute("aria-expanded", !more.hidden); if (!more.hidden) more.querySelector("input").focus() });
+    card.querySelector("[data-none]").addEventListener("click", () => toggle(c.id, NONE));
+    card.querySelector("[data-other]").addEventListener("submit", e => {
+      e.preventDefault(); const inp = e.target.querySelector("input"); const raw = inp.value.trim(); if (!raw) return;
+      const match = [...known].find(n => n.toLowerCase() === raw.toLowerCase());
+      const name = match || raw;
+      if (!match && !card.querySelector(`[data-custom] [data-tool="${CSS.escape(name)}"]`)) add(card.querySelector("[data-custom]"), name);
+      if (!(picks[c.id] && picks[c.id].has(name))) toggle(c.id, name);
+      inp.value = "";
+    });
+    if ([...(picks[c.id] || [])].some(n => !c.tools.some(t => t.name === n) && n !== NONE)) { more.hidden = false; mb.setAttribute("aria-expanded", true) }
+  }
+  syncQuiz();
+}
+function toggle(id, name){
+  const s = picks[id] || (picks[id] = new Set());
+  if (name === NONE){ const on = s.has(NONE); s.clear(); if (!on) s.add(NONE) }
+  else { s.delete(NONE); s.has(name) ? s.delete(name) : s.add(name) }
+  save(); syncQuiz();
+}
+function syncQuiz(){
+  let answered = 0, withTools = 0;
+  for (const card of document.querySelectorAll("#qgrid .card")){
+    const s = picks[card.dataset.id] || new Set();
+    card.querySelectorAll("[data-tool]").forEach(b => b.setAttribute("aria-pressed", s.has(b.dataset.tool)));
+    card.querySelector("[data-none]").setAttribute("aria-pressed", s.has(NONE));
+    const n = [...s].filter(x => x !== NONE).length;
+    card.querySelector("[data-n]").textContent = s.has(NONE) ? "none" : n ? n + " picked" : "";
+    if (s.size) answered++; if (n) withTools++;
+  }
+  document.getElementById("cnt").innerHTML = `<b>${answered}</b> of ${snap.categories.length} categories answered`;
+  document.getElementById("go").disabled = !withTools;
+}
+
+/* ---------- result ---------- */
+function cls(t){
+  const tags = t.tags || [];
+  return tags.includes("New in 2026") ? "new" : tags.includes("Rising") ? "rising" : tags.includes("Fading") ? "fading" : "";
+}
+function showResult(){
+  document.getElementById("quiz").hidden = true; document.getElementById("dock").hidden = true;
+  document.getElementById("result").hidden = false;
+  history.replaceState(null, "", "#" + toHash());
+  const {rows, score} = compute();
+  const [label, blurb] = verdict(score);
+  document.getElementById("score").textContent = score;
+  document.getElementById("label").textContent = label;
+  const thin = rows.filter(r => catDevs(r.c) < 30).length;
+  document.getElementById("blurb").textContent = `${blurb} Based on ${rows.length} ${rows.length === 1 ? "category" : "categories"}.` +
+    (thin ? ` ${thin} of them ${thin === 1 ? "has" : "have"} fewer than 30 developers in the data, so treat those as a rough signal.` : "");
+
+  // bar: person at the overall score, one small dot per category
+  const sc = document.getElementById("scale");
+  sc.querySelectorAll(".me-pin,.cdot").forEach(n => n.remove());
+  for (const r of rows){
+    const d = document.createElement("span"); d.className = "cdot"; d.style.left = (r.v * 100) + "%";
+    d.title = `${r.c.name}: ${Math.round(r.v * 100)}`; sc.appendChild(d);
+  }
+  const pin = document.createElement("div"); pin.className = "me-pin"; pin.style.left = "50%";
+  pin.innerHTML = `<span class="badge">${PERSON}</span><span class="stem"></span>`; sc.appendChild(pin);
+  requestAnimationFrame(() => requestAnimationFrame(() => pin.style.left = score + "%"));
+
+  // facts: most mainstream and most niche categories
+  const sorted = [...rows].sort((a,b) => b.v - a.v);
+  const li = r => `<li><span>${esc(r.c.name)}</span><span>${Math.round(r.v * 100)}</span></li>`;
+  const n = Math.min(3, Math.ceil(sorted.length / 2));
+  document.getElementById("facts").innerHTML =
+    `<div><h3>Most mainstream</h3><ul>${sorted.slice(0, n).map(li).join("")}</ul></div>` +
+    (sorted.length > 1 ? `<div><h3>Most niche</h3><ul>${sorted.slice(-Math.min(n, sorted.length - n)).reverse().map(li).join("")}</ul></div>` : "");
+
+  document.getElementById("rsub").innerHTML = `Each treemap is a category; tile area is the tool's share of Hacker News developers naming a tool there (snapshot ${snap.snapshot_date}, from <a href="${snap.source.url}" target="_blank" rel="noopener">${esc(snap.source.name)}</a>). Your picks carry the orange marker; the score is 0 for a fully niche stack and 100 if you use every category leader.`;
+  drawMaps();
+  document.getElementById("method").textContent = "How the score works: each pick counts as the square root of (developers naming it ÷ developers naming the category leader), so the leader is 100 and a strong runner-up still scores well. Tools outside the top 10, or that no developer names, count as 0. A category is the average of your picks, and the headline number is the average over the categories you answered. The data comes from Hacker News “what's your setup” threads, which skew senior and terminal-first.";
+  scrollTo({top:0});
+}
+function drawMaps(){
+  const g = document.getElementById("rgrid"); g.innerHTML = "";
+  const {rows} = compute(); const byId = Object.fromEntries(rows.map(r => [r.c.id, r]));
+  // answered categories first, in their original order; skipped ones after
+  const order = [...snap.categories].sort((a,b) => (!byId[a.id]) - (!byId[b.id]));
+  for (const c of order){
+    const r = byId[c.id]; const mine = new Set(r ? r.vals.map(x => x.name) : []);
+    const isNone = picks[c.id] && picks[c.id].has(NONE);
+    const card = document.createElement("section"); card.className = "card" + (r ? "" : " skipped");
+    card.innerHTML = `<h2>${esc(c.name)}<span class="n">${r ? `<span class="meter">${Math.round(r.v * 100)}</span> / 100` : isNone ? "you use none" : "skipped"}</span></h2><div class="tm${r ? " has-me" : ""}"></div><div class="foot"></div>`;
+    g.appendChild(card);
+    const box = card.querySelector(".tm"), W = box.clientWidth, H = box.clientHeight;
+    const used = c.tools.filter(t => (t.hn_devs || 0) > 0), total = d3.sum(used, t => t.hn_devs);
+    const root = d3.hierarchy({children:used}).sum(d => d.hn_devs || 0).sort((a,b) => b.value - a.value);
+    d3.treemap().size([W,H]).tile(d3.treemapSquarify.ratio(1.2)).round(true)(root);
+    for (const l of root.leaves()){
+      const t = l.data, w = l.x1 - l.x0, h = l.y1 - l.y0, sh = l.value / total;
+      const el = document.createElement("div");
+      el.className = "tile " + cls(t) + (mine.has(t.name) ? " mine" : "") + (w*h > W*H*.18 && w > 110 ? " big" : "") + (w < 46 || h < 30 ? " tiny" : (w < 80 || h < 44 ? " small" : ""));
+      Object.assign(el.style, {left:l.x0 + "px", top:l.y0 + "px", width:w + "px", height:h + "px"});
+      el.innerHTML = `<span class="nm">${esc(t.name)}</span><span class="v">${Math.round(sh * 100)}% · ${t.hn_devs}</span>`;
+      el.title = `${t.name}: ${t.hn_devs} developers, ${Math.round(sh * 100)}% of the category`;
+      box.appendChild(el);
+      if (mine.has(t.name)){
+        const p = document.createElement("span"); p.className = "pin" + (w < 50 || h < 50 ? " sm" : "");
+        // centre of the tile, nudged down on labelled tiles so the name stays readable
+        const cy = h > 70 ? l.y0 + h * .62 : l.y0 + h / 2;
+        Object.assign(p.style, {left:(l.x0 + w / 2) + "px", top:cy + "px"}); p.innerHTML = PERSON; box.appendChild(p);
+      }
+    }
+    const foot = card.querySelector(".foot");
+    if (r){
+      const tags = r.vals.map(x => x.share
+        ? `<span class="tag">${PERSON}${esc(x.name)} · ${Math.round(x.share * 100)}%</span>`
+        : `<span class="tag out" title="${x.top ? "In the top 10, but no HN developer names it" : "Outside the top 10"}">${PERSON}${esc(x.name)} · ${x.top ? "0 devs" : "off the map"}</span>`);
+      foot.innerHTML = `<div class="mine-line">${tags.join("")}</div>`;
+    }
+    if (c.verbatim !== true) foot.innerHTML += ` <span class="flag">numbers approximate</span>`;
+  }
+}
+
+/* ---------- wiring ---------- */
+function showQuiz(){
+  document.getElementById("result").hidden = true; document.getElementById("quiz").hidden = false; document.getElementById("dock").hidden = false;
+  history.replaceState(null, "", location.pathname + location.search);
+  buildQuiz(); scrollTo({top:0});
+}
+document.getElementById("go").addEventListener("click", showResult);
+document.getElementById("edit").addEventListener("click", showQuiz);
+document.getElementById("reset").addEventListener("click", () => { picks = {}; save(); showQuiz() });
+document.getElementById("copy").addEventListener("click", async () => {
+  const url = location.href.split("#")[0] + "#" + toHash(), msg = document.getElementById("copied");
+  try { await navigator.clipboard.writeText(url); msg.textContent = "Link copied." }
+  catch(e){ msg.textContent = url }
+});
+let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => { if (!document.getElementById("result").hidden) drawMaps() }, 120) });
+
+(async () => {
+  const idx = await (await fetch("data/snapshots/index.json")).json();
+  snap = await (await fetch(`data/snapshots/${idx.latest}.json`)).json();
+  document.getElementById("qsub").innerHTML += ` Compared against ${snap.corpus.hn_comments.toLocaleString("en")} Hacker News comments from <a href="${snap.source.url}" target="_blank" rel="noopener">${esc(snap.source.name)}</a> (snapshot ${snap.snapshot_date}). Your answers stay in your browser.`;
+  if (location.hash.length > 1){ picks = fromHash(location.hash); save() }
+  else { try { const s = localStorage.getItem("stack-picks"); if (s) picks = fromHash(s) } catch(e){} }
+  const hasTools = Object.values(picks).some(s => [...s].some(x => x !== NONE));
+  if (location.hash.length > 1 && hasTools) { buildQuiz(); showResult() } else buildQuiz();
+})();
+</script>
