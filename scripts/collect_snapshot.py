@@ -279,7 +279,9 @@ def main():
                 r["devto"] = safe(lambda: devto_posts(t["devto"], since12.isoformat()))
             p = prev_tools.get((cid, name), {})
             r["url"] = p.get("url")
-            r["tags"] = [g for g in p.get("tags", []) if g == "Open source"]
+            # Rising / Fading / New in 2026 / Open source come from the source's labels and are carried forward
+            # (the treemap colours tiles by them) until enough collected snapshots exist to compute them.
+            r["tags"] = list(p.get("tags", []))
             r["note"] = p.get("note")
             if t.get("collide"):
                 r["collision"] = True
