@@ -210,8 +210,7 @@
      "\"cursor agent\"",
      "\"using cursor\""
     ],
-    "re": "\\bCursor\\b",
-    "cs": true,
+    "re": "(?<!mouse )(?<!text )(?<!the )\\bcursor\\b(?! (?:position|movement|keys?|blink|jump))",
     "devto": "cursor",
     "collide": true
    },
@@ -569,7 +568,7 @@
      "\"claude skills\"",
      "\"skill.md\""
     ],
-    "re": "agent skills|skill\\.md|agentskills|claude (?:code )?skills|\\bskills\\b"
+    "re": "agent skills|skill\\.md|agentskills|(?:claude|codex)(?: code)? skills|\\bskills? (?:in|for|with) (?:claude|codex|pi|opencode)|\\b(?:my|custom|own) skills\\b"
    },
    "Superpowers": {
     "q": [
@@ -1243,7 +1242,7 @@
      "\"arize phoenix\"",
      "\"arize\""
     ],
-    "re": "arize",
+    "re": "\\barize\\b",
     "gh": "Arize-ai/phoenix",
     "pypi": "arize-phoenix",
     "collide": true

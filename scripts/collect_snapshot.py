@@ -43,7 +43,10 @@ WEIGHTS = {"hn_devs": 40, "hn_comments_12m": 20, "reach": 16, "hn_title_points":
 # run against Ask HN stories; a title must match SETUP_TITLE to be used.
 DISCOVERY_QUERIES = ["AI setup", "agentic setup", "AI coding setup", "AI workflow", "AI coding workflow",
                      "coding agent", "LLM setup", "AI tools", "AI coding tools", "AI stack", "using AI",
-                     "Claude Code", "coding assistant", "vibe coding", "LLM workflow", "AI dev"]
+                     "Claude Code", "coding assistant", "vibe coding", "LLM workflow", "AI dev",
+                     "your setup", "your workflow", "your stack", "how do you use AI", "how are you using AI",
+                     "AI-assisted coding", "agentic coding", "LLM coding", "AI programming", "coding with AI",
+                     "Cursor", "Copilot", "Codex", "coding agents", "AI tools for developers"]
 SETUP_TITLE = re.compile(
     r"(?i)^ask hn\b.*\b(setup|set-up|workflow|stack|tools?|using|use|uses)\b.*"
     r"\b(ai|llms?|agents?|agentic|claude|copilot|cursor|codex|coding assistants?|vibe)\b"
@@ -92,7 +95,7 @@ def ts(date):
 
 # ---------- Ask HN setup threads ----------
 
-def discover_threads(since_ts, seeds):
+def discover_threads(since_ts, seeds, rejected):
     found = {}
     for q in DISCOVERY_QUERIES:
         for page in range(3):
@@ -103,6 +106,8 @@ def discover_threads(since_ts, seeds):
             for h in res["hits"]:
                 if SETUP_TITLE.search(h.get("title") or ""):
                     found[int(h["objectID"])] = h
+                else:
+                    rejected[int(h["objectID"])] = {"title": h.get("title"), "num_comments": h.get("num_comments")}
             if page + 1 >= res.get("nbPages", 0):
                 break
     for s in seeds:
@@ -218,7 +223,8 @@ def main():
     since12_ts, devs_since_ts = ts(since12), ts(dt.date.fromisoformat(cfg["hn_devs_since"]))
 
     print("discovering Ask HN setup threads...", file=sys.stderr)
-    threads = discover_threads(devs_since_ts, cfg.get("setup_threads_seed", []))
+    rejected = {}
+    threads = discover_threads(devs_since_ts, cfg.get("setup_threads_seed", []), rejected)
     comments = []
     for th in threads:
         cs = safe(lambda: thread_comments(th["id"]), [])
@@ -229,7 +235,10 @@ def main():
 
     only = set(args.only.split(",")) if args.only else None
     raw = {"date": args.date, "since_12m": since12.isoformat(), "hn_devs_since": cfg["hn_devs_since"],
-           "setup_threads": threads, "tools": {}}
+           "setup_threads": threads,
+           "rejected_threads": sorted(({"id": k, **v} for k, v in rejected.items() if k not in {t["id"] for t in threads}),
+                                      key=lambda x: -(x["num_comments"] or 0))[:150],
+           "tools": {}}
     categories = []
     for cid, tools in cfg["categories"].items():
         if only and cid not in only:
@@ -248,6 +257,8 @@ def main():
                     if t.get("collide") and len(samples) < 8:
                         samples.append(snippet(c["text"], m))
             per_q = {q: safe(lambda q=q: hn_comments(q, since12_ts)) for q in t["q"]}
+            plain = re.sub(r"\s*\(.*?\)", "", name)
+            diag = {q: safe(lambda q=q: hn_comments(q, since12_ts)) for q in {plain, f'"{plain}"'} if q not in per_q}
             pts_q = {q: safe(lambda q=q: hn_title_points(q, since12_ts)) for q in t["q"]}
             r = {"name": name,
                  "hn_devs": len(authors), "hn_devs_12m": len(authors12),
@@ -271,7 +282,7 @@ def main():
             if t.get("collide"):
                 r["collision"] = True
             rows.append(r)
-            raw["tools"][f"{cid}/{name}"] = {"hn_comments_12m": per_q, "hn_title_points": pts_q, "downloads": dl,
+            raw["tools"][f"{cid}/{name}"] = {"hn_comments_12m": per_q, "name_queries": diag, "hn_title_points": pts_q, "downloads": dl,
                                              **({"collision_samples": samples} if t.get("collide") else {})}
         score_category(rows)
         rows.sort(key=lambda r: (-r["score"], -(r["hn_devs"] or 0), r["name"]))

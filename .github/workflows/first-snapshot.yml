@@ -1,4 +1,4 @@
-# Temporary: runs the collector once on this branch to produce the first collected snapshot. Removed before merge.
+# Temporary: runs the collector on this branch to produce the first collected snapshot (run 2). Removed before merge.
 name: First snapshot (temporary)
 on:
   push:
