@@ -121,7 +121,7 @@ h1{font:700 clamp(28px,4vw,42px)/1.05 var(--display);color:var(--ink);margin:0;t
 </style>
 
 <div class="wrap">
-  <nav><a href="./">Treemaps</a><a href="assess.html" aria-current="page">Check your stack</a></nav>
+  <nav><a href="./">Treemaps</a><a href="assess.html" aria-current="page">Check your stack</a><a href="trends.html">Trends</a></nav>
 
   <!-- 1. Questionnaire -->
   <section class="view" id="quiz">
@@ -393,9 +393,11 @@ document.getElementById("copy").addEventListener("click", async () => {
 });
 let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => { if (!document.getElementById("result").hidden) drawMaps() }, 120) });
 
+// ?snapshot=YYYY-MM-DD pins an older snapshot (the tests use it); default is the latest
+function pickSnapshot(idx){ const q=new URLSearchParams(location.search).get("snapshot"); return idx.snapshots.includes(q) ? q : idx.latest }
 (async () => {
   const idx = await (await fetch("data/snapshots/index.json")).json();
-  snap = await (await fetch(`data/snapshots/${idx.latest}.json`)).json();
+  snap = await (await fetch(`data/snapshots/${pickSnapshot(idx)}.json`)).json();
   document.getElementById("qsub").innerHTML += ` Compared against ${snap.corpus.hn_comments.toLocaleString("en")} Hacker News comments from <a href="${snap.source.url}" target="_blank" rel="noopener">${esc(snap.source.name)}</a> (snapshot ${snap.snapshot_date}). Your answers stay in your browser.`;
   if (location.hash.length > 1){ picks = fromHash(location.hash); save() }
   else { try { const s = localStorage.getItem("stack-picks"); if (s) picks = fromHash(s) } catch(e){} }

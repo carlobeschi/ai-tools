@@ -69,6 +69,49 @@ Other caveats:
 5. Fix the snapshot JSON and add an entry to its top-level `corrections`
    list (`date`, `category`, `tool`, `field`, `from`, `to`, `reason`).
 
+## Recurring snapshots (every two weeks)
+
+`scripts/collect_snapshot.py` re-measures every tool in `scripts/tracked_tools.json` (each category's top 10 from
+the source plus the other tools the source scored, 184 in all) and writes a new `data/snapshots/<date>.json`,
+with the details behind it in `data/raw/<date>.json`.
+
+How it runs: `.github/workflows/snapshot.yml` starts every Monday at 06:17 UTC on a GitHub runner (which, unlike
+the Claude cloud container, reaches HN, PyPI, npm and dev.to). It collects only when the latest snapshot is 13
+days old or more, so a new one lands every second Monday, and opens a pull request `Snapshot <date>` with a
+summary. Merging the PR publishes it on the site. "Run workflow" on the Actions tab with `force` collects at once.
+
+What it measures, per tool:
+
+| Field | How |
+|---|---|
+| `hn_devs` | Distinct HN authors whose comment in one of the curated Ask HN setup threads (`setup_threads`) matches the tool's `re` |
+| `hn_devs_12m` | Same, comments from the last 12 months only |
+| `hn_comments_12m` | Algolia comment hits for the first query in `q`, last 12 months (the others go to the raw file) |
+| `hn_title_points` | Sum of points of HN stories with a `q` phrase in the title, last 12 months |
+| `github_stars` | GitHub API, repo `gh` |
+| `downloads_month` | pypistats last month for `pypi`, else npm last month for `npm` |
+| `devto` | dev.to posts with tag `devto` in the last 12 months (only a few tools have a tag; not in the score) |
+| `score` | HN devs 40, HN comments 20, max(stars, downloads) 16, title points 12; each log-scaled against the category's best tracked tool, total rescaled to 100 |
+
+Lobsters and tone are not collected (null).
+
+Setup threads are a hand-curated list (19 general threads, none about a single tool, May 2025 onward) so the corpus changes only on purpose. Each
+run also searches Ask HN stories from the last 60 days with at least 30 comments whose title talks about an AI
+setup, workflow or stack, and lists them as candidates in the raw file and the PR; add the good ones to
+`setup_threads`.
+
+Comparability with the source: stars and downloads are the same measurement. For HN comments, 62 tools have a
+first query that reproduces the source's count within 10% (checked 2026-11-08 against every tool, quoted and
+unquoted names and our aliases); they carry `src: true` in the config and `source_query: true` in the snapshot,
+and only those are compared with the first snapshot. `hn_devs`, title points and the score are our own
+reconstruction (the source's thread list is not published), so the trends page compares them only between
+collected snapshots.
+
+Reviewing a snapshot PR: tools marked `collision: true` (Pi, Cursor, Orca, Goose…) match common words. Read
+their `collision_samples` in the raw file, correct the snapshot when the matches are not about the tool, and add
+the fix to `corrections`. To track a new tool, add it to `tracked_tools.json` (an `re` is required; check it on
+a few comments first).
+
 ## Access notes
 
 - The Claude cloud container used so far blocks hn.algolia.com, pypistats,

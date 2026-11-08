@@ -1,0 +1,3091 @@
+{
+ "date": "2026-11-08",
+ "since_12m": "2025-11-08",
+ "hn_devs_since": "2025-05-01",
+ "setup_threads": [
+  {
+   "id": 43959710,
+   "title": "Ask HN: Cursor or Windsurf?",
+   "points": 316,
+   "date": "2025-05-12",
+   "comments_fetched": 398
+  },
+  {
+   "id": 44095189,
+   "title": "Ask HN: Anyone struggling to get value out of coding LLMs?",
+   "points": 345,
+   "date": "2025-05-26",
+   "comments_fetched": 279
+  },
+  {
+   "id": 44262410,
+   "title": "Ask HN: What is your ultimate AI-assisted coding setup?",
+   "points": 6,
+   "date": "2025-06-12",
+   "comments_fetched": 15
+  },
+  {
+   "id": 44405067,
+   "title": "Ask HN: What are you actually using LLMs for in production?",
+   "points": 49,
+   "date": "2025-06-28",
+   "comments_fetched": 67
+  },
+  {
+   "id": 44572043,
+   "title": "Ask HN: What's Your Useful Local LLM Stack?",
+   "points": 91,
+   "date": "2025-07-15",
+   "comments_fetched": 54
+  },
+  {
+   "id": 45771870,
+   "title": "Ask HN: Who uses open LLMs and coding assistants locally? Share setup and laptop",
+   "points": 350,
+   "date": "2025-10-31",
+   "comments_fetched": 192
+  },
+  {
+   "id": 46255285,
+   "title": "Ask HN: How can I get better at using AI for programming?",
+   "points": 471,
+   "date": "2025-12-13",
+   "comments_fetched": 469
+  },
+  {
+   "id": 46678550,
+   "title": "Ask HN: COBOL devs, how are AI coding affecting your work?",
+   "points": 169,
+   "date": "2026-01-19",
+   "comments_fetched": 183
+  },
+  {
+   "id": 46691243,
+   "title": "Ask HN: Do you have any evidence that agentic coding works?",
+   "points": 461,
+   "date": "2026-01-20",
+   "comments_fetched": 455
+  },
+  {
+   "id": 46907001,
+   "title": "Ask HN: Anyone Using a Mac Studio for Local AI/LLM?",
+   "points": 57,
+   "date": "2026-02-05",
+   "comments_fetched": 35
+  },
+  {
+   "id": 46993479,
+   "title": "Ask HN: Are you using an agent orchestrator to write code?",
+   "points": 41,
+   "date": "2026-02-12",
+   "comments_fetched": 60
+  },
+  {
+   "id": 47388646,
+   "title": "Ask HN: How is AI-assisted coding going for you professionally?",
+   "points": 434,
+   "date": "2026-03-15",
+   "comments_fetched": 615
+  },
+  {
+   "id": 48413629,
+   "title": "Ask HN: What is your (AI) dev tech stack / workflow?",
+   "points": 171,
+   "date": "2026-06-05",
+   "comments_fetched": 136
+  },
+  {
+   "id": 48445024,
+   "title": "Ask HN: What is the AI setup for an experienced dev starting on a new project?",
+   "points": 5,
+   "date": "2026-06-08",
+   "comments_fetched": 10
+  },
+  {
+   "id": 48542100,
+   "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
+   "points": 1318,
+   "date": "2026-06-15",
+   "comments_fetched": 563
+  },
+  {
+   "id": 48587808,
+   "title": "Ask HN: What tools are you using for AI-assisted code review?",
+   "points": 26,
+   "date": "2026-06-18",
+   "comments_fetched": 31
+  },
+  {
+   "id": 48771515,
+   "title": "Ask HN: Is anyone experimenting with different ways of using LLMs for coding?",
+   "points": 212,
+   "date": "2026-07-03",
+   "comments_fetched": 206
+  },
+  {
+   "id": 49636239,
+   "title": "Ask HN: What's your AI coding set up?",
+   "points": 6,
+   "date": "2026-09-09",
+   "comments_fetched": 5
+  },
+  {
+   "id": 50366117,
+   "title": "Ask HN: What's your current AI agentic setup?",
+   "points": 557,
+   "date": "2026-11-04",
+   "comments_fetched": 691
+  }
+ ],
+ "candidate_threads": [],
+ "rejected_threads": [
+  {
+   "id": 50151036,
+   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+   "num_comments": 767
+  },
+  {
+   "id": 49657850,
+   "title": "Ask HN: Can we please limit the AI news flood?",
+   "num_comments": 403
+  },
+  {
+   "id": 49982498,
+   "title": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+   "num_comments": 349
+  },
+  {
+   "id": 50363461,
+   "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+   "num_comments": 200
+  },
+  {
+   "id": 50352757,
+   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+   "num_comments": 163
+  },
+  {
+   "id": 50039291,
+   "title": "Ask HN: Do you want a router that has DD-WRT pre-installed?",
+   "num_comments": 151
+  },
+  {
+   "id": 50301479,
+   "title": "Ask HN: Are you tired too in this AI era?",
+   "num_comments": 143
+  },
+  {
+   "id": 50067325,
+   "title": "Ask HN: CAD for wood working with LLM support?",
+   "num_comments": 128
+  },
+  {
+   "id": 49798257,
+   "title": "Tell HN: Claude Code just accepted and signed a contract for me. Without asking",
+   "num_comments": 98
+  },
+  {
+   "id": 49626431,
+   "title": "Ask HN: Anyone still coding like 2021? Where do you work?",
+   "num_comments": 94
+  },
+  {
+   "id": 50084969,
+   "title": "Ask HN: What is the current trajectory of a senior engineer?",
+   "num_comments": 83
+  },
+  {
+   "id": 50405250,
+   "title": "Ask HN: How did you convince family and friends to join your XMPP/Matrix server?",
+   "num_comments": 81
+  },
+  {
+   "id": 49851032,
+   "title": "Tell HN: Codex Is Down [fixed]",
+   "num_comments": 73
+  },
+  {
+   "id": 50167754,
+   "title": "Tell HN: 2x PHP RCE CVEs with CVSS 10.0 Incoming",
+   "num_comments": 63
+  },
+  {
+   "id": 49622554,
+   "title": "I'm going back to coding by hand",
+   "num_comments": 53
+  },
+  {
+   "id": 49826029,
+   "title": "Ask HN: I just talked to an AI-obsessed client, and I need a shower afterwards",
+   "num_comments": 51
+  },
+  {
+   "id": 49934037,
+   "title": "Ask HN: Is anybody producing good code with coding agents?",
+   "num_comments": 48
+  },
+  {
+   "id": 50331001,
+   "title": "In LLM era, can software startup survive?",
+   "num_comments": 47
+  },
+  {
+   "id": 50354336,
+   "title": "Gitbook Breached",
+   "num_comments": 45
+  },
+  {
+   "id": 49768826,
+   "title": "Ask HN: How do you interview devs in a post-AI world?",
+   "num_comments": 43
+  },
+  {
+   "id": 49674396,
+   "title": "How SaaS startup guys get first 100 customers first, make fkn $500k ARR fast?",
+   "num_comments": 43
+  },
+  {
+   "id": 49645683,
+   "title": "Apple is no longer thinking different",
+   "num_comments": 42
+  },
+  {
+   "id": 49802417,
+   "title": "Ask HN: Should we still learn coding?",
+   "num_comments": 41
+  },
+  {
+   "id": 50387483,
+   "title": "Ask HN: What are forgotten topics in computing that deserve a new revisit?",
+   "num_comments": 40
+  },
+  {
+   "id": 49873913,
+   "title": "Management is forcing us to use AI",
+   "num_comments": 37
+  },
+  {
+   "id": 49874609,
+   "title": "An Antidote to Roko's Basilisk",
+   "num_comments": 36
+  },
+  {
+   "id": 50121562,
+   "title": "Anthropic Console overcharged my card 100x due to internationalization input bug",
+   "num_comments": 36
+  },
+  {
+   "id": 49861047,
+   "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+   "num_comments": 36
+  },
+  {
+   "id": 50204125,
+   "title": "Median product \"lifespan\" has fallen from ~4y down to ~1.5y",
+   "num_comments": 35
+  },
+  {
+   "id": 49989504,
+   "title": "Tell HN: HN has lost the joy for me",
+   "num_comments": 32
+  },
+  {
+   "id": 49764727,
+   "title": "Ask HN: Losing motivation to work in the IT field, need advice",
+   "num_comments": 30
+  },
+  {
+   "id": 50344065,
+   "title": "Ask HN: Does anyone enjoy work anymore?",
+   "num_comments": 30
+  },
+  {
+   "id": 49682920,
+   "title": "Ask HN: Career paths to consider if I am better at supporting than creating?",
+   "num_comments": 30
+  }
+ ],
+ "tools": {
+  "terminal/Claude Code": {
+   "hn_comments_12m": {
+    "\"claude code\"": 23379
+   },
+   "name_queries": {
+    "\"Claude Code\"": 23379,
+    "Claude Code": 36599
+   },
+   "hn_title_points": {
+    "\"claude code\"": 68482
+   },
+   "downloads": {
+    "npm": 45548488
+   }
+  },
+  "terminal/Codex CLI": {
+   "hn_comments_12m": {
+    "\"codex\"": 15124
+   },
+   "name_queries": {
+    "\"Codex CLI\"": 647,
+    "Codex CLI": 11670
+   },
+   "hn_title_points": {
+    "\"codex\"": 25610
+   },
+   "downloads": {
+    "npm": 93964271
+   }
+  },
+  "terminal/OpenCode": {
+   "hn_comments_12m": {
+    "\"opencode\"": 5262
+   },
+   "name_queries": {
+    "\"OpenCode\"": 5262,
+    "OpenCode": 6465
+   },
+   "hn_title_points": {
+    "\"opencode\"": 6723
+   },
+   "downloads": {
+    "npm": 14089770
+   }
+  },
+  "terminal/Pi": {
+   "hn_comments_12m": {
+    "\"pi.dev\"": 377,
+    "\"pi agent\"": 161,
+    "\"pi coding agent\"": 127,
+    "\"pi-coding-agent\"": 127
+   },
+   "name_queries": {
+    "Pi": 142834,
+    "\"Pi\"": 8870
+   },
+   "hn_title_points": {
+    "\"pi.dev\"": 166,
+    "\"pi agent\"": 47,
+    "\"pi coding agent\"": 282,
+    "\"pi-coding-agent\"": 282
+   },
+   "downloads": {
+    "npm": 1454845
+   },
+   "collision_samples": [
+    "Mixed feelings. I use Opus 4.6 with pi.dev (one agent). I give detailed instructions what to do. I essentially u",
+    ", and Codex (especially for review). I do a bunch of niche stuff with Pi and OpenCode. My productivity is up. Some nuances with working with o",
+    "I use PI ( https://pi.dev ) and ( https://hermes-agent.nousresearch.com/ ) as the main drive",
+    "operly connected and I still got a title generated). So I settled for Pi, but I strongly disliked the idea that the agent could, at any point,",
+    "Tldr; just teach them to talk to Codex and show Pi to ambitious ones. Raw Codex, both app and cli. On windows 11 which i",
+    "Claude Code, Codex, Pi clis all for varying levels of work. VS Code when needed. I review ag",
+    "rminal threads (love this!) + Remote machine Devcontainers + Claude + Pi [1] Zed https://zed.dev/ [2] Terminal threads https://zed.dev/blo",
+    "you're writing the 5th version of \"little-coder\" or similar using the Pi library ahh shit, you just read an article that `tools` are actually"
+   ]
+  },
+  "terminal/DeepSeek Harness": {
+   "hn_comments_12m": {
+    "\"deepseek harness\"": 126
+   },
+   "name_queries": {
+    "DeepSeek Harness": 629,
+    "\"DeepSeek Harness\"": 126
+   },
+   "hn_title_points": {
+    "\"deepseek harness\"": 1267
+   },
+   "downloads": {}
+  },
+  "terminal/Aider": {
+   "hn_comments_12m": {
+    "\"aider\"": 332
+   },
+   "name_queries": {
+    "Aider": 12215,
+    "\"Aider\"": 332
+   },
+   "hn_title_points": {
+    "\"aider\"": 25
+   },
+   "downloads": {
+    "pypi": 260509
+   }
+  },
+  "terminal/Gemini CLI": {
+   "hn_comments_12m": {
+    "Gemini CLI": 2091,
+    "\"gemini cli\"": 1004,
+    "\"gemini-cli\"": 1004
+   },
+   "name_queries": {
+    "\"Gemini CLI\"": 1004
+   },
+   "hn_title_points": {
+    "Gemini CLI": 1325,
+    "\"gemini cli\"": 1110,
+    "\"gemini-cli\"": 1110
+   },
+   "downloads": {
+    "npm": 1591074
+   }
+  },
+  "terminal/Copilot CLI": {
+   "hn_comments_12m": {
+    "\"copilot cli\"": 189
+   },
+   "name_queries": {
+    "Copilot CLI": 767,
+    "\"Copilot CLI\"": 189
+   },
+   "hn_title_points": {
+    "\"copilot cli\"": 201
+   },
+   "downloads": {
+    "npm": 6636693
+   }
+  },
+  "terminal/Goose": {
+   "hn_comments_12m": {
+    "\"goose agent\"": 1,
+    "\"block goose\"": 5,
+    "\"block's goose\"": 1,
+    "\"codename goose\"": 1
+   },
+   "name_queries": {
+    "Goose": 2866,
+    "\"Goose\"": 923
+   },
+   "hn_title_points": {
+    "\"goose agent\"": 0,
+    "\"block goose\"": 0,
+    "\"block's goose\"": 0,
+    "\"codename goose\"": 0
+   },
+   "downloads": {},
+   "collision_samples": [
+    "f when I’m done, my backlog has a todo that’s basically using Block’s Goose + local R1 for that kind of thing because it’s a non-interactive batc",
+    "If I didn't know that I could have easily been sent on multiple wild goose chases.",
+    "space for a specific bug/feature - Ramble into the input box. I use a goose neck microphone and Spokenly (with Parakeet as the model ) for local",
+    ". Started with running all the usual suspects pi, claude code, codex, goose, but mostly migrated to own agent (ha!) for greater level of control.",
+    "me to orchestrate difference other coding agent : like Codex + claude/Goose ...etc Also : give out product agent notebook workbench : https://ge",
+    ", and, holy hell, what a mess. Do not ever use OpenCode. I also tried goose but it was too agentic for my taste. 4) No. I am doubtful that that k",
+    "o hundreds of models at API pricing. For day-to-day tasks, I am using Goose ( https://goose-docs.ai ) with OpenRouter.",
+    "ng existing agent harnesses rather than implementing my own). I tried goose, OpenClaw, Claude, codex, etc…and they didn’t really work for what I"
+   ]
+  },
+  "terminal/Mistral Vibe": {
+   "hn_comments_12m": {
+    "\"mistral vibe\"": 78,
+    "\"vibe cli\"": 27
+   },
+   "name_queries": {
+    "\"Mistral Vibe\"": 78,
+    "Mistral Vibe": 176
+   },
+   "hn_title_points": {
+    "\"mistral vibe\"": 780,
+    "\"vibe cli\"": 750
+   },
+   "downloads": {}
+  },
+  "terminal/Muse Code": {
+   "hn_comments_12m": {
+    "\"muse code\"": 40
+   },
+   "name_queries": {
+    "Muse Code": 6010,
+    "\"Muse Code\"": 40
+   },
+   "hn_title_points": {
+    "\"muse code\"": 365
+   },
+   "downloads": {}
+  },
+  "terminal/Kimi CLI": {
+   "hn_comments_12m": {
+    "\"kimi cli\"": 35,
+    "\"kimi-cli\"": 35
+   },
+   "name_queries": {
+    "Kimi CLI": 230,
+    "\"Kimi CLI\"": 35
+   },
+   "hn_title_points": {
+    "\"kimi cli\"": 1,
+    "\"kimi-cli\"": 1
+   },
+   "downloads": {}
+  },
+  "terminal/Qwen Code": {
+   "hn_comments_12m": {
+    "\"qwen code\"": 52,
+    "\"qwen-code\"": 52
+   },
+   "name_queries": {
+    "\"Qwen Code\"": 52,
+    "Qwen Code": 1701
+   },
+   "hn_title_points": {
+    "\"qwen code\"": 6,
+    "\"qwen-code\"": 6
+   },
+   "downloads": {
+    "npm": 388592
+   }
+  },
+  "terminal/Zerostack": {
+   "hn_comments_12m": {
+    "\"zerostack\"": 26
+   },
+   "name_queries": {
+    "Zerostack": 35,
+    "\"Zerostack\"": 26
+   },
+   "hn_title_points": {
+    "\"zerostack\"": 624
+   },
+   "downloads": {}
+  },
+  "terminal/Codewhale": {
+   "hn_comments_12m": {
+    "\"codewhale\"": 13
+   },
+   "name_queries": {
+    "Codewhale": 82,
+    "\"Codewhale\"": 13
+   },
+   "hn_title_points": {
+    "\"codewhale\"": 0
+   },
+   "downloads": {}
+  },
+  "terminal/Amp": {
+   "hn_comments_12m": {
+    "\"ampcode\"": 43,
+    "\"amp code\"": 15,
+    "\"sourcegraph amp\"": 4
+   },
+   "name_queries": {
+    "Amp": 827175,
+    "\"Amp\"": 1022
+   },
+   "hn_title_points": {
+    "\"ampcode\"": 3,
+    "\"amp code\"": 2,
+    "\"sourcegraph amp\"": 0
+   },
+   "downloads": {},
+   "collision_samples": [
+    "Amp. Early access waitlist -> ampcode.com",
+    "last month, I've made heavy use of agentic coding (a bit of Junie and Amp, but mostly Antigravity) to ship https://www.ratatui-ruby.dev from",
+    "lated cloud environment. There are a bazillion services for this now ampcode, hoplite.sh, cursor's cloud agents, devin.ai cloud, and more. I haven",
+    "oo much on anthropic or openai tooling, but rapidly increasing use of Amp, including their orbs (vm) and local runners I like the direction in",
+    "for multiple repos in one session. Separately I'm evaluating https://ampcode.com/ which is very polished, but I feel like the diff-reading part i"
+   ]
+  },
+  "terminal/jcode": {
+   "hn_comments_12m": {
+    "\"jcode\"": 17
+   },
+   "name_queries": {
+    "jcode": 683969
+   },
+   "hn_title_points": {
+    "\"jcode\"": 12
+   },
+   "downloads": {}
+  },
+  "terminal/Plandex": {
+   "hn_comments_12m": {
+    "\"plandex\"": 1
+   },
+   "name_queries": {
+    "\"Plandex\"": 1,
+    "Plandex": 23883
+   },
+   "hn_title_points": {
+    "\"plandex\"": 0
+   },
+   "downloads": {}
+  },
+  "terminal/Droid": {
+   "hn_comments_12m": {
+    "\"factory droid\"": 9,
+    "\"droid cli\"": 2
+   },
+   "name_queries": {
+    "\"Droid\"": 1223,
+    "Droid": 2365
+   },
+   "hn_title_points": {
+    "\"factory droid\"": 2,
+    "\"droid cli\"": 0
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "terminal/Crush": {
+   "hn_comments_12m": {
+    "\"charm crush\"": 8,
+    "\"crush cli\"": 0
+   },
+   "name_queries": {
+    "Crush": 26395,
+    "\"Crush\"": 1126
+   },
+   "hn_title_points": {
+    "\"charm crush\"": 1,
+    "\"crush cli\"": 0
+   },
+   "downloads": {},
+   "collision_samples": [
+    "gpt-oss-120b keeps stopping for me in Codex. (Also in Crush.) I have to say \"continue\" constantly.",
+    "tuff (gaming) when I'm not using it with coding tasks. CLI/Harness: - Crush harness ( https://github.com/charmbracelet/crush ) less feature rich"
+   ]
+  },
+  "terminal/Open Interpreter": {
+   "hn_comments_12m": {
+    "\"open interpreter\"": 1
+   },
+   "name_queries": {
+    "\"Open Interpreter\"": 1,
+    "Open Interpreter": 265
+   },
+   "hn_title_points": {
+    "\"open interpreter\"": 0
+   },
+   "downloads": {}
+  },
+  "terminal/Kiro CLI": {
+   "hn_comments_12m": {
+    "\"kiro cli\"": 18,
+    "\"kiro-cli\"": 18
+   },
+   "name_queries": {
+    "\"Kiro CLI\"": 18,
+    "Kiro CLI": 131
+   },
+   "hn_title_points": {
+    "\"kiro cli\"": 27,
+    "\"kiro-cli\"": 27
+   },
+   "downloads": {}
+  },
+  "editors/VS Code + Copilot": {
+   "hn_comments_12m": {
+    "\"github copilot\"": 1173,
+    "\"vscode copilot\"": 51,
+    "\"vs code copilot\"": 34
+   },
+   "name_queries": {
+    "\"VS Code + Copilot\"": 5,
+    "VS Code + Copilot": 89
+   },
+   "hn_title_points": {
+    "\"github copilot\"": 4168,
+    "\"vscode copilot\"": 9,
+    "\"vs code copilot\"": 2
+   },
+   "downloads": {}
+  },
+  "editors/Cursor": {
+   "hn_comments_12m": {
+    "\"cursor\"": 7946,
+    "\"cursor ide\"": 32,
+    "\"cursor editor\"": 4,
+    "\"cursor agent\"": 56,
+    "\"using cursor\"": 186
+   },
+   "name_queries": {
+    "Cursor": 9141,
+    "\"Cursor\"": 7946
+   },
+   "hn_title_points": {
+    "\"cursor\"": 15906,
+    "\"cursor ide\"": 16,
+    "\"cursor editor\"": 0,
+    "\"cursor agent\"": 29,
+    "\"using cursor\"": 15
+   },
+   "downloads": {},
+   "collision_samples": [
+    "But can they surpass Cursor?",
+    "Cursor itself is making 200 million a year now so I presume yes.",
+    "Cursor can index your codebase efficiently using vector embeddings rather th",
+    "For me, it's Cursor, sometimes Augment. Gemini 2.5 + Claude 3.7 work very well",
+    "ke this with a grain of salt, but I've seen and experienced this when Cursor chats start to get very long (eg the context starts to really fill up",
+    "The only thing preventing me to keep using Cursor/Windsurf it's the lack of sync feature. I use different machines and",
+    "Personally, I've been using Cursor since day 1. Lately with Gemini 2.5 Pro. I've also started experiment",
+    "Latest cursor update where they started charging for tokens is pretty good. I don't"
+   ]
+  },
+  "editors/Zed": {
+   "hn_comments_12m": {
+    "\"zed\"": 2408
+   },
+   "name_queries": {
+    "\"Zed\"": 2408,
+    "Zed": 65913
+   },
+   "hn_title_points": {
+    "\"zed\"": 5612
+   },
+   "downloads": {}
+  },
+  "editors/Antigravity": {
+   "hn_comments_12m": {
+    "\"antigravity\"": 1760
+   },
+   "name_queries": {
+    "\"Antigravity\"": 1760,
+    "Antigravity": 1857
+   },
+   "hn_title_points": {
+    "\"antigravity\"": 5230
+   },
+   "downloads": {}
+  },
+  "editors/Windsurf": {
+   "hn_comments_12m": {
+    "\"windsurf\"": 346
+   },
+   "name_queries": {
+    "\"Windsurf\"": 346,
+    "Windsurf": 551
+   },
+   "hn_title_points": {
+    "\"windsurf\"": 177
+   },
+   "downloads": {}
+  },
+  "editors/Cline": {
+   "hn_comments_12m": {
+    "\"cline\"": 319
+   },
+   "name_queries": {
+    "Cline": 27638,
+    "\"Cline\"": 319
+   },
+   "hn_title_points": {
+    "\"cline\"": 94
+   },
+   "downloads": {}
+  },
+  "editors/Kiro": {
+   "hn_comments_12m": {
+    "\"kiro\"": 487
+   },
+   "name_queries": {
+    "\"Kiro\"": 487,
+    "Kiro": 30403
+   },
+   "hn_title_points": {
+    "\"kiro\"": 244
+   },
+   "downloads": {}
+  },
+  "editors/Roo Code": {
+   "hn_comments_12m": {
+    "\"roo code\"": 50,
+    "\"roocode\"": 33
+   },
+   "name_queries": {
+    "Roo Code": 649,
+    "\"Roo Code\"": 50
+   },
+   "hn_title_points": {
+    "\"roo code\"": 39,
+    "\"roocode\"": 0
+   },
+   "downloads": {}
+  },
+  "editors/Kilo Code": {
+   "hn_comments_12m": {
+    "\"kilo code\"": 68,
+    "\"kilocode\"": 73
+   },
+   "name_queries": {
+    "\"Kilo Code\"": 68,
+    "Kilo Code": 898
+   },
+   "hn_title_points": {
+    "\"kilo code\"": 54,
+    "\"kilocode\"": 7
+   },
+   "downloads": {}
+  },
+  "editors/Neovim (CodeCompanion / avante)": {
+   "hn_comments_12m": {
+    "\"codecompanion\"": 12,
+    "\"avante\"": 13
+   },
+   "name_queries": {
+    "Neovim": 1254,
+    "\"Neovim\"": 1191
+   },
+   "hn_title_points": {
+    "\"codecompanion\"": 0,
+    "\"avante\"": 0
+   },
+   "downloads": {}
+  },
+  "editors/JetBrains Junie": {
+   "hn_comments_12m": {
+    "\"junie\"": 151
+   },
+   "name_queries": {
+    "JetBrains Junie": 72,
+    "\"JetBrains Junie\"": 9
+   },
+   "hn_title_points": {
+    "\"junie\"": 45
+   },
+   "downloads": {}
+  },
+  "editors/Emacs gptel": {
+   "hn_comments_12m": {
+    "\"gptel\"": 80
+   },
+   "name_queries": {
+    "\"Emacs gptel\"": 4,
+    "Emacs gptel": 57
+   },
+   "hn_title_points": {
+    "\"gptel\"": 6
+   },
+   "downloads": {}
+  },
+  "editors/Continue": {
+   "hn_comments_12m": {
+    "\"continue.dev\"": 28
+   },
+   "name_queries": {
+    "\"Continue\"": 25216,
+    "Continue": 110130
+   },
+   "hn_title_points": {
+    "\"continue.dev\"": 0
+   },
+   "downloads": {}
+  },
+  "editors/Whiteboard": {
+   "hn_comments_12m": {
+    "\"whiteboard ide\"": 0
+   },
+   "name_queries": {
+    "Whiteboard": 719,
+    "\"Whiteboard\"": 523
+   },
+   "hn_title_points": {
+    "\"whiteboard ide\"": 0
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "editors/Void": {
+   "hn_comments_12m": {
+    "\"void editor\"": 2,
+    "\"void ide\"": 0
+   },
+   "name_queries": {
+    "\"Void\"": 2538,
+    "Void": 60144
+   },
+   "hn_title_points": {
+    "\"void editor\"": 0,
+    "\"void ide\"": 0
+   },
+   "downloads": {}
+  },
+  "orchestration/Herdr": {
+   "hn_comments_12m": {
+    "\"herdr\"": 550
+   },
+   "name_queries": {
+    "\"Herdr\"": 550,
+    "Herdr": 4684
+   },
+   "hn_title_points": {
+    "\"herdr\"": 1346
+   },
+   "downloads": {}
+  },
+  "orchestration/tmux + git worktrees": {
+   "hn_comments_12m": {
+    "tmux worktree": 72,
+    "tmux worktrees": 71
+   },
+   "name_queries": {
+    "tmux + git worktrees": 15,
+    "\"tmux + git worktrees\"": 0
+   },
+   "hn_title_points": {
+    "tmux worktree": 37,
+    "tmux worktrees": 37
+   },
+   "downloads": {}
+  },
+  "orchestration/Paseo": {
+   "hn_comments_12m": {
+    "\"paseo\"": 176
+   },
+   "name_queries": {
+    "Paseo": 1153,
+    "\"Paseo\"": 176
+   },
+   "hn_title_points": {
+    "\"paseo\"": 127
+   },
+   "downloads": {}
+  },
+  "orchestration/Gas Town": {
+   "hn_comments_12m": {
+    "\"gas town\"": 480,
+    "\"gastown\"": 219
+   },
+   "name_queries": {
+    "Gas Town": 1329,
+    "\"Gas Town\"": 480
+   },
+   "hn_title_points": {
+    "\"gas town\"": 1457,
+    "\"gastown\"": 22
+   },
+   "downloads": {}
+  },
+  "orchestration/T3 Code": {
+   "hn_comments_12m": {
+    "\"t3 code\"": 55,
+    "\"t3code\"": 28,
+    "\"t3.codes\"": 11
+   },
+   "name_queries": {
+    "\"T3 Code\"": 55,
+    "T3 Code": 119
+   },
+   "hn_title_points": {
+    "\"t3 code\"": 34,
+    "\"t3code\"": 0,
+    "\"t3.codes\"": 0
+   },
+   "downloads": {}
+  },
+  "orchestration/Beads": {
+   "hn_comments_12m": {
+    "\"beads\"": 476
+   },
+   "name_queries": {
+    "\"Beads\"": 476,
+    "Beads": 31121
+   },
+   "hn_title_points": {
+    "\"beads\"": 245
+   },
+   "downloads": {}
+  },
+  "orchestration/Orca": {
+   "hn_comments_12m": {
+    "\"orca\"": 233
+   },
+   "name_queries": {
+    "Orca": 50089,
+    "\"Orca\"": 233
+   },
+   "hn_title_points": {
+    "\"orca\"": 129
+   },
+   "downloads": {},
+   "collision_samples": [
+    "I've been using it since February and only recently swapped to using Orca for Remote SSH and perf improvements. Looking forward to your general",
+    "Little Linux server with: Orca IDE + Tailscale + 3x Claude code (builds) + Codex (reviews). I run th",
+    "- Wrapper : Orca - Harness : oh-my-pie - Models : OpenAI $20 sub (mostly using Sol/Lun",
+    "ve app. I have a self built app in my mac, called Karajan, that knows Orca (onorca.dev) state of all my running agents, and is connected to GH a",
+    "ude via ACP in zed to Codex app, then harness aggregators like Paseo, Orca and Superset to Claude Projects. Claude Projects is pretty nice and i",
+    "ect stuff in Hermes with its coding agent. When I guide by hand I use Orca Dev, which is lovely. 4 - Claude drops GitHub issues that Opencode pi",
+    "b, $20usd I think. 2) pretty much just opus 3) claude code - but with Orca + app (being able to dev remotely via the app has been great for pers",
+    "For personal work. I use Orca. 1. Claude Code with $20 Claude subscription. This used to be a terri"
+   ]
+  },
+  "orchestration/Conductor": {
+   "hn_comments_12m": {
+    "\"conductor.build\"": 42,
+    "\"conductor app\"": 1
+   },
+   "name_queries": {
+    "Conductor": 8604,
+    "\"Conductor\"": 599
+   },
+   "hn_title_points": {
+    "\"conductor.build\"": 5,
+    "\"conductor app\"": 0
+   },
+   "downloads": {},
+   "collision_samples": [
+    "d so many tools. Cursor, Claude and Codex, open source coding agents, Conductor, building my own CLIs and online dev environments. Tool churn is a ch",
+    "Hey -- we've loved using Conductor here at Digits. I've been using it since February and only recently s",
+    "I'm biased (I'm the creator) but I use Conductor every day. I've recently switched to Opus 4.8 (fast mode always on) a",
+    "devs: Claude, Codex and Cursor. All on the $20 subscription. Then use Conductor for worktrees w/ Claude/Codex for mid-size tasks and code review. Cur",
+    "etailed skills has worked really really well. I use Claude Opus 4.8 + Conductor as my daily driver",
+    "d OpenCode side by side, each in its own worktree. Where it goes past Conductor is the step after: walkthroughs to actually understand each diff and",
+    "Models: Claude and ChatGPT Workspace orchestration: Conductor.build (RIP) Looking for a substitute, recommendations welcome. Skill"
+   ]
+  },
+  "orchestration/Juggler": {
+   "hn_comments_12m": {
+    "\"juggler\"": 86
+   },
+   "name_queries": {
+    "Juggler": 2117,
+    "\"Juggler\"": 86
+   },
+   "hn_title_points": {
+    "\"juggler\"": 325
+   },
+   "downloads": {}
+  },
+  "orchestration/Ralph loop": {
+   "hn_comments_12m": {
+    "\"ralph loop\"": 130,
+    "\"ralph wiggum\"": 93
+   },
+   "name_queries": {
+    "Ralph loop": 346,
+    "\"Ralph loop\"": 130
+   },
+   "hn_title_points": {
+    "\"ralph loop\"": 33,
+    "\"ralph wiggum\"": 149
+   },
+   "downloads": {}
+  },
+  "orchestration/Vibe Kanban": {
+   "hn_comments_12m": {
+    "\"vibe kanban\"": 29,
+    "\"vibe-kanban\"": 29
+   },
+   "name_queries": {
+    "Vibe Kanban": 52,
+    "\"Vibe Kanban\"": 29
+   },
+   "hn_title_points": {
+    "\"vibe kanban\"": 4,
+    "\"vibe-kanban\"": 4
+   },
+   "downloads": {}
+  },
+  "orchestration/Omnara": {
+   "hn_comments_12m": {
+    "\"omnara\"": 49
+   },
+   "name_queries": {
+    "Omnara": 85,
+    "\"Omnara\"": 49
+   },
+   "hn_title_points": {
+    "\"omnara\"": 261
+   },
+   "downloads": {}
+  },
+  "orchestration/Munder Difflin": {
+   "hn_comments_12m": {
+    "\"munder difflin\"": 8
+   },
+   "name_queries": {
+    "Munder Difflin": 931,
+    "\"Munder Difflin\"": 8
+   },
+   "hn_title_points": {
+    "\"munder difflin\"": 313
+   },
+   "downloads": {}
+  },
+  "orchestration/workmux": {
+   "hn_comments_12m": {
+    "\"workmux\"": 16
+   },
+   "name_queries": {
+    "workmux": 1217
+   },
+   "hn_title_points": {
+    "\"workmux\"": 12
+   },
+   "downloads": {}
+  },
+  "orchestration/qm": {
+   "hn_comments_12m": {
+    "\"qm\"": 295
+   },
+   "name_queries": {
+    "qm": 1167
+   },
+   "hn_title_points": {
+    "\"qm\"": 695
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "orchestration/Ruflo": {
+   "hn_comments_12m": {
+    "\"ruflo\"": 6
+   },
+   "name_queries": {
+    "\"Ruflo\"": 6,
+    "Ruflo": 490
+   },
+   "hn_title_points": {
+    "\"ruflo\"": 7
+   },
+   "downloads": {}
+  },
+  "orchestration/Superset": {
+   "hn_comments_12m": {
+    "\"superset.sh\"": 19
+   },
+   "name_queries": {
+    "Superset": 4991,
+    "\"Superset\"": 569
+   },
+   "hn_title_points": {
+    "\"superset.sh\"": 0
+   },
+   "downloads": {},
+   "collision_samples": [
+    "CP in zed to Codex app, then harness aggregators like Paseo, Orca and Superset to Claude Projects. Claude Projects is pretty nice and integrates wit"
+   ]
+  },
+  "orchestration/Claude Squad": {
+   "hn_comments_12m": {
+    "\"claude squad\"": 5,
+    "\"claude-squad\"": 5
+   },
+   "name_queries": {
+    "Claude Squad": 281,
+    "\"Claude Squad\"": 5
+   },
+   "hn_title_points": {
+    "\"claude squad\"": 0,
+    "\"claude-squad\"": 0
+   },
+   "downloads": {}
+  },
+  "orchestration/oh-my-claudecode": {
+   "hn_comments_12m": {
+    "\"oh-my-claudecode\"": 2
+   },
+   "name_queries": {
+    "oh-my-claudecode": 3
+   },
+   "hn_title_points": {
+    "\"oh-my-claudecode\"": 2
+   },
+   "downloads": {}
+  },
+  "orchestration/Sculptor": {
+   "hn_comments_12m": {
+    "\"sculptor\"": 64
+   },
+   "name_queries": {
+    "Sculptor": 515,
+    "\"Sculptor\"": 64
+   },
+   "hn_title_points": {
+    "\"sculptor\"": 21
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "orchestration/Crystal": {
+   "hn_comments_12m": {
+    "\"crystal app\"": 0
+   },
+   "name_queries": {
+    "\"Crystal\"": 1612,
+    "Crystal": 3553
+   },
+   "hn_title_points": {
+    "\"crystal app\"": 0
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "orchestration/AX (Agent Executor)": {
+   "hn_comments_12m": {
+    "\"agent executor\"": 0
+   },
+   "name_queries": {
+    "\"AX\"": 448,
+    "AX": 9177
+   },
+   "hn_title_points": {
+    "\"agent executor\"": 4
+   },
+   "downloads": {}
+  },
+  "review/Claude Code review": {
+   "hn_comments_12m": {
+    "\"claude code review\"": 19,
+    "\"claude review\"": 57
+   },
+   "name_queries": {
+    "\"Claude Code review\"": 19,
+    "Claude Code review": 2957
+   },
+   "hn_title_points": {
+    "\"claude code review\"": 12,
+    "\"claude review\"": 4
+   },
+   "downloads": {}
+  },
+  "review/Copilot code review": {
+   "hn_comments_12m": {
+    "\"copilot review\"": 20,
+    "\"copilot code review\"": 15
+   },
+   "name_queries": {
+    "\"Copilot code review\"": 15,
+    "Copilot code review": 244
+   },
+   "hn_title_points": {
+    "\"copilot review\"": 0,
+    "\"copilot code review\"": 336
+   },
+   "downloads": {}
+  },
+  "review/CodeRabbit": {
+   "hn_comments_12m": {
+    "\"coderabbit\"": 147
+   },
+   "name_queries": {
+    "CodeRabbit": 167,
+    "\"CodeRabbit\"": 147
+   },
+   "hn_title_points": {
+    "\"coderabbit\"": 59
+   },
+   "downloads": {}
+  },
+  "review/Cursor Bugbot": {
+   "hn_comments_12m": {
+    "Cursor Bugbot": 27,
+    "\"bugbot\"": 51
+   },
+   "name_queries": {
+    "\"Cursor Bugbot\"": 17
+   },
+   "hn_title_points": {
+    "Cursor Bugbot": 1,
+    "\"bugbot\"": 55
+   },
+   "downloads": {}
+  },
+  "review/Codex code review": {
+   "hn_comments_12m": {
+    "\"codex review\"": 54,
+    "\"codex code review\"": 2
+   },
+   "name_queries": {
+    "Codex code review": 8595,
+    "\"Codex code review\"": 2
+   },
+   "hn_title_points": {
+    "\"codex review\"": 16,
+    "\"codex code review\"": 0
+   },
+   "downloads": {}
+  },
+  "review/Codex Security": {
+   "hn_comments_12m": {
+    "\"codex security\"": 48
+   },
+   "name_queries": {
+    "\"Codex Security\"": 48,
+    "Codex Security": 6803
+   },
+   "hn_title_points": {
+    "\"codex security\"": 662
+   },
+   "downloads": {}
+  },
+  "review/Qodo": {
+   "hn_comments_12m": {
+    "\"qodo\"": 14
+   },
+   "name_queries": {
+    "Qodo": 5590,
+    "\"Qodo\"": 14
+   },
+   "hn_title_points": {
+    "\"qodo\"": 5
+   },
+   "downloads": {}
+  },
+  "review/Graphite": {
+   "hn_comments_12m": {
+    "\"graphite\"": 360,
+    "\"graphite.dev\"": 3,
+    "\"graphite.com\"": 8,
+    "\"graphite stacked\"": 0
+   },
+   "name_queries": {
+    "\"Graphite\"": 360,
+    "Graphite": 6108
+   },
+   "hn_title_points": {
+    "\"graphite\"": 731,
+    "\"graphite.dev\"": 0,
+    "\"graphite.com\"": 0,
+    "\"graphite stacked\"": 0
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "review/Greptile": {
+   "hn_comments_12m": {
+    "\"greptile\"": 64
+   },
+   "name_queries": {
+    "\"Greptile\"": 64,
+    "Greptile": 593
+   },
+   "hn_title_points": {
+    "\"greptile\"": 30
+   },
+   "downloads": {}
+  },
+  "review/Open Code Review (Alibaba)": {
+   "hn_comments_12m": {
+    "\"open code review\"": 16,
+    "\"open-code-review\"": 16
+   },
+   "name_queries": {
+    "Open Code Review": 1432,
+    "\"Open Code Review\"": 16
+   },
+   "hn_title_points": {
+    "\"open code review\"": 294,
+    "\"open-code-review\"": 294
+   },
+   "downloads": {}
+  },
+  "review/Sourcery": {
+   "hn_comments_12m": {
+    "\"sourcery\"": 16
+   },
+   "name_queries": {
+    "\"Sourcery\"": 16,
+    "Sourcery": 99104
+   },
+   "hn_title_points": {
+    "\"sourcery\"": 6
+   },
+   "downloads": {}
+  },
+  "review/Sphinx": {
+   "hn_comments_12m": {
+    "\"sphinx ai\"": 0
+   },
+   "name_queries": {
+    "Sphinx": 127,
+    "\"Sphinx\"": 79
+   },
+   "hn_title_points": {
+    "\"sphinx ai\"": 0
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "context/AGENTS.md": {
+   "hn_comments_12m": {
+    "\"agents.md\"": 1981
+   },
+   "name_queries": {
+    "\"AGENTS.md\"": 1981,
+    "AGENTS.md": 2120
+   },
+   "hn_title_points": {
+    "\"agents.md\"": 3100
+   },
+   "downloads": {}
+  },
+  "context/Agent Skills": {
+   "hn_comments_12m": {
+    "\"agent skills\"": 315,
+    "\"claude skills\"": 172,
+    "\"skill.md\"": 336
+   },
+   "name_queries": {
+    "Agent Skills": 6642,
+    "\"Agent Skills\"": 315
+   },
+   "hn_title_points": {
+    "\"agent skills\"": 2684,
+    "\"claude skills\"": 144,
+    "\"skill.md\"": 184
+   },
+   "downloads": {}
+  },
+  "context/Superpowers": {
+   "hn_comments_12m": {
+    "\"superpowers\"": 863
+   },
+   "name_queries": {
+    "Superpowers": 2147,
+    "\"Superpowers\"": 863
+   },
+   "hn_title_points": {
+    "\"superpowers\"": 1220
+   },
+   "downloads": {}
+  },
+  "context/Spec Kit": {
+   "hn_comments_12m": {
+    "\"spec kit\"": 83,
+    "\"spec-kit\"": 83,
+    "\"speckit\"": 41
+   },
+   "name_queries": {
+    "Spec Kit": 1697,
+    "\"Spec Kit\"": 83
+   },
+   "hn_title_points": {
+    "\"spec kit\"": 16,
+    "\"spec-kit\"": 16,
+    "\"speckit\"": 5
+   },
+   "downloads": {}
+  },
+  "context/Context7": {
+   "hn_comments_12m": {
+    "\"context7\"": 92
+   },
+   "name_queries": {
+    "\"Context7\"": 92,
+    "Context7": 60537
+   },
+   "hn_title_points": {
+    "\"context7\"": 8
+   },
+   "downloads": {
+    "npm": 3052319
+   }
+  },
+  "context/GitHub MCP server": {
+   "hn_comments_12m": {
+    "\"github mcp\"": 36
+   },
+   "name_queries": {
+    "GitHub MCP server": 748,
+    "\"GitHub MCP server\"": 9
+   },
+   "hn_title_points": {
+    "\"github mcp\"": 3
+   },
+   "downloads": {}
+  },
+  "context/Semble": {
+   "hn_comments_12m": {
+    "\"semble\"": 44
+   },
+   "name_queries": {
+    "Semble": 1064,
+    "\"Semble\"": 44
+   },
+   "hn_title_points": {
+    "\"semble\"": 461
+   },
+   "downloads": {}
+  },
+  "context/rtk": {
+   "hn_comments_12m": {
+    "\"rtk\"": 218
+   },
+   "name_queries": {
+    "rtk": 18941
+   },
+   "hn_title_points": {
+    "\"rtk\"": 528
+   },
+   "downloads": {}
+  },
+  "context/Impeccable": {
+   "hn_comments_12m": {
+    "\"impeccable\"": 190,
+    "\"impeccable\" skill": 47,
+    "\"impeccable.style\"": 14
+   },
+   "name_queries": {
+    "Impeccable": 248,
+    "\"Impeccable\"": 190
+   },
+   "hn_title_points": {
+    "\"impeccable\"": 453,
+    "\"impeccable\" skill": 0,
+    "\"impeccable.style\"": 0
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "context/Graphify": {
+   "hn_comments_12m": {
+    "\"graphify\"": 31
+   },
+   "name_queries": {
+    "Graphify": 137,
+    "\"Graphify\"": 31
+   },
+   "hn_title_points": {
+    "\"graphify\"": 134
+   },
+   "downloads": {}
+  },
+  "context/Figma MCP": {
+   "hn_comments_12m": {
+    "\"figma mcp\"": 39
+   },
+   "name_queries": {
+    "\"Figma MCP\"": 39,
+    "Figma MCP": 171
+   },
+   "hn_title_points": {
+    "\"figma mcp\"": 48
+   },
+   "downloads": {}
+  },
+  "context/Repomix": {
+   "hn_comments_12m": {
+    "\"repomix\"": 16
+   },
+   "name_queries": {
+    "\"Repomix\"": 16,
+    "Repomix": 2589
+   },
+   "hn_title_points": {
+    "\"repomix\"": 0
+   },
+   "downloads": {
+    "npm": 392525
+   }
+  },
+  "context/claude-mem": {
+   "hn_comments_12m": {
+    "\"claude-mem\"": 22
+   },
+   "name_queries": {
+    "claude-mem": 61
+   },
+   "hn_title_points": {
+    "\"claude-mem\"": 10
+   },
+   "downloads": {}
+  },
+  "context/Linear MCP": {
+   "hn_comments_12m": {
+    "\"linear mcp\"": 19
+   },
+   "name_queries": {
+    "\"Linear MCP\"": 19,
+    "Linear MCP": 389
+   },
+   "hn_title_points": {
+    "\"linear mcp\"": 7
+   },
+   "downloads": {}
+  },
+  "context/Serena": {
+   "hn_comments_12m": {
+    "\"serena mcp\"": 8,
+    "\"serena\"": 53
+   },
+   "name_queries": {
+    "Serena": 670,
+    "\"Serena\"": 53
+   },
+   "hn_title_points": {
+    "\"serena mcp\"": 0,
+    "\"serena\"": 7
+   },
+   "downloads": {},
+   "collision_samples": [
+    "lly the specs, requirements, design, and exec tasks scripts that plus serena mcp to replace all of gemini cli's agent tools actually gets it to wo"
+   ]
+  },
+  "context/Sentry MCP": {
+   "hn_comments_12m": {
+    "\"sentry mcp\"": 5
+   },
+   "name_queries": {
+    "Sentry MCP": 143,
+    "\"Sentry MCP\"": 5
+   },
+   "hn_title_points": {
+    "\"sentry mcp\"": 1
+   },
+   "downloads": {}
+  },
+  "context/codebase-memory-mcp": {
+   "hn_comments_12m": {
+    "\"codebase-memory-mcp\"": 11
+   },
+   "name_queries": {
+    "codebase-memory-mcp": 11
+   },
+   "hn_title_points": {
+    "\"codebase-memory-mcp\"": 0
+   },
+   "downloads": {}
+  },
+  "context/headroom": {
+   "hn_comments_12m": {
+    "\"headroom\" mcp": 21
+   },
+   "name_queries": {
+    "\"headroom\"": 469,
+    "headroom": 486
+   },
+   "hn_title_points": {
+    "\"headroom\" mcp": 0
+   },
+   "downloads": {},
+   "collision_samples": [
+    "enter gear, much less with the big proprietary suppliers; the compute headroom is too small to begin with once the model is in RAM) but rather to im",
+    "n/qwen3.6-35b-a3b mlx with my 48GB M4 MBP which leaves me just enough headroom for docker dev-container and other basics. I use LM Studio to run and",
+    "ort. I point it at the tailnet DNS (https://llama.<tailnet>:<port>) - Headroom ( https://github.com/chopratejas/headroom ) to maximize the 80k conte"
+   ]
+  },
+  "context/context-mode": {
+   "hn_comments_12m": {
+    "\"context-mode\"": 53
+   },
+   "name_queries": {
+    "context-mode": 118
+   },
+   "hn_title_points": {
+    "\"context-mode\"": 90
+   },
+   "downloads": {}
+  },
+  "browser/Playwright MCP": {
+   "hn_comments_12m": {
+    "Playwright MCP": 295,
+    "\"playwright mcp\"": 119,
+    "\"playwright-mcp\"": 119
+   },
+   "name_queries": {
+    "\"Playwright MCP\"": 119
+   },
+   "hn_title_points": {
+    "Playwright MCP": 35,
+    "\"playwright mcp\"": 21,
+    "\"playwright-mcp\"": 21
+   },
+   "downloads": {
+    "npm": 30029673
+   }
+  },
+  "browser/Chrome DevTools MCP": {
+   "hn_comments_12m": {
+    "\"chrome devtools mcp\"": 42,
+    "\"chrome-devtools-mcp\"": 42
+   },
+   "name_queries": {
+    "Chrome DevTools MCP": 83,
+    "\"Chrome DevTools MCP\"": 42
+   },
+   "hn_title_points": {
+    "\"chrome devtools mcp\"": 619,
+    "\"chrome-devtools-mcp\"": 619
+   },
+   "downloads": {
+    "npm": 8516845
+   }
+  },
+  "browser/agent-browser": {
+   "hn_comments_12m": {
+    "\"agent-browser\"": 101
+   },
+   "name_queries": {
+    "agent-browser": 124
+   },
+   "hn_title_points": {
+    "\"agent-browser\"": 97
+   },
+   "downloads": {
+    "npm": 8108787
+   }
+  },
+  "browser/Firecrawl": {
+   "hn_comments_12m": {
+    "\"firecrawl\"": 71
+   },
+   "name_queries": {
+    "Firecrawl": 112,
+    "\"Firecrawl\"": 71
+   },
+   "hn_title_points": {
+    "\"firecrawl\"": 48
+   },
+   "downloads": {}
+  },
+  "browser/Lightpanda": {
+   "hn_comments_12m": {
+    "\"lightpanda\"": 48
+   },
+   "name_queries": {
+    "Lightpanda": 77,
+    "\"Lightpanda\"": 48
+   },
+   "hn_title_points": {
+    "\"lightpanda\"": 474
+   },
+   "downloads": {}
+  },
+  "browser/Stagehand": {
+   "hn_comments_12m": {
+    "\"stagehand\"": 43
+   },
+   "name_queries": {
+    "Stagehand": 47,
+    "\"Stagehand\"": 43
+   },
+   "hn_title_points": {
+    "\"stagehand\"": 7
+   },
+   "downloads": {
+    "npm": 8350214
+   }
+  },
+  "browser/Claude in Chrome": {
+   "hn_comments_12m": {
+    "\"claude in chrome\"": 38,
+    "\"claude for chrome\"": 15
+   },
+   "name_queries": {
+    "\"Claude in Chrome\"": 38,
+    "Claude in Chrome": 390
+   },
+   "hn_title_points": {
+    "\"claude in chrome\"": 322,
+    "\"claude for chrome\"": 6
+   },
+   "downloads": {}
+  },
+  "browser/Vibium": {
+   "hn_comments_12m": {
+    "\"vibium\"": 50
+   },
+   "name_queries": {
+    "\"Vibium\"": 50,
+    "Vibium": 130
+   },
+   "hn_title_points": {
+    "\"vibium\"": 448
+   },
+   "downloads": {}
+  },
+  "browser/browser-use": {
+   "hn_comments_12m": {
+    "\"browser-use\"": 232,
+    "\"browser use\"": 232
+   },
+   "name_queries": {
+    "browser-use": 448
+   },
+   "hn_title_points": {
+    "\"browser-use\"": 73,
+    "\"browser use\"": 73
+   },
+   "downloads": {
+    "pypi": 8061974
+   }
+  },
+  "browser/Scrapling": {
+   "hn_comments_12m": {
+    "\"scrapling\"": 6
+   },
+   "name_queries": {
+    "Scrapling": 12885,
+    "\"Scrapling\"": 6
+   },
+   "hn_title_points": {
+    "\"scrapling\"": 0
+   },
+   "downloads": {
+    "pypi": 919855
+   }
+  },
+  "browser/Browser MCP": {
+   "hn_comments_12m": {
+    "\"browser mcp\"": 26,
+    "\"browsermcp\"": 4
+   },
+   "name_queries": {
+    "\"Browser MCP\"": 26,
+    "Browser MCP": 1170
+   },
+   "hn_title_points": {
+    "\"browser mcp\"": 11,
+    "\"browsermcp\"": 0
+   },
+   "downloads": {}
+  },
+  "browser/Jina Reader": {
+   "hn_comments_12m": {
+    "\"jina reader\"": 3,
+    "\"r.jina.ai\"": 3
+   },
+   "name_queries": {
+    "Jina Reader": 52,
+    "\"Jina Reader\"": 3
+   },
+   "hn_title_points": {
+    "\"jina reader\"": 2,
+    "\"r.jina.ai\"": 0
+   },
+   "downloads": {}
+  },
+  "browser/Browserbase": {
+   "hn_comments_12m": {
+    "\"browserbase\"": 37
+   },
+   "name_queries": {
+    "Browserbase": 86,
+    "\"Browserbase\"": 37
+   },
+   "hn_title_points": {
+    "\"browserbase\"": 18
+   },
+   "downloads": {}
+  },
+  "sandbox/bubblewrap": {
+   "hn_comments_12m": {
+    "\"bubblewrap\"": 371,
+    "\"bwrap\"": 161
+   },
+   "name_queries": {
+    "bubblewrap": 527
+   },
+   "hn_title_points": {
+    "\"bubblewrap\"": 319,
+    "\"bwrap\"": 11
+   },
+   "downloads": {}
+  },
+  "sandbox/Docker Sandboxes": {
+   "hn_comments_12m": {
+    "\"docker sandbox\"": 73,
+    "\"docker sandboxes\"": 65
+   },
+   "name_queries": {
+    "Docker Sandboxes": 617,
+    "\"Docker Sandboxes\"": 65
+   },
+   "hn_title_points": {
+    "\"docker sandbox\"": 102,
+    "\"docker sandboxes\"": 921
+   },
+   "downloads": {}
+  },
+  "sandbox/OpenShell": {
+   "hn_comments_12m": {
+    "\"openshell\"": 65
+   },
+   "name_queries": {
+    "\"OpenShell\"": 65,
+    "OpenShell": 105
+   },
+   "hn_title_points": {
+    "\"openshell\"": 585
+   },
+   "downloads": {}
+  },
+  "sandbox/Apple container": {
+   "hn_comments_12m": {
+    "\"apple container\"": 101,
+    "\"apple/container\"": 101,
+    "\"apple's container\"": 17
+   },
+   "name_queries": {
+    "Apple container": 439,
+    "\"Apple container\"": 101
+   },
+   "hn_title_points": {
+    "\"apple container\"": 622,
+    "\"apple/container\"": 622,
+    "\"apple's container\"": 7
+   },
+   "downloads": {}
+  },
+  "sandbox/Dev containers": {
+   "hn_comments_12m": {
+    "\"devcontainer\"": 99,
+    "\"dev container\"": 57,
+    "\"devcontainers\"": 134
+   },
+   "name_queries": {
+    "\"Dev containers\"": 68,
+    "Dev containers": 903
+   },
+   "hn_title_points": {
+    "\"devcontainer\"": 12,
+    "\"dev container\"": 61,
+    "\"devcontainers\"": 14
+   },
+   "downloads": {}
+  },
+  "sandbox/E2B": {
+   "hn_comments_12m": {
+    "\"e2b\"": 242
+   },
+   "name_queries": {
+    "E2B": 46393,
+    "\"E2B\"": 242
+   },
+   "hn_title_points": {
+    "\"e2b\"": 556
+   },
+   "downloads": {}
+  },
+  "sandbox/nono": {
+   "hn_comments_12m": {
+    "\"nono\"": 146
+   },
+   "name_queries": {
+    "nono": 130139
+   },
+   "hn_title_points": {
+    "\"nono\"": 20
+   },
+   "downloads": {},
+   "collision_samples": [
+    "tiple agents (with some patches I need to try to upstream) along with Nono[2] for sandboxing. This sandboxing approach avoids use of a microVM,",
+    "ing so I absolutely do not trust their implementation. Wrapping with `nono` or `sbx` has mitigated that on my side.",
+    "e in reverse: - smolvm (what I currently use) - tart (for macOS VM) - nono - Anthropic Sandbox Runtime (srt) - Docker containers I didn't love a",
+    "Tried nono.sh but it seemed cumbersome. I think it lets the whole agent run in t",
+    "ing to prevent the LLM from doing something you don’t want? I’m using nono.sh and have restricted network and file access. I use nono’s proxy so"
+   ]
+  },
+  "sandbox/smolvm": {
+   "hn_comments_12m": {
+    "\"smolvm\"": 137
+   },
+   "name_queries": {
+    "smolvm": 215
+   },
+   "hn_title_points": {
+    "\"smolvm\"": 13
+   },
+   "downloads": {}
+  },
+  "sandbox/yoloai": {
+   "hn_comments_12m": {
+    "\"yoloai\"": 73
+   },
+   "name_queries": {
+    "yoloai": 253
+   },
+   "hn_title_points": {
+    "\"yoloai\"": 2
+   },
+   "downloads": {}
+  },
+  "sandbox/Lume": {
+   "hn_comments_12m": {
+    "\"lume\"": 47,
+    "\"trycua\"": 10
+   },
+   "name_queries": {
+    "\"Lume\"": 47,
+    "Lume": 19858
+   },
+   "hn_title_points": {
+    "\"lume\"": 180,
+    "\"trycua\"": 0
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "sandbox/Daytona": {
+   "hn_comments_12m": {
+    "\"daytona\"": 74
+   },
+   "name_queries": {
+    "\"Daytona\"": 74,
+    "Daytona": 319
+   },
+   "hn_title_points": {
+    "\"daytona\"": 35
+   },
+   "downloads": {}
+  },
+  "sandbox/Agent Safehouse": {
+   "hn_comments_12m": {
+    "\"agent safehouse\"": 30
+   },
+   "name_queries": {
+    "Agent Safehouse": 42,
+    "\"Agent Safehouse\"": 30
+   },
+   "hn_title_points": {
+    "\"agent safehouse\"": 823
+   },
+   "downloads": {}
+  },
+  "sandbox/Ardent": {
+   "hn_comments_12m": {
+    "\"ardent\"": 139
+   },
+   "name_queries": {
+    "Ardent": 75486,
+    "\"Ardent\"": 139
+   },
+   "hn_title_points": {
+    "\"ardent\"": 111
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "sandbox/Sprites (Fly.io)": {
+   "hn_comments_12m": {
+    "\"sprites.dev\"": 60,
+    "\"fly sprites\"": 13,
+    "\"sprites\"": 600
+   },
+   "name_queries": {
+    "Sprites": 1720,
+    "\"Sprites\"": 600
+   },
+   "hn_title_points": {
+    "\"sprites.dev\"": 42,
+    "\"fly sprites\"": 41,
+    "\"sprites\"": 398
+   },
+   "downloads": {},
+   "collision_samples": []
+  },
+  "sandbox/container-use": {
+   "hn_comments_12m": {
+    "\"container-use\"": 18
+   },
+   "name_queries": {
+    "container-use": 59
+   },
+   "hn_title_points": {
+    "\"container-use\"": 0
+   },
+   "downloads": {}
+  },
+  "sandbox/Modal Sandboxes": {
+   "hn_comments_12m": {
+    "\"modal sandbox\"": 1,
+    "\"modal sandboxes\"": 6
+   },
+   "name_queries": {
+    "\"Modal Sandboxes\"": 6,
+    "Modal Sandboxes": 1001
+   },
+   "hn_title_points": {
+    "\"modal sandbox\"": 0,
+    "\"modal sandboxes\"": 4
+   },
+   "downloads": {}
+  },
+  "sandbox/Vercel Sandbox": {
+   "hn_comments_12m": {
+    "\"vercel sandbox\"": 2
+   },
+   "name_queries": {
+    "\"Vercel Sandbox\"": 2,
+    "Vercel Sandbox": 36
+   },
+   "hn_title_points": {
+    "\"vercel sandbox\"": 15
+   },
+   "downloads": {}
+  },
+  "local/Ollama": {
+   "hn_comments_12m": {
+    "\"ollama\"": 1998
+   },
+   "name_queries": {
+    "\"Ollama\"": 1998,
+    "Ollama": 6001
+   },
+   "hn_title_points": {
+    "\"ollama\"": 3468
+   },
+   "downloads": {}
+  },
+  "local/llama.cpp": {
+   "hn_comments_12m": {
+    "\"llama.cpp\"": 2074
+   },
+   "name_queries": {
+    "llama.cpp": 2082
+   },
+   "hn_title_points": {
+    "\"llama.cpp\"": 1589
+   },
+   "downloads": {}
+  },
+  "local/MLX": {
+   "hn_comments_12m": {
+    "\"mlx\"": 698
+   },
+   "name_queries": {
+    "MLX": 54081,
+    "\"MLX\"": 698
+   },
+   "hn_title_points": {
+    "\"mlx\"": 1736
+   },
+   "downloads": {
+    "pypi": 1094492
+   }
+  },
+  "local/LM Studio": {
+   "hn_comments_12m": {
+    "\"lm studio\"": 624,
+    "\"lmstudio\"": 215
+   },
+   "name_queries": {
+    "LM Studio": 822,
+    "\"LM Studio\"": 624
+   },
+   "hn_title_points": {
+    "\"lm studio\"": 1042,
+    "\"lmstudio\"": 5
+   },
+   "downloads": {}
+  },
+  "local/Open WebUI": {
+   "hn_comments_12m": {
+    "\"open webui\"": 104,
+    "\"openwebui\"": 93,
+    "\"open-webui\"": 104
+   },
+   "name_queries": {
+    "\"Open WebUI\"": 104,
+    "Open WebUI": 3509
+   },
+   "hn_title_points": {
+    "\"open webui\"": 8,
+    "\"openwebui\"": 10,
+    "\"open-webui\"": 8
+   },
+   "downloads": {}
+  },
+  "local/vLLM": {
+   "hn_comments_12m": {
+    "\"vllm\"": 919
+   },
+   "name_queries": {
+    "vLLM": 151081,
+    "\"vLLM\"": 919
+   },
+   "hn_title_points": {
+    "\"vllm\"": 1872
+   },
+   "downloads": {
+    "pypi": 1857414
+   }
+  },
+  "local/Unsloth": {
+   "hn_comments_12m": {
+    "\"unsloth\"": 818
+   },
+   "name_queries": {
+    "Unsloth": 1236,
+    "\"Unsloth\"": 818
+   },
+   "hn_title_points": {
+    "\"unsloth\"": 1273
+   },
+   "downloads": {
+    "pypi": 885608
+   }
+  },
+  "local/Lemonade": {
+   "hn_comments_12m": {
+    "\"lemonade server\"": 26,
+    "\"lemonade-server\"": 26,
+    "\"lemonade sdk\"": 10
+   },
+   "name_queries": {
+    "Lemonade": 656,
+    "\"Lemonade\"": 335
+   },
+   "hn_title_points": {
+    "\"lemonade server\"": 0,
+    "\"lemonade-server\"": 0,
+    "\"lemonade sdk\"": 40
+   },
+   "downloads": {},
+   "collision_samples": [
+    "infinite loop after some messages. But then i often start a new chat. Lemonade-server runs with llama.cpp, vllm seems to be scaling better thoug, bu",
+    "SD jail? I started to experiment with locale LLMs, through ollama and Lemonade. Enough to throw simple prompts with code excerpts and get small scop",
+    "Running AMD Lemonade as the daily rig, Started with Ollama then over to LMStudio and now s"
+   ]
+  },
+  "local/SGLang": {
+   "hn_comments_12m": {
+    "\"sglang\"": 166
+   },
+   "name_queries": {
+    "SGLang": 853,
+    "\"SGLang\"": 166
+   },
+   "hn_title_points": {
+    "\"sglang\"": 162
+   },
+   "downloads": {
+    "pypi": 2984581
+   }
+  },
+  "local/llama-swap": {
+   "hn_comments_12m": {
+    "\"llama-swap\"": 53
+   },
+   "name_queries": {
+    "llama-swap": 55
+   },
+   "hn_title_points": {
+    "\"llama-swap\"": 2
+   },
+   "downloads": {}
+  },
+  "local/Apfel": {
+   "hn_comments_12m": {
+    "\"apfel\"": 46
+   },
+   "name_queries": {
+    "Apfel": 386,
+    "\"Apfel\"": 46
+   },
+   "hn_title_points": {
+    "\"apfel\"": 757
+   },
+   "downloads": {}
+  },
+  "local/Jan": {
+   "hn_comments_12m": {
+    "\"jan.ai\"": 16,
+    "\"jan app\"": 0
+   },
+   "name_queries": {
+    "Jan": 136109,
+    "\"Jan\"": 2133
+   },
+   "hn_title_points": {
+    "\"jan.ai\"": 1,
+    "\"jan app\"": 0
+   },
+   "downloads": {},
+   "collision_samples": [
+    "atform teams at Heroku and Segment. Project type: new startup started Jan ‘26 at https://housecat.com . Pitch is “dev tools for non developers",
+    "were fine with the coding models of yesterday (i.e. Claude Opus from Jan/Feb of 2026), you will be fine with either Kimi K2.6 or DeepSeek v4 P"
+   ]
+  },
+  "local/KoboldCpp": {
+   "hn_comments_12m": {
+    "\"koboldcpp\"": 21
+   },
+   "name_queries": {
+    "\"KoboldCpp\"": 21,
+    "KoboldCpp": 21
+   },
+   "hn_title_points": {
+    "\"koboldcpp\"": 3
+   },
+   "downloads": {}
+  },
+  "gateways/OpenRouter": {
+   "hn_comments_12m": {
+    "\"openrouter\"": 3860
+   },
+   "name_queries": {
+    "\"OpenRouter\"": 3860,
+    "OpenRouter": 4164
+   },
+   "hn_title_points": {
+    "\"openrouter\"": 6377
+   },
+   "downloads": {}
+  },
+  "gateways/AWS Bedrock": {
+   "hn_comments_12m": {
+    "\"bedrock\"": 1315
+   },
+   "name_queries": {
+    "\"AWS Bedrock\"": 270,
+    "AWS Bedrock": 707
+   },
+   "hn_title_points": {
+    "\"bedrock\"": 1356
+   },
+   "downloads": {}
+  },
+  "gateways/LiteLLM": {
+   "hn_comments_12m": {
+    "\"litellm\"": 430
+   },
+   "name_queries": {
+    "\"LiteLLM\"": 430,
+    "LiteLLM": 442
+   },
+   "hn_title_points": {
+    "\"litellm\"": 3414
+   },
+   "downloads": {
+    "pypi": 92239101
+   }
+  },
+  "gateways/OpenCode Go / Zen": {
+   "hn_comments_12m": {
+    "\"opencode go\"": 430,
+    "\"opencode zen\"": 71
+   },
+   "name_queries": {
+    "\"OpenCode Go / Zen\"": 6,
+    "OpenCode Go / Zen": 93
+   },
+   "hn_title_points": {
+    "\"opencode go\"": 85,
+    "\"opencode zen\"": 6
+   },
+   "downloads": {}
+  },
+  "gateways/Claude Code Router": {
+   "hn_comments_12m": {
+    "\"claude code router\"": 25,
+    "\"claude-code-router\"": 25
+   },
+   "name_queries": {
+    "\"Claude Code Router\"": 25,
+    "Claude Code Router": 346
+   },
+   "hn_title_points": {
+    "\"claude code router\"": 1,
+    "\"claude-code-router\"": 1
+   },
+   "downloads": {
+    "npm": 170176
+   }
+  },
+  "gateways/llm (Simon Willison)": {
+   "hn_comments_12m": {
+    "\"simonw/llm\"": 23,
+    "\"llm cli\"": 26,
+    "\"llm.datasette.io\"": 10
+   },
+   "name_queries": {
+    "llm": 198144,
+    "\"llm\"": 133618
+   },
+   "hn_title_points": {
+    "\"simonw/llm\"": 0,
+    "\"llm cli\"": 13,
+    "\"llm.datasette.io\"": 0
+   },
+   "downloads": {
+    "pypi": 487919
+   }
+  },
+  "gateways/Vercel AI Gateway": {
+   "hn_comments_12m": {
+    "\"vercel ai gateway\"": 19
+   },
+   "name_queries": {
+    "Vercel AI Gateway": 32,
+    "\"Vercel AI Gateway\"": 19
+   },
+   "hn_title_points": {
+    "\"vercel ai gateway\"": 10
+   },
+   "downloads": {}
+  },
+  "gateways/cc-switch": {
+   "hn_comments_12m": {
+    "\"cc-switch\"": 3
+   },
+   "name_queries": {
+    "cc-switch": 5
+   },
+   "hn_title_points": {
+    "\"cc-switch\"": 3
+   },
+   "downloads": {}
+  },
+  "gateways/Portkey": {
+   "hn_comments_12m": {
+    "\"portkey\"": 6
+   },
+   "name_queries": {
+    "Portkey": 32,
+    "\"Portkey\"": 6
+   },
+   "hn_title_points": {
+    "\"portkey\"": 9
+   },
+   "downloads": {}
+  },
+  "gateways/Chutes": {
+   "hn_comments_12m": {
+    "\"chutes\"": 33,
+    "\"chutes.ai\"": 6
+   },
+   "name_queries": {
+    "Chutes": 225,
+    "\"Chutes\"": 33
+   },
+   "hn_title_points": {
+    "\"chutes\"": 3,
+    "\"chutes.ai\"": 3
+   },
+   "downloads": {},
+   "collision_samples": [
+    "and it fixed it. I'm using openrouter/google/gemma-3-27b-it:free via chutes. Not a frontier model in the slightest.",
+    "use them (cli, api, etc). 2) OpenCode Go subscription, backstopped by Chutes Plus subscription, OpenRouter with $10 in credit (for very rare use o"
+   ]
+  },
+  "gateways/OmniRoute": {
+   "hn_comments_12m": {
+    "\"omniroute\"": 1
+   },
+   "name_queries": {
+    "\"OmniRoute\"": 1,
+    "OmniRoute": 222
+   },
+   "hn_title_points": {
+    "\"omniroute\"": 0
+   },
+   "downloads": {}
+  },
+  "gateways/Cloudflare AI Gateway": {
+   "hn_comments_12m": {
+    "\"cloudflare ai gateway\"": 17
+   },
+   "name_queries": {
+    "\"Cloudflare AI Gateway\"": 17,
+    "Cloudflare AI Gateway": 52
+   },
+   "hn_title_points": {
+    "\"cloudflare ai gateway\"": 4
+   },
+   "downloads": {}
+  },
+  "gateways/Synthetic": {
+   "hn_comments_12m": {
+    "\"synthetic.new\"": 29
+   },
+   "name_queries": {
+    "Synthetic": 7367,
+    "\"Synthetic\"": 2544
+   },
+   "hn_title_points": {
+    "\"synthetic.new\"": 14
+   },
+   "downloads": {},
+   "collision_samples": [
+    "Opencode CLI (and connect it with Synthetic subscription and Claude subscription) and still use VS Code as the ma"
+   ]
+  },
+  "frameworks/LangChain": {
+   "hn_comments_12m": {
+    "LangChain": 817,
+    "\"langchain\"": 807
+   },
+   "name_queries": {
+    "\"LangChain\"": 807
+   },
+   "hn_title_points": {
+    "LangChain": 229,
+    "\"langchain\"": 227
+   },
+   "downloads": {
+    "pypi": 170457766
+   }
+  },
+  "frameworks/Mastra": {
+   "hn_comments_12m": {
+    "\"mastra\"": 115
+   },
+   "name_queries": {
+    "Mastra": 3997,
+    "\"Mastra\"": 115
+   },
+   "hn_title_points": {
+    "\"mastra\"": 240
+   },
+   "downloads": {
+    "npm": 10167371
+   }
+  },
+  "frameworks/Claude Agent SDK": {
+   "hn_comments_12m": {
+    "\"claude agent sdk\"": 132,
+    "\"agent sdk\"": 301
+   },
+   "name_queries": {
+    "\"Claude Agent SDK\"": 132,
+    "Claude Agent SDK": 2205
+   },
+   "hn_title_points": {
+    "\"claude agent sdk\"": 106,
+    "\"agent sdk\"": 387
+   },
+   "downloads": {
+    "npm": 57570191
+   }
+  },
+  "frameworks/LangGraph": {
+   "hn_comments_12m": {
+    "\"langgraph\"": 466
+   },
+   "name_queries": {
+    "\"LangGraph\"": 466,
+    "LangGraph": 472
+   },
+   "hn_title_points": {
+    "\"langgraph\"": 215
+   },
+   "downloads": {
+    "pypi": 44769952
+   }
+  },
+  "frameworks/DSPy": {
+   "hn_comments_12m": {
+    "\"dspy\"": 130
+   },
+   "name_queries": {
+    "DSPy": 8029,
+    "\"DSPy\"": 130
+   },
+   "hn_title_points": {
+    "\"dspy\"": 392
+   },
+   "downloads": {
+    "pypi": 5312050
+   }
+  },
+  "frameworks/Microsoft Agent Framework": {
+   "hn_comments_12m": {
+    "\"microsoft agent framework\"": 8,
+    "\"agent framework\"": 272
+   },
+   "name_queries": {
+    "\"Microsoft Agent Framework\"": 8,
+    "Microsoft Agent Framework": 61
+   },
+   "hn_title_points": {
+    "\"microsoft agent framework\"": 72,
+    "\"agent framework\"": 907
+   },
+   "downloads": {}
+  },
+  "frameworks/OpenAI Agents SDK": {
+   "hn_comments_12m": {
+    "\"openai agents sdk\"": 32,
+    "\"agents sdk\"": 84
+   },
+   "name_queries": {
+    "\"OpenAI Agents SDK\"": 32,
+    "OpenAI Agents SDK": 386
+   },
+   "hn_title_points": {
+    "\"openai agents sdk\"": 13,
+    "\"agents sdk\"": 65
+   },
+   "downloads": {
+    "pypi": 12449784
+   }
+  },
+  "frameworks/Google ADK": {
+   "hn_comments_12m": {
+    "\"google adk\"": 46,
+    "\"agent development kit\"": 22
+   },
+   "name_queries": {
+    "\"Google ADK\"": 46,
+    "Google ADK": 16866
+   },
+   "hn_title_points": {
+    "\"google adk\"": 12,
+    "\"agent development kit\"": 5
+   },
+   "downloads": {
+    "pypi": 10109331
+   }
+  },
+  "frameworks/CrewAI": {
+   "hn_comments_12m": {
+    "\"crewai\"": 156
+   },
+   "name_queries": {
+    "\"CrewAI\"": 156,
+    "CrewAI": 199
+   },
+   "hn_title_points": {
+    "\"crewai\"": 28
+   },
+   "downloads": {
+    "pypi": 2442764
+   }
+  },
+  "frameworks/Pydantic AI": {
+   "hn_comments_12m": {
+    "\"pydantic ai\"": 69,
+    "\"pydantic-ai\"": 69,
+    "\"pydanticai\"": 30
+   },
+   "name_queries": {
+    "\"Pydantic AI\"": 69,
+    "Pydantic AI": 301
+   },
+   "hn_title_points": {
+    "\"pydantic ai\"": 37,
+    "\"pydantic-ai\"": 37,
+    "\"pydanticai\"": 7
+   },
+   "downloads": {
+    "pypi": 5383780
+   }
+  },
+  "evals/OpenTelemetry GenAI": {
+   "hn_comments_12m": {
+    "\"opentelemetry\"": 303,
+    "\"otel\"": 320
+   },
+   "name_queries": {
+    "OpenTelemetry GenAI": 9,
+    "\"OpenTelemetry GenAI\"": 1
+   },
+   "hn_title_points": {
+    "\"opentelemetry\"": 880,
+    "\"otel\"": 394
+   },
+   "downloads": {}
+  },
+  "evals/promptfoo": {
+   "hn_comments_12m": {
+    "\"promptfoo\"": 48
+   },
+   "name_queries": {
+    "promptfoo": 81
+   },
+   "hn_title_points": {
+    "\"promptfoo\"": 62
+   },
+   "downloads": {
+    "npm": 3949597
+   }
+  },
+  "evals/Langfuse": {
+   "hn_comments_12m": {
+    "\"langfuse\"": 125
+   },
+   "name_queries": {
+    "Langfuse": 373,
+    "\"Langfuse\"": 125
+   },
+   "hn_title_points": {
+    "\"langfuse\"": 264
+   },
+   "downloads": {
+    "pypi": 23563200
+   }
+  },
+  "evals/Arize Phoenix": {
+   "hn_comments_12m": {
+    "\"arize phoenix\"": 5,
+    "\"arize\"": 9
+   },
+   "name_queries": {
+    "Arize Phoenix": 6,
+    "\"Arize Phoenix\"": 5
+   },
+   "hn_title_points": {
+    "\"arize phoenix\"": 0,
+    "\"arize\"": 3
+   },
+   "downloads": {
+    "pypi": 626210
+   },
+   "collision_samples": []
+  },
+  "evals/MLflow": {
+   "hn_comments_12m": {
+    "\"mlflow\"": 55
+   },
+   "name_queries": {
+    "\"MLflow\"": 55,
+    "MLflow": 60
+   },
+   "hn_title_points": {
+    "\"mlflow\"": 14
+   },
+   "downloads": {
+    "pypi": 19887934
+   }
+  },
+  "evals/Logfire": {
+   "hn_comments_12m": {
+    "\"logfire\"": 14
+   },
+   "name_queries": {
+    "\"Logfire\"": 14,
+    "Logfire": 58
+   },
+   "hn_title_points": {
+    "\"logfire\"": 29
+   },
+   "downloads": {
+    "pypi": 13028487
+   }
+  },
+  "evals/Opik": {
+   "hn_comments_12m": {
+    "\"opik\"": 5
+   },
+   "name_queries": {
+    "Opik": 38135,
+    "\"Opik\"": 5
+   },
+   "hn_title_points": {
+    "\"opik\"": 11
+   },
+   "downloads": {
+    "pypi": 1741711
+   }
+  },
+  "evals/Braintrust": {
+   "hn_comments_12m": {
+    "\"braintrust\"": 32
+   },
+   "name_queries": {
+    "Braintrust": 54,
+    "\"Braintrust\"": 32
+   },
+   "hn_title_points": {
+    "\"braintrust\"": 4
+   },
+   "downloads": {
+    "pypi": 6574708
+   },
+   "collision_samples": []
+  },
+  "evals/Helicone": {
+   "hn_comments_12m": {
+    "\"helicone\"": 13
+   },
+   "name_queries": {
+    "Helicone": 530,
+    "\"Helicone\"": 13
+   },
+   "hn_title_points": {
+    "\"helicone\"": 18
+   },
+   "downloads": {}
+  },
+  "evals/DeepEval": {
+   "hn_comments_12m": {
+    "\"deepeval\"": 11
+   },
+   "name_queries": {
+    "\"DeepEval\"": 11,
+    "DeepEval": 33
+   },
+   "hn_title_points": {
+    "\"deepeval\"": 2
+   },
+   "downloads": {
+    "pypi": 2584198
+   }
+  },
+  "evals/LangSmith": {
+   "hn_comments_12m": {
+    "\"langsmith\"": 67
+   },
+   "name_queries": {
+    "\"LangSmith\"": 67,
+    "LangSmith": 70
+   },
+   "hn_title_points": {
+    "\"langsmith\"": 18
+   },
+   "downloads": {
+    "pypi": 77233437
+   }
+  },
+  "evals/Inspect AI": {
+   "hn_comments_12m": {
+    "\"inspect ai\"": 3,
+    "\"inspect_ai\"": 3
+   },
+   "name_queries": {
+    "\"Inspect AI\"": 3,
+    "Inspect AI": 479
+   },
+   "hn_title_points": {
+    "\"inspect ai\"": 3,
+    "\"inspect_ai\"": 3
+   },
+   "downloads": {
+    "pypi": 2896739
+   }
+  },
+  "evals/garak": {
+   "hn_comments_12m": {
+    "\"garak\" llm": 4,
+    "\"nvidia garak\"": 0
+   },
+   "name_queries": {
+    "\"garak\"": 13,
+    "garak": 3117
+   },
+   "hn_title_points": {
+    "\"garak\" llm": 0,
+    "\"nvidia garak\"": 0
+   },
+   "downloads": {
+    "pypi": 39200
+   },
+   "collision_samples": []
+  },
+  "evals/Weights & Biases Weave": {
+   "hn_comments_12m": {
+    "\"wandb weave\"": 0,
+    "\"w&b weave\"": 0
+   },
+   "name_queries": {
+    "Weights & Biases Weave": 20,
+    "\"Weights & Biases Weave\"": 0
+   },
+   "hn_title_points": {
+    "\"wandb weave\"": 0,
+    "\"w&b weave\"": 0
+   },
+   "downloads": {
+    "pypi": 817064
+   }
+  },
+  "evals/Laminar": {
+   "hn_comments_12m": {
+    "\"lmnr\"": 0,
+    "\"laminar\" llm": 9
+   },
+   "name_queries": {
+    "\"Laminar\"": 65,
+    "Laminar": 368
+   },
+   "hn_title_points": {
+    "\"lmnr\"": 0,
+    "\"laminar\" llm": 0
+   },
+   "downloads": {
+    "pypi": 5952916
+   },
+   "collision_samples": []
+  },
+  "assistants/OpenClaw": {
+   "hn_comments_12m": {
+    "\"openclaw\"": 5014
+   },
+   "name_queries": {
+    "\"OpenClaw\"": 5014,
+    "OpenClaw": 5652
+   },
+   "hn_title_points": {
+    "\"openclaw\"": 13329
+   },
+   "downloads": {}
+  },
+  "assistants/Hermes Agent": {
+   "hn_comments_12m": {
+    "\"hermes agent\"": 216,
+    "\"hermes-agent\"": 216
+   },
+   "name_queries": {
+    "Hermes Agent": 2197,
+    "\"Hermes Agent\"": 216
+   },
+   "hn_title_points": {
+    "\"hermes agent\"": 227,
+    "\"hermes-agent\"": 227
+   },
+   "downloads": {}
+  },
+  "assistants/Muse": {
+   "hn_comments_12m": {
+    "\"muse agent\"": 14,
+    "\"muse app\"": 12
+   },
+   "name_queries": {
+    "\"Muse\"": 1394,
+    "Muse": 54475
+   },
+   "hn_title_points": {
+    "\"muse agent\"": 11,
+    "\"muse app\"": 0
+   },
+   "downloads": {},
+   "collision_samples": [
+    "for Hermes | 1 - Cursor/Grok/X 200 | 1 2. GPT, Claude, Gemini, Kimi, Muse Voyage for product API 3. CLI/Cursor 4. Hermes/Actvox/OpenClaw 5. Ope",
+    "ough. 2. Other: Local models for non-coding agentic workflows. Mainly Muse Glimmer, some Qwen 3.8 27b and a little Gemma4 31b. Seriously thinkin",
+    "ader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? > No. Not interested.",
+    "ly not my main machine 4) No 5) No. Thinking I probably will use Dots/Muse at tax time",
+    "that makes sense. I also don't use AI chat gateways like OpenClaw or Muse because I don't want to do that work on my phone every minute of my l",
+    "about something new. 5.) In EU (DK) so we don't get access to Dots or Muse like everyone else. I have used Grok Bot and I really like it. It's s",
+    "ader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? I built custom agents on top of RubyLLM. I primarily communicate wit",
+    "Muse Spark 1.3 contributor might not be the smartest or fastest, but it do"
+   ]
+  },
+  "assistants/Claude Cowork": {
+   "hn_comments_12m": {
+    "Claude Cowork": 970,
+    "\"cowork\"": 842
+   },
+   "name_queries": {
+    "\"Claude Cowork\"": 352
+   },
+   "hn_title_points": {
+    "Claude Cowork": 3682,
+    "\"cowork\"": 5683
+   },
+   "downloads": {}
+  },
+  "assistants/n8n": {
+   "hn_comments_12m": {
+    "\"n8n\"": 429
+   },
+   "name_queries": {
+    "n8n": 129304
+   },
+   "hn_title_points": {
+    "\"n8n\"": 635
+   },
+   "downloads": {}
+  },
+  "assistants/NanoClaw": {
+   "hn_comments_12m": {
+    "\"nanoclaw\"": 199
+   },
+   "name_queries": {
+    "\"NanoClaw\"": 199,
+    "NanoClaw": 345
+   },
+   "hn_title_points": {
+    "\"nanoclaw\"": 1486
+   },
+   "downloads": {}
+  },
+  "assistants/Home Assistant + LLM": {
+   "hn_comments_12m": {
+    "\"home assistant\" llm": 113,
+    "\"home assistant\" ai": 139
+   },
+   "name_queries": {
+    "\"Home Assistant + LLM\"": 0,
+    "Home Assistant + LLM": 28
+   },
+   "hn_title_points": {
+    "\"home assistant\" llm": 2,
+    "\"home assistant\" ai": 6
+   },
+   "downloads": {}
+  },
+  "assistants/Claude Duet": {
+   "hn_comments_12m": {
+    "\"claude duet\"": 19
+   },
+   "name_queries": {
+    "\"Claude Duet\"": 19,
+    "Claude Duet": 1162
+   },
+   "hn_title_points": {
+    "\"claude duet\"": 792
+   },
+   "downloads": {}
+  },
+  "assistants/Dots": {
+   "hn_comments_12m": {
+    "\"dots agent\"": 0
+   },
+   "name_queries": {
+    "Dots": 794131,
+    "\"Dots\"": 1739
+   },
+   "hn_title_points": {
+    "\"dots agent\"": 0
+   },
+   "downloads": {},
+   "collision_samples": [
+    "sor 4. Hermes/Actvox/OpenClaw 5. OpenClaw / Hermes Agent / Grok bot / Dots / Duet Muse still on wait list More as \"Agent Manager\", support,",
+    "ing broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? > No. Not interested.",
+    "cidedly not my main machine 4) No 5) No. Thinking I probably will use Dots/Muse at tax time",
+    "h My Opencode - sometimes, not as much. 4) Herdr 5) Hermes, Openclaw, Dots, Instinct, Pickle. Hermes and openclaw for most routines. Dots and Pi",
+    ". ( https://sleeperservice.io/ ) 5. Waiting on a Duet invitation. But Dots is interesting to me. Use Gemini with Gmail to some extent.",
+    "hing me about something new. 5.) In EU (DK) so we don't get access to Dots or Muse like everyone else. I have used Grok Bot and I really like it",
+    "ing broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? I built custom agents on top of RubyLLM. I primarily communic",
+    "ing broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? No. I'd like to try agent stuff using a local model, but it s"
+   ]
+  },
+  "assistants/Paperclip": {
+   "hn_comments_12m": {
+    "\"paperclip\" agents": 73,
+    "\"paperclipai\"": 3
+   },
+   "name_queries": {
+    "\"Paperclip\"": 556,
+    "Paperclip": 879
+   },
+   "hn_title_points": {
+    "\"paperclip\" agents": 17,
+    "\"paperclipai\"": 4
+   },
+   "downloads": {},
+   "collision_samples": [
+    "fun. If you want to try it: https://github.com/sadilek/obeya ) 4) No Paperclip or Munder Difflin or anything. I actually think it doesn't make sense",
+    "dels in LocalLM. Haven't got into agent orchestration much other than Paperclip earlier this year."
+   ]
+  },
+  "assistants/Claude Code Routines": {
+   "hn_comments_12m": {
+    "\"claude code routines\"": 10,
+    "\"claude routines\"": 6
+   },
+   "name_queries": {
+    "\"Claude Code Routines\"": 10,
+    "Claude Code Routines": 359
+   },
+   "hn_title_points": {
+    "\"claude code routines\"": 722,
+    "\"claude routines\"": 0
+   },
+   "downloads": {}
+  },
+  "assistants/nanobot": {
+   "hn_comments_12m": {
+    "\"nanobot\"": 44
+   },
+   "name_queries": {
+    "nanobot": 895
+   },
+   "hn_title_points": {
+    "\"nanobot\"": 265
+   },
+   "downloads": {}
+  },
+  "assistants/Eigent": {
+   "hn_comments_12m": {
+    "\"eigent\"": 2
+   },
+   "name_queries": {
+    "\"Eigent\"": 2,
+    "Eigent": 1008
+   },
+   "hn_title_points": {
+    "\"eigent\"": 38
+   },
+   "downloads": {}
+  }
+ }
+}

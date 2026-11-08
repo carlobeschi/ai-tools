@@ -17,7 +17,7 @@ const SCENARIOS = [
     name: "Category leader everywhere",
     picks: { terminal: ["Claude Code"], editors: ["Cursor"], orchestration: ["tmux + git worktrees"], review: ["Claude Code review"],
       context: ["AGENTS.md"], browser: ["Playwright MCP"], sandbox: ["bubblewrap"], local: ["Ollama"], gateways: ["OpenRouter"],
-      frameworks: ["LangChain"], evals: ["Arize Phoenix"], assistants: ["OpenClaw"] },
+      frameworks: ["LangChain"], evals: ["OpenTelemetry GenAI"], assistants: ["OpenClaw"] },
     score: 100, label: "Right with the crowd", markers: 12,
   },
   {
@@ -99,7 +99,7 @@ async function readResult(page) {
 }
 
 (async () => {
-  const srv = await serve(), base = `http://localhost:${srv.address().port}/assess.html`;
+  const srv = await serve(), base = `http://localhost:${srv.address().port}/assess.html?snapshot=2026-11-07`;
   const browser = await chromium.launch();
   let failed = 0;
   const check = (name, cond, msg) => { if (!cond) { failed++; console.log(`  ✗ ${msg}`) } };

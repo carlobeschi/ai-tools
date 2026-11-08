@@ -25,6 +25,12 @@ someone who uses nothing). It checks score, label, markers and the shared link a
 the 2026-11-07 snapshot, so update the expected numbers when the scoring or the latest snapshot changes. Needs
 Playwright; set `D3_PATH` to a local `d3.min.js` if the CDN is unreachable.
 
+## Trends
+
+`trends.html` compares snapshots: per category, each tool's sparkline across snapshots, its latest value and the change
+since the previous one, for HN comments, HN devs, stars, downloads and score, plus the biggest movers. Signals that our
+recurring run measures differently from the source are compared only between our own snapshots.
+
 ## Data
 
 - `data/snapshots/<date>.json`: one snapshot per research run (schema_version 1). Each has the source, corpus size,
@@ -35,3 +41,8 @@ Playwright; set `D3_PATH` to a local `d3.min.js` if the CDN is unreachable.
   Categories 1-8 and the first four tools of "Model access & routing" match his `tools.json`; the rest was transcribed
   from the rendered page and has rounded numbers (flagged as `verbatim: false`).
 - `scripts/seed_snapshot_2026-11-07.py` regenerates that first snapshot.
+- Later snapshots are collected every two weeks by a GitHub Action (`.github/workflows/snapshot.yml` runs
+  `scripts/collect_snapshot.py` over `scripts/tracked_tools.json`) and arrive as a pull request. They add `kind:
+  "collected"`, `method`, `hn_devs_12m` and `others` (tracked tools outside the top 10); raw counts and samples go
+  to `data/raw/<date>.json`. See [docs/methodology.md](docs/methodology.md).
+- Any page takes `?snapshot=YYYY-MM-DD` to show an older snapshot.
