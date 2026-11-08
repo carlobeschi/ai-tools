@@ -29,7 +29,7 @@
   "tone": "HN sentiment, -1 to 1",
   "tags": "Rising, Fading, New in 2026, Open source"
  },
- "notes": "Categories marked verbatim=false (and gateways ranks 5-10) were transcribed from the rendered page, not the JSON; numbers are rounded (e.g. stars 38k) and URLs missing. Re-fetch tools.json to fill gaps.",
+ "notes": "Categories marked verbatim=false (and gateways ranks 5-10) were transcribed from the rendered page, not the JSON; numbers are rounded (e.g. stars 38k) and URLs missing. Re-fetch tools.json to fill gaps. Evals category: stars/downloads re-measured exactly and Arize Phoenix hn_devs corrected on 2026-11-08, see 'corrections'.",
  "polls": [
   {
    "id": "hn-agentic-setup-2026-11",
@@ -2013,7 +2013,7 @@
     {
      "rank": 1,
      "name": "OpenTelemetry GenAI",
-     "url": null,
+     "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
      "score": 55,
      "tags": [],
      "hn_devs": 3,
@@ -2029,7 +2029,7 @@
     {
      "rank": 2,
      "name": "promptfoo",
-     "url": null,
+     "url": "https://github.com/promptfoo/promptfoo",
      "score": 48,
      "tags": [],
      "hn_devs": 1,
@@ -2037,15 +2037,15 @@
      "hn_title_points": null,
      "lobsters": null,
      "devto": null,
-     "github_stars": 27000,
-     "downloads_month": 4000000,
+     "github_stars": 26950,
+     "downloads_month": 3591424,
      "tone": null,
      "note": null
     },
     {
      "rank": 3,
      "name": "Langfuse",
-     "url": null,
+     "url": "https://github.com/langfuse/langfuse",
      "score": 46,
      "tags": [],
      "hn_devs": 0,
@@ -2053,33 +2053,33 @@
      "hn_title_points": null,
      "lobsters": null,
      "devto": null,
-     "github_stars": 37000,
-     "downloads_month": 23600000,
+     "github_stars": 37140,
+     "downloads_month": 23563200,
      "tone": null,
      "note": null
     },
     {
      "rank": 4,
      "name": "Arize Phoenix",
-     "url": null,
+     "url": "https://github.com/Arize-ai/phoenix",
      "score": 42,
      "tags": [
       "Fading"
      ],
-     "hn_devs": 30,
+     "hn_devs": 0,
      "hn_comments_12m": null,
      "hn_title_points": null,
      "lobsters": null,
      "devto": null,
-     "github_stars": 12000,
-     "downloads_month": 626000,
+     "github_stars": 12200,
+     "downloads_month": 626210,
      "tone": null,
-     "note": null
+     "note": "Source lists 30 HN devs; independent check found 0 'phoenix' mentions in the main Ask HN setup threads and only 5 'Arize Phoenix' comments on all of HN in 12 months. Most likely a name collision (Elixir Phoenix, Phoenix AZ), so set to 0. Its composite score is likely inflated too."
     },
     {
      "rank": 5,
      "name": "MLflow",
-     "url": null,
+     "url": "https://github.com/mlflow/mlflow",
      "score": 38,
      "tags": [],
      "hn_devs": 0,
@@ -2087,15 +2087,15 @@
      "hn_title_points": null,
      "lobsters": null,
      "devto": null,
-     "github_stars": 29000,
-     "downloads_month": 19900000,
+     "github_stars": 28722,
+     "downloads_month": 19887934,
      "tone": null,
      "note": null
     },
     {
      "rank": 6,
      "name": "Logfire",
-     "url": null,
+     "url": "https://github.com/pydantic/logfire",
      "score": 33,
      "tags": [],
      "hn_devs": 0,
@@ -2103,15 +2103,15 @@
      "hn_title_points": null,
      "lobsters": null,
      "devto": null,
-     "github_stars": 4500,
-     "downloads_month": 13000000,
+     "github_stars": 4537,
+     "downloads_month": 13028487,
      "tone": null,
      "note": null
     },
     {
      "rank": 7,
      "name": "Opik",
-     "url": null,
+     "url": "https://github.com/comet-ml/opik",
      "score": 29,
      "tags": [],
      "hn_devs": 0,
@@ -2119,15 +2119,15 @@
      "hn_title_points": null,
      "lobsters": null,
      "devto": null,
-     "github_stars": 23000,
-     "downloads_month": 1700000,
+     "github_stars": 23256,
+     "downloads_month": 1741711,
      "tone": null,
      "note": null
     },
     {
      "rank": 8,
      "name": "Braintrust",
-     "url": null,
+     "url": "https://www.braintrust.dev",
      "score": 29,
      "tags": [],
      "hn_devs": 0,
@@ -2136,14 +2136,14 @@
      "lobsters": null,
      "devto": null,
      "github_stars": null,
-     "downloads_month": 6600000,
+     "downloads_month": 6574708,
      "tone": null,
      "note": null
     },
     {
      "rank": 9,
      "name": "Helicone",
-     "url": null,
+     "url": "https://github.com/Helicone/helicone",
      "score": 28,
      "tags": [],
      "hn_devs": 0,
@@ -2151,7 +2151,7 @@
      "hn_title_points": null,
      "lobsters": null,
      "devto": null,
-     "github_stars": 6300,
+     "github_stars": 6273,
      "downloads_month": null,
      "tone": null,
      "note": null
@@ -2159,7 +2159,7 @@
     {
      "rank": 10,
      "name": "DeepEval",
-     "url": null,
+     "url": "https://github.com/confident-ai/deepeval",
      "score": 28,
      "tags": [],
      "hn_devs": 0,
@@ -2167,8 +2167,8 @@
      "hn_title_points": null,
      "lobsters": null,
      "devto": null,
-     "github_stars": 19000,
-     "downloads_month": 2600000,
+     "github_stars": 19363,
+     "downloads_month": 2584198,
      "tone": null,
      "note": null
     }
@@ -2365,6 +2365,24 @@
     "nanobot",
     "Eigent"
    ]
+  }
+ ],
+ "corrections": [
+  {
+   "date": "2026-11-08",
+   "category": "evals",
+   "tool": "Arize Phoenix",
+   "field": "hn_devs",
+   "from": 30,
+   "to": 0,
+   "reason": "Not reproducible: HN Algolia finds 0 comments matching 'phoenix' in Ask HN 50366117 (690 comments) and three other Ask HN AI-setup threads; 'arize phoenix' has 5 comments and 'arize' 9 across all HN since 2025-11-08. The source methodology itself lists Phoenix among colliding names."
+  },
+  {
+   "date": "2026-11-08",
+   "category": "evals",
+   "tool": "(8 tools)",
+   "field": "github_stars, downloads_month, url",
+   "reason": "Replaced rounded page values with exact ones re-measured from GitHub and pypistats (PyPI last month; promptfoo from npm last month). All matched the rounded source values. Composite scores left as published by the source."
   }
  ]
 }

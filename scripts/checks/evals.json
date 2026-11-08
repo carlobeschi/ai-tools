@@ -1,0 +1,26 @@
+{
+ "category": "evals",
+ "since": "2025-11-08",
+ "setup_threads": [50366117, 48445024, 49636239, 44262410],
+ "tools": {
+  "OpenTelemetry GenAI": {"hn_queries": ["\"opentelemetry\"", "\"otel\""], "github": "open-telemetry/semantic-conventions"},
+  "promptfoo": {"hn_queries": ["\"promptfoo\""], "github": "promptfoo/promptfoo", "npm": "promptfoo"},
+  "Langfuse": {"hn_queries": ["\"langfuse\""], "github": "langfuse/langfuse", "pypi": "langfuse"},
+  "Arize Phoenix": {"hn_queries": ["\"arize phoenix\"", "\"arize\""], "github": "Arize-ai/phoenix", "pypi": "arize-phoenix",
+                    "collision": {"term": "phoenix", "reject": ["elixir", "liveview", "phoenix, az", "arizona", "firefox"]}},
+  "MLflow": {"hn_queries": ["\"mlflow\""], "github": "mlflow/mlflow", "pypi": "mlflow"},
+  "Logfire": {"hn_queries": ["\"logfire\""], "github": "pydantic/logfire", "pypi": "logfire"},
+  "Opik": {"hn_queries": ["\"opik\""], "github": "comet-ml/opik", "pypi": "opik"},
+  "Braintrust": {"hn_queries": ["\"braintrust\""], "pypi": "braintrust",
+                 "collision": {"term": "braintrust", "reject": ["a braintrust", "the braintrust of", "s3 braintrust"]}},
+  "Helicone": {"hn_queries": ["\"helicone\""], "github": "Helicone/helicone"},
+  "DeepEval": {"hn_queries": ["\"deepeval\""], "github": "confident-ai/deepeval", "pypi": "deepeval"},
+  "LangSmith": {"hn_queries": ["\"langsmith\""], "github": "langchain-ai/langsmith-sdk", "pypi": "langsmith"},
+  "Inspect AI": {"hn_queries": ["\"inspect ai\"", "\"inspect_ai\""], "github": "UKGovernmentBEIS/inspect_ai", "pypi": "inspect-ai"},
+  "garak": {"hn_queries": ["\"garak\""], "github": "NVIDIA/garak", "pypi": "garak",
+            "collision": {"term": "garak", "reject": ["deep space nine", "ds9", "star trek", "cardassian"]}},
+  "Weights & Biases Weave": {"hn_queries": ["\"wandb weave\"", "\"w&b weave\""], "github": "wandb/weave", "pypi": "weave"},
+  "Laminar": {"hn_queries": ["\"lmnr\"", "\"laminar\""], "github": "lmnr-ai/lmnr", "pypi": "lmnr",
+              "collision": {"term": "laminar", "reject": ["laminar flow", "turbulent", "airflow", "fluid"]}}
+ }
+}
