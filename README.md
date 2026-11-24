@@ -22,14 +22,16 @@ is the mean of its picks and the headline is the mean of answered categories. An
 `node tests/assess.test.js` plays seven developer scenarios in headless Chromium (category leaders everywhere, strong
 runners-up, a mixed stack, only invented tool names, free text matching a known tool, niche-but-scored tools, and
 someone who uses nothing). It checks score, label, markers and the shared link against values worked out by hand from
-the 2026-11-07 snapshot, so update the expected numbers when the scoring or the latest snapshot changes. Needs
-Playwright; set `D3_PATH` to a local `d3.min.js` if the CDN is unreachable.
+the pinned 2026-11-07 snapshot, so changing the latest snapshot does not affect its expected numbers. Update them only
+if the scoring or that historical snapshot changes. Run `npm install` and `npx playwright install chromium` once to
+install the test dependencies. If the D3 CDN is unreachable, set `D3_PATH` to a local `d3.min.js`.
 
 ## Trends
 
 `trends.html` compares snapshots: per category, each tool's sparkline across snapshots, its latest value and the change
 since the previous one, for HN comments, HN devs, stars, downloads and score, plus the biggest movers. Signals that our
-recurring run measures differently from the source are compared only between our own snapshots.
+recurring run measures differently from the source are compared only between our own snapshots. Short-window star and
+rolling-download changes can be noisy; verify large moves before treating them as durable adoption.
 
 ## Data
 
@@ -45,4 +47,4 @@ recurring run measures differently from the source are compared only between our
   `scripts/collect_snapshot.py` over `scripts/tracked_tools.json`) and arrive as a pull request. They add `kind:
   "collected"`, `method`, `hn_devs_12m` and `others` (tracked tools outside the top 10); raw counts and samples go
   to `data/raw/<date>.json`. See [docs/methodology.md](docs/methodology.md).
-- Any page takes `?snapshot=YYYY-MM-DD` to show an older snapshot.
+- The main treemap links to older snapshots; any page also takes `?snapshot=YYYY-MM-DD` to show one directly.

@@ -33,6 +33,11 @@ def main(date):
     out = [f"New snapshot **{date}**: {new['corpus']['ask_hn_threads']} Ask HN setup threads, "
            f"{new['corpus']['hn_comments']:,} comments, {new['corpus']['tools_scored']} tools tracked "
            f"({new['method']['requests']} requests, {new['method']['errors']} failed).", ""]
+    failures = new["method"].get("source_failures", [])
+    if failures:
+        out += ["**Source fetch failures:**"]
+        out += [f"- `{failure['url']}`: {failure['error']}" for failure in failures]
+        out.append("")
     if prev:
         kind = "the source's own numbers" if old.get("kind") != "collected" else "our previous run"
         out += [f"Compared with **{prev}** ({kind}). Against the source, only stars, downloads and the HN comments of tools "
