@@ -53,7 +53,7 @@ SETUP_TITLE = re.compile(
     r"|^ask hn\b.*\b(ai|llms?|agents?|agentic|claude|copilot|cursor|codex)\b.*\b(setup|set-up|workflow|stack)\b")
 MIN_THREAD_COMMENTS = 30
 
-stats = {"requests": 0, "errors": 0}
+stats = {"requests": 0, "errors": 0, "failures": []}
 
 
 def get_json(url, headers=None, tries=4):
@@ -73,6 +73,7 @@ def get_json(url, headers=None, tries=4):
             err = e
             time.sleep(2 ** i)
     stats["errors"] += 1
+    stats["failures"].append({"url": url, "error": str(err)})
     raise err
 
 
@@ -327,7 +328,8 @@ def main():
                    "weights": WEIGHTS, "raw": f"data/raw/{args.date}.json",
                    "comparable_to_baseline": ["github_stars", "downloads_month"],
                    "comparable_per_tool": {"hn_comments_12m": "source_query"},
-                   "requests": stats["requests"], "errors": stats["errors"]},
+                   "requests": stats["requests"], "errors": stats["errors"],
+                   "source_failures": stats["failures"]},
         "notes": "Measured with our own queries, not taken from the source. source_query=true marks tools whose HN comment query reproduces the source's count. Top 10 per category is re-ranked by the recomputed score among all tracked tools; `others` holds the rest. Names marked collision=true collide with common words: their counts need reading (samples in the raw file).",
         "polls": [],
         "categories": categories,

@@ -160,7 +160,15 @@ function draw(){
   mv.innerHTML = prev && pick.length ? pick.map(x => `<div class="mv"><div class="k">${esc(x.c)}</div><div class="t">${esc(x.n)}</div><div class="d ${x.dl.cls}">${x.dl.txt} · ${fmt(x.cur)} ${esc(m.label.toLowerCase())}</div></div>`).join("")
     : `<p class="empty">${ss.length < 2 ? `Only one snapshot is comparable for “${esc(m.label)}” so far; changes appear after the next run.` : "No movers on this signal."}</p>`;
   const skipped = snaps.length - ss.length;
-  document.getElementById("note").innerHTML = `${esc(m.long)}. Grey dots are the first snapshot, taken from <a href="${esc(snaps[0].source.url)}" target="_blank" rel="noopener">${esc(snaps[0].source.name)}</a>; blue dots are our own runs (<a href="https://github.com/carlobeschi/ai-tools/blob/main/docs/methodology.md" target="_blank" rel="noopener">method</a>). ${skipped ? `For this signal the first snapshot is left out, because our method differs from the source's. ` : perTool(snaps[snaps.length-1], metric) ? "The first snapshot is shown only for tools where our query reproduces the source's count. " : ""}Sparklines use a log scale. “≈” marks names that collide with common words (Pi, Cursor, Orca…), whose counts are less reliable.`;
+  const latest = snaps[snaps.length-1];
+  const failures = latest.method?.source_failures || [];
+  const failureNote = failures.map(f => {
+    const url = new URL(f.url);
+    const target = url.hostname === "api.github.com" && url.pathname.startsWith("/repos/")
+      ? url.pathname.slice("/repos/".length) : url.hostname;
+    return `${url.hostname === "api.github.com" ? "GitHub" : esc(url.hostname)} lookup for ${esc(target)} failed (${esc(f.error)}); that metric is unavailable.`;
+  }).join(" ");
+  document.getElementById("note").innerHTML = `${esc(m.long)}. Grey dots are the first snapshot, taken from <a href="${esc(snaps[0].source.url)}" target="_blank" rel="noopener">${esc(snaps[0].source.name)}</a>; blue dots are our own runs (<a href="https://github.com/carlobeschi/ai-tools/blob/main/docs/methodology.md" target="_blank" rel="noopener">method</a>). ${skipped ? `For this signal the first snapshot is left out, because our method differs from the source's. ` : perTool(snaps[snaps.length-1], metric) ? "The first snapshot is shown only for tools where our query reproduces the source's count. " : ""}Sparklines use a log scale. “≈” marks names that collide with common words (Pi, Cursor, Orca…), whose counts are less reliable. Large star or rolling-download moves over a short interval can be noisy; verify spikes before treating them as durable adoption. ${failureNote}`;
 }
 
 (async () => {

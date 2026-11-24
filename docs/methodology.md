@@ -94,6 +94,7 @@ What it measures, per tool:
 | `score` | HN devs 40, HN comments 20, max(stars, downloads) 16, title points 12; each log-scaled against the category's best tracked tool, total rescaled to 100 |
 
 Lobsters and tone are not collected (null).
+Failed source requests are recorded in `method.source_failures`; affected metrics remain unavailable rather than being inferred.
 
 Tags (Rising, Fading, New in 2026, Open source) are the source's labels, carried forward from the previous
 snapshot for each tool; the treemap colours tiles by them. They are not recomputed yet.
@@ -130,3 +131,8 @@ a few comments first).
   threads; 5 "arize phoenix" comments on all of HN in 12 months). Set to 0.
   Stars and downloads replaced with exact values; all matched the rounded
   source values.
+- 2026-11-23: Collected all 184 tracked tools from the same 19 setup threads
+  (4,491 comments); no new setup-thread candidates were found. One GitHub
+  lookup (`microsoft/agent-framework`) returned 404, so its star count is
+  unavailable. Large star and rolling-download changes over this 15-day
+  interval should be treated as provisional.

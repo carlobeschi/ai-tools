@@ -70,12 +70,14 @@ h1{font:700 clamp(28px,4vw,42px)/1.05 var(--display);color:var(--ink);margin:0;t
 .nav a{color:var(--muted);text-decoration:none}
 .nav a[aria-current]{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
 .nav a:hover{color:var(--ink)}
+.nav .archives{display:contents}
 .note{font-size:13px;color:var(--muted);max-width:80ch}
+.insight{margin:0;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--muted);font-size:14px}
 @media (prefers-reduced-motion:reduce){.tile{transition:none}}
 </style>
 
 <div class="wrap">
-  <nav class="nav"><a href="./" aria-current="page">Treemaps</a><a href="assess.html">Check your stack</a><a href="trends.html">Trends</a></nav>
+  <nav class="nav"><a href="./" aria-current="page">Treemaps</a><a href="assess.html">Check your stack</a><a href="trends.html">Trends</a><span class="archives" id="archives" aria-label="Previous snapshots"></span></nav>
   <header>
     <div>
       <h1>Which AI dev tools developers actually use</h1>
@@ -95,6 +97,7 @@ h1{font:700 clamp(28px,4vw,42px)/1.05 var(--display);color:var(--ink);margin:0;t
       </div>
     </div>
   </header>
+  <p class="insight" id="insight" aria-live="polite"></p>
   <div class="grid" id="grid"></div>
   <p class="note" id="note"></p>
 </div>
@@ -176,10 +179,25 @@ function pickSnapshot(idx){ const q=new URLSearchParams(location.search).get("sn
 (async()=>{
   const idx=await (await fetch("data/snapshots/index.json")).json();
   snap=await (await fetch(`data/snapshots/${pickSnapshot(idx)}.json`)).json();
+  document.getElementById("archives").innerHTML=idx.snapshots.filter(d=>d!==idx.latest).reverse().map(d=>`<a href="?snapshot=${encodeURIComponent(d)}"${d===snap.snapshot_date?' aria-current="page"':''}>Snapshot ${new Date(`${d}T00:00:00Z`).toLocaleDateString("en",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"})}</a>`).join("");
+  const allTools=snap.categories.flatMap(c=>[...c.tools,...(c.others||[])]);
+  const leaders=[...allTools].sort((a,b)=>(b.hn_devs||0)-(a.hn_devs||0)).slice(0,3);
+  const mentions=allTools.reduce((sum,t)=>sum+(t.hn_devs||0),0);
+  const categoryMentions=id=>{
+    const category=snap.categories.find(c=>c.id===id);
+    return category?[...category.tools,...(category.others||[])].reduce((sum,t)=>sum+(t.hn_devs||0),0):0;
+  };
+  const focusedShare=mentions?Math.round((categoryMentions("terminal")+categoryMentions("editors"))/mentions*100):0;
+  document.getElementById("insight").textContent=`Most named in setup threads: ${leaders.map(t=>`${t.name}${t.collision?"†":""} (${fmt(t.hn_devs)})`).join(", ")}. Terminal and editor categories account for ${focusedShare}% of tracked-tool mentions. Counts overlap across tools; † marks a name collision.`;
   const s=snap.source, own=snap.kind==="collected";
   document.getElementById("sub").innerHTML=`Snapshot ${snap.snapshot_date}, ${own?`measured by our <a href="${s.url}" target="_blank" rel="noopener">recurring run</a> (baseline: <a href="${s.baseline.url}" target="_blank" rel="noopener">${s.baseline.name}</a>)`:`from <a href="${s.url}" target="_blank" rel="noopener">${s.name}</a> by ${s.author}`}: ${snap.corpus.hn_comments.toLocaleString("en")} Hacker News comments across ${snap.corpus.ask_hn_threads} “what's your setup” threads. Tile area is the tool's share within its category; hover a tile for details.`;
   if(own) document.getElementById("note").textContent="“Devs naming it” counts Hacker News developers who name the tool in Ask HN setup threads, the closest proxy for share of users; HN skews senior and terminal-first. “Composite score” is our recomputation of the source's blend (HN devs, HN comments, stars or downloads, HN story points). See the Trends page for changes over time.";
   else document.getElementById("note").textContent="“Devs naming it” counts Hacker News developers who say they use the tool, so it is the closest proxy for share of users. HN skews senior and terminal-first. “Composite score” is Alexis's blend of mentions, comment volume, stars, downloads, Lobsters and dev.to. Cards marked “numbers approximate” were transcribed from the rendered page and will be refreshed from the source JSON.";
+  for(const failure of snap.method?.source_failures||[]){
+    const url=new URL(failure.url);
+    const target=url.hostname==="api.github.com"&&url.pathname.startsWith("/repos/")?url.pathname.slice(7):url.hostname;
+    document.getElementById("note").textContent+=` Source issue: lookup for ${target} failed (${failure.error}); its metric is unavailable.`;
+  }
   draw();
 })();
 </script>
